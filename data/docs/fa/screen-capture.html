@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><link href="../style/style.css" rel="stylesheet" type="text/css"><meta charset="utf-8"></head><body>
+<h1 id="amped-screen-capture-documentation"><a class="toclink" href="#amped-screen-capture-documentation">Amped Screen Capture Documentation</a></h1>
+<h2 id="why-a-screen-capture-tool"><a class="toclink" href="#why-a-screen-capture-tool">Why a Screen Capture tool</a></h2>
+<p>One of the biggest and most time consuming issues working on CCTV videos is that quite often the files are encoded in proprietary video formats. To play these files you need specific players provided by the system producer. If you want to analyze and process these videos, it is necessary to convert them to a standard format.  Unfortunately, most of the time, player software is not properly designed for investigative and forensics usage,  so an export function is often not provided or; if it there, it causes further reduction in the video quality.
+In these cases, capturing screen output played from the native player is  the only way to work with it. While several screen capture tools are available, the Screen Capture utility integrated in FIVE allows the user to easily save to uncompressed video, a very important requirement for forensic applications, and to have control over the capture process.  At the end of the capture, the resulting video file is open in FIVE and you are ready to get to work.</p>
+<h2 id="layout-of-the-screen-capture-tool"><a class="toclink" href="#layout-of-the-screen-capture-tool">Layout of the Screen Capture tool</a></h2>
+<p><img alt="Layout" src="../screen-capture/layout.png" /></p>
+<ol>
+<li>Output File:  This is a location that you set for the new video file.  The default location is <em>Desktop</em>,  the default file name is <em>capture</em> followed by a timestamp to avoid overwriting.
+2- Output Format: The output format is the format for the new video that is created by the capture.  The default is avi-Raw Video, which makes a large file, but is the highest quality.  The other formats can also be used depending on your needs and the tradeoff between disk usage, quality and codec compatibility. Capture Region: Choose between full screen and a specific area, such as the player screen only.</li>
+<li>Capture Frame Rate: The default is 10 fps, but you will need to adjust it in order to reflect, if possible, original video frame rate. </li>
+</ol>
+<h2 id="using-the-screen-capture-utility"><a class="toclink" href="#using-the-screen-capture-utility">Using the Screen Capture Utility:</a></h2>
+<ul>
+<li>Open the proprietary file in either the DVR console or in the proprietary player. It is important to capture the video in its most original formatted size and frame rate.  First, try to set the window size in the player or DVR console to the default original playback video size (no full screen or custom resizing of the window, as this will cause unwanted pixel interpolation).</li>
+</ul>
+<p><img alt="1" src="../screen-capture/1.png" /></p>
+<ul>
+<li>Open the Amped Screen Capture utility for FIVE, clicking on <em>File / DVR Screen Capture...</em>:</li>
+</ul>
+<p><img alt="2" src="../screen-capture/2.png" /></p>
+<ul>
+<li>Make any changes necessary to the basic settings for Amped Screen Capture. It is very important that you set the correct frame rate for capture the video. If the capture frame rate is too low you will lose some frames. 
+If it is too high, you will have duplicate frames which will complicate the further analysis on the video. Even though FIVE has the Remove Duplicates function available, it is still better to get it right as early in the process as possible.  If the frame rate is constant (a condition not always apparent in surveillance videos), you can simply look at the video timestamp and see how often the seconds text changes. If it changes every 10 frames, for example, we'll set 10 frames per seconds for our capture. Remember that you will need to capture the video closest to the original speed to get the capture right.</li>
+</ul>
+<p><img alt="3" src="../screen-capture/3.png" /></p>
+<ul>
+<li>In this case, we only want to capture the area of the player screen only.  So in Capture Region, we choose <em>Select Region</em>:</li>
+</ul>
+<p><img alt="4" src="../screen-capture/4.png" /></p>
+<ul>
+<li>Your monitor screen will fade and a box selection tool will appear with the mouse pointer.  You then select an outline of the screen area.  In this case, it is partially obstructed by the Amped Screen Capture tool, but we can easily move it out of the way when we need to.</li>
+</ul>
+<p><img alt="5" src="../screen-capture/5.png" /></p>
+<ul>
+<li>
+<p>Now the points of the area of the screen are plotted so this particular area is the area captured.  If you have made a mistake on the area, reselect the Capture Region and re-plot your capture area rectangle. </p>
+</li>
+<li>
+<p>Now you can start the capture using the Start Capture button.  </p>
+</li>
+</ul>
+<p><img alt="6" src="../screen-capture/6.png" /></p>
+<ul>
+<li>Now press play on the proprietary player: </li>
+</ul>
+<p><img alt="7" src="../screen-capture/7.png" /></p>
+<ul>
+<li>
+<p>When you have finished playing and simultaneously capturing the part or whole video that you need to capture, hit the Stop button to stop the capture.  You can also shut down the proprietary player.</p>
+</li>
+<li>
+<p>The file should now open in Windows Media Player (or your default media player):</p>
+</li>
+</ul>
+<p><img alt="8" src="../screen-capture/8.png" /></p>
+<ul>
+<li>
+<p>If the quality or smoothness of play is not what you would like it to be, you can redo the process until you achieve the results you need.</p>
+</li>
+<li>
+<p>If the frame rate for the capture window were set too high,  or the capture window was set too large (such as fullscreen) you may notice several lost frames. In this case you will need to recapture the video and either reduce the capture area size or the frame rate. A good trick, if allowed by your player, is to reduce the playback speed of the video and then adjust the capture frame rate accordingly.</p>
+</li>
+<li>
+<p>Once you close the Screen Capture window, the captured files will be automatically loaded in FIVE in your current project.</p>
+</li>
+</ul></body></html>

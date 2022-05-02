@@ -1,0 +1,508 @@
+<!DOCTYPE html><html><head><link href="../style/style.css" rel="stylesheet" type="text/css"><meta charset="utf-8"></head><body>
+<h1 id="amped-five-program-reference"><a class="toclink" href="#amped-five-program-reference">Amped FIVE Program Reference</a></h1>
+<p>This document will introduce the Amped FIVE user interface and its main functionalities.</p>
+<h2 id="main-window"><a class="toclink" href="#main-window">Main Window</a></h2>
+<p>This section covers the elements constituting the Amped FIVE main window.</p>
+<hr />
+<h3 id="title"><a class="toclink" href="#title">Title</a></h3>
+<p>The main program window's title contains the name of the program and the project filename which you are currently working on.</p>
+<p>Please note that the asterisk after the filename means that the saved project is not up-to-date with the current situation and should be saved again.</p>
+<hr />
+<h3 id="menu"><a class="toclink" href="#menu">Menu</a></h3>
+<h4 id="file-menu"><a class="toclink" href="#file-menu">File Menu</a></h4>
+<p>Allows opening and saving projects, images, and videos; printing images and quitting the program.</p>
+<ul>
+<li><strong>New Project</strong>: creates a new empty project.</li>
+<li><strong>Open Project...</strong>: loads a previously saved project.</li>
+<li><strong>Recent Projects...</strong>: contains a list of recent projects for a fast reloading.</li>
+<li><strong>Save Project</strong>: saves the current project.</li>
+<li><strong>Save Project As...</strong>: opens a file dialog which helps to choose the name and the path of the file to be saved.</li>
+<li><strong>Open Image or Video...</strong>: opens a file dialog to open an image or video file.</li>
+<li><strong>Copy and Verify...</strong>: a tool to quickly and reliably acquire evidence files.</li>
+<li><strong>Convert DVR...</strong>: open the tool to convert proprietary DVR videos into standard formats.</li>
+<li><strong>DVR Screen Capture...</strong>: open the tool to capture the screen, for proprietary DVR video which cannot be converted by other means.</li>
+<li><strong>Advanced File info...</strong>: opens a dialog containing basic and advanced information about the loaded image or video file.</li>
+<li><strong>Export video...</strong>: a feature to export the loaded video.</li>
+<li><strong>Export PDF...</strong>: a feature to export the selected frames into a pdf file.</li>
+<li><strong>Print...</strong>: prints the image or frame displayed on the currently active <em>Viewer</em>.</li>
+<li><strong>Page Setup...</strong>: setups the page to be printed.</li>
+<li><strong>Print Preview</strong>: displays how the project will look when printed.</li>
+<li><strong>Exit</strong>: exits from the program.</li>
+</ul>
+<h4 id="project-menu"><a class="toclink" href="#project-menu">Project Menu</a></h4>
+<p>Project related functions, such us project properties configuration and report generation.</p>
+<ul>
+<li><strong>Generate Report</strong>: generate a detailed report in html format with the description of the full processing and including the bookmark images and notes; the report is automatically opened in the default system browser</li>
+<li><strong>Export Bookmarks Images</strong>: export all the bookmark images in the default format</li>
+<li><strong>Save Snapshot</strong>: saves the currently displayed image and the current status of the project</li>
+<li><strong>Open Project Folder</strong>: opens the file Explorer in the folder containing snapshots images and projects</li>
+</ul>
+<h4 id="view-menu"><a class="toclink" href="#view-menu">View Menu</a></h4>
+<p>Allows changing the aspect of the graphical user interface of FIVE.</p>
+<ul>
+<li><strong>Filters</strong>: shows/hides the corresponding panel.</li>
+<li><strong>Assistant</strong>: shows/hides the corresponding panel.</li>
+<li><strong>Tools</strong>: shows/hides the corresponding panel.</li>
+<li><strong>Filter Settings</strong>: shows/hides the corresponding panel.</li>
+<li><strong>Player</strong>: shows/hides the corresponding panel.</li>
+<li><strong>Audio</strong>: shows/hides the corresponding panel within the Player.</li>
+<li><strong>History</strong>: shows/hides the corresponding panel.</li>
+<li><strong>Bookmarks</strong>: shows/hides the corresponding panel.</li>
+<li><strong>Toggle Full Screen Viewer</strong>: shows/hides all panels.</li>
+<li><strong>Toggle Full Screen Viewer with Player</strong>: shows/hides all panels but the Player.</li>
+<li><strong>Open Log Folder</strong>: opens the folder containing the logs.</li>
+<li><strong>Project Properties...</strong>: loads the dialog to modify project settings</li>
+<li><strong>Reset Layout and Options</strong>: will restore program layout and settings to the default values. Restart the program to let them take effect.</li>
+</ul>
+<h4 id="help-menu"><a class="toclink" href="#help-menu">Help Menu</a></h4>
+<p>Contains links to the manual and to Amped web page.</p>
+<ul>
+<li><strong>Quick Start:</strong> opens the quick start introduction to FIVE.</li>
+<li><strong>Tutorials:</strong> opens the tutorial section.</li>
+<li><strong>Program Reference:</strong> opens this page.</li>
+<li><strong>Filters Reference:</strong> opens the documentation for filters.</li>
+<li><strong>Keyboard Shortcuts:</strong> opens the cheat sheet of available keyboard shortcuts.</li>
+<li><strong>Supported Formats:</strong> opens a document that lists the formats supported by the current version of the software.</li>
+<li><strong>Reference List: </strong> opens a document that lists the scientific references of the algorithms available within the software.</li>
+<li><strong>Open Samples Folder:</strong> opens the folder with sample projects and media files.</li>
+<li><strong>Amped Homepage:</strong> links to www.ampedsoftware.com.</li>
+<li><strong>Check for Updates:</strong> connects to our server to check if there are updates available.</li>
+<li><strong>Reset License Information:</strong> deletes current license data; the next time you restart the program, you'll be asked for a new serial key code or subscription account.  Do not use this function unless instructed to do so by Amped tech support.</li>
+<li><strong>About Amped FIVE:</strong> shows license and version information.</li>
+</ul>
+<hr />
+<h3 id="project-properties"><a class="toclink" href="#project-properties">Project Properties</a></h3>
+<p>In the Project properties you can add some useful information about your project, which will complete the automatically generated report.</p>
+<ul>
+<li><strong>Case</strong>: the name of the case you are working on.</li>
+<li><strong>Author</strong>: your name.</li>
+<li><strong>Description</strong>: any useful info, text, or narrative, you'd like to add about the case.</li>
+<li><strong>Report Image Width</strong>: with of the images in pixels in the report. This will not influence the actual size of the exported images, but only their display size in the report. Leave setting at 0 to use the default width.</li>
+</ul>
+<h3 id="program-options"><a class="toclink" href="#program-options">Program Options</a></h3>
+<p>The program options define general settings of the software.</p>
+<ul>
+<li><strong>Project Auto-Recovery</strong> (enabled by default): once enabled, if the program is forced to stop processing (due maybe to a crash or power failure), FIVE will be able to restart from the last operation. In this case, when started, the program will warn the user that it detected an improper exit and will offer the possibility to reload the interrupted project.</li>
+<li><strong>Language</strong>: lets you choose software localization, the default value uses your system settings if it's a supported language, otherwise it is English.</li>
+<li><strong>Default Image Format</strong>: sets the default image format for snapshots, exported bookmarks and filters that save images.</li>
+<li><strong>Default Image Quality</strong>: sets the default image quality for snapshots, exported bookmarks and filters that save images.</li>
+<li><strong>Default Video Format</strong>: sets the default video format and codec for filters that save videos. Choose <em>avi - MSPEMG4v2</em>for maximum compatibility and <em>avi - Raw Video</em> for the best quality. In the second case please note that the generated video file may become huge if you need more than few seconds of footage.</li>
+<li><strong>Default Quality for H264 Codec:</strong> sets the default video quality in case the chosen codec for transcoding is H264.</li>
+<li><strong>Log:</strong> enables or disables log file creation.</li>
+<li><strong>Snapshot Mode:</strong> sets the operation to do upon clicking the Snapshot button.</li>
+<li><strong>Snapshot Data:</strong> sets the content of the snapshot.</li>
+<li><strong>HiDPI Mode:</strong> enables or disables the HiDPI Mode (interpolation of the user interface elements to preserve the layout on high-resolution screens).</li>
+<li><strong>Color Style:</strong> sets the theme of the interface.</li>
+<li><strong>Font Size:</strong> sets the font size for the user's text.</li>
+<li><strong>Use FFMS with Audio as Default:</strong> enables or disables FFMS with Audio as the default video engine.</li>
+<li><strong>Show Filter Id on History and Report:</strong> enables or disables a numerical ID for the filters in the History and the generated Report.</li>
+<li><strong>Auto Load Timestamps:</strong> enables or disables the automatic timestamp loading (if available).</li>
+<li><strong>Filters Panel Alignment:</strong> sets the desired option for the Filters Panel Alignment.</li>
+<li><strong>Remind me about Expiration:</strong> sets the desired frequency of the reminders for the Software Maintenance and Support expiration.</li>
+<li>*<em>Auto Add Windows Date and Time to Notes:</em> enables or disable the adding of the Windows date and time to Notes.</li>
+</ul>
+<h3 id="tool-bar"><a class="toclink" href="#tool-bar">Tool Bar</a></h3>
+<p>Under the menu there is the program's toolbar: by clicking on the icons, you can, in the following order:</p>
+<ul>
+<li><strong>New</strong>: creates a new empty document;</li>
+<li><strong>Open</strong>: opens a saved project;</li>
+<li><strong>Save</strong>: saves the current project;</li>
+<li><strong>Open Image or Video...</strong>: opens a file dialog to open an image or video file.</li>
+</ul>
+<h3 id="status-bar"><a class="toclink" href="#status-bar">Status Bar</a></h3>
+<p>The Status Bar on the bottom of the main window contains important information about the current state of FIVE. It is normally in "Ready" state, but it becomes "Busy" as soon as FIVE receives a command. Once done, the status bar returns in "Ready" state. In the case of time-consuming filters, progress percentage is shown.</p>
+<h3 id="viewer-window"><a class="toclink" href="#viewer-window">Viewer Window</a></h3>
+<p>The <em>Viewer</em> is the window in the center of the screen. It shows the frame which we are currently working on.</p>
+<p>Each chain in the workspace has its <em>Viewer</em>: when closing the <em>Viewer</em>, the chain will be deleted from history.</p>
+<p>The image inside the <em>Viewer</em> shows the effect of the filter currently selected in the history and of the previous ones. Thus, the review of the processing steps is very simple and easy to understand: you have just to click on the desired filter.</p>
+<p>It is possible to drag different files into the <em>Viewer</em>. You can drag an image, a video or an .afp project file. It is also possible to drag multiple images (creating a Sequence Loader) or multiple videos (creating one chain for each video). Dragging a folder is also supported and is equal to dragging its contents. The new chains with the dragged files appear at the position that is currently selected in the <a href="#history-panel"><em>History</em></a>. If you want to place them at the end, just clear the selection by clicking on the empty space at the bottom of the <em>History</em>.</p>
+<hr />
+<h2 id="filters-panel"><a class="toclink" href="#filters-panel">Filters Panel</a></h2>
+<p>The Filters panel, located on the left side of the main window, contains all the filters you can apply to an image or video. They are divided in different categories, according with the type of action they perform. By double-clicking on a category, the complete list of filters will be opened. </p>
+<p>To select one of them and add it to the current chain in the history, just single-click the desired filter. The new filter will be immediately added after the last selected filter. On the other hand Loaders always create a new chain.</p>
+<p>Please note that all filters can be applied to images, sequences of images and videos. However, there are cases in which the output of a filter returns the input image unchanged. This occurs mainly when you apply to images filters that need more than one frame to work properly. The categories of filters are the following.</p>
+<p><em>Note: depending on your version of FIVE some of the following groups may not be available.  If you require the additional filters showed, please inquire about upgrading your version.</em></p>
+<h3 id="load-group"><a class="toclink" href="#load-group">Load group</a></h3>
+<p>This type of filters allows loading images, videos or sequences from files. They allow selecting the file by typing a path, using the system dialogs, or by dragging and dropping it from the desktop or any Explorer window.</p>
+<p>Since revision 18800, new Loaders are created at the position that is currently selected in the <a href="#history-panel"><em>History</em></a>. If you want to place them at the end, just clear the selection by clicking on the empty space at the bottom of the <em>History</em>.</p>
+<h3 id="write-group"><a class="toclink" href="#write-group">Write group</a></h3>
+<p>Writers allow saving the output of a filter by writing the result of processing (image or video) to one or more user defined files. Please note that, once saved, if you add any filter after the writer, it will work on the saved file. Therefore, we may say that a writer is a sort of loader for some aspects.</p>
+<p>Differently from all other filters, writers have to be updated manually. If some change is made on any filter in the same chain before the writer, the output will not be overwritten until the user pushes again the "Apply" button on the writer's toolbar. A writer can be useful in many ways:</p>
+<ul>
+<li>it allows exporting the results of processing by generating a file containing the processed data;</li>
+<li>it allows a non-sequential access to those videos that use particular codecs that prevent it, as described in the FAQ section;</li>
+<li>it allows making a sort of explicit buffering. Each frame is calculated in real-time and sometimes the amount of work may be too heavy for the CPU; in this case, the playing slows down. A writer may come handy in this situation because it saves results of previous filters, so they don't need to be re-calculated on the fly. Every new filter added to the chain, after the writer, will continue to be computed in real-time.</li>
+</ul>
+<h3 id="select-frames-group"><a class="toclink" href="#select-frames-group">Select Frames group</a></h3>
+<p>When using this kind of filters, you can select one or more frames of interest from the input file. It is possible to use any media as input, but a selector will have no effect on a single image. Generally, they change the length of a video, but they don't modify its frames. If you choose, for example, frames from 10 to 20, in the resulting output media the frame number 0 will correspond to frame 10 of the input media. To avoid mistakes, you can configure selectors only when "Show Input" mode is selected, i.e. when you are displaying the input and not the output image.</p>
+<h3 id="deinterlacing-group"><a class="toclink" href="#deinterlacing-group">Deinterlacing group</a></h3>
+<p>These filters change an interlaced video into a progressive one.</p>
+<h3 id="edit-group"><a class="toclink" href="#edit-group">Edit group</a></h3>
+<p>This kind of filter implements basic image processing functionality involving geometric transformations. Generally:</p>
+<ul>
+<li>they separately work on single frames;</li>
+<li>they can modify the image characteristics (size, number of channels, color depth);</li>
+<li>they don't modify the video length (number of frames).</li>
+</ul>
+<h3 id="channels-group"><a class="toclink" href="#channels-group">Channels group</a></h3>
+<p>These filters allow conversion, extraction and replacement of color channels.</p>
+<h3 id="adjust-group"><a class="toclink" href="#adjust-group">Adjust group</a></h3>
+<p>These filters are useful to tune the pixel intensity of a specific region of the image. In general:</p>
+<ul>
+<li>they separately work on single frames;</li>
+<li>they don't modify the image characteristics (size, number of channels, color depth);</li>
+<li>they don't modify the video length (number of frames).</li>
+</ul>
+<p>Without going into details, we can say that all digital images are represented by a sequence of numbers between lower and upper limits. In the 8-bit format these limits are 0 and 255. For every pixel there is a numeric value of this type. For black and white images, the value 0 corresponds to a black pixel, while the value 255 stands for white. Color images are slightly different because they are made of three channels (red, green, blue). Each channel can be represented as a black and white image that contains data about the intensity of the color, pixel by pixel. This decomposition is done in such a way that, putting together the three components again, we will get the original image. Filters of the "Adjust" category map separately input image values to other values of the output image, for every single pixel, following a certain table ("look-up table").</p>
+<h3 id="extract-group"><a class="toclink" href="#extract-group">Extract group</a></h3>
+<p>Edges extraction and separation of some information of the image . <em>Fourier</em>, for example removes periodic noise, background and interferences in the Frequency domain. Useful for latent fingerprints, capture artifacts and electromagnetic interferences in videos.</p>
+<h3 id="verify-group"><a class="toclink" href="#verify-group">Verify group</a></h3>
+<p>These filters allow checking metadata of the image or verifying the hash code for tracing the originality of images.
+They don't process the image at all; they simply provide some useful information on the source file and also display the results in the report group.</p>
+<h3 id="measure-group"><a class="toclink" href="#measure-group">Measure group</a></h3>
+<p>These filters allow taking different kind of measures on the images.</p>
+<h3 id="sharpen-group"><a class="toclink" href="#sharpen-group">Sharpen group</a></h3>
+<p>The filters of this category don't change the image characteristics; conversely its contents are processed to emphasize details and borders of the present objects. They can make appear the finest details, but if you go further, they can also raise noise level.</p>
+<h3 id="denoise-group"><a class="toclink" href="#denoise-group">Denoise group</a></h3>
+<p>These filters have the opposite effect of the sharpening ones. They are used to reduce the image noise level. This is usually noticed as granularity or pixels with the wrong color. You could need to use these filters, when you have a digital camera shot taken in a low light condition.</p>
+<h3 id="deblurring-group"><a class="toclink" href="#deblurring-group">Deblurring group</a></h3>
+<p>This category contains various filters for image restoration and enhancement. They are used for solving very specific problems, such as motion blur or compression artifacts. They don't modify image characteristics or video length. Every single frame is elaborated separately.</p>
+<h3 id="stabilization-group"><a class="toclink" href="#stabilization-group">Stabilization group</a></h3>
+<p>Filters in this category perform different kind of stabilization. They provide results only for videos or sequences of more images. The stabilization filters may either keep a region of interest steady in the image or stabilize the overall scene.</p>
+<h3 id="integrate-group"><a class="toclink" href="#integrate-group">Integrate group</a></h3>
+<p>In this category we can find the most powerful and CPU-intensive filters. They work on sequences and videos and their output could be very different from the original file. In general the result of the processing is an image which "sums up" all details and information present in every single frame.</p>
+<h3 id="presentation-group"><a class="toclink" href="#presentation-group">Presentation group</a></h3>
+<p>These filters provide some utilities for better presenting the final result for the processing, for example putting side by side the original and the processed image or hide sensitive details like witnesses faces or license plates of vehicles unrelated to the case.</p>
+<hr />
+<h2 id="assistant-panel"><a class="toclink" href="#assistant-panel">Assistant Panel</a></h2>
+<p>The Assistant panel provides a tool which is something between a scripting system and wizard, allowing the user to go through a series of standardized steps in order to follow a proper workflow. For example, an agency can implement in an Assistant script its SOPs (standard operating procedures) in order to standardize the users workflow for specific situations. Amped FIVE includes several workflows to be used as a starting point for some common situations.</p>
+<p>The different workflows can be customized or added to for adaptation to individual or organizational preferences and needs. The panel can be displayed or hidden using the View menu or keyboard shortcut <em>"Alt + A"</em>.</p>
+<p>Workflow scripts can be selected using the drop down menu under the toolbar in the Assistant panel.</p>
+<p>The pre-defined workflows and scripts supplied are as follows:</p>
+<ul>
+<li><strong>Assistant home</strong>: welcome message displayed when first accessing the assistant panel.</li>
+<li><strong>Assistant tutorial</strong>: tutorial to assist with general use of the assistant and for creating custom workflows and scripts. Please use this if you want to understand how to create and modify a workflow.</li>
+<li><strong>Enhancing a face from a video</strong>: enhancing the face of a subject putting together several frames of a video.</li>
+<li><strong>Enhancing a fingerprint</strong>: correcting the most common issues to enhance a fingerprint from a single image.</li>
+<li><strong>Enhancing a license plate from a single image</strong>: enhancing a vehicle license plate from a static image or frame.</li>
+<li><strong>Enhancing a license plate from a video</strong>: enhancing a vehicle license plate from a video or image sequence where it is visible on multiple frames.</li>
+<li><strong>Favorite filters</strong>: list of regularly used filters which can be edited to include personal filter preferences.</li>
+<li><strong>General workflow (cheat sheet)</strong>: this includes all the filters of Amped FIVE in a single step. It is useful as a reference to know which filter to apply in every step of the processing.</li>
+<li><strong>General workflow (guided)</strong>: this is a very long workflow that guides the user through the application of all the filters in Amped FIVE, helping the user understand the proper filter for every situation and the optimal order in which to put them.</li>
+<li><strong>Measuring the height of a person</strong>: measuring the height of a subject in a video or image.</li>
+<li><strong>Prepare for social media release</strong>: recommended for instances in which images will be released to the general public, for example on social media, with possible redactions, annotations and other presentation improvements.</li>
+<li><strong>Redacting a body worn camera video</strong>: This workflow is recommended for removing sensitive material from body worn video.</li>
+</ul>
+<p>The panel itself, located in the bottom left corner by default, has a toolbar at the top allowing for the creation of new scripts or navigating between workflow steps.</p>
+<ul>
+<li><strong>Create new script</strong>: this command, represented by an icon with a blank page, allows you to create a new script should you want to create a custom workflow.</li>
+<li><strong>Duplicate the current script</strong>: this command, represented by an icon with two overlapping pages, allows you to duplicate the currently loaded script should you want to alter the workflow slightly but keep some of the steps.</li>
+<li><strong>Edit the current script</strong>: this command, represented by an icon with a  pencil, allows you to edit the currently loaded script should you want to alter any of the filters or comments used in the workflow.</li>
+<li><strong>Rename the current script</strong>: this command, represented by an icon with two letters, allows you to rename the currently loaded script.</li>
+<li><strong>Delete the current script</strong>: this command, represented by an icon red cross, allows you delete the currently loaded script.</li>
+<li><strong>Open the Assistant scripts folder</strong>: this command, represented by an icon with a folder, allows you to navigate to the folder in which the various Assistant scripts are stored.</li>
+<li><strong>Refresh the current assistant script and the script list</strong>: this command icon, represented by an icon with a looped arrow, allows you to refresh the currently loaded script and the list of scripts should you have recently updated a workflow.</li>
+<li><strong>Go to the previous step in the current script</strong>: this command, represented by an icon with a green arrow pointing backwards, allows you to return to the previous step in the workflow of a currently loaded script.</li>
+<li><strong>Go to the next step in the current script</strong>: this command, represented by an icon with a green arrow pointing forwards, allows you to jump to the next step in the workflow of a currently loaded script.</li>
+</ul>
+<p>To create a script, filters from Amped FIVE must be added by name in a particular format. Filters should be added in square brackets and comments or actions in round brackets. A tutorial is included to assist with creating new scripts.</p>
+<hr />
+<h2 id="tools-panel"><a class="toclink" href="#tools-panel">Tools Panel</a></h2>
+<p>The tools panel contains all the tools that allow you to interact with the dislayed image or with the filters. Thus, they don't actually process the data. You can activate a specific tool clicking on the tool at the top of the panel. Below is a description of various tools. Every tool condition the behavior of mouse command on the viewer.</p>
+<h3 id="inspector"><a class="toclink" href="#inspector">Inspector</a></h3>
+<p>The Inspector tool allows us to know the value of an image pixel. When the mouse is moving around the <em>Viewer</em> window, the coordinates x and y in the tool will vary accordingly.  So will the R, G, B values of the pixel indicated below the mouse pointer.</p>
+<p>If the Inspector is active, you can move around the image by dragging it into the <em>Viewer</em>.</p>
+<p>The inspector displays the following values related to the pixel where the mouse is currently over:</p>
+<ul>
+<li><strong>x</strong>: top-0 based horizontal coordinate of the pixel;</li>
+<li><strong>y</strong>: left-0 based vertical coordinate of the pixel;</li>
+<li><strong>R</strong>: red channel pixel value (not valid for grays scale images);</li>
+<li><strong>G</strong>: green channel pixel value (not valid for gray scale images);</li>
+<li><strong>B</strong>: blue channel pixel value (not valid for gray scale images);</li>
+<li><strong>Y</strong>: intensity value of the pixel (corresponding to the value of the pixel for gray scale image and the gray scale converted pixel value for color images).</li>
+</ul>
+<p>In the <em>Details</em> box, the additional information on the currently displayed frame is shown.</p>
+<ul>
+<li><strong>Position</strong>: current frame position in a video (always 0 for a single image);</li>
+<li><strong>Width</strong>: horizontal resolution of the current image in pixels;</li>
+<li><strong>Height</strong>: vertical resolution of the current image in pixels;</li>
+<li><strong>Type</strong>: color (3 channels) or gray scale (1 channel).</li>
+</ul>
+<h3 id="zoom"><a class="toclink" href="#zoom">Zoom</a></h3>
+<p>The Zoom tool allows to magnify or to scale down the image. When selected, if you move the mouse pointer over the <em>Viewer</em>, the pointer will become a magnifying glass and you will be able to zoom on the area of interest.</p>
+<ul>
+<li>In the Zoom combo box some predefined zoom values may be selected.</li>
+<li>With the <em>+</em> and <em>-</em> buttons you can raise or lower the zoom factor.</li>
+<li>The button <em>100</em> applies a zoom factor so that every pixel of the screen corresponds to a pixel of the image (1:1 scale);</li>
+<li>The <em>Fit Window</em> checkbox resizes the image so that it will match the window's size.</li>
+<li>Below those controls you will find a little preview and a selection rectangle over it. In the <em>Viewer</em> is displayed the contents of the selection rectangle and vice versa. Just above the preview area there is a slider; the more it is on the right (high zoom values), the smaller the rectangle is. Dragging the selection rectangle in the preview navigator will automatically shift the image in the <em>Viewer</em>, so it will be possible to perform image drag &amp; drop.</li>
+</ul>
+<p>Please note that, if the <em>Zoom</em> tool is selected and you left-click on the image in the <em>Viewer</em>, you will raise the zoom factor, while with the right button you will lower it. By selecting a rectangle on the <em>Viewer</em> you will zoom on that area.</p>
+<p><em>Note: the zoom panel does not apply any interpolation to the displayed image, it applies a simple pixel replication or decimation, depending on the zoom factor.</em></p>
+<p><em>Note: you can always zoom in and out the current image even if the zoom tool is not active. Simply go with the mouse over the viewer and use the mouse wheel.</em></p>
+<h3 id="selector"><a class="toclink" href="#selector">Selector</a></h3>
+<p>The Selector tool allows selecting an area of the image. When selected, if you move the mouse pointer over the <em>Viewer</em>, the pointer will become a cross and you will be able to select an area of the image. Just keep pressed the left mouse button while moving the mouse, to draw the selection rectangle. Once done, the tool panel will show the selected coordinates.</p>
+<ul>
+<li>By clicking on <em>Select All</em>, the selection will be expanded and will cover the whole image.</li>
+<li>By clicking on <em>Deselect</em>, the selection will be disabled. Please note that, if you change your mind at any time, you can achieve the same result by clicking on a point of the image that is outside of the selection rectangle.</li>
+<li>The <em>Zoom</em> button will automatically apply the maximum possible magnification to the selected area.</li>
+</ul>
+<p>Please note that, once selected, it is possible to move the selection rectangle around: just place the mouse pointer on the center of it, and then drag it as you like. If you want to modify the rectangle's size, just place the mouse on its corners and drag it.</p>
+<p>The Selector tool is generally used to configure a selection inside a filter (generally those one which contain the tab <em>Select</em> in the GUI).</p>
+<h3 id="ruler"><a class="toclink" href="#ruler">Ruler</a></h3>
+<p>The Ruler tool is used to define the distance between the objects in an image. When selected, if you move the mouse pointer over the <em>Viewer</em>, the pointer will become a cross and you will be able to select any couple of points on the image. As the segment of interest has been selected, the tool panel will show its "Point 1" and "Point 2" coordinates, its pixel "Length" and its "Angle" with respect to the horizontal axis. If you want to change the selected points afterwards, just drag them wherever you want; while, the selected segment will be disabled by clicking on a point of the image.</p>
+<p>The Ruler tool is used by some filters (for example, <em>Motion Deblurring</em> or <em>Measure 1d/2d/3d</em>) in order to automatically configure parameters related to distance and angles.</p>
+<h3 id="quadrilateral"><a class="toclink" href="#quadrilateral">Quadrilateral</a></h3>
+<p>When the Quadrilateral tool is selected, the mouse pointer will become a cross moving it over the <em>Viewer</em> and you can select the four vertices of the polygon that will be drawn on the image. When you mark the coordinates, they will appear in the <em>Point 1</em>, <em>Point 2</em>, <em>Point 3</em>, <em>Point 4</em> boxes of the tool panel. If you want to change the selected points afterwards, just drag them wherever you want; while, by clicking outside the selected polygon, it will be disabled.</p>
+<p>The Points is used by some filters (for example <em>Perspective Correction</em>) to automatically configure parameters related to some selection areas.</p>
+<h3 id="point"><a class="toclink" href="#point">Point</a></h3>
+<p>The Point tool allows selecting a single point in the image.</p>
+<p>The Point is used by some filters to configure single point coordinates.</p>
+<h3 id="histogram"><a class="toclink" href="#histogram">Histogram</a></h3>
+<p>The histogram panel shows the histogram of the currently displayed image and some details on the statistical distribution of pixel values.
+The image histogram is a graphical representation of the tonal distribution in a digital image. The horizontal axis of the graph represents the tonal variations (from 0 to 255), while the vertical axis represents the number of pixels in that particular tone.</p>
+<p>With the <em>Channels</em> option you can choose what channel(s) to plot on the histogram:</p>
+<ul>
+<li><strong>RGB</strong>: plots the histogram of all the three channels together;</li>
+<li><strong>Red</strong>: plots the histogram of the red channel;</li>
+<li><strong>Green</strong>: plots the histogram of the green channel;</li>
+<li><strong>Blue</strong>: plots the histogram of the blue channel;</li>
+<li><strong>Y</strong>: plots the histogram of the intensity value (corresponding to the image itself for gray scale images and the gray scale converted image for color images).</li>
+</ul>
+<p>Under the histogram you will find, for the selected channel(s), the following statistics:</p>
+<ul>
+<li><strong>Min</strong>: minimum value of the image (0-255);</li>
+<li><strong>Max</strong>: maximum value of the image (0-255);</li>
+<li><strong>Mean</strong>: average value of the image (0-255);</li>
+<li><strong>StdDev</strong>: standard deviation of image values.</li>
+</ul>
+<p>At the top of the panel you can select the box <strong>Show Saturated Pixels</strong>. If you check it, all pixels whose value is 0 (R = G = B = 0) will be colored in blue and all pixels whose value is saturated (R = G = B = 255) will be colored in red. This is very useful to verify you are not applying excessive enhancements causing loss of information.</p>
+<hr />
+<h2 id="filter-settings-panel"><a class="toclink" href="#filter-settings-panel">Filter Settings Panel</a></h2>
+<p>The filter settings panel allows changing the configuration of the currently active filter.</p>
+<p>In the title part of the Filter Settings panel you can see whether you are display the input or the output of the filter you are configuring and if the currently set parameters have been applied.</p>
+<p>On the tool bar of the filter settings window you can find the following buttons (their availability changes depending on the filter type):</p>
+<ul>
+<li><strong>On / Off</strong>: allows temporarily disabling of the filter; the configuration is not lost, but until you enable it again, it will be simply bypassed in the processing change, as if it was not present there;</li>
+<li><strong>Auto-Apply</strong>: if checked the filter is updated every time you change some parameter. If disabled you will need to click <em>Apply</em> every time you change a parameter to commit the change;</li>
+<li><strong>Help</strong>: opens the filter reference to get more information about the current filter type. Not that you can get some information about the parameters passing over them with them mouse;</li>
+<li><strong>Reset</strong>: reset filter parameters to the default value;</li>
+<li><strong>Show Input</strong>: shows the input image for the current filter;</li>
+<li><strong>Apply</strong>: apply the parameters set and shows the output.</li>
+</ul>
+<p>In order to activate the Filter Settings window for a specific filter, you must double click on it on the <em>History</em> panel. If you want to configure a filter while looking at the output of another filter (that must be after the one you are configuring), you can do a single click on it on the <em>History</em> tree.</p>
+<h3 id="setting-filters-selection"><a class="toclink" href="#setting-filters-selection">Setting Filters Selection</a></h3>
+<p>An option that all local filters have in common the <em>Selection</em> tab (usually the last one on the right). With the <em>Selection</em> tab you can set the current filter to act on a specific region of interest in the image. These are the available options.</p>
+<h4 id="whole-image"><a class="toclink" href="#whole-image">Whole Image</a></h4>
+<p>With the option <em>Whole Image</em> the filter is applied to the whole image</p>
+<h4 id="static-region"><a class="toclink" href="#static-region">Static Region</a></h4>
+<p>The filter is applied only to the specific region selected, which is kept fixed in all the frames.</p>
+<h4 id="static-tracking"><a class="toclink" href="#static-tracking">Static Tracking</a></h4>
+<p>The filter is applied only to the selected area of interest, tracking the object of interest in all the frames. In order to set the object to track, find a frame where you see it better, set a selection around it and click <em>Set</em> on the <em>Selection</em> tab. For every frame, <em>Static Tracking</em> will try to find the best matches the reference selection taken on the reference frame.  This type of tracking is best for non-animated subjects.</p>
+<p>If you set only one reference frame, it will be used as reference for the tracking in all the other frames. If you set more than one reference frame, the tracking will start on the first reference frame and will stop with the last reference frame. You can also set intermediate reference selections.</p>
+<h4 id="dynamic-tracking"><a class="toclink" href="#dynamic-tracking">Dynamic Tracking</a></h4>
+<p>The filter is applied only to the selected region, tracking the selected area of interest in all the frames. In order to set the object to track, move to a frame where you see it best and set a selection around it. Then click <em>Set</em> on the <em>Selection</em> tab. <em>Dynamic Tracking</em> will attempt to find the area of the image in each frame the best matches the reference selection on the previous frame. <em>Dynamic Tracking</em> works differently from <em>Static Tracking</em> as the reference selection will be updated after each frame. The best results can be obtained if the reference frame is set to the first frame of the video where the object of interest appears.</p>
+<p>If you set only one reference frame, it will be used as reference for the tracking in all the other frames. If you set more than one reference frame, the tracking will start on the first reference frame and will stop with the last reference frame. You can also set intermediate reference selections.</p>
+<p>For significant movement, the more reference frames specified, the better the possible result.</p>
+<h4 id="manual-tracking"><a class="toclink" href="#manual-tracking">Manual Tracking</a></h4>
+<p><em>Manual Tracking</em> allows the user to select manually different selections of different frames. The selections on intermediate frames will be calculated interpolating the position and the size of set selections on closest frames.</p>
+<h4 id="suggestions-for-different-tracking-types"><a class="toclink" href="#suggestions-for-different-tracking-types">Suggestions for different tracking types</a></h4>
+<p>If you want to keep the scene steady around a moving object it is better to use either <em>Static Tracking</em> or <em>Dynamic Tracking</em>.</p>
+<p><em>Static Tracking</em> is usually more precise but less robust then <em>Dynamic Tracking</em>. It tracks the object very accurately if it's not changing too much from frame to frame. For example usually <em>Static Tracking</em> is very effective on shaking license plates or other inanimate objects. If the appearance of the license plate is changing too much, for example because the car is coming closer to the camera, then you'll need to use <em>Dynamic Tracking</em>. Also if you need to track people or faces, <em>Dynamic Tracking</em> is usually the better choice.</p>
+<p>If the target to track is not present in all the frames, you first want to work only on a part of the video. It is helpful to use a filter from the <em>Select Frames</em> group and select the frames where the target is present prior to using a filter with <em>Dynamic Tracking</em> selected.</p>
+<p><em>Manual Tracking</em> is a better option when the scene is static but you want to follow some subject moving in it.</p>
+<p>For all the tracking modes, with:</p>
+<ul>
+<li><em>Set</em>: you will erase all current reference frames and set the current as the only one;</li>
+<li><em>Add</em>: you will add the current frame and selection to the reference frames</li>
+<li><em>Remove</em>: will delete the current reference frame.</li>
+</ul>
+<p>Clicking on the items on the list, will move the position of the video to the reference frame and will select the corresponding reference area.</p>
+<p>The behavior of the various tracking mode changes if there is one or more reference selection. If there is only one reference selection, that will be used to process the whole video; if there are two or more reference selections, the tracking will be properly applied only in frames between the first and the last reference selection.</p>
+<p>For the filters <em>Crop</em> and <em>Local Stabilization</em> it's recommended to use only one single reference frame or to keep constant the size of the selections if using more than one reference.</p>
+<hr />
+<h2 id="history-panel"><a class="toclink" href="#history-panel">History Panel</a></h2>
+<p>The History shows all the filters that have been added in the current project.
+Filters are grouped in Chains. The first filter of every chain is either a loader (from the &ldquo;Load&rdquo; category) or a mixer (from the &ldquo;Link&rdquo; category). Any filter with the exception of the first one receives the image generated from the filter it has in input and send the result of the processing to the filter (if any) in output.</p>
+<p>Since revision 18800, it is possible to organize chains in folders. If a project that uses folders is opened in an older version of FIVE, only the chains will appear one after the other at the same level, and saving the project will destroy the folder structure. Folders can be added to an empty project by clicking on the &ldquo;New Folder&rdquo; link on the History panel. A project containing only empty folders can be saved and reopened, but will give an error in previous versions of FIVE. It is not yet possible to duplicate folders or to nest them in multiple levels.</p>
+<p>Chains and folders can be renamed by double-clicking on the name. To confirm the change, press ENTER or click outside; to cancel it, press ESC. It is also possible to right-click on the name and select &ldquo;Rename Chain&rdquo; / &ldquo;Rename Folder&rdquo; on the drop-down menu.</p>
+<p>Chains and folders can be collapsed and expanded by clicking on the <img alt="MinusButton" src="../img/FiltersPanel_MinusButton.png" /> and <img alt="PlusButton" src="../img/FiltersPanel_PlusButton.png" /> buttons on the tree view. Empty folders don't have buttons. The tree is automatically expanded to visualize the current filter.</p>
+<p>Filters, chains and folders can be deleted by selecting them and pressing the DELETE key or by right-clicking them and selecting &ldquo;Delete&rdquo; from the drop-down menu. For folders, a dialog box will appear asking if you want to delete the contents as well or to move them outside.</p>
+<p>Chain mixers (from the &ldquo;Link&rdquo; category) must be positioned after their inputs. Only the filters before the mixer will show as available inputs in the Filter Settings panel. Attempting to move a mixer before its inputs, or an input after the mixer, will produce an error message.</p>
+<h3 id="activating-a-filter"><a class="toclink" href="#activating-a-filter">Activating a filter</a></h3>
+<p>To display the output of a filter, you just need to click on it with the left button of the mouse. With a double click you will also activate the Filter Settings panel for that filter. If you want to adjust the settings of a filter while displaying the output of another one, first double-click on the filter to adjust and then single-click on the filter to display.</p>
+<p>Filters can be disabled and enabled by clicking on the <img alt="checked_ld" src="../img/FiltersPanel_checked_ld.png" /> check box next to their name. The first filter of a chain cannot be disabled, and the check box is therefore dimmed.</p>
+<h3 id="context-menu"><a class="toclink" href="#context-menu">Context menu</a></h3>
+<p>Right clicking on the history panel will activate the context menu. Available actions will depend on the clicked item: first filter of a chain, other filters, chain, folder or empty space.
+These are the available commands:</p>
+<ul>
+<li><strong>Cut</strong>: cuts the selected item (the item remains visible at the original position until pasted);</li>
+<li><strong>Copy</strong>: copies the selected item to memory (not yet supported for folders);</li>
+<li><strong>Paste and Replace</strong>: substitutes the selected item with the one that has been previously cut or copied (this menu entry is auto-enabled only when an item of the same type is available);</li>
+<li><strong>Paste Before</strong>: inserts the item in the position, immediately before the current selected one;</li>
+<li><strong>Paste After</strong>: inserts the item in the position, immediately after the current selected one;</li>
+<li><strong>Paste Inside</strong>: inserts a chain into the selected folder, at the first position;</li>
+<li><strong>Move Outside</strong>: moves the selected chain out of its folder, after it;</li>
+<li><strong>Delete</strong>: deletes the selected item;</li>
+<li><strong>New Folder</strong>: creates an empty folder before the selected chain (if clicking on a chain) or at the end (if clicking on the empty space after the last chain);</li>
+<li><strong>Rename Chain</strong>: allows renaming the selected chain;</li>
+<li><strong>Rename Folder</strong>: allows renaming the selected folder.</li>
+</ul>
+<h3 id="dragging-an-item"><a class="toclink" href="#dragging-an-item">Dragging an item</a></h3>
+<p>It is also possible to use the drag and drop function. That means that you can drag an item to any position inside the history. A marker will appear showing the position the dragged item will go to. To cancel a drag and drop operation, move the mouse cursor out of the History panel before releasing the mouse button.</p>
+<p>The default operation (move or copy) depends on the type of action, as explained below. Holding down the CTRL key will force a copy, and holding down the SHIFT key will force a move. Copying a chain will also clone all the filters it contains. The shape of the cursor changes to indicate the type of operation:</p>
+<!--
+| ![MoveDrop](../img/FiltersPanel_MoveDrop.gif) | ![CopyDrop](../img/FiltersPanel_CopyDrop.gif) | ![MoveNoDrop](../img/FiltersPanel_MoveNoDrop.gif) |
+|:--:|:--:|:--:|
+| The item is being moved | The item is being copied | The operation is not allowed |
+-->
+
+<table class="FullWidthCentered">
+<tr>
+<td width="33%"><img alt="MoveDrop" src="../img/FiltersPanel_MoveDrop.gif"></td>
+<td width="33%"><img alt="CopyDrop" src="../img/FiltersPanel_CopyDrop.gif"></td>
+<td width="33%"><img alt="MoveNoDrop" src="../img/FiltersPanel_MoveNoDrop.gif"></td>
+</tr>
+<tr>
+<td>The item is being moved</td>
+<td>The item is being copied</td>
+<td>The operation is not allowed</td>
+</tr>
+</table>
+
+<p>The possible <strong>filter</strong> operations are:</p>
+<ul>
+<li>Dragging a loader in the empty space after the last chain will create a new chain with a copy of that loader.</li>
+<li>Dragging a non-loader filter onto another filter of the same chain will move the filter after the target.</li>
+<li>Dragging a non-loader filter onto a filter of a different chain will copy the filter after the target (hold down SHIFT to move instead).</li>
+<li>Dragging a filter on the Bookmarks panel will create a new bookmark for the filter at the current position in the video.</li>
+</ul>
+<p>The possible <strong>chain</strong> operations are:</p>
+<ul>
+<li>Dragging a chain at the top of the panel will move it at the beginning, outside any folder.</li>
+<li>Dragging a chain in the empty space after the last chain will copy it at the end, outside any folder (hold down SHIFT to move instead).</li>
+<li>Dragging a chain onto a folder will move it inside that folder, at the first position.</li>
+<li>Dragging a chain onto another chain (or its contents) will move it after the target, at the same folder level.</li>
+</ul>
+<p>The possible <strong>folder</strong> operations are:</p>
+<ul>
+<li>Dragging a folder at the top of the panel will move it at the beginning.</li>
+<li>Dragging a folder in the empty space after the last chain <strong>while holding down the SHIFT key</strong> will move it at the end.</li>
+<li>Dragging a folder onto another folder (or its contents) will move it after the target.</li>
+</ul>
+<h3 id="dragging-a-file"><a class="toclink" href="#dragging-a-file">Dragging a file</a></h3>
+<p>It is possible to drag different files into the <em>History</em>. You can drag an image, a video or an .afp project file. It is also possible to drag multiple images (creating a Sequence Loader) or multiple videos (creating one chain for each video). Dragging a folder is also supported and is equal to dragging its contents.</p>
+<p>The possible <strong>file</strong> operations are:</p>
+<ul>
+<li>Dragging an .afp project file closes the current project and opens the dragged one.</li>
+<li>Dragging files over the text label of a loader can either replace the loader or create a new chain after it. A dialog box will appear, asking the user what to do. <strong>Note that the behavior has changed in revision 18800: previous versions of FIVE only allowed to replace the loader.</strong></li>
+<li>Dragging files over other parts of the <em>History</em> creates new loaders at the cursor position, indicated by a marker. Files can be dragged at the top, over a chain (creating the new loaders after it, at the same folder level), over a folder (creating the new loaders inside, at the first position) or at the bottom.</li>
+</ul>
+<h3 id="folder-management"><a class="toclink" href="#folder-management">Folder management</a></h3>
+<p>New folders can be created by right clicking on the desired position and selecting &ldquo;New Folder&rdquo; from the drop-down menu. The folder will appear before the selected item. If you want to create a folder at the last position, right-click on the empty space after the last chain.</p>
+<p>To move a chain inside a folder, you can either:</p>
+<ul>
+<li>Cut / Copy and Paste Inside,</li>
+<li>Cut / Copy and paste onto another chain that is already inside the folder (using Paste and Replace, Paste Before or Paste After),</li>
+<li>Drag onto the folder,</li>
+<li>Drag onto another chain that is already inside the folder.</li>
+</ul>
+<p>To move a chain out of a folder, you can either:</p>
+<ul>
+<li>Cut / Copy and paste onto another chain that is outside the folder (using Paste and Replace, Paste Before or Paste After),</li>
+<li>Cut / Copy and Paste Before / Paste After the folder,</li>
+<li>Cut / Copy and Paste onto the empty space at the bottom of the panel,</li>
+<li>Select &ldquo;Move Outside&rdquo; from the drop-down menu,</li>
+<li>Drag onto another chain that is outside the folder,</li>
+<li>Drag at the top of the panel,</li>
+<li>Drag in the empty space after the last chain (hold SHIFT to move).</li>
+</ul>
+<hr />
+<h2 id="bookmarks-panel"><a class="toclink" href="#bookmarks-panel">Bookmarks Panel</a></h2>
+<p>The bookmarks panel allows to store some filter positions in order to easily switch between salient points in your project.</p>
+<p>You can add a new bookmark:</p>
+<ul>
+<li>dragging a filter from the <em>History</em> to the <em>Bookmarks</em> panel;</li>
+<li>clicking with the right mouse button on the <em>Bookmarks</em> panel and then selecting <em>New Bookmark</em>;</li>
+<li>clicking the <em>Add Bookmark</em> button on the <em>Player</em> panel.</li>
+</ul>
+<p>A bookmark stores the following info:</p>
+<ul>
+<li><em>Filter</em>: when the bookmark is selected it will activate the corresponding filter</li>
+<li><em>Position</em>: when the bookmark is selected it will seek the defined position</li>
+<li><em>Name</em>: you can define a custom name for the bookmark;</li>
+<li><em>Description</em>: you can define a description (or simply add a note to your bookmark).</li>
+</ul>
+<p>In order to set name or description of a bookmark click with the right mouse button on the bookmark and select <em>Edit Name</em> or <em>Edit Description</em>. Selecting <em>Delete</em> in the bookmark menu you can delete it.</p>
+<p>When you generate the report, all the bookmark images will be included with the accompanying names and descriptions. You can change the format of the exported images with <em>View / Program Options... / Default Image Format</em></p>
+<p>Bookmarks relative to filters that have been deleted, will be removed, too.</p>
+<hr />
+<h2 id="player-panel"><a class="toclink" href="#player-panel">Player Panel</a></h2>
+<p>The player panel allows to control playback of a video and to move between frames.</p>
+<p>The player panel has the following controls, starting from the left. Most of them will be disabled for single images.</p>
+<ul>
+<li><strong>Play / Pause</strong>: start or pause the playback.</li>
+<li><strong>Stop</strong>: pause the playback.</li>
+<li><strong>Previous</strong>: go to the previous frame.</li>
+<li><strong>Next</strong>: go to the next frame.</li>
+<li><strong>Snapshot</strong>: save the snapshot of the currently displayed image and relative project.</li>
+<li><strong>Open Project Folder</strong>: open the snapshots folder.</li>
+<li><strong>Add Bookmark</strong>: add a new bookmark with the active filter on the current position.</li>
+<li><strong>Position</strong>: text box display playing position (current frame number) and playing time (hh::mm::ss.msec). If the video is not playing, you can move on by inserting the desired position: if you give an integer number (ex. 10) you will move to the 10th frame, while if you give a decimal number (ex. 10.0) you will move to the nearest frame to the 10th second of playing (the format, 00.10.0, can be used too).</li>
+<li><strong>Loop</strong>: if active, when the end of the footage is reached, playing automatically restarts (otherwise stops).</li>
+<li><strong>Special Seek Controls</strong>: the special seek buttons allows moving in the video by a custom amount of time or frames. You can configure, for example, that every time you press the <em>Special Next</em> button you go on by 10 frames, or 3 minutes, using the proper amount and unit controls.</li>
+<li><strong>Frame Rate Controls</strong>:  the slider allow to set the target frame rate. It may actually be lower than the desired one, if the filters to process are too heavy. By clicking on "Reset Fps", it will reset fps to the original value.</li>
+</ul>
+<p>The frame rate mode (on the right side) allows selecting if you want to use the frame rate slider to adjust the frames per second or like a jog control. The available modes are:</p>
+<ul>
+<li><strong>Speed</strong>: a frame rate multipler/reducer, relatively to the frame rate in use in the filter currently selected (default);</li>
+<li><strong>Seek</strong>: if you leave the slider on the center the video stays stopped, if you move it on the right it will go forward, on the left it will play backward. The playback speed it proportional to the distance of the cursor form the center. Please note that all frames will be played;</li>
+<li><strong>Skip</strong>: similar to <em>Seek</em>, but frames will be skipped; it's faster than <em>Seek</em>, but excessively large steps may obstacle the vision of some sudden event in the video.</li>
+</ul>
+<p>The <em>Position</em> slider, on the bottom of the <em>Player</em> panel will let you move on the range of frames of the video. On the left you can read start frame and start time and on the right side stop frame and stop time.</p>
+<hr />
+<h2 id="audio-panel"><a class="toclink" href="#audio-panel">Audio Panel</a></h2>
+<p>This is part of the Player Panel which allows previewing of the audio track associated with a video.</p>
+<p>Different colors on the preview correspond to different channels of the audio track. For example, red to the left channel and blue to the right channel in a stereo (2-channel) audio track.</p>
+<h4 id="zooming-the-audio-track"><a class="toclink" href="#zooming-the-audio-track">Zooming the audio track</a></h4>
+<p>Usually, the audio sampling frequency is so high that a sample-by-sample plot becomes unreadable at lower zoom levels; in those cases, the envelope* plot is used instead.</p>
+<p>There are several ways to zoom into the preview in order to see more audio track details.</p>
+<ul>
+<li>Right-clicking over the plot activates the context menu. There are zooming actions like zoom in, out or reset, both horizontally and vertically.</li>
+<li>Holding CTRL enables zooming horizontally using the mouse.</li>
+<li>
+<p>Holding SHIFT enables zooming vertically using the mouse.</p>
+<ul>
+<li>Left-click or wheel up will zoom in.</li>
+<li>Right-click or wheel down will zoom out.</li>
+</ul>
+</li>
+</ul>
+<p>* Envelope, the outer shape of a signal plot, presented here is the root-mean-square (RMS) envelope, determined using a sliding window over multiple samples. It gives a measure of the power of the signal.</p>
+<h4 id="navigating-through-the-audio-track"><a class="toclink" href="#navigating-through-the-audio-track">Navigating through the audio track</a></h4>
+<p>The Audio playhead automatically links with the video playhead.</p>
+<p>A Left-Click of the mouse over the Audio visualization causes the video to seek to the frame corresponding to the clicked point.</p>
+<p>It is possible to scroll the preview with the mouse wheel. Wheel up will seek frames forward and wheel down will seek frames backward.</p>
+<p>Similarly, the audio track can be navigated forward or backward by mouse dragging.</p>
+<hr />
+<h2 id="annotation-ranges-panel"><a class="toclink" href="#annotation-ranges-panel">Annotation Ranges Panel</a></h2>
+<p>This is part of the Player Panel which allows previewing of annotation ranges associated with the currently configured Annotate filter. The Annotation Ranges Panel substitutes the Audio Panel when an Annotate filter is being configured.</p>
+<h4 id="understanding-the-preview"><a class="toclink" href="#understanding-the-preview">Understanding the preview</a></h4>
+<p>The preview eases handling multiple annotations. Colored lines indicate ranges of frames to which annotations are applied. Every line is related to a single annotation.</p>
+<p>The color of each line is determined by the color the user sets for the annotation object. This is a quick and easy way to distinguish different annotations straight from the player panel.</p>
+<p>The vertical order with which lines stack over each other reflects the current layering of annotations. For example, if you bring to front an annotation, its line will move up to the top. That’s a very effective and simple way to know which is the current layering of all annotations in every frame.</p>
+<p>When you click on an annotation object, you will notice two vertical segments at both ends of a line. It’s a way to quickly show where the currently selected object appears and disappears from the video. This is especially useful when you have many annotations, and therefore many lines in the preview.</p>
+<h4 id="navigating-through-the-video-track"><a class="toclink" href="#navigating-through-the-video-track">Navigating through the video track</a></h4>
+<p>The panel playhead automatically links with the video playhead.</p>
+<p>A Left-Click of the mouse over the panel causes the video to seek to the frame corresponding to the clicked point.</p>
+<p>It is possible to scroll the preview with the mouse wheel. Wheel up will seek frames forward and wheel down will seek frames backward.</p>
+<p>Similarly, the video can be navigated forward or backward by mouse dragging.</p>
+<hr />
+<h2 id="commandline-parameters"><a class="toclink" href="#commandline-parameters">Commandline parameters</a></h2>
+<p><code>Usage: five.exe [/i &lt;str&gt;] [/o &lt;str&gt;] [/c &lt;str&gt;] [/pgeadi]</code></p>
+<ul>
+<li><strong><code>/i &lt;str&gt;</code></strong>, <strong><code>--input_path=&lt;str&gt;</code></strong>: path of the image/video file or the folder to load</li>
+<li><strong><code>/o &lt;str&gt;</code></strong>, <strong><code>--output_path=&lt;str&gt;</code></strong>: outputfilename to generate</li>
+<li><strong><code>/c &lt;str&gt;</code></strong>, <strong><code>--command=&lt;str&gt;</code></strong>: command to call (<code>load|convert|screencap</code>); when "convert" is used and it's not possible to preserve the original encoding then the file will be transcoded with h264</li>
+<li><strong><code>/pgeadi</code></strong>, <strong><code>--plugin_geadi</code></strong>: run as plugin for Griffeye Analyze DI</li>
+</ul></body></html>

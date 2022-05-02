@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <link href="../style/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1 id="enhancing-a-face">
+      <a class="toclink" href="#enhancing-a-face">تقویت چهره</a>
+    </h1>
+    <h2 id="outline"><a class="toclink" href="#outline">طرح کلی</a></h2>
+    <p>
+      در این آموزش ما چهره فردی را که پشت شیشه پنجره تاریک قرار دارد، زیباتر یا
+      تقویت می‌کنیم.
+    </p>
+    <h2 id="enhancing"><a class="toclink" href="#enhancing">تقویت کننده</a></h2>
+    <p>اول از همه، ویدیو را با amped FIVE باز کنید.</p>
+    <p>
+      <img
+        alt="باز کردن ویدیوی مورد علاقه با آمپد FIVE"
+        src="../img/03/openVideo.png"
+        title="Opening the video of interest with Amped FIVE"
+      />
+    </p>
+    <p>
+      در این ویدیو می‌توانیم افکت را در سراسر لبه‌های عمودی تصویر ببینیم: این
+      افکت interlacing است که با کلیک بر روی <em>Edit</em> &#8594;
+      <em>Deinterlace</em>اصلاح می‌شود.
+    </p>
+    <div style="text-align: center; font-size: 500%; color: DodgerBlue">
+      <img
+        src="../img/03/deinterlaceAfter.png"
+        alt="Deinterlacing process - After"
+        style="max-width: 40%; display: inline"
+      />
+      &#10145;
+      <img
+        src="../img/03/deinterlaceBefore.png"
+        alt="Deinterlacing process - Before"
+        style="max-width: 40%; display: inline"
+      />
+    </div>
+
+    <p>
+      همانطور که می‌بینید، تعداد فریم‌هایی که فیلم را تشکیل می‌دهند پس از
+      جداسازی دو برابر می‌شود.
+    </p>
+    <div style="text-align: center; font-size: 500%; color: DodgerBlue">
+      <img
+        src="../img/03/framesNumAfter.png"
+        alt="Number of frames after the process"
+        style="max-width: 40%; display: inline"
+      />
+      &#10145;
+      <img
+        src="../img/03/framesNumBefore.png"
+        alt="Number of frames before the process"
+        style="max-width: 40%; display: inline"
+      />
+    </div>
+
+    <p>اگر بهتر به ویدیو نگاه کنیم، می بینیم که یک نفر پشت پنجره است.</p>
+    <p>
+      <img
+        alt="Subject lightly visible behind the window"
+        src="../img/03/subjectOverWindow.png"
+        title="Subject lightly visible behind the window"
+      />
+    </p>
+    <p>
+      سوژه به آرامی پشت پنجره قابل مشاهده است. به دلیل کنتراست کم شیشه پنجره،
+      فرد کمی قابل مشاهده است.
+    </p>
+    <p>
+      می‌توانیم روشنایی و کنتراست را با استفاده از فیلتر تساوی هیستوگرام افزایش
+      دهیم، که می‌توان آن را با کلیک بر روی
+      <em>Adjust</em> &#8594; <em>Histogram Equalization</em> در پانل فیلترها
+      اعمال کرد. در اینجا می‌توانیم بین شدت و یکسان‌سازی رنگ‌ها انتخاب کنیم:
+      اینها را می‌توان در گزینه Mode در قسمت تنظیمات فیلتر انتخاب کرد.
+    </p>
+    <div>
+      <img
+        src="../img/03/intensityHistogramEq.png"
+        alt="Intensity Histogram Equalization"
+        style="max-width: 50%; display: inline"
+      /><img
+        src="../img/03/ColorsHistogramEq.png"
+        alt="Colors Histogram Equalization"
+        style="max-width: 50%; display: inline"
+      />
+    </div>
+
+    <p>
+      در حال حاضر قابلیت دید شخص پشت شیشه پنجره بسیار بیشتر شده است. ما
+      می‌توانیم این شخص را حتی بهتر با اعمال میانگین فریم ببینیم، اما ابتدا باید
+      طیفی از فریم‌ها را انتخاب کنیم که در آن سوژه ثابت بماند. این کار را می
+      توان با کلیک بر روی <em>Select Frames</em> &#8594;
+      <em>Range Selector</em> و سپس انتخاب محدوده مورد علاقه با تنظیم First
+      Frame و Last Frame در پانل تنظیمات فیلتر انجام داد. برای انجام این کار،
+      اولین فریم از دنباله مورد علاقه را با استفاده از نوار لغزنده پخش کننده یا
+      با تایپ کلیدهای جهت دار چپ یا راست برای رفتن به عقب یا جلو در کل دنباله
+      انتخاب کنید، سپس روی اولین دکمه Curr (اشاره به فریم اول) کلیک کنید. سپس
+      آخرین فریم را انتخاب کنید و روی دکمه Curr دوم (اشاره به آخرین فریم) کلیک
+      کنید. برای پایان دادن به فرآیند، روی Apply کلیک کنید.
+    </p>
+    <p>
+      سوژه در این فریم ها حرکت نمی کند اما دوربین ثابت نیست، بنابراین یک تثبیت
+      موضعی لازم است. روی
+      <em>Stabilization</em> &#10145; <em>Local Stabilization</em> کلیک کنید و
+      سپس مستطیلی را که می خواهیم ثابت نگه داریم انتخاب کنید: در این حالت چهره
+      شخص در پنجره است.
+    </p>
+    <p>
+      <img
+        alt="تثبیت موضعی روی صورت فرد در پنجره"
+        src="../img/03/localStabilization.png"
+        title="Local stabilization on the face of the person in the window"
+      />
+    </p>
+    <p>
+      می بینیم که صورت شخص ثابت نگه داشته می‌شود، در حالی که بقیه کادر در اطراف
+      صورت او حرکت می‌کند.
+    </p>
+    <p>
+      <img
+        alt="اثر تثبیت روی صورت آن شخص. به فضای سیاه در سمت چپ و پایین توجه کنید."
+        src="../img/03/localStabilizationEffect.png"
+        title="Effect of the stabilization over the guy's face. Notice the black space at the left side and at the bottom."
+      />
+    </p>
+    <p>
+      اکنون برای دریافت تصویر بهتر، میانگین قاب مورد نیاز است. با کلیک بر روی
+      Integrate &#8594; Frame Averaging یک چهره پیشرفته از شخص به دست می آوریم.
+    </p>
+    <p>
+      <img
+        alt="نتیجه فیلتر میانگین قاب"
+        src="../img/03/frameAveraging.png"
+        title="Result of the Frame Averaging filter"
+      />
+    </p>
+    <p>
+      می‌توانیم ببینیم که نتیجه بسیار بهتر از تصاویر ابتدایی است، اما همچنان
+      می‌توانیم با تنظیم کنتراست و روشنایی با استفاده از فیلتر
+      <em>Adjust</em> &#8594; <em>Levels</em> آن را کمی بیشتر بهبود ببخشیم.
+    </p>
+    <p>
+      <img
+        alt="اعمال فیلتر Levels برای افزایش کنتراست و روشنایی"
+        src="../img/03/levels.png"
+        title="Applying Levels filter to enhance contrast and brightness"
+      />
+    </p>
+    <p>
+      می‌توانیم لبه‌ها و حاشیه‌های تصویر را با استفاده از فیلتر
+      <em>Sharpen</em> &#8594; <em>Unsharp Masking</em> تیز کنیم و در پایان
+      نتیجه نهایی را داریم.
+    </p>
+    <p>
+      <img
+        alt="نتیجه فیلتر Unsharp Masking"
+        src="../img/03/unsharpMasking.png"
+        title="Result of the Unsharp Masking filter"
+      />
+    </p>
+    <p>اکنون صورت سوژه به وضوح قابل مشاهده است.</p>
+    <h2 id="summary"><a class="toclink" href="#summary">خلاصه</a></h2>
+    <p>در این آموزش دیدیم:</p>
+    <ul>
+      <li>چگونه یک سکانس ویدیویی را با Deinterlace جدا کنیم</li>
+      <li>
+        چگونه کنتراست یک سوژه را در یک ویدیو با کنتراست کم با تساوی هیستوگرام
+        افزایش دهیم
+      </li>
+      <li>چگونه بخش مورد علاقه را با انتخابگر محدوده انتخاب کنیم</li>
+      <li>چگونه هدف روی یک ویدیوی لرزان را با تثبیت محلی تثبیت کنیم</li>
+      <li>چگونه نویز فریم‌ها را با ترکیب آنها با Frame Averaging کاهش دهیم</li>
+      <li>
+        چگونه با Levels و Unsharp Masking لبه‌ها را افزایش دهیم تا تصویر
+        واضح‌تری داشته باشیم
+      </li>
+    </ul>
+  </body>
+</html>

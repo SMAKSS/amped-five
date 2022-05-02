@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <link href="../style/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1 id="separate-a-latent-fingerprint-from-the-background">
+      <a
+        class="toclink"
+        href="#separate-a-latent-fingerprint-from-the-background"
+        >اثر انگشت پنهان را از پس زمینه جدا کنید</a
+      >
+    </h1>
+    <h2 id="outline"><a class="toclink" href="#outline">طرح کلی</a></h2>
+    <p>
+      در این آموزش نحوه بهبود تصویر اثر انگشت با استفاده از Amped FIVE را نشان
+      خواهیم داد.
+    </p>
+    <h2 id="enhancing"><a class="toclink" href="#enhancing">تقویت کننده</a></h2>
+    <p>اول از همه، تصویر را برای بهبود در Amped FIVE باز کنید.</p>
+    <p>
+      <img
+        alt="نمونه‌ای از تصویر اثر انگشت که باید بهبود یابد"
+        src="../img/05/fingerprint.png"
+        title="A sample fingerprint image to be enhanced"
+      />
+    </p>
+    <p>
+      توجه داشته باشید که به دلیل ویژگی امنیتی ظریف موجود در اسکناس، اثر انگشت
+      به سختی قابل مشاهده است.
+    </p>
+    <p>
+      کاری که در اینجا می‌توان انجام داد استفاده از فیلتر فوریه است. با کلیک بر
+      روی <em>Extract</em> &#8594; <em>Fourier</em> در دسترس است.
+    </p>
+    <p>
+      <img
+        alt="فیلتر فوریه"
+        src="../img/05/fourier.png"
+        title="Fourier filter"
+      />
+    </p>
+    <p>
+      در بالا می‌توانید نمایش فرکانس تصویر را مشاهده کنید. تصاویری که هیچ الگوی
+      تناوبی ندارند، بیشتر انرژی بازنمایی فوریه خود را در مرکز تصویر متمرکز کرده
+      و به شکل صلیب (که در تصویر قابل مشاهده است) هستند. با این حال، اغلب
+      اختلالات هندسی و دوره ای وجود دارد که می‌توان با انتخاب مناطق و کلیک کردن
+      بر روی افزودن در پانل تنظیمات فیلتر، آنها را حذف کرد.
+    </p>
+    <p>
+      <img
+        alt="رفع اختلال در نمایندگی فوریه"
+        src="../img/05/removal.png"
+        title="Disturbance removal in the Fourier representation"
+      />
+    </p>
+    <p>
+      پس از لغو اختلالات، تصویر (IFFT) را در گزینه خروجی در تنظیمات فیلتر انتخاب
+      کنید.
+    </p>
+    <p>
+      <img alt="نتیجه نهایی" src="../img/05/result.png" title="Final result" />
+    </p>
+    <p>
+      در اینجا می‌بینیم که اثر انگشت در این تصویر بیشتر از تصویر اصلی قابل
+      مشاهده است و ویژگی امنیتی ریز به طور کامل حذف شده است.
+    </p>
+    <h2 id="summary"><a class="toclink" href="#summary">خلاصه</a></h2>
+    <p>
+      در این آموزش نحوه حذف نویز دوره‌ای روی یک تصویر با استفاده از تبدیل فوریه
+      را دیدیم.
+    </p>
+  </body>
+</html>
