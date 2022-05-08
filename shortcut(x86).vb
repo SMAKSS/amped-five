@@ -1,9 +1,12 @@
 @echo off
 SETLOCAL ENABLEDELAYEDEXPANSION
-SET LinkName="بستا (نسخه آزمایشی)"
+SET LinkName=BASTA
+SET BaseTargetPath=%%HOMEDRIVE%%\Program Files\Amped FIVE
+SET TargetName=five
+SET IconName=five300
 SET Esc_LinkDest=%%HOMEDRIVE%%%%HOMEPATH%%\Desktop\!LinkName!.lnk
-SET Esc_LinkTarget=%%HOMEDRIVE%%\Program Files\Amped Five\bin32\five.exe
-SET Esc_IconLocation=%%HOMEDRIVE%%\Program Files\Amped Five\fivedata\img\five300.png
+SET Esc_LinkTarget=!BaseTargetPath!\bin32\!TargetName!.EXE
+SET Esc_IconLocation=!BaseTargetPath!\fivedata\img\!IconName!.ICO
 SET cSctVBS=CreateShortcut.vbs
 SET LOG=".\%~N0_runtime.log"
 ((
