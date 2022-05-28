@@ -1,127 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html dir="rtl">
   <head>
     <link href="../style/style.css" rel="stylesheet" type="text/css" />
     <meta charset="utf-8" />
   </head>
   <body>
-    <h1><a name="Filters-Reference">Filters Reference</a></h1>
+    <h1><a name="Filters-Reference">مرجع فیلترها</a></h1>
     <hr />
-    <h2><a name="Load">Load</a></h2>
-    <p><em>Loads image and video files.</em></p>
+    <h2><a name="Load">بارگذار</a></h2>
+    <p><em>فایل‌‌های تصویری و ویدئویی را بارگذاری می‌کند.</em></p>
     <hr />
     <h3><a name="Image-Loader">بارگذار تصویر</a></h3>
-    <p><em>Loads an image from file.</em></p>
-    <h4>Details</h4>
+    <p><em>یک تصویر را از فایل بارگذاری می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>بارگذار تصویر</em> tool renders an image file that can be encoded
-      in a variety of formats to a bitmap that can be displayed and processed.
+      ابزار بارگذار تصویر یک فایل تصویری را ارائه می‌دهد که می‌تواند در
+      فرمت‌‌های مختلف رمزگذاری شود تا یک بیت مپ قابل نمایش و پردازش باشد.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>File</strong><br />
-        <em>The path of the file to load.</em><a href="" target="_blank"></a>
+        <strong>فایل</strong><br />
+        <em>مسیر فایل برای بارگذاری</em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
-    <ul>
-      <li>Load a snapshot from a CCTV video.<a href="" target="_blank"></a></li>
-      <li>
-        Load an image from a mobile phone or digital camera.<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-      <li>Load an image from the web.<a href="" target="_blank"></a></li>
-      <li>Load an image in RAW format.<a href="" target="_blank"></a></li>
-    </ul>
-    <hr />
-    <h3><a name="Sequence-Loader">Sequence Loader</a></h3>
-    <p><em>Loads multiple images as video.</em></p>
-    <h4>Details</h4>
-    <p>
-      The <em>Sequence Loader</em> tool renders different image files that can
-      be encoded in a variety of formats to a sequence of bitmaps that can be
-      displayed and processed.
-    </p>
-    <h4>Parameters</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        <strong>Files</strong><br />
-        <em>Path of the images in the list.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Fps</strong><br />
-        <em>Frame rate, in frames per second, for the resulting video.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Usage</h4>
-    <p>
-      All common image formats are supported, but all images must have the same
-      size. If the images have different size, the reference size will be taken
-      from the first one. Other images will be cropped to fit in the reference
-      size. This is quite normal if images are taken by the same source. The
-      default sorting is alphabetical, but you can adjust it by selecting items
-      in the list and using buttons on the right side of the list box.<br />
-      For configuring filter, you can drag and drop multiple files or entire
-      folders over this window or directly on the main window.
-    </p>
-    <h4>Application Examples</h4>
-    <ul>
-      <li>
-        Load multiple images in sequence and process them together.<a
+        یک عکس فوری از یک فیلم دوربین مدار بسته بارگذاری کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Load frames extracted from a proprietary DVR player.<a
+        یک تصویر را از تلفن همراه یا دوربین دیجیتال بارگذاری کنید.<a
           href=""
           target="_blank"
         ></a>
+      </li>
+      <li>یک تصویر از وب بارگذاری کنید.<a href="" target="_blank"></a></li>
+      <li>
+        یک تصویر را با فرمت خام بارگذاری کنید.<a href="" target="_blank"></a>
       </li>
     </ul>
     <hr />
-    <h3><a name="Video-Loader">Video Loader</a></h3>
-    <p><em>Loads a video from file.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Sequence-Loader">بارگذاری دنباله‌ای</a></h3>
+    <p><em>چندین تصویر را به عنوان ویدیو بارگذاری می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Video Loader</em> tool renders a video file that can be encoded in
-      a variety of standard formats to a sequence of bitmaps that can be
-      displayed and processed.
+      ابزار بارگذاری دنباله‌ای فایل‌‌های تصویری مختلفی را ارائه می‌دهد که
+      می‌توانند از فرمت‌‌های مختلف گرفته تا دنباله ای از بیت مپ‌‌ها که قابل
+      نمایش و پردازش هستند، رمزگذاری بشوند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>File</strong><br />
-        <em>Path of the video to load.</em><a href="" target="_blank"></a>
+        <strong>فایل‌‌ها</strong><br />
+        <em>مسیر تصاویر در لیست.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Video Engine</strong><br />
-        <em>Video decoder to use.</em><a href="" target="_blank"></a>
+        <strong>فریم در ثانیه</strong><br />
+        <em>نرخ فریم، بر حسب فریم در ثانیه، برای ویدیوی حاصل.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <h4>استفاده</h4>
+    <p>
+      همه فرمت‌‌های تصویری رایج پشتیبانی می‌شوند، اما همه تصاویر باید اندازه
+      یکسانی داشته باشند. اگر تصاویر دارای اندازه‌‌های متفاوتی باشند، اندازه
+      مرجع از اولی گرفته می‌شود. سایر تصاویر برای قرار گرفتن در اندازه مرجع برش
+      داده می‌شوند. اگر تصاویر توسط یک منبع گرفته شده باشند، این کاملا طبیعی
+      است. مرتب‌سازی پیش‌فرض بر اساس حروف الفبا است، اما می‌توانید با انتخاب
+      موارد موجود در لیست و استفاده از دکمه‌های سمت راست کادر فهرست، آن را تنظیم
+      کنید. برای پیکربندی فیلتر، می‌توانید چندین فایل یا کل پوشه را روی این
+      پنجره یا مستقیماً روی پنجره اصلی بکشید و رها کنید.
+    </p>
+    <h4>نمونه‌‌های کاربردی</h4>
+    <ul>
+      <li>
+        چندین تصویر را به ترتیب بارگذاری کنید و آنها را با هم پردازش کنید.<a
+          href=""
+          target="_blank"
+        ></a>
+      </li>
+      <li>
+        بارگذاری فریم‌‌های استخراج شده از پخش کننده اختصاصی DVR.<a
+          href=""
+          target="_blank"
+        ></a>
+      </li>
+    </ul>
+    <hr />
+    <h3><a name="Video-Loader">ویدئو لودر یا بارگذاری کننده ویدئو</a></h3>
+    <p><em>یک ویدیو را از فایل بارگذاری می‌کند.</em></p>
+    <h4>جزئیات</h4>
+    <p>
+      ابزار بارگذار ویدئو یک فایل ویدیویی را ارائه می‌کند که می‌تواند در
+      قالب‌های مختلف استاندارد کدگذاری شود و به دنباله‌ای از بیت مپ‌ها قابل
+      نمایش و پردازش هستند.
+    </p>
+    <h4>مولفه‌‌ها</h4>
+    <ul>
+      <li>
+        <strong>فایل</strong><br />
+        <em>مسیر بارگذاری ویدیو.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Color Range</strong><br />
+        <strong>موتور ویدئو</strong><br />
+        <em>رسیور ویدیویی برای استفاده</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>محدوده رنگ</strong><br />
         <em
-          >Use the color range specified in the video file or force it to full
-          or limited (16-235). Works only with the FFMS Video Engine.</em
+          >از محدوده رنگی مشخص شده در فایل ویدیویی استفاده کنید یا آن را کامل یا
+          محدود کنید (16-235). فقط با موتور ویدئویی FFMS کار می‌کند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Original File</strong><br />
-        <em
-          >Original video file that has been converted from a proprietary DVR
-          format.</em
+        <strong>فایل اصلی</strong><br />
+        <em>فایل ویدئویی اصلی که از فرمت اختصاصی DVR تبدیل شده است</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
@@ -129,221 +134,218 @@
     <h3><a name="Milestone-Client">Milestone Client</a></h3>
     <p>
       <em
-        >Connects to a Milestone XProtect image server to get archived or live
-        images.</em
+        >برای دریافت تصاویر بایگانی یا زنده به سرور تصویر Milestone XProtect
+        متصل می‌شود.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Milestone Client</em> tool allows loading images stored on a
-      Milestone XProtect images server without the need to export them to
-      another format. For further information refer to the website
-      www.milestonesys.com and the documentation provided with the Milestone
-      XProtect video management system.
+      ابزار Milestone Client اجازه می‌دهد تا تصاویر ذخیره شده در سرور تصاویر
+      Milestone XProtect را بدون نیاز به صادر کردن آنها به فرمت دیگری بارگذاری
+      کنید. برای اطلاعات بیشتر به وب سایت www.milestonesys.com و مستندات ارائه
+      شده با سیستم مدیریت ویدیو Milestone XProtect مراجعه کنید.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Server Address</strong><br />
-        <em>IP address or server name of the host Milestone XProtect Server.</em
+        <strong>آدرس سرور</strong><br />
+        <em>آدرس IP یا نام سرور میزبان Milestone XProtect Server.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Authentication</strong><br />
-        <em>The authentication type used.</em><a href="" target="_blank"></a>
+        <strong>احراز هویت</strong><br />
+        <em>نوع احراز هویت استفاده شده</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Username</strong><br />
-        <em>User name to connect to the server.</em
+        <strong>نام کاربری</strong><br />
+        <em>نام کاربری برای اتصال به سرور.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>کلمه عبور</strong><br />
+        <em>رمز عبور برای اتصال به سرور.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>ورود خودکار</strong><br />
+        <em
+          >هر بار که Milestone Client بارگذاری می‌شود، به طور خودکار متصل
+          می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Password</strong><br />
-        <em>Password to connect to the server.</em
-        ><a href="" target="_blank"></a>
+        <strong>دوربین</strong><br />
+        <em>دوربین برای اتصال.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Auto Login</strong><br />
-        <em>Connects automatically every time Milestone Client is loaded.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Camera</strong><br />
-        <em>Camera to connect to.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Live Video</strong><br />
+        <strong>ویدئوی زنده</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Process videos captured directly from the city CCTV network.<a
+        فیلم‌‌های ضبط شده مستقیم از شبکه دوربین مدار بسته شهری را پردازش کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Enhance live videos during surveillance operations.<a
+        ویدیوهای زنده را در طول عملیات نظارتی تقویت کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
     <hr />
-    <h3><a name="Milestone-Archive">Milestone Archive</a></h3>
+    <h3><a name="Milestone-Archive">آرشیو Milestone</a></h3>
     <p>
       <em
-        >Loads a video exported from a Milestone XProtect server without need
-        for conversion.</em
+        >یک ویدیوی صادر شده از سرور Milestone XProtect را بدون نیاز به تبدیل
+        بارگذاری می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Milestone Archive</em> loads a video format in the native format
-      created by Milestone XProtect.
+      بایگانی Milestone یک فرمت ویدیویی را در قالب اصلی ایجاد شده توسط Milestone
+      XProtect بارگذاری می‌کند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>File</strong><br />
-        <em>Path of the video to load.</em><a href="" target="_blank"></a>
+        <strong>فایل</strong><br />
+        <em>مسیر بارگذاری ویدیو.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Media (XML archives)</strong><br />
-        <em>Media name; makes sense only in XML archives</em
+        <strong>رسانه (بایگانی XML)</strong><br />
+        <em>نام رسانه؛ فقط در بایگانی‌‌های XML معنا دارد</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <hr />
-    <h3><a name="Image-Paster">Image Paster</a></h3>
-    <p><em>Pastes the image from the clipboard for further processing.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Image-Paster">چسباندن تصویر </a></h3>
+    <p><em>تصویر را از کلیپ بورد برای پردازش بیشتر جای‌گذاری می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Image Paster</em> tool encodes the image currently in the
-      clipboard to the specified file with the chosen format.
+      ابزار چسباندن تصویر تصویری را که در حال حاضر در کلیپ بورد است در فایل مشخص
+      شده با فرمت انتخاب شده رمزگذاری می‌کند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>File</strong><br />
-        <em>Path of the image to save.</em><a href="" target="_blank"></a>
+        <strong>فایل</strong><br />
+        <em>مسیر تصویر برای ذخیره.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Format</strong><br />
-        <em>Format used to encode the image file.</em
+        <strong>فرمت</strong><br />
+        <em>فرمت مورد استفاده برای رمزگذاری فایل تصویری.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Quality</strong><br />
-        <em
-          >Quality of the image to save (JPEG only, the bigger is the
-          better).</em
+        <strong>کیفیت</strong><br />
+        <em>کیفیت تصویر برای ذخیره (فقط JPEG، بزرگتر بهتر است).</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Process an image copied to the clipboard from the web or another
-        program.<a href="" target="_blank"></a>
+        تصویری را که از وب یا برنامه دیگری در کلیپ بورد کپی شده است پردازش
+        کنید.<a href="" target="_blank"></a>
       </li>
     </ul>
     <hr />
-    <h3><a name="Video-Input">Video Input</a></h3>
+    <h3><a name="Video-Input">ورودی ویدیو</a></h3>
     <p>
       <em
-        >Live stream DirectShow video sources for real time display or
-        capture.</em
+        >پخش زنده منابع ویدئویی DirectShow برای نمایش یا ضبط در زمان واقعی.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      <em>Video Input</em> allows to view real time full motion video coming
-      from any DirectShow compatible device.
+      ورودی ویدیو به شما امکان می‌دهد ویدیوی تمام حرکتی را در زمان واقعی از هر
+      دستگاه سازگار با DirectShow مشاهده کنید.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Device</strong><br />
-        <em>Name of video input device.</em><a href="" target="_blank"></a>
+        <strong>دستگاه</strong><br />
+        <em>نام دستگاه ورودی ویدیو</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>File</strong><br />
-        <em>Path of the file to save.</em><a href="" target="_blank"></a>
+        <strong>فایل</strong><br />
+        <em>مسیر فایل برای ذخیره</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Format</strong><br />
-        <em>Container and codec used to write the video file.</em
+        <strong>فرمت</strong><br />
+        <em>کانتینر و کدک مورد استفاده برای نوشتن فایل ویدئویی.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Frame rate</strong><br />
+        <strong>نرخ فریم</strong><br />
         <em
-          >Frame rate (in frames per second) of the output video. Note that some
-          video formats support only a limited set of frame rates.</em
+          >نرخ فریم (بر حسب فریم در ثانیه) فیلم خروجی. توجه داشته باشید که برخی
+          از فرمت‌‌های ویدئویی تنها از مجموعه محدودی از نرخ فریم پشتیبانی
+          می‌کنند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Quality</strong><br />
+        <strong>کیفیت</strong><br />
         <em
-          >If a codec has been selected that allows quality control, the
-          following options can be selected:<br />
-          <em>Default</em>: Uses a Constant Rate Factor of 18<br />
-          <em>High</em>: Uses a Constant Rate Factor of 12<br />
-          <em>Visually Lossless</em>: Uses a Constant Rate Factor of 1<br /> </em
+          >اگر کدک انتخاب شده است که امکان کنترل کیفیت را فراهم می‌کند،
+          گزینه‌‌های زیر را می‌توان انتخاب کرد:<br />
+          <em>پیش فرض</em>: از ضریب نرخ ثابت 18 استفاده می‌کند<br />
+          <em>بالا</em>: از ضریب نرخ ثابت 12 استفاده می‌کند<br />
+          <em>Visually Lossless</em>: از ضریب نرخ ثابت 1 استفاده می‌کند<br /> </em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      Working with a live video input is the same as with an image or archived
-      video files, but some filters, such as those in the group
-      <em>Select Frames</em>, cannot be applied to a live feed.
+      کار با یک ورودی ویدیوی زنده مانند یک تصویر یا فایل‌‌های ویدیویی بایگانی
+      شده است، اما برخی از فیلترها مانند فیلترهای گروه انتخاب فریم‌ها را
+      نمی‌توان در فید زنده (live feed) اعمال کرد.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Process live videos coming from a webcam.<a href="" target="_blank"></a>
-      </li>
-      <li>
-        Capture analog video coming from a frame grabber.<a
+        ویدیوهای زنده را که از وب‌کم می‌آیند پردازش کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
+      <li>
+        فیلم برداری آنالوگ از یک قاب گیرنده.<a href="" target="_blank"></a>
+      </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        Video Input :
+        ورودی ویدیو:
         <a
           href="https://blog.ampedsoftware.com/2016/08/24/video-input/"
           target="_blank"
@@ -352,180 +354,175 @@
       </li>
     </ul>
     <hr />
-    <h2><a name="Link">Link</a></h2>
-    <p><em>Connects and mixes different source filters.</em></p>
+    <h2><a name="Link">لینک</a></h2>
+    <p><em>فیلترهای منبع مختلف را متصل و مخلوط می‌کند.</em></p>
     <hr />
-    <h3><a name="Video-Mixer">Video Mixer</a></h3>
+    <h3><a name="Video-Mixer">میکسر ویدیو</a></h3>
     <p>
       <em
-        >Overlays or displays two different chains side by side. Supports
-        synchronization of streams and similarity metrics computation.</em
+        >دو زنجیره مختلف را در کنار هم قرار می‌دهد یا نمایش می‌دهد. از همگام
+        سازی جریان‌‌ها و محاسبات معیارهای شباهت پشتیبانی می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Video Mixer</em> filter allows to mix the images from other two
-      chains, or to put them side by side. It also computes and shows the
-      similarity between corresponding frames of the two videos using multiple
-      metrics.
+      فیلتر میکسر ویدیئو اجازه می‌دهد تا تصاویر را از دو زنجیره دیگر مخلوط کنید
+      یا آنها را در کنار هم قرار دهید. همچنین شباهت بین فریم‌‌های متناظر دو
+      ویدیو را با استفاده از معیارهای متعدد محاسبه و نشان می‌دهد.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>First Input</strong><br />
-        <em>First filter to mix.</em><a href="" target="_blank"></a>
+        <strong>ورودی اول</strong><br />
+        <em>ابتدا فیلتر برای مخلوط کردن.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Second Input</strong><br />
-        <em>Second filter to mix.</em><a href="" target="_blank"></a>
+        <strong>ورودی دوم</strong><br />
+        <em>فیلتر دوم برای مخلوط کردن.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Video to Seek</strong><br />
-        <em>Select which video to seek, or both.</em
+        <strong>ویدئویی برای جستجو</strong><br />
+        <em>انتخاب کنید کدام ویدیو جستجو شود یا هر دو جستجو شوند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selected Frames</strong><br />
-        <em>Two specific positions in the mixed videos to compare.</em
+        <strong>فریم‌‌های انتخاب شده</strong><br />
+        <em>دو موقعیت خاص در فیلم‌‌های ترکیبی برای مقایسه.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Mode</strong><br />
+        <strong>حالت</strong><br />
         <em
-          >How to display the processed and the original (or unprocessed)
-          images, videos or frames.</em
+          >نحوه نمایش تصاویر، فیلم‌‌ها یا فریم‌‌های پردازش شده و اصلی (یا پردازش
+          نشده).</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Output Size</strong><br />
-        <em>The size of the output image.</em><a href="" target="_blank"></a>
+        <strong>اندازه خروجی</strong><br />
+        <em>اندازه تصویر خروجی</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Output Mode</strong><br />
-        <em
-          >What to do if the output image has a different size than the
-          input.</em
+        <strong>حالت خروجی</strong><br />
+        <em>اگر اندازه تصویر خروجی متفاوت از ورودی باشد چه باید کرد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Interpolation</strong><br />
-        <em>Interpolation algorithm.</em><a href="" target="_blank"></a>
+        <strong>درون یابی</strong><br />
+        <em>الگوریتم درون یابی</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Balance</strong><br />
-        <em>Balance between the original (0) and processed image (1).</em
+        <strong>تعادل</strong><br />
+        <em>تعادل بین تصویر اصلی (۰) و تصویر پردازش شده (۱).</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Gain</strong><br />
-        <em>Gain applied to the output image.</em
+        <strong>کسب کردن</strong><br />
+        <em>بهره بر روی تصویر خروجی اعمال می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Line Color</strong><br />
-        <em
-          >The color of the separating line in Half Horizontally and Half
-          Vertically mode.</em
+        <strong>رنگ خط</strong><br />
+        <em>رنگ خط جداکننده در حالت نیمه افقی و نیمه عمودی.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Line Thickness</strong><br />
-        <em
-          >The thickness of the separating line in Half Horizontally and Half
-          Vertically mode.</em
+        <strong>ضخامت خط</strong><br />
+        <em>ضخامت خط جداکننده در حالت نیمه افقی و نیمه عمودی.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Compute Similarity Metrics</strong><br />
-        <em>Enable/disable the computation of similarity metrics.</em
+        <strong>محاسبه معیارهای تشابه</strong><br />
+        <em>محاسبه معیارهای شباهت را فعال/غیرفعال کنید.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Similarity Metrics</strong><br />
-        <em>The similarity metrics are shown below if available.</em
+        <strong>معیارهای تشابه</strong><br />
+        <em>معیارهای شباهت در صورت وجود در زیر نشان داده شده است.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
         <strong>SAD (0 .. 255)</strong><br />
-        <em>Sum of Absolute Differences (mean).</em
-        ><a href="" target="_blank"></a>
+        <em>مجموع تفاوت‌‌های مطلق (میانگین).</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
         <strong>PSNR (dB)</strong><br />
-        <em>Peak Signal to Noise Ratio.</em><a href="" target="_blank"></a>
+        <em>نسبت پیک سیگنال به نویز.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
         <strong>MSSIM (0 .. 1)</strong><br />
-        <em>Mean Structural Similarity.</em><a href="" target="_blank"></a>
+        <em>میانگین تشابه ساختاری.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
         <strong>Correlation (-1 .. 1)</strong><br />
-        <em>Correlation Coefficient.</em><a href="" target="_blank"></a>
+        <em>ضریب همبستگی.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Audio Source</strong><br />
-        <em>Select the audio (if available) played in the output video.</em
+        <strong>منبع صوتی</strong><br />
+        <em>صدای پخش شده (در صورت وجود) را در فیلم خروجی انتخاب کنید.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      The <em>Video Mixer</em> filter must always be positioned in the history
-      under the filters it links, otherwise the project cannot load
-      successfully. Also, don't delete the filters the <em>Video Mixer</em> is
-      linking to, or it will not have proper sources anymore.
+      فیلتر میکسر ویدیئو باید همیشه در تاریخچه در زیر فیلترهایی که پیوند می‌دهد
+      قرار گیرد، در غیر این صورت پروژه نمی‌تواند با موفقیت بارگذاری شود. همچنین،
+      فیلترهایی را که میکسر ویدیئو به آنها پیوند می‌دهد حذف نکنید، در غیر این
+      صورت دیگر منابع مناسبی نخواهد داشت.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
-      <li>Put two videos side by side.<a href="" target="_blank"></a></li>
+      <li>ویدیو را در کنار هم قرار دهید.<a href="" target="_blank"></a></li>
       <li>
-        Overlay two images to analyze the differences.<a
+        دو تصویر را برای تجزیه و تحلیل تفاوت‌‌ها روی هم قرار دهید.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Perform reverse projection to compare a suspect to an unknown subject in
-        a CCTV video.<a href="" target="_blank"></a>
+        برای مقایسه یک فرد مشکوک با یک سوژه ناشناخته در یک فیلم دوربین مداربسته،
+        پروژکشن معکوس (reverse projection ) را انجام دهید.<a
+          href=""
+          target="_blank"
+        ></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Z. Wang, A. C. Bovik, H. R. Sheikh and E. P. Simoncelli, “Image quality
@@ -537,10 +534,10 @@
         >
       </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        بـستا Update: The Video Mixer Filter:
+        به‌روزرسانی بـستا: فیلتر میکسر ویدیو:
         <a
           href="https://blog.ampedsoftware.com/2015/08/10/amped-five-update-the-video-mixer-filter/"
           target="_blank"
@@ -548,7 +545,7 @@
         >
       </li>
       <li>
-        What’s the Difference?:
+        تفاوت چیست؟:
         <a
           href="https://blog.ampedsoftware.com/2018/04/09/whats-the-difference/"
           target="_blank"
@@ -557,110 +554,104 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Perspective-Aligner">Perspective Aligner</a></h3>
+    <h3><a name="Perspective-Aligner">تنظیم کننده چشم انداز</a></h3>
     <p>
       <em
-        >Display two chains, either side by side or overlaid, and optionally
-        warp one of them in order to simulate an identical point of view.</em
+        >دو زنجیره را در کنار هم یا روی هم نشان دهید و به صورت اختیاری یکی از
+        آنها را به منظور شبیه سازی یک دیدگاه مشابه، تاب دهید.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Perspective Aligner</em> tool allows for the display of two chains
-      simultaneously, either side by side or overlaid with adjustable weight. It
-      is optionally possible to apply a perspective warp to one of the two
-      images by selecting four corresponding points. This simulates the effect
-      of moving the point of view of that image to match that of the other one.
+      ابزار تنظیم کننده چشم انداز امکان نمایش دو زنجیره را به طور همزمان، در
+      کنار هم یا با وزن قابل تنظیم روی هم قرار می‌دهد. به صورت اختیاری می‌توان
+      با انتخاب چهار نقطه مربوطه، یک تاب چشم انداز به یکی از دو تصویر اعمال کرد.
+      این اثر جابجایی نقطه دید آن تصویر را شبیه سازی می‌کند تا با دیدگاه تصویر
+      دیگر مطابقت داشته باشد.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>First input</strong><br />
-        <em>First filter to mix.</em><a href="" target="_blank"></a>
+        <strong>ورودی اول</strong><br />
+        <em>ابتدا فیلتر برای مخلوط کردن.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Second input</strong><br />
-        <em>Second filter to mix.</em><a href="" target="_blank"></a>
+        <strong>ورودی دوم</strong><br />
+        <em>فیلتر دوم برای مخلوط کردن.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Mode</strong><br />
-        <em>How to mix the two sources.</em><a href="" target="_blank"></a>
+        <strong>حالت</strong><br />
+        <em>نحوه ترکیب دو منبع</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Balance</strong><br />
-        <em>Weight of the two sources (-1 = first, 1 = second).</em
+        <strong>تعادل</strong><br />
+        <em>وزن دو منبع (-1 = اول، 1 = دوم).</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>بهره</strong><br />
+        <em>بهره بر روی تصویر خروجی اعمال می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Gain</strong><br />
-        <em>Gain applied to the output image.</em
+        <strong>رنگ خط</strong><br />
+        <em>رنگ خط جداکننده در حالت نیمه افقی و نیمه عمودی.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Line Color</strong><br />
-        <em
-          >The color of the separating line in Half Horizontally and Half
-          Vertically mode.</em
+        <strong>ضخامت خط</strong><br />
+        <em>ضخامت خط جداکننده در حالت نیمه افقی و نیمه عمودی.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Line Thickness</strong><br />
-        <em
-          >The thickness of the separating line in Half Horizontally and Half
-          Vertically mode.</em
+        <strong>چشم انداز</strong><br />
+        <em>کدام دیدگاه را تغییر دهیم.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>نقاط تطبیق</strong><br />
+        <em>نقشه برداری جفت نقاط از تصویر اول تا تصویر دوم.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Perspective</strong><br />
-        <em>Which perspective to change.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Matching Points</strong><br />
-        <em>Pairs of points mapping from the first image to the second one.</em
+        <strong>منبع صوتی</strong><br />
+        <em>صدای پخش شده (در صورت وجود) را در فیلم خروجی انتخاب کنید.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <ul>
-      <li>
-        <strong>Audio Source</strong><br />
-        <em>Select the audio (if available) played in the output video.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      Use the <em>Ruler</em> tool, in the <em>Perspective</em> tab, to draw at
-      least 4 lines that connect a point in the first image to the corresponding
-      point in the second image.
+      از ابزار خط کش در تب چشم اندازبرای کشیدن حداقل 4 خط استفاده کنید که یک
+      نقطه در تصویر اول را به نقطه مربوطه در تصویر دوم متصل می‌کند.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Align two images with different perspectives to analyze the
-        differences.<a href="" target="_blank"></a>
+        دو تصویر را با دیدگاه‌‌های مختلف تراز کنید تا تفاوت‌‌ها را تجزیه و تحلیل
+        کنید.<a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        Different Points of View? No Problem! Use بـستا’s Perspective Aligner to
-        Compare or Integrate Images Taken From Different Angles!:
+        دیدگاه‌‌های مختلف؟ مشکلی نیست! از بـستا تنظیم کننده چشم انداز برای
+        مقایسه یا ادغام تصاویر گرفته شده از زوایای مختلف استفاده کنید!:
         <a
           href="https://blog.ampedsoftware.com/2020/02/04/different-points-of-view-no-problem-use-amped-fives-perspective-aligner-to-compare-or-integrate-images-taken-from-different-angles/"
           target="_blank"
@@ -669,171 +660,162 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Timeline">Timeline</a></h3>
-    <p><em>Displays multiple videos one after the other.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Timeline">جدول زمانی</a></h3>
+    <p><em>چندین ویدیو را یکی پس از دیگری نمایش می‌دهد.</em></p>
+    <h4>جزئیات</h4>
+    <p>فیلتر جدول زمانی چندین ویدیو را یکی پس از دیگری نمایش می‌دهد.</p>
+    <h4>مولفه‌‌ها</h4>
+    <ul>
+      <li>
+        <strong>ورودی برای افزودن</strong><br />
+        <em>فیلتری که باید به لیست زیر اضافه شود.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>ورودی‌‌ها</strong><br />
+        <em>لیست فیلترهایی که باید یکی پس از دیگری نمایش داده شوند</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>اندازه خروجی</strong><br />
+        <em>اندازه هر سلول در شبکه خروجی.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>حالت خروجی</strong><br />
+        <em>اگر اندازه سلول متفاوت از ورودی باشد چه باید کرد.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>درون یابی</strong><br />
+        <em>الگوریتم درون یابی</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <h4>استفاده</h4>
     <p>
-      The <em>Timeline</em> filter displays multiple videos one after the other.
+      فیلتر جدول زمانی همیشه باید در تاریخچه زیر فیلترهایی که پیوند می‌دهد قرار
+      گیرد، در غیر این صورت پروژه نمی‌تواند با موفقیت بارگذاری شود. همچنین،
+      فیلترهایی را که تایم لاین به آنها پیوند می‌دهد حذف نکنید، در غیر این صورت
+      دیگر منابع مناسبی نخواهد داشت.
     </p>
-    <h4>Parameters</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        <strong>Input To Add</strong><br />
-        <em>The filter to add to the list below.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Inputs</strong><br />
-        <em>The list of filters to display one after the other</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Output Size</strong><br />
-        <em>The size of each cell in the output grid.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Output Mode</strong><br />
-        <em>What to do if the cell has a different size than the input.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Interpolation</strong><br />
-        <em>Interpolation algorithm.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Usage</h4>
-    <p>
-      The <em>Timeline</em> filter must always be positioned in the history
-      under the filters it links, otherwise the project cannot load
-      successfully. Also, don't delete the filters the <em>Timeline</em> is
-      linking to, or it will not have proper sources anymore.
-    </p>
-    <h4>Application Examples</h4>
-    <ul>
-      <li>
-        Play multiple videos one after the other.<a href="" target="_blank"></a>
+        چندین ویدیو را یکی پس از دیگری پخش کنید.<a href="" target="_blank"></a>
       </li>
     </ul>
     <hr />
-    <h3><a name="Multiview">Multiview</a></h3>
+    <h3><a name="Multiview">چند نما</a></h3>
     <p>
       <em
-        >Displays multiple chains simultaneously on a grid. Supports
-        synchronization of streams.</em
+        >چندین زنجیره را به طور همزمان روی یک شبکه نمایش می‌دهد. از همگام سازی
+        جریان‌‌ها پشتیبانی می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
+    <p>فیلتر چند نما چندین زنجیره را به طور همزمان روی یک شبکه نمایش می‌دهد.</p>
+    <h4>مولفه‌‌ها</h4>
+    <ul>
+      <li>
+        <strong>ردیف‌‌ها</strong><br />
+        <em>تعداد ردیف‌‌ها در طرح.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>ستون‌‌ها</strong><br />
+        <em>تعداد ستون‌‌ها در طرح.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>ورودی برای افزودن</strong><br />
+        <em>فیلتری که باید به لیست زیر اضافه شود.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>ورودی‌‌ها</strong><br />
+        <em>لیست فیلترهایی که در یک شبکه نمایش داده می‌شوند</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>تاخیر ورودی</strong><br />
+        <em>موقعیت خاص در فیلم‌‌های ترکیبی برای مقایسه.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>اندازه خروجی</strong><br />
+        <em>اندازه هر سلول در شبکه خروجی.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>حالت خروجی</strong><br />
+        <em>اگر اندازه سلول متفاوت از ورودی باشد چه باید کرد.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>درون یابی</strong><br />
+        <em>الگوریتم درون یابی</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>رنگ خط</strong><br />
+        <em>رنگ خط اختیاری جداکننده سلول‌‌ها.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>ضخامت خط</strong><br />
+        <em>ضخامت خط اختیاری جداکننده سلول‌‌ها.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>منبع صوتی</strong><br />
+        <em>ورودی (در صورت وجود) که صدای آن پخش می‌شود.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <h4>استفاده</h4>
     <p>
-      The <em>Multiview</em> filter displays multiple chains simultaneously on a
-      grid.
+      فیلتر چند نما باید همیشه در تاریخچه زیر فیلترهایی که پیوند می‌دهد قرار
+      گیرد، در غیر این صورت پروژه نمی‌تواند با موفقیت بارگذاری شود. همچنین،
+      فیلترهایی را که چند نما به آنها پیوند می‌دهد حذف نکنید، در غیر این صورت
+      دیگر منابع مناسبی نخواهد داشت.
     </p>
-    <h4>Parameters</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        <strong>Rows</strong><br />
-        <em>The number of rows in the layout.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Columns</strong><br />
-        <em>The number of columns in the layout.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Input To Add</strong><br />
-        <em>The filter to add to the list below.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Inputs</strong><br />
-        <em>The list of filters to display in a grid</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Input Delay</strong><br />
-        <em>Two specific positions in the mixed videos to compare.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Output Size</strong><br />
-        <em>The size of each cell in the output grid.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Output Mode</strong><br />
-        <em>What to do if the cell has a different size than the input.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Interpolation</strong><br />
-        <em>Interpolation algorithm.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Line Color</strong><br />
-        <em>The color of the optional line separating the cells.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Line Thickness</strong><br />
-        <em>The thickness of the optional line separating the cells.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Audio Source</strong><br />
-        <em>The input (if available) whose audio is played.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Usage</h4>
-    <p>
-      The <em>Multiview</em> filter must always be positioned in the history
-      under the filters it links, otherwise the project cannot load
-      successfully. Also, don't delete the filters the <em>Multiview</em> is
-      linking to, or it will not have proper sources anymore.
-    </p>
-    <h4>Application Examples</h4>
-    <ul>
-      <li>
-        View multiple videos simultaneously on a grid.<a
+        چندین ویدیو را به طور همزمان در یک شبکه مشاهده کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        The Bigger Picture: Did You Know بـستا’s Multiview Filter Lets You
-        Combine and Sync Multiple Videos?:
+        تصویر بزرگتر: آیا می‌دانستید که فیلتر چند نما بـستا به شما امکان می‌دهد
+        چندین ویدیو را ترکیب و همگام کنید؟:
         <a
           href="https://blog.ampedsoftware.com/2019/10/22/the-bigger-picture-did-you-know-amped-fives-multiview-filter-lets-you-combine-and-sync-multiple-videos/"
           target="_blank"
@@ -842,420 +824,427 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Picture-In-Picture">Picture In Picture</a></h3>
-    <p><em>Displays a smaller image or video on top of a larger one.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Picture-In-Picture">تصویر در تصویر </a></h3>
     <p>
-      The <em>Picture In Picture</em> filter displays a smaller image or video
-      on top of a larger one. The size of the output is equal to the size of the
-      background image. The size and position of the foreground image can be set
-      using the <em>Selection</em> tab.
+      <em>یک تصویر یا ویدیوی کوچکتر را در بالای تصویر بزرگتر نشان می‌دهد.</em>
     </p>
-    <h4>Parameters</h4>
-    <ul>
-      <li>
-        <strong>Background Input</strong><br />
-        <em
-          >Image or video to display on the background (determines the size of
-          the output frame).</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Foreground Input</strong><br />
-        <em>Image or video to display on the foreground.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Size</strong><br />
-        <em>Optionally resize the foreground image.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Interpolation</strong><br />
-        <em>Interpolation algorithm.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Horizontal Position</strong><br />
-        <em
-          >Horizontal position of the foreground image with respect to the frame
-          or selection.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Vertical Position</strong><br />
-        <em
-          >Vertical position of the foreground image with respect to the frame
-          or selection.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Transparency</strong><br />
-        <em>Optional transparency of the inner filter.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Border Color</strong><br />
-        <em>The color of the optional border</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Border Thickness</strong><br />
-        <em>The thickness of the border (set to 0 to disable the border).</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Audio Source</strong><br />
-        <em>Select the audio (if available) played in the output video.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Selection</strong><br />
-        <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Usage</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Picture In Picture</em> filter must always be positioned in the
-      history under the filters it links, otherwise the project cannot load
-      successfully. Also, don't delete the filters the
-      <em>Picture In Picture</em> is linking to, or it will not have proper
-      sources anymore.
+      فیلتر تصویر در تصویر یک تصویر یا ویدیوی کوچکتر را در بالای تصویر بزرگتر
+      نشان می‌دهد. اندازه خروجی برابر با اندازه تصویر پس زمینه است. اندازه و
+      موقعیت تصویر پیش زمینه را می‌توان با استفاده از تب Selection تنظیم کرد.
+    </p>
+    <h4>مولفه‌‌ها</h4>
+    <ul>
+      <li>
+        <strong>ورودی پس زمینه</strong><br />
+        <em
+          >تصویر یا ویدیو برای نمایش در پس زمینه (اندازه فریم خروجی را تعیین
+          می‌کند).</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>ورودی پیش زمینه</strong><br />
+        <em>تصویر یا ویدیو برای نمایش در پیش زمینه</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>اندازه</strong><br />
+        <em>به صورت اختیاری اندازه تصویر پیش زمینه را تغییر دهید.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>درون یابی</strong><br />
+        <em>الگوریتم درون یابی</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>موقعیت افقی</strong><br />
+        <em>موقعیت افقی تصویر پیش زمینه با توجه به کادر یا انتخاب.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>موقعیت عمودی</strong><br />
+        <em>موقعیت عمودی تصویر پیش زمینه با توجه به کادر یا انتخاب.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>شفافیت</strong><br />
+        <em>شفافیت اختیاری فیلتر داخلی</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>رنگ لبه</strong><br />
+        <em>رنگ حاشیه اختیاری</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>ضخامت حاشیه - ضخامت لبه</strong><br />
+        <em>ضخامت حاشیه (برای غیرفعال کردن حاشیه روی 0 تنظیم کنید).</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>منبع صوتی</strong><br />
+        <em>صدای پخش شده (در صورت وجود) را در فیلم خروجی انتخاب کنید.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>انتخاب</strong><br />
+        <em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <h4>استفاده</h4>
+    <p>
+      فیلتر تصویر در تصویر همیشه باید در تاریخچه زیر فیلترهایی که پیوند می‌دهد
+      قرار گیرد، در غیر این صورت پروژه نمی‌تواند با موفقیت بارگذاری شود. همچنین،
+      فیلترهایی را که تصویر در تصویر به آنها پیوند می‌دهد حذف نکنید، در غیر این
+      صورت دیگر منابع مناسبی نخواهد داشت.
     </p>
     <hr />
-    <h2><a name="Write">Write</a></h2>
+    <h2><a name="Write">رایت کردن</a></h2>
     <p>
       <em
-        >Writes image and video files after processing filters have been
-        applied.</em
+        >پس از اعمال فیلترهای پردازش، فایل‌‌های تصویری و ویدئویی را رایت
+        می‌کند.</em
       >
     </p>
     <hr />
-    <h3><a name="Image-Writer">Image Writer</a></h3>
-    <p><em>Writes the current image to a new file.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Image-Writer">تصویر نویس</a></h3>
+    <p><em>تصویر فعلی را در یک فایل جدید می‌نویسد.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Image Writer</em> tool encodes the current frame to the specified
-      file with the chosen format.
+      ابزار تصویر نویس قاب فعلی را با فرمت انتخاب شده در فایل مشخص شده رمزگذاری
+      می‌کند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>File</strong><br />
-        <em>Path of the image to save.</em><a href="" target="_blank"></a>
+        <strong>فایل</strong><br />
+        <em>مسیر تصویر برای ذخیره.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Format</strong><br />
-        <em>Format used to encode the image file.</em
+        <strong>فرمت</strong><br />
+        <em>فرمت مورد استفاده برای رمزگذاری فایل تصویری.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Quality</strong><br />
+        <strong>کیفیت</strong><br />
         <em
-          >Quality of the image to save (the higher it is, the better it is).
-          Used only when saving in Jpeg format.</em
+          >کیفیت تصویر برای ذخیره (هر چه بالاتر باشد بهتر است). فقط هنگام ذخیره
+          در فرمت Jpeg استفاده می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Frame Position</strong><br />
-        <em>Position of the saved frame in the input video.</em
+        <strong>موقعیت قاب</strong><br />
+        <em>موقعیت فریم ذخیره شده در فیلم ورودی.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Align two images with different perspectives to analyze the
-        differences.<a href="" target="_blank"></a>
+        دو تصویر را با دیدگاه‌‌های مختلف تراز کنید تا تفاوت‌‌ها را تجزیه و تحلیل
+        کنید.<a href="" target="_blank"></a>
       </li>
       <li>
-        Process an image and save the results.<a href="" target="_blank"></a>
+        یک تصویر را پردازش کنید و نتایج را ذخیره کنید.<a
+          href=""
+          target="_blank"
+        ></a>
       </li>
     </ul>
     <hr />
-    <h3><a name="Sequence-Writer">Sequence Writer</a></h3>
-    <p><em>Writes all frames as image files.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Sequence-Writer">ابزار دنباله نویس</a></h3>
+    <p><em>تمام فریم‌‌ها را به صورت فایل تصویری می‌نویسد.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Sequence Writer</em> tool encodes all the frames of the current
-      video to a sequence of the specified files with the chosen format.
+      ابزار دنباله نویس تمام فریم‌‌های ویدیوی فعلی را به دنباله ای از فایل‌‌های
+      مشخص شده با فرمت انتخاب شده رمزگذاری می‌کند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Output Folder</strong><br />
-        <em>Destination folder where to save the images.</em
+        <strong>پوشه خروجی</strong><br />
+        <em>پوشه مقصد که در آن تصاویر را ذخیره کنید.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Format</strong><br />
-        <em>Format used to encode the image file.</em
+        <strong>فرمت</strong><br />
+        <em>فرمت مورد استفاده برای رمزگذاری فایل تصویری.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Quality</strong><br />
-        <em>Quality of the images.</em><a href="" target="_blank"></a>
+        <strong>کیفیت</strong><br />
+        <em>کیفیت تصاویر</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>First Frame Number</strong><br />
-        <em>Identificative number of the first frame.</em
-        ><a href="" target="_blank"></a>
+        <strong>شماره فریم اول</strong><br />
+        <em>شماره شناسایی فریم اول.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Output Files</strong><br />
-        <em>Output files paths.</em><a href="" target="_blank"></a>
+        <strong>فایل‌‌های خروجی</strong><br />
+        <em>مسیرهای فایل خروجی</em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Save the result of the processing as separate frames.<a
+        نتیجه پردازش را به عنوان فریم جداگانه ذخیره کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Convert a video to a sequence of images.<a href="" target="_blank"></a>
+        یک ویدیو را به دنباله ای از تصاویر تبدیل کنید.<a
+          href=""
+          target="_blank"
+        ></a>
       </li>
     </ul>
     <hr />
-    <h3><a name="Video-Writer">Video Writer</a></h3>
-    <p><em>Writes the current video to a file.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Video-Writer">ابزار ویدئو نویس</a></h3>
+    <p><em>ویدیوی فعلی را در یک فایل رایت می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Video Writer</em> tool encodes all frames of the current video to
-      the specified video file format.
+      ابزار ویدئو نویس همه فریم‌‌های ویدیوی فعلی را به فرمت فایل ویدیویی مشخص
+      شده رمزگذاری می‌کند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>File</strong><br />
-        <em>Path of the file to save.</em><a href="" target="_blank"></a>
+        <strong>فایل</strong><br />
+        <em>مسیر فایل برای ذخیره</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Format</strong><br />
-        <em>Container and codec used to write the video file.</em
+        <strong>فرمت</strong><br />
+        <em>کانتینر و کدک مورد استفاده برای نوشتن فایل ویدئویی.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Frame rate</strong><br />
+        <strong>نرخ فریم</strong><br />
         <em
-          >Frame rate (in frames per second) of the output video. Note that some
-          video formats support only a limited set of frame rates.</em
+          >نرخ فریم (بر حسب فریم در ثانیه) فیلم خروجی. توجه داشته باشید که برخی
+          از فرمت‌‌های ویدئویی تنها از مجموعه محدودی از نرخ فریم پشتیبانی
+          می‌کنند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Quality</strong><br />
+        <strong>کیفیت</strong><br />
         <em
-          >If a codec has been selected that allows quality control, the
-          following options can be selected:<br />
-          <em>Default</em>: Uses a Constant Rate Factor of 18<br />
-          <em>High</em>: Uses a Constant Rate Factor of 12<br />
-          <em>Visually Lossless</em>: Uses a Constant Rate Factor of 1<br /> </em
+          >اگر کدک انتخاب شده است که امکان کنترل کیفیت را فراهم می‌کند،
+          گزینه‌‌های زیر را می‌توان انتخاب کرد:<br />
+          <em>پیش فرض</em>: از ضریب نرخ ثابت 18 استفاده می‌کند<br />
+          <em>بالا</em>: از ضریب نرخ ثابت 12 استفاده می‌کند<br />
+          <em>Visually Lossless</em>: از ضریب نرخ ثابت 1 استفاده می‌کند<br /> </em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      For uncompressed video use <em>avi - Raw video</em>. The resulting file
-      size could be very large.<br />
-      For high quality with low compression video use <em>mp4 – H264</em> with a
-      visually lossless quality setting.<br />
-      For compatibility with other players use, <em>avi – MSMPEG4v3</em><br />
+      برای ویدیوی فشرده نشده از avi - Raw video استفاده کنید. اندازه فایل حاصل
+      می‌تواند بسیار بزرگ باشد. برای کیفیت بالا با فشرده سازی کم از mp4 – H264
+      با تنظیمات کیفیت بصری بدون افت استفاده کنید. برای سازگاری با سایر پلیرها
+      (نرم افزارهای پخش) از avi – MSMPEG4v3 استفاده کنید
       <br />
-      Padding will be automatically applied if the video Width and Height are
-      not divisible by 4 to ensure encoding standards are met. Be aware of this
-      issue if comparing the new video with the original.
+      برای اطمینان از رعایت استانداردهای رمزگذاری، در صورتی که عرض و ارتفاع
+      ویدیو بر 4 تقسیم نشود، پد به‌طور خودکار اعمال می‌شود. اگر ویدیوی جدید را
+      با ویدیوی اصلی مقایسه می‌کنید به این موضوع توجه کنید.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Save the result of the processing as a video file.<a
+        نتیجه پردازش را به عنوان یک فایل ویدیویی ذخیره کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Convert a sequence of images to a video.<a href="" target="_blank"></a>
-      </li>
-      <li>
-        Convert a video to an easily playable format.<a
+        دنباله ای از تصاویر را به ویدیو تبدیل کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Save the intermediate results of processing without losing quality
-        (uncompressed).<a href="" target="_blank"></a>
+        یک ویدیو را به فرمتی تبدیل کنید که به راحتی قابل پخش باشد.<a
+          href=""
+          target="_blank"
+        ></a>
+      </li>
+      <li>
+        نتایج میانی پردازش را بدون از دست دادن کیفیت (غیر فشرده) ذخیره کنید.<a
+          href=""
+          target="_blank"
+        ></a>
       </li>
     </ul>
     <hr />
-    <h2><a name="Select-Frames">Select Frames</a></h2>
-    <p><em>Selects video frames.</em></p>
+    <h2><a name="Select-Frames">انتخاب فریم‌ها</a></h2>
+    <p><em>فریم‌‌های ویدئویی را انتخاب می‌کند.</em></p>
     <hr />
-    <h3><a name="Single-Selector">Single Selector</a></h3>
-    <p><em>Selects a single frame of the video.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Single-Selector">انتخابگر واحد</a></h3>
+    <p><em>یک فریم از ویدیو را انتخاب می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Single Selector</em> tool gives in output only the selected frame
-      of the current video.
+      ابزار انتخاب کننده تنها تنها فریم انتخابی ویدیوی فعلی را به خروجی می‌دهد.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Frame</strong><br />
-        <em>Frame number to be selected.</em><a href="" target="_blank"></a>
+        <strong>فریم یا قاب</strong><br />
+        <em>شماره قاب باید انتخاب شود.</em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Select the only frame where a detail is visible.<a
+        تنها فریمی‌را انتخاب کنید که جزئیات آن قابل مشاهده است.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
     <hr />
-    <h3><a name="Range-Selector">Range Selector</a></h3>
+    <h3>
+      <a name="Range-Selector">ابزار Range Selector یا انتخابگر محدوده</a>
+    </h3>
     <p>
       <em
-        >Selects frames of the video within an interval with an optional step.
-        Support the trimming of the original video stream without
-        transcoding.</em
+        >فریم‌‌های ویدیو را در یک بازه زمانی با یک مرحله اختیاری انتخاب می‌کند.
+        از برش جریان ویدیوی اصلی بدون رمزگذاری پشتیبانی کنید.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Range Selector</em> tool outputs a video of specific frames that
-      are part of the input video.
+      ابزار انتخابگر محدوده یک ویدیو از فریم‌‌های خاصی را که بخشی از ویدیوی
+      ورودی هستند، خروجی می‌دهد.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>First Frame</strong><br />
-        <em>First frame of the selection of interest.</em
-        ><a href="" target="_blank"></a>
+        <strong>فریم اول</strong><br />
+        <em>اولین فریم از انتخاب مورد علاقه.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Last Frame</strong><br />
-        <em>Last frame of the selection of interest.</em
-        ><a href="" target="_blank"></a>
+        <strong>آخرین فریم</strong><br />
+        <em>آخرین فریم از انتخاب مورد علاقه.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Step</strong><br />
-        <em>Take only one frame every <em>Step</em> frames.</em
-        ><a href="" target="_blank"></a>
+        <strong>گام</strong><br />
+        در هر مرحله فقط یک فریم بگیرید.<a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Select the frames where a car of interest is passing.<a
+        فریم‌‌هایی را انتخاب کنید که خودروی مورد علاقه از آنجا عبور می‌کند.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Select the good interval of frames before integrating them.<a
+        قبل از ادغام فریم‌‌ها، فاصله زمانی مناسب را انتخاب کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
-      <li>Trim a video without reencoding.<a href="" target="_blank"></a></li>
+      <li>
+        یک ویدیو را بدون رمزگذاری مجدد کوتاه کنید.<a
+          href=""
+          target="_blank"
+        ></a>
+      </li>
     </ul>
     <hr />
-    <h3><a name="Sparse-Selector">Sparse Selector</a></h3>
-    <p><em>Selects a list of frames that are defined by the user.</em></p>
-    <h4>Details</h4>
+    <h3>
+      <a name="Sparse-Selector">ابزار Sparse Selector یا انتخابگر پراکنده</a>
+    </h3>
     <p>
-      The <em>Sparse Selector</em> tool outputs multiple frames taken from user
-      selected positions of an input video.
+      <em>لیستی از فریم‌‌هایی که توسط کاربر تعریف شده اند را انتخاب می‌کند.</em>
     </p>
-    <h4>Parameters</h4>
+    <h4>جزئیات</h4>
+    <p>
+      ابزار انتخابگر پراکنده چندین فریم گرفته شده از موقعیت‌‌های انتخاب شده توسط
+      کاربر از یک ویدیوی ورودی را خروجی می‌دهد.
+    </p>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Frames</strong><br />
-        <em>List of selected frames.</em><a href="" target="_blank"></a>
+        <strong>قاب‌‌ها</strong><br />
+        <em>لیست فریم‌‌های انتخاب شده</em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Select a few interesting frames in a video.<a
+        چند فریم جالب را در یک ویدیو انتخاب کنید.<a href="" target="_blank"></a>
+      </li>
+      <li>
+        قبل از ادغام بهترین فریم‌‌ها را انتخاب کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Select the best frames before integrating them.<a
+        پس از تثبیت، فریم‌هایی که به شدت تثبیت شده‌اند را دور بیندازید.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Discard badly stabilized frames after a stabilization.<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-      <li>
-        Manually demultiplex a video with various cameras.<a
+        به صورت دستی یک ویدیو را با دوربین‌‌های مختلف دملتپلکس کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        The Sparse Selector:
+        انتخابگر پراکنده:
         <a
           href="https://blog.ampedsoftware.com/2017/11/27/the-sparse-selector/"
           target="_blank"
@@ -1264,370 +1253,368 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Remove-Duplicates">Remove Duplicates</a></h3>
+    <h3>
+      <a name="Remove-Duplicates"
+        >ابزار Remove Duplicates یا حذف موارد تکراری
+      </a>
+    </h3>
+    <p>
+      <em>فریم‌‌های تکراری را با قابلیت تعیین آستانه تشابه حذف می‌کند.</em>
+    </p>
+    <h4>جزئیات</h4>
+    <p>
+      ابزار حذف موارد تکراری تمام فریم‌‌هایی را که فقط یک کپی از فریم‌‌های قبلی
+      هستند، حذف می‌کند.
+    </p>
+    <h4>مولفه‌‌ها</h4>
+    <ul>
+      <li>
+        <strong>تفاوت</strong><br />
+        <em>میانگین تفاوت بین پیکسل‌‌های فریم فعلی و قبلی.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>آستانه</strong><br />
+        <em
+          >حداکثر تفاوت بین دو فریم برای در نظر گرفتن آنها تکراری. معمولاً برای
+          ویدیوهای دیجیتال روی 0 و برای ویدیوهایی که از منبع آنالوگ دیجیتالی
+          می‌شوند مقدار بیشتری تنظیم می‌شود.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>نرخ فریم را تنظیم کنید</strong><br />
+        <em>تنظیمات تنظیم نرخ فریم</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>نرخ فریم خروجی</strong><br />
+        <em>نرخ فریم فیلم خروجی</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>قاب‌‌ها</strong><br />
+        <em>لیست فریم‌‌های مختلف (پارامتر خروجی).</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <h4>نمونه‌‌های کاربردی</h4>
+    <ul>
+      <li>
+        به دلیل مشکلات رمزگذاری، فریم‌‌های تکراری را حذف کنید.<a
+          href=""
+          target="_blank"
+        ></a>
+      </li>
+      <li>
+        فریم‌های تکراری را از ویدیویی که با نرخ فریم اشتباه گرفته شده است
+        (عکس‌برداری از صفحه یا گرابگر فریم) یا با نرخ فریم متغیر حذف کنید.<a
+          href=""
+          target="_blank"
+        ></a>
+      </li>
+    </ul>
+    <hr />
+    <h3><a name="IFrames-Selector">ابزار IFrames Selector </a></h3>
+    <p><em>IntraFrames یک ویدیو را انتخاب می‌کند.</em></p>
+    <h4>جزئیات</h4>
+    <p>
+      ابزار IFrames Selector فقط فریم‌‌های کامل (I-frames) یک ویدیو را انتخاب
+      می‌کند. Iframesها معمولاً دقیق تر و با کیفیت تر از سایر فریم‌‌های ویدیو
+      هستند. این فیلتر فقط با بارگذار ویدئو با Video Engine که روی FFMS تنظیم
+      شده است کار می‌کند.
+    </p>
+    <h4>مولفه‌‌ها</h4>
+    <ul>
+      <li>
+        <strong>قاب‌‌ها</strong><br />
+        <em>لیست فریم‌‌های I (پارامتر خروجی).</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <h4>نمونه‌‌های کاربردی</h4>
+    <ul>
+      <li>
+        مشکلات جستجو و رمزگذاری را حل کنید.<a href="" target="_blank"></a>
+      </li>
+      <li>
+        فقط فریم‌‌هایی را با بهترین کیفیت انتخاب کنید (مراقب باشید گاهی اوقات
+        اطلاعات خوبی در فریم‌‌های P/B نیز وجود دارد، اما در جایی که صدها یا
+        هزاران فریم برای ادغام داریم، می‌تواند مفید باشد).<a
+          href=""
+          target="_blank"
+        ></a>
+      </li>
+    </ul>
+    <hr />
+    <h3><a name="Remove-Frames">ابزار Remove Frames یا حذف فریم‌‌ها</a></h3>
+    <p><em>فریم‌‌های جداگانه تعریف شده توسط کاربر را حذف می‌کند.</em></p>
+    <h4>جزئیات</h4>
+    <p>
+      ابزار Remove Frames فهرستی از فریم‌‌های انتخاب شده توسط کاربر در
+      موقعیت‌‌های دلخواه را از ویدیوی ورودی حذف می‌کند.
+    </p>
+    <h4>مولفه‌‌ها</h4>
+    <ul>
+      <li>
+        <strong>قاب‌‌ها</strong><br />
+        <em>لیست فریم‌‌هایی که باید حذف شوند.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <h4>نمونه‌‌های کاربردی</h4>
+    <ul>
+      <li>
+        چند فریم جالب را در یک ویدیو انتخاب کنید.<a href="" target="_blank"></a>
+      </li>
+      <li>
+        قبل از ادغام بهترین فریم‌‌ها را انتخاب کنید.<a
+          href=""
+          target="_blank"
+        ></a>
+      </li>
+      <li>
+        پس از تثبیت، فریم‌هایی که به شدت تثبیت شده‌اند را دور بیندازید.<a
+          href=""
+          target="_blank"
+        ></a>
+      </li>
+      <li>
+        به صورت دستی یک ویدیو را با دوربین‌‌های مختلف دی مولتی پلکس کنید.<a
+          href=""
+          target="_blank"
+        ></a>
+      </li>
+    </ul>
+    <hr />
+    <h3><a name="Auto-Selector">انتخابگر خودکار</a></h3>
     <p>
       <em
-        >Removes duplicate frames with the ability to set a similarity
-        threshold.</em
+        >به طور خودکار فریم‌‌های مشابه (برای دور انداختن فریم‌‌های بد) با قابلیت
+        تعیین آستانه تشابه و یک قاب مرجع را انتخاب می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
-    <p>
-      The <em>Remove Duplicates</em> tool removes all frames that are just a
-      copy of the previous one(s).
-    </p>
-    <h4>Parameters</h4>
-    <ul>
-      <li>
-        <strong>Difference</strong><br />
-        <em
-          >Average difference between pixels of the current and the previous
-          frame.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Threshold</strong><br />
-        <em
-          >Maximum difference between two frames to consider them duplicates.
-          Usually set to 0 for digital videos and to a bigger value for videos
-          digitized from an analog source.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Adjust Frame Rate</strong><br />
-        <em>Frame rate adjustment settings.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Output Frame Rate</strong><br />
-        <em>Frame rate of the output video.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Frames</strong><br />
-        <em>List of different frames (output parameter).</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Application Examples</h4>
-    <ul>
-      <li>
-        Remove duplicated frames due to encoding issues.<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-      <li>
-        Remove duplicated frames from a video captured at the wrong frame rate
-        (screen capture or frame grabber) or with variable frame rate.<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-    </ul>
-    <hr />
-    <h3><a name="IFrames-Selector">IFrames Selector</a></h3>
-    <p><em>Selects IntraFrames of a video.</em></p>
-    <h4>Details</h4>
-    <p>
-      The <em>IFrames Selector</em> tool selects only full frames (I-frames) of
-      a video. I-frames are usually more accurate and of better quality than
-      other frames of a video. This filter works only with
-      <em>Video Loader</em> with <em>Video Engine</em> set to <em>FFMS</em>.
-    </p>
-    <h4>Parameters</h4>
-    <ul>
-      <li>
-        <strong>Frames</strong><br />
-        <em>List of I-frames (output parameter).</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Application Examples</h4>
-    <ul>
-      <li>Solve seeking and encoding issues.<a href="" target="_blank"></a></li>
-      <li>
-        Select only the frames with best quality (beware that sometimes there is
-        good info also in P/B frames, but it can be useful where we have
-        hundreds or thousands of frames to integrate).<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-    </ul>
-    <hr />
-    <h3><a name="Remove-Frames">Remove Frames</a></h3>
-    <p><em>Removes individual frames defined by the user.</em></p>
-    <h4>Details</h4>
-    <p>
-      The <em>Remove Frames</em> tool removes from the input video a list of
-      frames selected by the user in arbitrary positions.
-    </p>
-    <h4>Parameters</h4>
-    <ul>
-      <li>
-        <strong>Frames</strong><br />
-        <em>List of frames to remove.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Application Examples</h4>
-    <ul>
-      <li>
-        Select a few interesting frames in a video.<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-      <li>
-        Select the best frames before integrating them.<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-      <li>
-        Discard badly stabilized frames after a stabilization.<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-      <li>
-        Manually demultiplex a video with various cameras.<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-    </ul>
-    <hr />
-    <h3><a name="Auto-Selector">Auto Selector</a></h3>
-    <p>
-      <em
-        >Automatically selects similar frames (to discard bad frames) with the
-        ability to set a similarity threshold and a reference frame.</em
-      >
-    </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p></p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Reference Frame</strong><br />
-        <em>Frame to keep as reference for the correlation.</em
+        <strong>چارچوب مرجع</strong><br />
+        <em>قاب به عنوان مرجع برای همبستگی.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>انتخاب</strong><br />
+        <em>منطقه ای که در آن می‌توان همبستگی را بررسی کرد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
-        <em>Region where to check the correlation.</em
+        <strong>همبستگی</strong><br />
+        <em>همبستگی بین انتخاب تصاویر فعلی و الگو.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Correlation</strong><br />
-        <em>Correlation between current images selection and template.</em
+        <strong>آستانه</strong><br />
+        <em>حداقل همبستگی برای فریم‌‌های معتبر</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Threshold</strong><br />
-        <em>Minimum correlation for valid frames.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Frames</strong><br />
+        <strong>قاب‌‌ها</strong><br />
         <em
-          >List of valid frames, whose correlation is bigger than threshold
-          (output parameter).</em
+          >فهرست فریم‌‌های معتبر، که همبستگی آنها بزرگتر از آستانه (پارامتر
+          خروجی) است.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Discard badly stabilized frames after a stabilization.<a
+        پس از تثبیت، فریم‌هایی که به شدت تثبیت شده‌اند را دور بیندازید.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Demultiplex difficult multiplexed videos selecting a specific area of
-        interest to look for.<a href="" target="_blank"></a>
+        با انتخاب یک منطقه خاص مورد علاقه برای جستجو، ویدیوهای مالتی پلکس دشوار
+        را Demultiplex یا تقسیم کنید. <a href="" target="_blank"></a>
       </li>
       <li>
-        Select only similar frames, useful in some specific kind of
-        multiplexing.<a href="" target="_blank"></a>
+        فقط فریم‌‌های مشابهی را انتخاب کنید که در نوع خاصی از مالتی پلکسی مفید
+        هستند.<a href="" target="_blank"></a>
       </li>
       <li>
-        Intracamera demultiplexing for sweeping PTZ cameras.<a
+        دی مالتی پلکس داخل دوربین برای تمیز کردن دوربین‌‌های PTZ.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
     <hr />
-    <h3><a name="Demultiplexer">Demultiplexer</a></h3>
+    <h3><a name="Demultiplexer">ابزار Demultiplexer یا تقسیم کننده</a></h3>
     <p>
       <em
-        >Separates different scenes multiplexed in the same video. Supports the
-        automatic export of multiple channels with a single action.</em
+        >صحنه‌‌های مختلف مالتی پلکس شده در یک ویدیو را از هم جدا می‌کند. از
+        خروجی گرفتن خودکار چندین کانال با یک عمل پشتیبانی می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Demultiplexer</em> tool takes as input a multiplexed video and
-      gives in output the frames grouped by source camera, thus allowing the
-      user to work more comfortably. Multiplexed videos are usually coming from
-      analog systems, where the signal from different cameras was saved in the
-      same video alternating the scene in every frame.
+      ابزار Demultiplexer یک ویدیوی مالتی پلکس را به عنوان ورودی می‌گیرد و
+      فریم‌‌های گروه بندی شده بر اساس دوربین منبع را به خروجی می‌دهد، بنابراین
+      به کاربر اجازه می‌دهد راحت تر کار کند. ویدیوهای چندگانه معمولاً از
+      سیستم‌های آنالوگ می‌آیند، جایی که سیگنال دوربین‌های مختلف در یک ویدیو
+      ذخیره می‌شود و صحنه را در هر فریم متناوب می‌کند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Threshold</strong><br />
+        <strong>آستانه</strong><br />
+        <em>کوچکترین مقدار مطابقت ممکن برای مرتبط کردن یک قاب با یک صحنه.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>صحنه‌‌ها</strong><br />
+        <em>فریم‌‌های گروه بندی شده بر اساس صحنه (پارامتر خروجی).</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>صحنه</strong><br />
+        <em>صحنه انتخاب شده برای نمایش</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>قاب‌‌ها</strong><br />
+        <em>لیست فریم‌‌های صحنه انتخاب شده (پارامتر خروجی).</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>هر صحنه را در یک فایل جداگانه بنویسید</strong><br />
         <em
-          >Smallest possible match value for associating a frame with a
-          scene.</em
+          >در صورت انتخاب، هر صحنه را در یک فایل ویدئویی مستقل ذخیره می‌کند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Scenes</strong><br />
-        <em>Frames grouped by scene (output parameter).</em
+        <strong>فایل</strong><br />
+        <em>مسیر فایل برای ذخیره</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>فرمت</strong><br />
+        <em>کانتینر و کدک مورد استفاده برای نوشتن فایل ویدئویی.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Scene</strong><br />
-        <em>Selected scene for display.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Frames</strong><br />
-        <em>List of frames for the selected scene (output parameter).</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Write every scene to a separate file</strong><br />
-        <em>If selected, saves every scene to an independent video file.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>File</strong><br />
-        <em>Path of the file to save.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Format</strong><br />
-        <em>Container and codec used to write the video file.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Quality</strong><br />
+        <strong>کیفیت</strong><br />
         <em
-          >If a codec has been selected that allows quality control, the
-          following options can be selected:<br />
-          <em>Default</em>: Uses a Constant Rate Factor of 18<br />
-          <em>High</em>: Uses a Constant Rate Factor of 12<br />
-          <em>Visually Lossless</em>: Uses a Constant Rate Factor of 1<br /> </em
+          >اگر کدک انتخاب شده است که امکان کنترل کیفیت را فراهم می‌کند،
+          گزینه‌‌های زیر را می‌توان انتخاب کرد::<br />
+          <em>پیش فرض</em>: از ضریب نرخ ثابت 18 استفاده می‌کند<br />
+          <em>بالا</em>: از ضریب نرخ ثابت 12 استفاده می‌کند<br />
+          <em>Visually Lossless</em>: از ضریب نرخ ثابت 1 استفاده می‌کند<br /> </em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Demultiplex videos from analog systems.<a href="" target="_blank"></a>
+        ویدئوها را از سیستم‌‌های آنالوگ Demultiplex کنید.
+        <a href="" target="_blank"></a>
       </li>
       <li>
-        Demultiplex videos digitally multiplexed.<a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <hr />
-    <h3><a name="Motion-Detection">Motion Detection</a></h3>
-    <p>
-      <em>Finds events in a video and marks the areas with movement in red.</em>
-    </p>
-    <h4>Details</h4>
-    <p>
-      <em>Motion Detection</em> finds events of interest in a video quickly by
-      only stopping on the frames where motion is found. It is possible to set
-      the detection only within a specific region of the image. In order to make
-      the results more robust, a background image is generated for comparison by
-      multiple frames and a denoising filter is applied.
-    </p>
-    <h4>Parameters</h4>
-    <ul>
-      <li>
-        <strong>Frame Motion</strong><br />
-        <em>Estimated amount of motion for the current frame.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Motion Threshold</strong><br />
-        <em>The threshold for automatic motion detection.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Frames</strong><br />
-        <em>The number of frames to use for background estimation.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Denoising</strong><br />
-        <em>The number of iterations for noise removal.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Selection</strong><br />
-        <em>The area of the image where motion detection is performed.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Application Examples</h4>
-    <ul>
-      <li>
-        Find all the moments when a car is arriving.<a
+        ویدیوها را به صورت دیجیتالی مالتی پلکس شده Demultiplex کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
-      <li>
-        Find all the moments where, for example, a person is coming or something
-        is happening.<a href="" target="_blank"></a>
-      </li>
     </ul>
-    <h4>Related Links</h4>
+    <hr />
+    <h3><a name="Motion-Detection">ابزار Motion Detection یا تشخیص حرکت</a></h3>
+    <p>
+      <em
+        >رویدادها را در یک ویدیو پیدا می‌کند و نواحی را با حرکت به رنگ قرمز
+        علامت گذاری می‌کند.</em
+      >
+    </p>
+    <h4>جزئیات</h4>
+    <p>
+      «تشخیص حرکت» تنها با توقف روی فریم‌هایی که حرکت در آن‌ها مشاهده می‌شود،
+      رویدادهای مورد علاقه را در یک ویدیو به سرعت پیدا می‌کند. تنظیم تشخیص فقط
+      در یک منطقه خاص از تصویر امکان پذیر است. به منظور قوی تر کردن نتایج، یک
+      تصویر پس زمینه برای مقایسه با فریم‌‌های متعدد ایجاد می‌شود و یک فیلتر حذف
+      نویز اعمال می‌شود.
+    </p>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        بـستا’s Motion Detection: the way to skip the noise and focus on the
-        action!:
+        <strong>حرکت قاب</strong><br />
+        <em>مقدار حرکت تخمینی برای فریم فعلی.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>آستانه حرکت</strong><br />
+        <em>آستانه تشخیص خودکار حرکت</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>قاب‌‌ها</strong><br />
+        <em>تعداد فریم‌‌هایی که برای تخمین پس زمینه استفاده می‌شود.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>نویز زدایی</strong><br />
+        <em>تعداد تکرارها برای حذف نویز.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>انتخاب</strong><br />
+        <em>ناحیه ای از تصویر که در آن تشخیص حرکت انجام می‌شود.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <h4>نمونه‌‌های کاربردی</h4>
+    <ul>
+      <li>
+        تمام لحظات ورود ماشین را پیدا کنید.<a href="" target="_blank"></a>
+      </li>
+      <li>
+        تمام لحظاتی را پیدا کنید که مثلاً شخصی در حال آمدن است یا اتفاقی در حال
+        رخ دادن است.<a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <h4>لینک‌‌های مربوطه</h4>
+    <ul>
+      <li>
+        بـستا Motion Detection: راهی برای رد کردن نویز و تمرکز بر روی اکشن!:
         <a
           href="https://blog.ampedsoftware.com/2019/04/09/amped-fives-motion-detection-the-way-to-skip-the-noise-and-focus-on-the-action/"
           target="_blank"
@@ -1636,46 +1623,44 @@
       </li>
     </ul>
     <hr />
-    <h2><a name="Deinterlacing">Deinterlacing</a></h2>
-    <p><em>Processes the interlaced videos.</em></p>
+    <h2><a name="Deinterlacing">گره زدایی</a></h2>
+    <p><em>فیلم‌‌های درهم آمیخته را پردازش می‌کند.</em></p>
     <hr />
-    <h3><a name="Line-Doubling">Line Doubling</a></h3>
-    <p><em>Corrects the height of field based video.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Line-Doubling">دو برابر شدن خط</a></h3>
+    <p><em>ارتفاع ویدیو مبتنی بر فیلد را تصحیح می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Line Doubling</em> filter doubles the height of an image which
-      appears vertically squeezed because of an incomplete deinterlacing process
-      or other issues in the decoding. Only one line every two will be
-      interpolated, while the others will be kept at the original pixel
-      values.<br />
+      فیلتر Line Doubling ارتفاع تصویری را که به صورت عمودی فشرده به نظر می‌رسد
+      به دلیل یک فرآیند ناقص درهم‌آمیزی یا سایر مسائل در رمزگشایی دو برابر
+      می‌کند. هر دو فقط یک خط درون یابی می‌شود، در حالی که بقیه در مقادیر پیکسل
+      اصلی نگه داشته می‌شوند.<br />
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Interpolation</strong><br />
+        <strong>درون یابی</strong><br />
         <em
-          >The algorithm used to reconstruct a full size frame from a half
-          vertical-resolution one. <em>Replication</em> simply copies the
-          adjacent line, <em>Linear</em> interpolates two adjacent lines,
-          <em>Cubic</em> interpolates by considering also more distant
-          lines.</em
+          >الگوریتم مورد استفاده برای بازسازی یک فریم با اندازه کامل از یک قاب
+          با وضوح نیمه عمودی. Replication به سادگی خط مجاور را کپی می‌کند،
+          Linear دو خط مجاور را درون یابی می‌کند، Cubic با در نظر گرفتن خطوط
+          دورتر نیز درون یابی می‌کند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Correct the aspect ratio to avoid stretched images.<a
+        برای جلوگیری از کشیده شدن تصاویر، نسبت تصویر را اصلاح کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Reconstruct the proper ratio for further processing, measurement and
-        analysis. For example, before undistort.<a href="" target="_blank"></a>
+        نسبت مناسب را برای پردازش، اندازه‌گیری و تجزیه و تحلیل بیشتر بازسازی
+        کنید. به عنوان مثال، قبل از عدم تحریف.<a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         E. B. Bellers and G. de Haan, “Deinterlacing - An overview”, in
@@ -1685,10 +1670,10 @@
         >
       </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        What’s wrong with this video?:
+        این ویدیو چه اشکالی دارد؟:
         <a
           href="https://blog.ampedsoftware.com/2017/07/24/whats-wrong-with-this-video/"
           target="_blank"
@@ -1697,37 +1682,35 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Interleave">Interleave</a></h3>
+    <h3><a name="Interleave">ابزار Interleave</a></h3>
     <p>
-      <em>Converts a video with juxtaposed fields into an interlaced video.</em>
+      <em> یک ویدیو را با فیلدهای کنار هم به یک ویدیوی درهم تبدیل می‌کند.</em>
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      <em>Interleave</em> converts a video, in which the two fields are
-      juxtaposed one above the other, into an ordinary interlaced video.
+      Interleave یک ویدیو را که در آن دو فیلد در کنار یکدیگر قرار گرفته اند، به
+      یک ویدیوی معمولی در هم آمیخته تبدیل می‌کند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Field Order</strong><br />
-        <em
-          >The order in which the two halves of the input video are
-          interleaved.</em
+        <strong>ترتیب فیلدی یا Field Order</strong><br />
+        <em>ترتیبی که دو نیمه فیلم ورودی به هم می‌پیوندند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        In rare situations, some DVR models save two fields in the upper and
-        lower half of the picture. This filter converts them to a normal
-        interlaced format.<a href="" target="_blank"></a>
+        در شرایط نادر، برخی از مدل‌‌های DVR دو فیلد را در نیمه بالایی و پایینی
+        تصویر ذخیره می‌کنند. این فیلتر آنها را به یک فرمت معمولی در هم آمیخته
+        تبدیل می‌کند.<a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        بـستا Update: The Interleave Filter:
+        به روز رسانی بـستا: فیلتر Interleave:
         <a
           href="https://blog.ampedsoftware.com/2015/08/07/amped-five-update-the-interleave-filter/"
           target="_blank"
@@ -1736,89 +1719,81 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Deinterlace">Deinterlace</a></h3>
+    <h3><a name="Deinterlace">جدا کردن</a></h3>
     <p>
       <em
-        >Converts interlaced videos into progressive ones. Supports several
-        options to choose active fields, their order and the interpolation
-        method.</em
+        >ویدیوهای درهم آمیخته را به ویدیوهای مترقی تبدیل می‌کند. از چندین گزینه
+        برای انتخاب فیلدهای فعال، ترتیب آنها و روش درونیابی پشتیبانی می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Deinterlace</em> tool converts an interlaced video into a
-      progressive one.<br />
-      In an interlaced video, two subsequent fields are stored in every frame:
-      the first in the even lines (even field) and the second in the odd lines
-      (odd field), or vice versa. Being the image coordinates zero based, the
-      even field is the top one. Even lines are discarded from the odd field
-      while odd lines are discarded from the even field.<br />
-      The deinterlacing process consists of two steps:<br />
-      1) separates even and odd fields from each input frame, creating two
-      frames whose height is half of the input height; the output video will
-      thus have twice the frames of the input;<br />
-      2) interpolates the missing rows with the chosen algorithm; once the
-      interpolation is performed, each frame of the output sequence will have
-      the same size of the input frames.<br />
-      The available interpolation algorithms are:<br />
-      - <em>None</em>: no interpolation is done, thus the output image height
-      will be half of the input one;<br />
-      - <em>Replication</em>: fields are replicated, so each missing line is
-      copied from the previous one for odd fields and the next one for even
-      fields;<br />
-      - <em>Linear</em>: missing lines are created through the closest upper and
-      lower lines;<br />
-      - <em>Cubic</em>: missing lines are calculated by the four closest
-      lines.<br />
+      ابزار جدا کردن یک ویدیوی درهم آمیخته را به یک ویدیوی پیشرو تبدیل
+      می‌کند.<br />
+      در یک ویدیوی درهم آمیخته، دو فیلد بعدی در هر فریم ذخیره می‌شود: اولی در
+      خطوط زوج (فیلد زوج) و دومی‌در خطوط فرد (فیلد فرد) یا بالعکس. از آنجایی که
+      مختصات تصویر بر اساس صفر است، فیلد زوج بالای آن است. خطوط زوج از فیلد فرد
+      حذف می‌شوند در حالی که خطوط فرد از فیلد زوج حذف می‌شوند.<br />
+      فرآیند جداسازی از دو مرحله تشکیل شده است:<br />
+      ۱) فیلدهای زوج و فرد را از هر فریم ورودی جدا می‌کند و دو قاب ایجاد می‌کند
+      که ارتفاع آنها نصف ارتفاع ورودی است. بنابراین ویدیوی خروجی دو برابر فریم
+      ورودی خواهد داشت.<br />
+      ۲) ردیف‌‌های از دست رفته را با الگوریتم انتخاب شده درون یابی می‌کند.
+      هنگامی‌که درون یابی انجام شد، هر فریم از دنباله خروجی همان اندازه
+      فریم‌‌های ورودی را خواهد داشت.<br />
+      الگوریتم‌‌های درون یابی موجود عبارتند از:<br />
+      - <em>هیچ</em>: هیچ درون یابی انجام نمی‌شود، بنابراین ارتفاع تصویر خروجی
+      نصف ورودی خواهد بود.<br />
+      - <em>Replication</em>: فیلدها تکرار می‌شوند، بنابراین هر خط گم شده از خط
+      قبلی برای فیلدهای فرد و خط بعدی برای فیلدهای زوج کپی می‌شود.;<br />
+      - <em>خطی</em>: خطوط گمشده از طریق نزدیکترین خطوط بالا و پایین ایجاد
+      می‌شوند.;<br />
+      - <em>مکعب</em>: خطوط گم شده توسط چهار خط نزدیک محاسبه می‌شود.<br />
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Separate Fields</strong><br />
-        <em>Select if fields need to be separated and their order.</em
+        <strong>فیلدهای جدا</strong><br />
+        <em>اگر فیلدها باید جدا و مرتب شوند، آنها را انتخاب کنید.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Interpolation</strong><br />
+        <strong>درون یابی</strong><br />
         <em
-          >The algorithm used to reconstruct a full size frame from a half
-          vertical-resolution one. <em>None</em> leaves half resolution,
-          <em>Replication</em> simply copies the adjacent line,
-          <em>Linear</em> interpolates two adjacent lines,
-          <em>Cubic</em> interpolates by considering also more distant lines,
-          <em>CRT Simulation</em> leaves the lines from the other field black
-          (simulating the appearance of a Cathode Ray Tube).</em
+          >الگوریتم مورد استفاده برای بازسازی یک فریم با اندازه کامل از یک قاب
+          با وضوح نیمه عمودی. الگوریتم هیچ یا none، نیمی‌از وضوح را باقی
+          می‌گذارد، Replication به سادگی خط مجاور را کپی می‌کند، Linear دو خط
+          مجاور را درون‌یابی می‌کند، مکعب با در نظر گرفتن خطوط دورتر نیز
+          درون‌یابی می‌کند، شبیه‌سازی CRT خطوط فیلد دیگر را سیاه می‌کند
+          (شبیه‌سازی ظاهر یک لوله پرتو کاتدی).</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      In general, you will have to separate the fields; however this operation
-      is, in some cases, already done. If this is the case, the source video
-      appears "stretched", and you have to choose either
-      <em>No - Same Field</em> or <em>No - Alternating Fields</em> as
-      <em>Separate Fields</em> option. In case the fields need to be separated,
-      if you select <em>Separate Fields</em> = <em>Yes - Upper First</em>, the
-      field starting from the first line is the first frame. This is the default
-      format in the PAL standard. If instead you select
-      <em>Separate Fields</em> = <em>Yes - Lower First</em>, the field starting
-      from the second line is the first frame. This is the default format in the
-      NTSC standard.<br />
-      The recommended interpolation settings for normal use are
-      <em>Linear</em> or <em>Cubic</em>. The latter should be the best one, even
-      if, in practice, the results are almost the same.
+      به طور کلی، شما باید فیلدها را از هم جدا کنید. با این حال، این عملیات، در
+      برخی موارد، قبلا انجام شده است. در این صورت، ویدیوی منبع "کشیده" به نظر
+      می‌رسد، و شما باید گزینه No - Same Field یا No - Alternating Fields as
+      Separate Fields را انتخاب کنید. در صورت نیاز به جداسازی فیلدها، اگر
+      فیلدهای Separate Fields = Yes - Upper First را انتخاب کنید، فیلدی که از خط
+      اول شروع می‌شود اولین فریم است. این فرمت پیش فرض در استاندارد PAL است. اگر
+      به جای آن، Separate Fields = Yes - Lower First را انتخاب کنید، فیلدی که از
+      خط دوم شروع می‌شود، اولین فریم است. این فرمت پیش فرض در استاندارد NTSC
+      است.تنظیمات درون یابی توصیه شده برای استفاده معمولی Linear یا Cubic هستند.
+      دومی‌باید بهترین باشد، حتی اگر در عمل نتایج تقریباً یکسان باشد.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Deinterlace a car in movement (but avoid deinterlacing a static or
-        parked car).<a href="" target="_blank"></a>
+        یک ماشین را در حال حرکت جدا کنید (اما از در هم آمیختن ماشین ساکن یا پارک
+        شده خودداری کنید).
+        <a href="" target="_blank"></a>
       </li>
-      <li>Deinterlace a person in movement.<a href="" target="_blank"></a></li>
+      <li>یک فرد را در حال حرکت جدا کنید.<a href="" target="_blank"></a></li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         E. B. Bellers and G. de Haan, “Deinterlacing - An overview”, in
@@ -1828,11 +1803,11 @@
         >
       </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        Dealing with Interlaced Videos in بـستا: There’s an Exception That Makes
-        the Rule!:
+        برخورد با ویدیوهای درهم آمیخته در بـستا: یک استثنا وجود دارد که قانون را
+        تعیین می‌کند!:
         <a
           href="https://blog.ampedsoftware.com/2019/06/04/dealing-with-interlaced-videos-in-amped-five-theres-an-exception-that-makes-the-rule/"
           target="_blank"
