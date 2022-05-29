@@ -3248,78 +3248,73 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Hue-Saturation-Value">Hue Saturation Value</a></h3>
+    <h3><a name="Hue-Saturation-Value">ابزار مقدار اشباع رنگ</a></h3>
     <p>
-      <em
-        >Adjusts the hue, the saturation and the color values of the image.</em
-      >
+      <em>رنگ، اشباع و مقادیر رنگ تصویر را تنظیم می‌کند.</em>
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Hue Saturation Value</em> tool adjusts image pixel values in the
-      HSV color space, where: <em>Hue</em>, H, is the visual sensation that
-      corresponds to the color tone; <em>Saturation</em>, S, refers to the color
-      purity, this means how vibrant or rich the color is; <em>Value</em>, V, is
-      the brightness.<br />
-      The input image is first converted from RGB to HSV color space, then the
-      HSV value of each pixel of the image is modified according to the
-      parameters. The resulting image is finally converted back to the RGB color
-      space.
+      ابزار مقدار اشباع رنگ مقادیر پیکسل تصویر را در فضای رنگی HSV تنظیم می‌کند،
+      جایی که: Hue، H، حس بصری است که با تن رنگ مطابقت دارد. اشباع، S، به خلوص
+      رنگ اشاره دارد، به این معنی که رنگ چقدر زنده یا غنی است. مقدار، V، روشنایی
+      است.<br />
+      تصویر ورودی ابتدا از فضای رنگی RGB به HSV تبدیل می‌شود، سپس مقدار HSV هر
+      پیکسل از تصویر با توجه به پارامترها اصلاح می‌شود. تصویر حاصل در نهایت به
+      فضای رنگی RGB تبدیل می‌شود.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Hue</strong><br />
+        <strong>رنگ</strong><br />
         <em
-          >Adds or subtracts a constant to the hue of the image. It adjusts the
-          offset of a linear mapping.</em
+          >یک ثابت به رنگ تصویر اضافه یا کم می‌کند. افست یک نگاشت خطی را تنظیم
+          می‌کند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Saturation</strong><br />
+        <strong>اشباع</strong><br />
         <em
-          >Multiplies by a constant the saturation of the image. It adjusts the
-          slope of a linear mapping.</em
+          >اشباع تصویر را در یک ثابت ضرب می‌کند. شیب نگاشت خطی را تنظیم
+          می‌کند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Value</strong><br />
+        <strong>مقدار</strong><br />
         <em
-          >Adds or subtracts a constant to the value of the image. It adjusts
-          the offset of a linear mapping.</em
+          >را به مقدار تصویر اضافه یا کم می‌کند. افست یک نگاشت خطی را تنظیم
+          می‌کند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Adjust the colors of an object to better reflect the real scene.<a
+        رنگ یک شی را تنظیم کنید تا صحنه واقعی را بهتر منعکس کند.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Desaturate color to attenuate the impact of color artifacts.<a
+        رنگ را غیر اشباع کنید تا تاثیر مصنوعات رنگی را کاهش دهید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -3337,87 +3332,79 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Curves">Curves</a></h3>
+    <h3><a name="Curves">منحنی‌‌ها</a></h3>
     <p>
       <em
-        >Adjusts the tone values following a smooth curve defined by control
-        points. Supports independent modification of intensity and the RGB
-        channels and multiple interpolation modes.</em
+        >مقادیر تن را به دنبال یک منحنی صاف تعریف شده توسط نقاط کنترل تنظیم
+        می‌کند. از اصلاح مستقل شدت و کانال‌‌های RGB و حالت‌‌های درون یابی
+        چندگانه پشتیبانی می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Curves</em> filter maps the input image values to the output image
-      values according to the drawn curve: the x coordinate of the curve is
-      mapped to the corresponding y value. Every RGB channel of the image is
-      processed according to the respective color curve. Then all the channels
-      are also processed in the same way according to the <em>Value</em> curve.
+      فیلتر منحنی‌‌ها مقادیر تصویر ورودی را به مقادیر تصویر خروجی مطابق با منحنی
+      ترسیم شده نگاشت می‌کند: مختصات x منحنی به مقدار y مربوطه نگاشت می‌شود. هر
+      کانال RGB تصویر با توجه به منحنی رنگ مربوطه پردازش می‌شود. سپس تمام
+      کانال‌‌ها نیز طبق منحنی Value به همین ترتیب پردازش می‌شوند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Value</strong><br />
-        <em>Points representing the value transformation curve.</em
+        <strong>مقدار</strong><br />
+        <em>نقاطی که منحنی تبدیل ارزش را نشان می‌دهند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Red</strong><br />
-        <em>Points representing the red transformation curve.</em
+        <strong>قرمز</strong><br />
+        <em>نقاطی که منحنی تبدیل قرمز را نشان می‌دهند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Green</strong><br />
-        <em>Points representing the green transformation curve.</em
+        <strong>سبز</strong><br />
+        <em>نقاطی که منحنی تبدیل سبز را نشان می‌دهند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Blue</strong><br />
-        <em>Points representing the blue transformation curve.</em
+        <strong>آبی</strong><br />
+        <em>نقاطی که منحنی تبدیل آبی را نشان می‌دهند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Mode</strong><br />
-        <em>Interpolation mode for the intensity curve.</em
-        ><a href="" target="_blank"></a>
+        <strong>حالت</strong><br />
+        <em>حالت درون یابی برای منحنی شدت.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      The curve can be edited using the control points. To add a point,
-      left-click on the curve. To move a control point, drag it to the desired
-      position holding the left mouse button down. To delete a point,
-      right-click on it.<br />
+      منحنی را می‌توان با استفاده از نقاط کنترل ویرایش کرد. برای اضافه کردن یک
+      نقطه، روی منحنی کلیک چپ کنید. برای جابجایی یک نقطه کنترل، آن را با نگه
+      داشتن دکمه سمت چپ ماوس به موقعیت مورد نظر بکشید. برای حذف یک نقطه، روی آن
+      راست کلیک کنید.<br />
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
-      <li>
-        Improve the visibility of a license plate.<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-      <li>Improve the visibility of a face.<a href="" target="_blank"></a></li>
-      <li>Correct an underwater image.<a href="" target="_blank"></a></li>
+      <li>بهبود دید پلاک<a href="" target="_blank"></a></li>
+      <li>بهبود دید یک چهره.<a href="" target="_blank"></a></li>
+      <li>تصحیح تصویر زیر آب<a href="" target="_blank"></a></li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -3428,129 +3415,118 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Parametric-Curves">Parametric Curves</a></h3>
+    <h3><a name="Parametric-Curves">منحنی‌‌های پارامتریک</a></h3>
     <p>
       <em
-        >Adjusts the tone values by setting the gain in four portions of the
-        luminance range.</em
+        >مقادیر تن را با تنظیم بهره در چهار قسمت از محدوده روشنایی تنظیم
+        می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Parametric Curves</em> filter maps the input image values to the
-      output image values according to a curve generated using the sliders. The
-      sliders determine the slope of the curve in four zones of the input
-      luminance range: <em>Highlights</em>, <em>Lights</em>, <em>Darks</em> and
-      <em>Shadows</em>.
+      فیلتر منحنی پارامتری مقادیر تصویر ورودی را با توجه به منحنی ایجاد شده با
+      استفاده از لغزنده‌‌ها به مقادیر تصویر خروجی نگاشت می‌کند. لغزنده‌‌ها شیب
+      منحنی را در چهار ناحیه از محدوده روشنایی ورودی تعیین می‌کنند: نقاط برجسته،
+      روشنایی، تاریکی و سایه.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Curve</strong><br />
-        <em>The curve generated with the current settings.</em
-        ><a href="" target="_blank"></a>
+        <strong>منحنی</strong><br />
+        <em>منحنی ایجاد شده با تنظیمات فعلی.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Highlights</strong><br />
-        <em>Adjustment for the highlights.</em><a href="" target="_blank"></a>
+        <strong>نکات برجسته</strong><br />
+        <em>تنظیم برای نقاط برجسته</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Lights</strong><br />
-        <em>Adjustment for the lights.</em><a href="" target="_blank"></a>
+        <strong>چراغ‌‌ها</strong><br />
+        <em>تنظیم برای چراغ‌‌ها</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Darks</strong><br />
-        <em>Adjustment for the darks.</em><a href="" target="_blank"></a>
+        <strong>تاریکی‌‌ها</strong><br />
+        <em>تنظیم برای تاریکی</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Shadows</strong><br />
-        <em>Adjustment for the shadows.</em><a href="" target="_blank"></a>
+        <strong>سایه‌‌ها</strong><br />
+        <em>تنظیم برای سایه‌‌ها</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      Use the sliders to adjust the shape of the curve. The range of values that
-      can be obtained using the current slider will appear shaded on the graph.
+      از لغزنده‌‌ها برای تنظیم شکل منحنی استفاده کنید. محدوده مقادیری که می‌توان
+      با استفاده از نوار لغزنده فعلی به دست آورد، در نمودار سایه دار ظاهر
+      می‌شود.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
+      <li>بهبود دید پلاک<a href="" target="_blank"></a></li>
+      <li>بهبود دید یک چهره.<a href="" target="_blank"></a></li>
       <li>
-        Improve the visibility of a license plate.<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-      <li>Improve the visibility of a face.<a href="" target="_blank"></a></li>
-      <li>
-        Increase the constrast of facial features for a better comparison.<a
+        برای مقایسه بهتر، کنتراست ویژگی‌‌های صورت را افزایش دهید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
     <hr />
-    <h3><a name="Levels">Levels</a></h3>
-    <p><em>Adjusts intensity and color levels.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Levels">سطوح</a></h3>
+    <p><em>شدت و سطوح رنگ را تنظیم می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Levels</em> filter maps the values of the input image to the
-      values of output image according to a piece-wise linear transformation
-      controlled by the values of <em>Highlights</em>, <em>Midtones</em> and
-      <em>Shadows</em>. The <em>Midtones</em> slider changes the intensity
-      values of the middle range of intensity levels without significantly
-      changing the highlights and shadows in the image. The
-      <em>Highlights</em> and <em>Shadows</em> sliders set the black point and
-      the white point of the image. Each channel of the input image is
-      configured using the sliders of the corresponding parameter:
-      <em>Value</em>, <em>Red</em>, <em>Green</em> or <em>Blue</em>. For each
-      parameter, the histogram of the tonal range of the input image is
-      displayed. If the input image is in grayscale, changing the setting of
-      <em>Red</em>, <em>Green</em> and <em>Blue</em> parameters has no effect on
-      the output image.
+      فیلتر سطوح مقادیر تصویر ورودی را به مقادیر تصویر خروجی مطابق با یک تبدیل
+      خطی تکه‌ای که توسط مقادیر نکات برجسته، Midtones و سایه‌‌ها کنترل می‌شود،
+      نگاشت می‌کند. نوار لغزنده Midtones مقادیر شدت دامنه متوسط سطوح شدت را بدون
+      تغییر قابل توجهی در نقاط برجسته و سایه در تصویر تغییر می‌دهد. لغزنده‌‌های
+      Highlights و سایه‌‌ها نقطه سیاه و نقطه سفید تصویر را تنظیم می‌کنند. هر
+      کانال از تصویر ورودی با استفاده از لغزنده پارامتر مربوطه پیکربندی می‌شود:
+      مقدار، قرمز، سبز یا آبی. برای هر پارامتر، هیستوگرام محدوده تونال تصویر
+      ورودی نمایش داده می‌شود. اگر تصویر ورودی در مقیاس خاکستری باشد، تغییر
+      تنظیمات پارامترهای قرمز، سبز و آبی تاثیری بر تصویر خروجی ندارد.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Value</strong><br />
+        <strong>مقدار</strong><br />
         <em
-          ><em>Highlights</em>, <em>Midtones</em> and <em>Shadows</em> settings
-          used to map the pixel values of the grayscale converted image.</em
+          ><em>تنظیمات برجسته</em>, Midtones و سایه‌‌هابرای نقشه برداری از
+          مقادیر پیکسل تصویر تبدیل شده در مقیاس خاکستری استفاده می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Red</strong><br />
+        <strong>قرمز</strong><br />
         <em
-          ><em>Highlights</em>, <em>Midtones</em> and <em>Shadows</em> settings
-          used to map the pixel values of the red channel of image.</em
+          ><em>تنظیمات برجسته</em>, <em>Midtones</em> and
+          <em>Shadows</em> Midtones و سایه‌‌هابرای نگاشت مقادیر پیکسل کانال قرمز
+          تصویر استفاده می‌شود. </em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Green</strong><br />
+        <strong>سبز</strong><br />
         <em
-          ><em>Highlights</em>, <em>Midtones</em> and <em>Shadows</em> settings
-          used to map the pixel values of the blue channel of image.</em
+          ><em>تنظیمات برجسته</em>, Midtones و سایه‌‌هابرای نگاشت مقادیر پیکسل
+          کانال آبی تصویر استفاده می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
@@ -3558,38 +3534,32 @@
       <li>
         <strong>Blue</strong><br />
         <em
-          ><em>Highlights</em>, <em>Midtones</em> and <em>Shadows</em> settings
-          used to map the pixel values of the green channel of image.</em
+          ><em>تنظیمات برجسته</em>, Midtones و سایه‌‌هابرای نقشه برداری از
+          مقادیر پیکسل کانال سبز تصویر استفاده می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
+      <li>بهبود دید پلاک<a href="" target="_blank"></a></li>
+      <li>بهبود دید یک چهره.<a href="" target="_blank"></a></li>
       <li>
-        Improve the visibility of a license plate.<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-      <li>Improve the visibility of a face.<a href="" target="_blank"></a></li>
-      <li>
-        Increase the constrast of facial features for a better comparison.<a
+        برای مقایسه بهتر، کنتراست ویژگی‌‌های صورت را افزایش دهید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -3600,91 +3570,72 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Histogram-Equalization">Histogram Equalization</a></h3>
+    <h3><a name="Histogram-Equalization">یکسان سازی هیستوگرام</a></h3>
     <p>
       <em
-        >Improves the image contrast by uniformly distributing the pixel values.
-        Supports the optimization of a specific region of the image.</em
+        >کنتراست تصویر را با توزیع یکنواخت مقادیر پیکسل بهبود می‌بخشد. از بهینه
+        سازی یک منطقه خاص از تصویر پشتیبانی می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Histogram Equalization</em> filter adjusts the image tones by
-      distributing the pixel values more uniformly across the available
-      range.<br />
-      It is possible to use one of the two equalization modes:<br />
-      - <em>Intensity</em>: the equalization is applied to the overall image
-      luminance by processing the image in the YCrCb color space;<br />
-      - <em>Colors</em>: the equalization is independently performed on the
-      three RGB channels.<br />
-      For grayscale images there is no difference in using the
-      <em>Intensity</em> or the <em>Colors</em> mode. It is optionally possible
-      to ignore black pixels in the computation; this may improve the rendition
-      of images that contain a black border.
+      فیلتر یکسان سازی هیستوگرام، تن‌‌های تصویر را با توزیع یکنواخت تر مقادیر
+      پیکسل در محدوده موجود تنظیم می‌کند.<br />
+      امکان استفاده از یکی از دو حالت تساوی وجود دارد:<br />
+      - <em>شدت</em>: یکسان سازی با پردازش تصویر در فضای رنگی YCrCb به درخشندگی
+      کلی تصویر اعمال می‌شود.<br />
+      - <em>رنگ‌‌ها</em>: تساوی به طور مستقل در سه کانال RGB انجام می‌شود.<br />
+      برای تصاویر خاکستری تفاوتی در استفاده از حالت شدت یا رنگ‌‌ها وجود ندارد.
+      به صورت اختیاری امکان نادیده گرفتن پیکسل‌‌های سیاه در محاسبات وجود دارد.
+      این ممکن است بازنمایی تصاویری که دارای حاشیه سیاه هستند را بهبود بخشد.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Mode</strong><br />
-        <em>Type of adjustment to be done.</em><a href="" target="_blank"></a>
+        <strong>حالت</strong><br />
+        <em>نوع تنظیمی‌که باید انجام شود.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Ignore Black Pixels</strong><br />
+        <strong>پیکسل‌‌های سیاه را نادیده بگیرید</strong><br />
         <em
-          >Optionally ignore black pixels in the computation. This may improve
-          the rendition of images that contain a black border.</em
+          >به صورت اختیاری پیکسل‌‌های سیاه را در محاسبه نادیده بگیرید. این ممکن
+          است نمایش تصاویری را که دارای حاشیه سیاه هستند بهبود بخشد</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Lookup Table</strong><br />
-        <em>The lookup table generated with the current settings.</em
+        <strong>جدول جست و جو</strong><br />
+        <em>جدول جستجو با تنظیمات فعلی ایجاد شد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
+      <li>بهبود دید پلاک<a href="" target="_blank"></a></li>
+      <li>بهبود دید یک چهره.<a href="" target="_blank"></a></li>
+      <li>تصحیح تصویر زیر آب<a href="" target="_blank"></a></li>
       <li>
-        Improve the visibility of a license plate.<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-      <li>Improve the visibility of a face.<a href="" target="_blank"></a></li>
-      <li>Correct an underwater image.<a href="" target="_blank"></a></li>
-      <li>
-        Maximize the contrast to highlight some weak detail or variation.<a
-          href=""
-          target="_blank"
-        ></a>
+        کنتراست را به حداکثر برسانید تا برخی از جزئیات یا تغییرات ضعیف را برجسته
+        کنید.<a href="" target="_blank"></a>
       </li>
       <li>
-        Extract hidden dots from a printed document.<a
-          href=""
-          target="_blank"
-        ></a>
+        استخراج نقاط پنهان از یک سند چاپ شده<a href="" target="_blank"></a>
       </li>
-      <li>
-        Improve the visibility a person behind a glass.<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
+      <li>بهبود دید شخص پشت شیشه<a href="" target="_blank"></a></li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -3695,85 +3646,74 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Contrast-Stretch">Contrast Stretch</a></h3>
+    <h3><a name="Contrast-Stretch">کشش کنتراست</a></h3>
     <p>
       <em
-        >Improves the image contrast by expanding the range of intensity values.
-        Supports a sensitivity threshold to tune the filter effect.</em
+        >کنتراست تصویر را با گسترش دامنه مقادیر شدت بهبود می‌بخشد. از آستانه
+        حساسیت برای تنظیم افکت فیلتر پشتیبانی می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Contrast Stretch</em> filter adjusts the image values expanding
-      the pixel values across the whole available range.<br />
-      Two stretching modes are available:<br />
-      - <em>Intensity</em>: the stretch is applied to the overall image
-      luminance by processing the image in the YCrCb color space;<br />
-      - <em>Colors</em>: the stretch is independently performed on the three RGB
-      channels.<br />
-      For grayscale images there is no difference in using the
-      <em>Intensity</em> or the <em>Colors</em> mode.<br />
-      If the parameter <em>Sensitivity</em> is greater than zero, a percentage
-      equal to <em>Sensitivity</em> of the darkest and brightest pixels is
-      discarded before the stretching.<br />
-      If the range of the input image values already covers the whole tonal
-      range (0-255) and <em>Sensitivity</em> is equal to zero, the filter has no
-      effect.
+      فیلتر کشش کنتراستمقادیر تصویر را تنظیم می‌کند و مقادیر پیکسل را در کل
+      محدوده موجود گسترش می‌دهد.<br />
+      دو حالت کشش در دسترس است:.<br />
+      - <em>شدت</em>: با پردازش تصویر در فضای رنگی YCrCb، کشش به درخشندگی کلی
+      تصویر اعمال می‌شود.<br />
+      - <em>رنگ‌‌ها</em>: کشش به طور مستقل روی سه کانال RGB انجام می‌شود.<br />
+      برای تصاویر خاکستری تفاوتی در استفاده از حالت شدت یا رنگها وجود ندارد.<br />
+      اگر پارامتر حساسیت بزرگتر از صفر باشد، درصدی برابر با حساسیت تیره ترین و
+      روشن ترین پیکسل‌‌ها قبل از کشش کنار گذاشته می‌شود.<br />
+      اگر محدوده مقادیر تصویر ورودی از قبل کل محدوده تونال (0-255) را پوشش دهد و
+      حساسیت برابر با صفر باشد، فیلتر هیچ تاثیری ندارد.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Mode</strong><br />
-        <em>Type of adjustment to perform.</em><a href="" target="_blank"></a>
+        <strong>حالت</strong><br />
+        <em>نوع تنظیم برای انجام</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Sensitivity</strong><br />
+        <strong>حساسیت</strong><br />
+        <em>درصد پیکسل‌‌هایی که باید در محاسبه محدوده تون حذف شوند.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>جدول جست و جو</strong><br />
+        <em>جدول جستجو با تنظیمات فعلی ایجاد شد.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>انتخاب</strong><br />
         <em
-          >The percentage of pixels to exclude in the computation of the tonal
-          range.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <ul>
-      <li>
-        <strong>Lookup Table</strong><br />
-        <em>The lookup table generated with the current settings.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Selection</strong><br />
-        <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      Contrast Stretch can be used to enhance features in low-contrast images.
+      از کشش کنتراست می‌توان برای بهبود ویژگی‌‌ها در تصاویر با کنتراست کم
+      استفاده کرد.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
+      <li>بهبود دید پلاک<a href="" target="_blank"></a></li>
+      <li>بهبود دید یک چهره.<a href="" target="_blank"></a></li>
       <li>
-        Improve the visibility of a license plate.<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-      <li>Improve the visibility of a face.<a href="" target="_blank"></a></li>
-      <li>
-        Increase the constrast of facial features for a better comparison.<a
+        برای مقایسه بهتر، کنتراست ویژگی‌‌های صورت را افزایش دهید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -3781,74 +3721,68 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Temperature-Tint">Temperature Tint</a></h3>
+    <h3><a name="Temperature-Tint">رنگ درجه حرارت</a></h3>
     <p>
-      <em
-        >Manually adjusts the dominant color temperature and tint in the
-        scene.</em
-      >
+      <em>دمای رنگ غالب و رنگ در صحنه را به صورت دستی تنظیم می‌کند.</em>
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Temperature Tint</em> method allows to change the dominant color
-      of an image by manually adjusting the
-      <em>Color Temperature</em> (orange-blue) and <em>Tint</em> (purple-green).
-      With the default setting, the selected color is mapped to 6500K white (as
-      specified by most image and video standards) and is therefore removed from
-      the image; e.g. increasing the <em>Color Temperature</em> will make the
-      image less blue and more orange. The opposite behavior can be obtained by
-      setting the <em>Mode</em> to <em>Map White to Selected Color</em>. In this
-      way, 6500K white is mapped to the selected color; e.g. increasing the
-      <em>Color Temperature</em> will make the image more blue. In both cases,
-      the colors are processed using the CAT02 chromatic adaptation transform
-      used in the CIECAM02 color appearance model. The overall image can be made
-      brighter or darker by adjusting the
-      <em>Exposure Correction</em> parameter; if this parameter is 0, the
-      average luminance (XYZ Y) of the image remains unchanged. If the input
-      image is grayscale, only the <em>Exposure Correction</em> is performed.
+      روش رنگ درجه حرارت اجازه می‌دهد تا با تنظیم دستی دمای رنگ (نارنجی-آبی) و
+      رنگ (بنفش-سبز) رنگ غالب یک تصویر را تغییر دهید. با تنظیمات پیش‌فرض، رنگ
+      انتخاب‌شده به رنگ سفید 6500K ترسیم می‌شود (همانطور که توسط اکثر
+      استانداردهای تصویر و ویدیو مشخص شده است) و بنابراین از تصویر حذف می‌شود.
+      به عنوان مثال، افزایش دمای رنگ تصویر را آبی کمتر و نارنجی تر می‌کند. رفتار
+      مخالف را می‌توان با تنظیم حالت روی Map White به رنگ انتخاب شده بدست آورد.
+      به این ترتیب، 6500K سفید به رنگ انتخاب شده نگاشت می‌شود. به عنوان مثال،
+      افزایش دمای رنگ تصویر را آبی تر می‌کند. در هر دو مورد، رنگ‌‌ها با استفاده
+      از تبدیل سازگاری رنگی CAT02 مورد استفاده در مدل ظاهر رنگ CIECAM02 پردازش
+      می‌شوند. با تنظیم پارامتر تصحیح نوردهی، می‌توان تصویر کلی را روشن‌تر یا
+      تیره‌تر کرد. اگر این پارامتر 0 باشد، متوسط روشنایی (XYZ Y) تصویر بدون
+      تغییر باقی می‌ماند. اگر تصویر ورودی خاکستری باشد، فقط تصحیح نوردهی انجام
+      می‌شود.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Exposure Correction (EV)</strong><br />
-        <em>Adjusts the overall brightness of the image.</em
+        <strong>تصحیح نوردهی (EV)</strong><br />
+        <em>روشنایی کلی تصویر را تنظیم می‌کند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Color Temperature (Kelvin)</strong><br />
+        <strong>دمای رنگ (کلوین)</strong><br />
         <em
-          >Color temperature used for Temperature Tint correction. Low = orange,
-          6500 = white, high = blue.</em
+          >دمای رنگ برای تصحیح رنگ دما استفاده می‌شود. کم = نارنجی، 6500 = سفید،
+          زیاد = آبی.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Tint Correction (Δuv percent)</strong><br />
+        <strong>تصحیح رنگ (درصد Δuv)</strong><br />
         <em
-          >Color tint used for Temperature Tint correction. Negative = purple,
-          positive = green.</em
+          >رنگ رنگ برای تصحیح رنگ دما استفاده می‌شود. منفی = بنفش، مثبت =
+          سبز.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Mode</strong><br />
-        <em>The way the filter proceeds.</em><a href="" target="_blank"></a>
+        <strong>حالت</strong><br />
+        <em>نحوه کار فیلتر</em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Correct the color cast given by illumination or wrong camera settings.<a
+        رنگ ریخته شده توسط نور یا تنظیمات اشتباه دوربین را تصحیح کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         N. Moroney, M. D. Fairchild, R. W. G. Hunt, C. Li, M. Ronnier Luo and T.
@@ -3859,10 +3793,10 @@
         ></a>
       </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        The Temperature Tint Filter:
+        فیلتر رنگی دما:
         <a
           href="https://blog.ampedsoftware.com/2017/06/29/the-temperature-tint-filter/"
           target="_blank"
@@ -3871,75 +3805,69 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="White-Balance">White Balance</a></h3>
+    <h3><a name="White-Balance">تعادل رنگ سفید</a></h3>
     <p>
       <em
-        >Adjusts an image in order to make neutral objects appear gray or
-        white.</em
+        >یک تصویر را به گونه ای تنظیم می‌کند که اشیاء خنثی را خاکستری یا سفید
+        نشان دهد.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>White Balance</em> filter performs a global adjustment that maps
-      the average color of the image to neutral gray, according to the “Gray
-      World” model. In some cases, this can effectively correct an improper
-      white balance setting of the camera. If a selection is set in the
-      <em>Selection</em> tab, the average color of the selection is mapped to
-      neutral gray. It is optionally possible to adjust the overall brightness
-      of the image.
+      فیلتر تعادل سفید یک تنظیم کلی انجام می‌دهد که طبق مدل "دنیای خاکستری"،
+      میانگین رنگ تصویر را به خاکستری خنثی ترسیم می‌کند. در برخی موارد، این
+      می‌تواند به طور موثر تنظیم تعادل سفیدی نامناسب دوربین را اصلاح کند. اگر
+      انتخابی در تب Selection تنظیم شده باشد، میانگین رنگ انتخابی به خاکستری
+      خنثی نگاشت می‌شود. به صورت اختیاری امکان تنظیم روشنایی کلی تصویر وجود
+      دارد.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Color Space</strong><br />
-        <em>The color space in which the processing is performed.</em
+        <strong>فضای رنگی</strong><br />
+        <em>فضای رنگی که در آن پردازش انجام می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Exposure Correction (EV)</strong><br />
-        <em>Adjusts the overall brightness of the image.</em
+        <strong>تصحیح نوردهی (EV)</strong><br />
+        <em>روشنایی کلی تصویر را تنظیم می‌کند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      The processing can be performed either by scaling the three
-      <em>RGB</em> channels of the input image, or by applying the
-      <em>CAT02</em> chromatic adaptation transform used in the CIECAM02 color
-      appearance model. <em>CAT02</em> is more accurate but requires a slightly
-      longer processing time; differences between <em>RGB</em> and
-      <em>CAT02</em> are often barely noticeable, unless the image contains very
-      saturated colors. If a selection is set in the <em>Selection</em> tab, the
-      average color of the selection is mapped to neutral gray. Therefore, the
-      <em>Selection</em> should be used to pick a gray object in the scene if
-      available. The overall image can be made brighter or darker by adjusting
-      the <em>Exposure Correction</em> parameter; if this parameter is 0, the
-      average luminance (XYZ Y) of the image or the selection remains unchanged.
-      If the input image is grayscale, only the <em>Exposure Correction</em> is
-      performed.
+      پردازش را می‌توان با مقیاس گذاری سه کانال RGB تصویر ورودی یا با اعمال
+      تبدیل سازگاری رنگی CAT02 که در مدل ظاهری رنگ CIECAM02 استفاده می‌شود،
+      انجام داد. CAT02 دقیق تر است اما به زمان پردازش کمی‌طولانی تری نیاز دارد.
+      تفاوت بین RGB و CAT02 اغلب به سختی قابل توجه است، مگر اینکه تصویر حاوی
+      رنگ‌‌های بسیار اشباع شده باشد. اگر انتخابی در تب Selection تنظیم شده باشد،
+      میانگین رنگ انتخابی به خاکستری خنثی نگاشت می‌شود. بنابراین، انتخاب باید
+      برای انتخاب یک شی خاکستری در صحنه در صورت وجود استفاده شود. با تنظیم
+      پارامتر تصحیح نوردهی، می‌توان تصویر کلی را روشن‌تر یا تیره‌تر کرد. اگر این
+      پارامتر 0 باشد، متوسط روشنایی (XYZ Y) تصویر یا انتخاب بدون تغییر باقی
+      می‌ماند. اگر تصویر ورودی خاکستری باشد، فقط تصحیح نوردهی انجام می‌شود.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Correct the color cast given by illumination or wrong camera settings.<a
+        رنگ ریخته شده توسط نور یا تنظیمات اشتباه دوربین را تصحیح کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         N. Moroney, M. D. Fairchild, R. W. G. Hunt, C. Li, M. Ronnier Luo and T.
@@ -3951,62 +3879,59 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="CLAHE">CLAHE</a></h3>
+    <h3><a name="CLAHE">فیلتر CLAHE</a></h3>
     <p>
       <em
-        >Applies a contrast limited histogram equalization, useful on images
-        with high dynamic range (both very dark and very bright areas).</em
+        >تساوی هیستوگرام محدود کنتراست را اعمال می‌کند، که برای تصاویر با محدوده
+        دینامیکی بالا (هم مناطق بسیار تاریک و هم مناطق بسیار روشن) مفید است.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>CLAHE</em> filter adjusts the image values by dividing the image
-      in <em>Size</em>x<em>Size</em> pixel blocks and applying histogram
-      equalization to each block independently. In order to avoid noise
-      amplification, contrast limiting is applied: if the fraction of pixels in
-      any histogram bin is above the value <em>Limit</em>, those pixels are
-      clipped and distributed uniformly to other bins before applying histogram
-      equalization. After equalization, to remove artifacts in tile borders,
-      bilinear interpolation is applied.<br />
-      It is possible to use one of the two equalization modes:<br />
-      - <em>Intensity</em>: the equalization is applied to the overall image
-      luminance by processing the image in the YCrCb color space;<br />
-      - <em>Colors</em>: the equalization is independently performed on the
-      three RGB channels.<br />
-      For grayscale images there is no difference in using the
-      <em>Intensity</em> or the <em>Colors</em> mode.
+      فیلتر CLAHE مقادیر تصویر را با تقسیم تصویر در بلوک‌‌های پیکسل SizexSize و
+      اعمال یکسان سازی هیستوگرام برای هر بلوک به طور مستقل تنظیم می‌کند. برای
+      جلوگیری از تقویت نویز، محدودیت کنتراست اعمال می‌شود: اگر کسر پیکسل‌ها در
+      هر bin هیستوگرام بالاتر از مقدار Limit باشد، آن پیکسل‌ها قبل از اعمال
+      یکسان سازی هیستوگرام، بریده می‌شوند و به‌طور یکنواخت در بین‌های دیگر توزیع
+      می‌شوند. پس از یکسان سازی، برای حذف مصنوعات در حاشیه کاشی، درون یابی دو
+      خطی اعمال می‌شود.<br />
+      امکان استفاده از یکی از دو حالت تساوی وجود دارد:<br />
+      - شدت: یکسان سازی با پردازش تصویر در فضای رنگی YCrCb به درخشندگی کلی تصویر
+      اعمال می‌شود. - رنگ‌‌ها: تساوی به طور مستقل در سه کانال RGB انجام
+      می‌شود.<br />
+      برای تصاویر خاکستری تفاوتی در استفاده از حالت شدتیا رنگهاوجود ندارد
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Mode</strong><br />
-        <em>Type of adjustment to be done.</em><a href="" target="_blank"></a>
+        <strong>حالت</strong><br />
+        <em>نوع تنظیمی‌که باید انجام شود.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Size</strong><br />
-        <em>Size of image blocks for filtering.</em
+        <strong>اندازه</strong><br />
+        <em>اندازه بلوک‌‌های تصویر برای فیلتر کردن</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Limit</strong><br />
-        <em>Clip limit to avoid noise amplification.</em
+        <strong>حد</strong><br />
+        <em>محدودیت کلیپ برای جلوگیری از تقویت نویز.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Improve the contrast on indoor/outdoor images.<a
+        کنتراست را در تصاویر داخل/خارج بهبود دهید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         K. Zuiderveld, “Contrast Limited Adaptive Histogram Equalization”, in
@@ -4015,76 +3940,66 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Homomorphic-Filter">Homomorphic Filter</a></h3>
+    <h3><a name="Homomorphic-Filter">فیلتر همومورفیک</a></h3>
     <p>
-      <em
-        >Adjusts separately the contrast of the illumination and detail in an
-        image.</em
-      >
+      <em>کنتراست نور و جزئیات را به طور جداگانه در یک تصویر تنظیم می‌کند.</em>
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Homomorphic Filter</em> is a classical image processing tool. It
-      separates the low frequencies (illumination) and high frequencies (detail)
-      of an image and adjusts separately their contrast. Typically, the contrast
-      of the illumination is reduced, in order to make the dark portions
-      brighter and therefore more visible. This filter can produce better
-      results than <em>Contrast Brightness</em> because it does not attenuate
-      the details in the image, and can optionally enhance them. As a drawback,
-      it can introduce halos around the edges of the objects.
+      فیلتر همومورفیک یک ابزار کلاسیک پردازش تصویر است. فرکانس‌های پایین
+      (روشنایی) و فرکانس‌های بالا (جزئیات) یک تصویر را جدا می‌کند و کنتراست
+      آن‌ها را جداگانه تنظیم می‌کند. به طور معمول، کنتراست نور کاهش می‌یابد تا
+      قسمت‌‌های تاریک روشن تر و در نتیجه بیشتر قابل مشاهده باشد. این فیلتر
+      می‌تواند نتایج بهتری نسبت به روشنایی کنتراست داشته باشد زیرا جزئیات موجود
+      در تصویر را کاهش نمی‌دهد و به صورت اختیاری می‌تواند آنها را افزایش دهد. به
+      عنوان یک اشکال، می‌تواند‌‌هاله‌‌ها را در اطراف لبه‌‌های اجسام وارد کند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Alpha</strong><br />
+        <strong>آلفا</strong><br />
         <em
-          >A parameter of the filter that separates the low and high frequencies
-          of the image.</em
+          >پارامتری از فیلتر که فرکانس‌‌های پایین و بالای تصویر را از هم جدا
+          می‌کند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Low Frequency Contrast</strong><br />
-        <em
-          >Reducing this parameter makes the dark portions of the image
-          brighter.</em
+        <strong>کنتراست فرکانس پایین</strong><br />
+        <em>کاهش این پارامتر قسمت‌‌های تاریک تصویر را روشن تر می‌کند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>High Frequency Contrast</strong><br />
-        <em
-          >Increasing this parameter makes the details of the image more
-          visible.</em
+        <strong>کنتراست فرکانس بالا</strong><br />
+        <em>افزایش این پارامتر باعث می‌شود جزئیات تصویر بیشتر دیده شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Gain (EV)</strong><br />
-        <em>Adjusts the overall brightness of the image.</em
+        <strong>سود (EV)</strong><br />
+        <em>روشنایی کلی تصویر را تنظیم می‌کند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      When the <em>Contrast</em> sliders are both set to 1, the filter leaves
-      the image unchanged. Try reducing the <em>Low Frequency Contrast</em> in
-      order to make the dark portions more visible. Then, try increasing the
-      <em>High Frequency Contrast</em> in order to enhance the details. You can
-      adjust the overall brightness of the image by using the
-      <em>Gain</em> slider. The <em>Alpha</em> parameter adjusts the boundary
-      between low and high frequencies; higher values produce an output image
-      with richer details but can introduce halos around the edges of the
-      objects.
+      هنگامی‌که لغزنده‌‌های کنتراست هر دو روی 1 تنظیم می‌شوند، فیلتر تصویر را
+      بدون تغییر می‌گذارد. سعی کنید کنتراست فرکانس پایین را کاهش دهید تا
+      قسمت‌‌های تاریک بیشتر دیده شوند. سپس، سعی کنید کنتراست فرکانس بالا را برای
+      بهبود جزئیات افزایش دهید. با استفاده از نوار لغزنده سود می‌توانید روشنایی
+      کلی تصویر را تنظیم کنید. پارامتر آلفا مرز بین فرکانس‌‌های پایین و بالا را
+      تنظیم می‌کند. مقادیر بالاتر یک تصویر خروجی با جزئیات غنی‌تر تولید می‌کند،
+      اما می‌تواند‌‌هاله‌ها را در اطراف لبه‌های اشیاء معرفی کند.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
-      <li>Correct uneven illumination.<a href="" target="_blank"></a></li>
+      <li>روشنایی ناهموار را اصلاح کنید.<a href="" target="_blank"></a></li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Alan V. Oppenheim, Ronald W. Schafer and Thomas G. Stockham, Jr.,
@@ -4104,42 +4019,43 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Retinex">Retinex</a></h3>
+    <h3><a name="Retinex">رتینکس</a></h3>
     <p>
       <em
-        >Corrects an uneven illumination in the image using the Retinex
-        algorithm.</em
+        >با استفاده از الگوریتم رتینکس، نور ناهموار در تصویر را تصحیح
+        می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Retinex</em> filter was specifically developed in order to remove
-      an uneven illumination from the image. It also enhances high-contrast
-      images, making the dark portions more visible. بـستا uses an improved
-      version of the “spiral path” algorithm described in (Frankle and McCann,
-      1983). If the input image is grayscale, only the contrast is adjusted.
+      فیلتر رتینکس به طور خاص به منظور حذف نور ناهموار از تصویر ساخته شده است.
+      همچنین تصاویر با کنتراست بالا را افزایش می‌دهد و قسمت‌‌های تاریک را بیشتر
+      قابل مشاهده می‌کند. بستا از یک نسخه بهبود یافته از الگوریتم "مسیر مارپیچی"
+      استفاده می‌کند که در (فرانکل و مک کان، 1983) توضیح داده شده است. اگر تصویر
+      ورودی خاکستری باشد، فقط کنتراست تنظیم می‌شود.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Iterations</strong><br />
+        <strong>تکرارها</strong><br />
         <em
-          >How many times the Retinex filter is applied. Higher values produce a
-          higher contrast but can introduce halos near sharp edges.</em
+          >فیلتر رتینکس چند بار اعمال می‌شود. مقادیر بالاتر کنتراست بالاتری
+          ایجاد می‌کنند اما می‌توانند‌‌هاله‌‌ها را در نزدیکی لبه‌‌های تیز ایجاد
+          کنند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      The <em>Iterations</em> parameter adjusts how many times the filter is
-      applied; more iterations produce a higher-contrast output image but can
-      introduce dark halos near the sharp edges.
+      پارامتر رخداد تعداد دفعات اعمال فیلتر را تنظیم می‌کند. تکرارهای بیشتر یک
+      تصویر خروجی با کنتراست بالاتر تولید می‌کنند اما می‌توانند‌‌هاله‌‌های تیره
+      را در نزدیکی لبه‌‌های تیز ایجاد کنند.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
-      <li>Correct uneven illumination.<a href="" target="_blank"></a></li>
+      <li>روشنایی ناهموار را اصلاح کنید.<a href="" target="_blank"></a></li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         J. A. Frankle and J. J. McCann, “Method and apparatus for lightness
@@ -4153,74 +4069,70 @@
     </ul>
     <hr />
     <h3>
-      <a name="Automatic-Color-Equalization">Automatic Color Equalization</a>
+      <a name="Automatic-Color-Equalization">یکسان سازی خودکار رنگ</a>
     </h3>
     <p>
       <em
-        >Reduces color casts and adjusts the contrast using the Automatic Color
-        Equalization (ACE) algorithm.</em
+        >رنگ‌‌ها را کاهش می‌دهد و کنتراست را با استفاده از الگوریتم تساوی رنگ
+        خودکار (ACE) تنظیم می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Automatic Color Equalization</em> (ACE) algorithm, described in
-      (Rizzi, Gatta and Marini, 2003), performs a space-varying processing that
-      removes color casts and adjusts the contrast. This method can effectively
-      balance the colors of an image illuminated by multiple light sources and
-      reduce the contrast of images with very bright and very dark areas
-      simultaneously. بـستا uses the piecewise linear interpolation method
-      described in (Getreuer, 2012). A <em>Global</em> method, that replaces the
-      spatial filtering with a global average, is also available; it has a
-      significantly lower computational cost but may reduce the visibility of
-      fine details. This global processing is equivalent to a “smoothed”
-      histogram equalization in which the image histogram is smoothed with a
-      moving average and then equalized.
+      الگوریتم تساوی خودکار رنگ (ACE) که در (Rizzi, Gatta and Marini, 2003)
+      توضیح داده شده است، پردازشی را انجام می‌دهد که در فضا تغییر می‌کند که
+      رنگ‌‌ها را حذف می‌کند و کنتراست را تنظیم می‌کند. این روش می‌تواند به طور
+      موثر رنگ‌‌های یک تصویر روشن شده توسط چندین منبع نور را متعادل کند و
+      کنتراست تصاویر با مناطق بسیار روشن و بسیار تاریک را به طور همزمان کاهش
+      دهد. بستا از روش درونیابی خطی تکه ای که در (Getreuer, 2012) توضیح داده شده
+      است استفاده می‌کند. یک روش جهانی، که فیلتر فضایی را با میانگین جهانی
+      جایگزین می‌کند، نیز موجود است. هزینه محاسباتی بسیار پایین تری دارد اما
+      ممکن است دید جزئیات دقیق را کاهش دهد. این پردازش سراسری معادل یک تساوی
+      هیستوگرام "صاف" است که در آن هیستوگرام تصویر با میانگین متحرک صاف می‌شود و
+      سپس یکسان می‌شود.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Method</strong><br />
-        <em>Filtering method used in the piecewise linear approximation.</em
+        <strong>روش</strong><br />
+        <em>روش فیلتر کردن در تقریب خطی تکه ای استفاده می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Strength</strong><br />
-        <em>Strength of the filter. Higher values produce a stronger effect.</em
+        <strong>استحکام - قدرت</strong><br />
+        <em>استحکام فیلتر مقادیر بالاتر اثر قوی تری ایجاد می‌کند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Lookup Table (Global)</strong><br />
-        <em
-          >The lookup table generated with the current settings (Global mode
-          only).</em
+        <strong>جدول جستجو (جهانی)</strong><br />
+        <em>جدول جستجو با تنظیمات فعلی ایجاد شده است (فقط حالت جهانی).</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      The filter can be computed using either a
-      <em>Discrete Fourier Transform</em> (DFT) or a
-      <em>Discrete Cosine Transform</em> (DCT); the DCT is slower but produces
-      higher-quality results. A <em>Global</em> method is also available; it has
-      a significantly lower computational cost but may reduce the visibility of
-      fine details. The <em>Strength</em> parameter acts as a contrast tuner:
-      higher values produce a stronger equalization of the colors and contrast.
-      If the input image is grayscale, only the contrast is affected.
+      فیلتر را می‌توان با استفاده از تبدیل فوریه گسسته (DFT) یا تبدیل کسینوس
+      گسسته (DCT) محاسبه کرد. DCT کندتر است اما نتایج با کیفیت بالاتری تولید
+      می‌کند. یک روش جهانی نیز موجود است. هزینه محاسباتی بسیار پایین تری دارد
+      اما ممکن است دید جزئیات دقیق را کاهش دهد. پارامتر استحکام - قدرت به عنوان
+      تیونر کنتراست عمل می‌کند: مقادیر بالاتر یک برابری قوی تری از رنگ‌‌ها و
+      کنتراست ایجاد می‌کند. اگر تصویر ورودی خاکستری باشد، فقط کنتراست تحت تأثیر
+      قرار می‌گیرد.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Correct the color cast given by illumination or wrong camera settings.<a
+        رنگ ریخته شده توسط نور یا تنظیمات اشتباه دوربین را تصحیح کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         A. Rizzi, C. Gatta and D. Marini, “A new algorithm for unsupervised
@@ -4241,28 +4153,28 @@
       </li>
     </ul>
     <hr />
-    <h2><a name="Extract">Extract</a></h2>
-    <p><em>Extracts and analyzes image features.</em></p>
+    <h2><a name="Extract">استخراج کردن</a></h2>
+    <p><em>ویژگی‌‌های تصویر را استخراج و تجزیه و تحلیل می‌کند.</em></p>
     <hr />
-    <h3><a name="Negative">Negative</a></h3>
-    <p><em>Negative of the image.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Negative">نگاتیو</a></h3>
+    <p><em>نگاتیو تصویر</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Negative</em> tool calculates the negative of the image, by
-      subtracting the value of each pixel to the maximum intensity value (255).
+      ابزار نگاتیو نگاتیو تصویر را با کم کردن مقدار هر پیکسل به حداکثر مقدار شدت
+      (255) محاسبه می‌کند.
     </p>
-    <h4>Parameters</h4>
-    <em>This filter has no parameters.</em>
-    <h4>Application Examples</h4>
+    <h4>مولفه‌‌ها</h4>
+    <em>این فیلتر هیچ پارامتری ندارد.</em>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Improve the readability of a license plate or some text.<a
+        خوانایی پلاک یا برخی از متن‌‌ها را بهبود ببخشید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -4270,73 +4182,68 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Threshold">Threshold</a></h3>
+    <h3><a name="Threshold">ابزار آستانه</a></h3>
     <p>
       <em
-        >Thresholds the image values to the desired values. Supports several
-        thresholding modes.</em
+        >آستانه مقادیر تصویر را به مقادیر دلخواه می‌رساند. چندین حالت آستانه را
+        پشتیبانی می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Threshold</em> tool applies the following formula to each pixel
-      value of the input image:<br />
-      - For <em>Mode</em> = <em>Binary</em>:<br />
+      ابزار آستانه فرمول زیر را برای هر مقدار پیکسل تصویر ورودی اعمال می‌کند:<br />
+      - برای حالت = باینری:<br />
       if <em>Low Threshold</em> < Input < <em>High Threshold</em><br />
-      then Output = 255<br />
-      otherwise Output = 0;<br />
+      سپس خروجی = 255<br />
+      سپس خروجی = 0;<br />
       if <em>High Threshold</em> < Input < <em>Low Threshold</em><br />
-      then Output = 0<br />
-      otherwise Output = 255.<br />
+      سپس خروجی = 0<br />
+      در غیر این صورت خروجی = 255.<br />
       - For <em>Mode</em> = <em>Truncated</em>:<br />
       if <em>Low Threshold</em> < Input < <em>High Threshold</em><br />
-      then Output = Input otherwise Output = 0;<br />
+      سپس خروجی = ورودی در غیر این صورت خروجی = 0;<br />
       if <em>High Threshold</em> < Input < <em>Low Threshold</em><br />
-      then Output = Input<br />
-      otherwise Output = 255.
+      سپس خروجی = Input<br />
+      در غیر این صورت خروجی = 255.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Low Threshold</strong><br />
-        <em
-          >The values smaller than the <em>Low Threshold</em> will be set to
-          0.</em
+        <strong>آستانه پایین</strong><br />
+        <em>مقادیر کوچکتر از آستانه پایین روی 0 تنظیم می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>High Threshold</strong><br />
-        <em
-          >The values bigger than the <em>High Threshold</em> will be set to
-          0.</em
+        <strong>آستانه بالا</strong><br />
+        <em>مقادیر بزرگتر از آستانه بالا روی 0 تنظیم می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Mode</strong><br />
-        <em>Determines whether to saturate or truncate the values.</em
+        <strong>حالت</strong><br />
+        <em>تعیین می‌کند که آیا مقادیر اشباع یا کوتاه شوند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Improve the readability of a license plate or some text.<a
+        خوانایی پلاک یا برخی از متن‌‌ها را بهبود ببخشید.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Identify defective pixels in an image or video.<a
+        پیکسل‌‌های معیوب در یک تصویر یا ویدیو را شناسایی کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -4347,61 +4254,57 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Adaptive-Threshold">Adaptive Threshold</a></h3>
-    <p><em>Extracts the edges with an adaptive thresholding algorithm.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Adaptive-Threshold">ابزار آستانه تطبیقی</a></h3>
+    <p><em>لبه‌‌ها را با یک الگوریتم آستانه تطبیقی استخراج می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Adaptive Threshold</em> tool processes the values of the input
-      image by the following formula:<br />
-      if (Input > T)<br />
-      then Output = Input, where:<br />
-      - for <em>Type</em> = <em>Mean</em>, T is the mean value of a window of
-      <em>Size</em>x<em>Size</em> pixels around the processed pixel, subtracted
-      by <em>Offset</em>;<br />
-      - for <em>Type</em> = <em>Gaussian</em>, T is the Gaussian weighted sum of
-      a window of <em>Size</em>x<em>Size</em> pixels around the current one,
-      subtracted by <em>Offset</em>.
+      ابزار آستانه تطبیقی مقادیر تصویر ورودی را با فرمول زیر پردازش می‌کند:<br />
+      اگر (ورودی > T)<br />
+      سپس خروجی = ورودی، جایی که:<br />
+      - برای Type = Mean، T مقدار میانگین پنجره ای از پیکسل‌‌های SizexSize در
+      اطراف پیکسل پردازش شده است که با Offset کم می‌شود.<br />
+      - برای Type = Gaussian، T مجموع وزنی گاوسی پنجره ای از پیکسل‌‌های
+      SizexSize در اطراف پیکسل فعلی است که با Offset کم می‌شود.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Size</strong><br />
+        <strong>اندازه</strong><br />
         <em
-          >Size of a pixel neighborhood that is used to calculate the threshold
-          value T for each pixel of the image.</em
+          >اندازه همسایگی پیکسلی که برای محاسبه مقدار آستانه T برای هر پیکسل
+          تصویر استفاده می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Offset</strong><br />
-        <em>Constant to be subtracted from the threshold value T.</em
+        <strong>انحراف</strong><br />
+        <em>ثابتی که باید از مقدار آستانه T کم شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Mode</strong><br />
-        <em>Thresholding type.</em><a href="" target="_blank"></a>
+        <strong>حالت</strong><br />
+        <em>نوع آستانه.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Sign</strong><br />
-        <em>Direction of thresholding.</em><a href="" target="_blank"></a>
+        <strong>امضا کردن</strong><br />
+        <em>جهت آستانه گذاری.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -4412,24 +4315,23 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Laplace">Laplace</a></h3>
-    <p><em>Extracts the edges with a Laplacian algorithm.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Laplace"> لاپلاس</a></h3>
+    <p><em>لبه‌‌ها را با الگوریتم لاپلاسی استخراج می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Laplace</em> filter calculates the Laplacian of the source image
-      by summing second x- and y- derivatives calculated by using Sobel
-      operator:<br />
-      Output = d²Input/dx² + d²Input/dy².
+      فیلتر لاپلاس، لاپلاسی تصویر مبدأ را با جمع کردن مشتقات دوم x و y محاسبه
+      شده با استفاده از عملگر Sobel محاسبه می‌کند:<br />
+      خروجی = d²ورودی/dx² + d²ورودی/dy².
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Size</strong><br />
-        <em>Size of the kernel used to compute the second-derivative filter.</em
+        <strong>اندازه</strong><br />
+        <em>اندازه هسته مورد استفاده برای محاسبه فیلتر مشتق دوم.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -4440,40 +4342,38 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Sobel">Sobel</a></h3>
-    <p><em>Extracts the edges with a Sobel algorithm.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Sobel">فیلتر سوبل</a></h3>
+    <p><em>لبه‌‌ها را با الگوریتم سوبل استخراج می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Sobel</em> filter calculates the image derivative by convolving
-      the image with the appropriate Sobel kernel.
+      فیلتر سوبل مشتق تصویر را با انحراف تصویر با هسته سوبلمناسب محاسبه می‌کند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Direction</strong><br />
-        <em>Main direction of the edges to be detected.</em
-        ><a href="" target="_blank"></a>
+        <strong>جهت</strong><br />
+        <em>جهت اصلی لبه‌‌ها شناسایی می‌شود.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Size</strong><br />
-        <em>Size of the Sobel kernel.</em><a href="" target="_blank"></a>
+        <strong>اندازه</strong><br />
+        <em>اندازه هسته سوبل</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Order</strong><br />
-        <em>Derivative order.</em><a href="" target="_blank"></a>
+        <strong>سفارش</strong><br />
+        <em>سفارش مشتق.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Offset</strong><br />
-        <em>Offset added to the output.</em><a href="" target="_blank"></a>
+        <strong>انحراف</strong><br />
+        <em>افست به خروجی اضافه شد.</em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
