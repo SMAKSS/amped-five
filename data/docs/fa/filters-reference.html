@@ -4384,36 +4384,34 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Scharr">Scharr</a></h3>
-    <p><em>Extracts the edges with a Scharr algorithm.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Scharr">شار</a></h3>
+    <p><em>لبه‌‌ها را با الگوریتم شار استخراج می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Scharr</em> filter convolves the image with the following
-      kernels:<br />
-      - for <em>Direction</em> = <em>Horizontal</em>:<br />
+      فیلتر شار تصویر را با هسته‌‌های زیر در هم می‌پیچد:<br />
+      - برای جهت = افقی::<br />
       | -3 0 3|<br />
       |-10 0 10|<br />
       | -3 0 3|;<br />
-      - for <em>Direction</em> = <em>Vertical</em>:<br />
+      - برای جهت = عمودی::<br />
       | -3 -10 3|<br />
       | 0 0 0|<br />
       | -3 -10 3|.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Direction</strong><br />
-        <em>Main direction of the edges to be detected.</em
-        ><a href="" target="_blank"></a>
+        <strong>جهت</strong><br />
+        <em>جهت اصلی لبه‌‌ها شناسایی می‌شود.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Offset</strong><br />
-        <em>Offset added to the output.</em><a href="" target="_blank"></a>
+        <strong>انحراف</strong><br />
+        <em>افست به خروجی اضافه شد.</em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -4424,37 +4422,36 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Canny">Canny</a></h3>
-    <p><em>Extracts the edges with a Canny algorithm.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Canny">فیلتر Canny </a></h3>
+    <p><em>لبه‌‌ها را با الگوریتم Canny استخراج می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Canny</em> filter finds the edges on the input image and marks
-      them on the output image by using the Canny algorithm. The smallest value
-      between <em>Threshold 1</em> and <em>Threshold 2</em> is used for edge
-      linking, while the largest one is used to find the initial segments of
-      strong edges.
+      فیلتر Canny لبه‌‌های تصویر ورودی را پیدا کرده و با استفاده از الگوریتم
+      Canny روی تصویر خروجی علامت گذاری می‌کند. کوچکترین مقدار بین آستانه 1 و
+      آستانه 2 برای پیوند لبه استفاده می‌شود، در حالی که بزرگترین مقدار برای
+      یافتن بخش‌‌های اولیه لبه‌‌های قوی استفاده می‌شود.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Size</strong><br />
-        <em>Size of the kernel used for filtering.</em
+        <strong>اندازه</strong><br />
+        <em>اندازه هسته مورد استفاده برای فیلتر کردن</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Threshold 1</strong><br />
-        <em>First edge threshold.</em><a href="" target="_blank"></a>
+        <strong>آستانه 1</strong><br />
+        <em>آستانه لبه اول</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Threshold 2</strong><br />
-        <em>Second edge threshold.</em><a href="" target="_blank"></a>
+        <strong>آستانه 2</strong><br />
+        <em>آستانه لبه دوم.</em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         John Canny, “A Computational Approach to Edge Detection”, in IEEE
@@ -4466,44 +4463,42 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Linear-Filter">Linear Filter</a></h3>
-    <p><em>Filters the image with a user-defined kernel.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Linear-Filter">فیلتر خطی</a></h3>
+    <p><em>تصویر را با یک هسته تعریف شده توسط کاربر فیلتر می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Linear Filter</em> performs the convolution of the input image
-      with a given matrix. Each value of the matrix is multiplied by an optional
-      rational scaling value.
+      فیلتر خطی کانولوشن تصویر ورودی را با یک ماتریس مشخص انجام می‌دهد. هر مقدار
+      ماتریس در یک مقدار مقیاس پذیری منطقی اختیاری ضرب می‌شود.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Matrix</strong><br />
-        <em>Matrix containing the user-defined kernel.</em
+        <strong>ماتریس</strong><br />
+        <em>ماتریسی حاوی هسته تعریف شده توسط کاربر.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Scale</strong><br />
-        <em>The value that multiplies all the elements in the matrix.</em
+        <strong>مقیاس</strong><br />
+        <em>مقداری که تمام عناصر ماتریس را ضرب می‌کند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        The Ghostreader: Learn How to Read Latent Writings on White Paper Using
-        بـستا and Some Intuition!:
+        یاد بگیرید چگونه نوشته‌‌های پنهان را با استفاده از بـستا و کمی‌شهود
+        بخوانید روی کاغذ سفید!:
         <a
           href="https://blog.ampedsoftware.com/2019/09/10/the-ghostreader-learn-how-to-read-latent-writings-on-white-paper-using-amped-five-and-some-intuition/"
           target="_blank"
@@ -4512,252 +4507,238 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Bilinear-Filter">Bilinear Filter</a></h3>
+    <h3><a name="Bilinear-Filter">فیلتر دو خطی</a></h3>
     <p>
       <em
-        >Filters the image with two user-defined kernels and combines the
-        results.</em
+        >تصویر را با دو هسته تعریف شده توسط کاربر فیلتر می‌کند و نتایج را ترکیب
+        می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Bilinear Filter</em> performs the convolution of the input image
-      with two given matrices. The results are combined by taking the norm,
-      minimum or maximum. The output is multiplied by an optional rational
-      scaling value.
+      فیلتر دو خطی انحراف تصویر ورودی را با دو ماتریس داده شده انجام می‌دهد.
+      نتایج با گرفتن هنجار، حداقل یا حداکثر ترکیب می‌شوند. خروجی در یک مقدار
+      مقیاس پذیری منطقی اختیاری ضرب می‌شود.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Matrix 1</strong><br />
-        <em>Matrix containing the first user-defined kernel.</em
+        <strong>ماتریس 1</strong><br />
+        <em>ماتریسی حاوی اولین هسته تعریف شده توسط کاربر.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Matrix 2</strong><br />
-        <em>Matrix containing the second user-defined kernel.</em
+        <strong>ماتریس 2</strong><br />
+        <em>ماتریسی حاوی دومین هسته تعریف شده توسط کاربر.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Scale</strong><br />
-        <em>The value that multiplies all the output pixels.</em
+        <strong>مقیاس</strong><br />
+        <em>مقداری که تمام پیکسل‌‌های خروجی را ضرب می‌کند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Combination method</strong><br />
-        <em>Method used to combine the outputs of the two linear filters.</em
+        <strong>روش ترکیبی</strong><br />
+        <em>روش استفاده شده برای ترکیب خروجی‌‌های دو فیلتر خطی.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <hr />
-    <h3><a name="Channel-Mixer">Channel Mixer</a></h3>
+    <h3><a name="Channel-Mixer">میکسر کانال</a></h3>
     <p>
       <em
-        >Mixes the ratio of color in every channel as a linear combination of
-        the input image channels.</em
+        >نسبت رنگ را در هر کانال به صورت ترکیبی خطی از کانال‌‌های تصویر ورودی
+        مخلوط می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      <em>Channel Mixer</em> allows to balance the proportion of color in every
-      channel.<br />
-      The value of each RGB component of every pixel in the output image is
-      calculated weighting the value of RGB components of the same pixel in the
-      input image accordingly to the parameters value specified for every
-      channel, or for <em>Value</em> if setting <em>Mode</em> to
-      <em>Grayscale</em>. The result is then multiplied by the
-      <em>Constant</em> specified for the channel.
+      میکسر کانال اجازه می‌دهد تا نسبت رنگ را در هر کانال متعادل کنید.<br />
+      مقدار هر جزء RGB از هر پیکسل در تصویر خروجی با وزن دادن به مقدار اجزای RGB
+      همان پیکسل در تصویر ورودی مطابق با مقدار پارامترهای مشخص شده برای هر کانال
+      یا برای مقدار در صورت تنظیم حالت روی مقیاس خاکستری محاسبه می‌شود. سپس
+      نتیجه در ثابت مشخص شده برای کانال ضرب می‌شود.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Mode</strong><br />
+        <strong>حالت</strong><br />
         <em
-          >Color mode: Value settings work only in Grayscale mode; Red, Green
-          and Blue settings work only in Color mode.</em
+          >حالت رنگ: تنظیمات مقدار فقط در حالت Grayscale کار می‌کند. تنظیمات
+          قرمز، سبز و آبی فقط در حالت Color کار می‌کنند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Value Red</strong><br />
+        <strong>ارزش قرمز</strong><br />
         <em
-          >Percentage of the Red value of the input image which will be mixed in
-          Value of the output pixel for Grayscale mode.</em
+          >درصد مقدار قرمز تصویر ورودی که با مقدار پیکسل خروجی برای حالت
+          Grayscale مخلوط می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Value Green</strong><br />
+        <strong>ارزش سبز</strong><br />
         <em
-          >Percentage of the Green value of the input image which will be mixed
-          in Value of the output pixel for Grayscale mode.</em
+          >درصد مقدار سبز تصویر ورودی که در مقدار پیکسل خروجی برای حالت
+          Grayscale مخلوط می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Value Blue</strong><br />
+        <strong>ارزش آبی</strong><br />
         <em
-          >Percentage of the Blue value of the input image which will be mixed
-          in Value of the output pixel for Grayscale mode.</em
+          >درصد مقدار آبی تصویر ورودی که با مقدار پیکسل خروجی برای حالت
+          Grayscale مخلوط می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Value Constant</strong><br />
-        <em
-          >Percentage of the combination of colors which will be added to the
-          overall value.</em
+        <strong>ارزش ثابت</strong><br />
+        <em>درصد ترکیب رنگ‌‌ها که به ارزش کلی اضافه می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Red Red</strong><br />
+        <strong>قرمز قرمز</strong><br />
         <em
-          >Percentage of the Red value of the input image which will be mixed in
-          the Red value of the output pixel for Color mode.</em
+          >درصد مقدار قرمز تصویر ورودی که برای حالت رنگ با مقدار قرمز پیکسل
+          خروجی مخلوط می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Red Green</strong><br />
+        <strong>قرمز سبز</strong><br />
         <em
-          >Percentage of the Green value of the input image which will be mixed
-          in the Red value of the output pixel for Color mode.</em
+          >درصد مقدار سبز تصویر ورودی که با مقدار قرمز پیکسل خروجی برای حالت رنگ
+          مخلوط می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Red Blue</strong><br />
+        <strong>قرمز آبی</strong><br />
         <em
-          >Percentage of the Blue value of the input image which will be mixed
-          in the Red value of the output pixel for Color mode.</em
+          >درصد مقدار آبی تصویر ورودی که برای حالت رنگ با مقدار قرمز پیکسل خروجی
+          مخلوط می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Red Constant</strong><br />
-        <em
-          >Percentage of the combination of colors which will be added to the
-          overall red value.</em
+        <strong>ثابت قرمز</strong><br />
+        <em>درصد ترکیب رنگ‌‌ها که به مقدار کلی قرمز اضافه می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Green Red</strong><br />
+        <strong>قرمز سبز</strong><br />
         <em
-          >Percentage of the Red value of the input image which will be mixed in
-          the Green value of the output pixel for Color mode.</em
+          >درصد مقدار قرمز تصویر ورودی که برای حالت رنگ با مقدار سبز پیکسل خروجی
+          مخلوط می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Green Green</strong><br />
+        <strong>سبز سبز</strong><br />
         <em
-          >Percentage of the Green value of the input image which will be mixed
-          in the Green value of the output pixel for Color mode.</em
+          >درصد مقدار سبز تصویر ورودی که برای حالت رنگ با مقدار سبز پیکسل خروجی
+          مخلوط می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Green Blue</strong><br />
+        <strong>سبز آبی</strong><br />
         <em
-          >Percentage of the Blue value of the input image which will be mixed
-          in the Green value of the output pixel for Color mode.</em
+          >درصد مقدار آبی تصویر ورودی که برای حالت رنگ با مقدار سبز پیکسل خروجی
+          مخلوط می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Green Constant</strong><br />
-        <em
-          >Percentage of the combination of colors which will be added to the
-          overall green value.</em
+        <strong>ثابت سبز</strong><br />
+        <em>درصد ترکیب رنگ‌‌ها که به مقدار کلی سبز اضافه می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Blue Red</strong><br />
+        <strong>آبی قرمز</strong><br />
         <em
-          >Percentage of the Red value of the input image which will be mixed in
-          the Blue value of the output pixel for Color mode.</em
+          >درصد مقدار قرمز تصویر ورودی که با مقدار آبی پیکسل خروجی برای حالت رنگ
+          مخلوط می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Blue Green</strong><br />
+        <strong>سبز آبی</strong><br />
         <em
-          >Percentage of the Green value of the input image which will be mixed
-          in the Blue value of the output pixel for Color mode.</em
+          >درصد مقدار سبز تصویر ورودی که با مقدار آبی پیکسل خروجی برای حالت رنگ
+          مخلوط می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Blue Blue</strong><br />
+        <strong>آبی آبی</strong><br />
         <em
-          >Percentage of the Blue value of the input image which will be mixed
-          in the Blue value of the output pixel for Color mode.</em
+          >درصد مقدار آبی تصویر ورودی که با مقدار آبی پیکسل خروجی برای حالت رنگ
+          مخلوط می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Blue Constant</strong><br />
-        <em
-          >Percentage of the combination of colors which will be added to the
-          overall blue value.</em
+        <strong>ثابت آبی</strong><br />
+        <em>درصد ترکیب رنگ‌‌ها که به مقدار کلی آبی اضافه می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Separate inks of different colors from a document.<a
+        جوهرهای رنگ‌‌های مختلف را از یک سند جدا کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -4767,10 +4748,10 @@
         ></a>
       </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        Channel Mixer in بـستا:
+        میکسر کانال در بستا:
         <a
           href="https://blog.ampedsoftware.com/2012/08/24/channel-mixer-in-amped-five-2/"
           target="_blank"
@@ -4779,91 +4760,86 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Color-Deconvolution">Color Deconvolution</a></h3>
+    <h3><a name="Color-Deconvolution">دکانولوشن رنگ</a></h3>
     <p>
-      <em>Maximizes the differences between specific colors in the image.</em>
+      <em>تفاوت بین رنگ‌‌های خاص در تصویر را به حداکثر می‌رساند.</em>
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      <em>Color Deconvolution</em> allows to separate or extract different
-      colors in an image, changing the standard RGB color space to a new one
-      which maximizes the differences between user selected colors.
+      دکانولوشن رنگ اجازه می‌دهد تا رنگ‌‌های مختلف را در یک تصویر جدا یا استخراج
+      کنید و فضای رنگ استاندارد RGB را به فضای جدید تغییر دهید که تفاوت بین
+      رنگ‌‌های انتخاب شده توسط کاربر را به حداکثر می‌رساند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Desired Color Point</strong><br />
+        <strong>نقطه رنگ مورد نظر</strong><br />
+        <em>مختصات نقطه مورد استفاده برای نمونه رنگ مورد نظر برای استخراج.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>نقطه رنگ نامطلوب</strong><br />
         <em
-          >Coordinates of the point used to sample the desired color to
-          extract.</em
+          >مختصات نقطه مورد استفاده برای نمونه برداری از اولین رنگ ناخواسته برای
+          حذف.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Undesired Color Point</strong><br />
+        <strong>نقطه رنگ نامطلوب 2</strong><br />
         <em
-          >Coordinates of the point used to sample the first unwanted color to
-          remove.</em
+          >مختصات نقطه مورد استفاده برای نمونه برداری از دومین رنگ ناخواسته برای
+          حذف.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Undesired Color Point 2</strong><br />
-        <em
-          >Coordinates of the point used to sample the second unwanted color to
-          remove.</em
+        <strong>نقطه رنگ پس زمینه</strong><br />
+        <em>مختصات نقطه مورد استفاده برای نمونه برداری از رنگ پس زمینه.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Background Color Point</strong><br />
-        <em>Coordinates of the point used to sample the background color.</em
+        <strong>اندازه</strong><br />
+        <em>اندازه پنجره به میانگین برای محاسبه مقادیر رنگ.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Size</strong><br />
-        <em>Size of the window to average to calculate color values.</em
-        ><a href="" target="_blank"></a>
+        <strong>حالت رنگ</strong><br />
+        <em>عملیات انجام شده توسط فیلتر.</em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <ul>
-      <li>
-        <strong>Color Mode</strong><br />
-        <em>The operation performed by the filter.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      Select, using the <em>Point</em> tool and the appropriate tab in the
-      filter settings, a <em>Desired Color</em>, one or two
-      <em>Undesired Colors</em> and a <em>Background Color</em>. The filter will
-      generate and apply an affine linear transformation to the image's RGB
-      channels that transforms the undesired color(s) into the background color
-      and leaves the other user-selected colors unchanged. The transformation is
-      determined by the <em>Color Mode</em> setting. <em>Legacy</em> is the
-      original method described in (Berger et al., 2006) and removes only the
-      first undesired color. Also <em>Min. Color Shift</em> removes only the
-      first undesired color but uses a different method that minimizes the mean
-      squared difference between the input and output images. This technique is
-      known as the Monge-Kantorovitch optimal transportation problem. Finally,
-      <em>Remove First and Second Color</em> removes both undesired colors.
+      با استفاده از ابزار نقطه و تب مناسب در تنظیمات فیلتر، یک رنگ دلخواه، یک یا
+      دو رنگ نامطلوب و یک رنگ پس زمینه را انتخاب کنید. این فیلتر یک تبدیل خطی
+      وابسته به کانال‌های RGB تصویر ایجاد و اعمال می‌کند که رنگ(های) نامطلوب را
+      به رنگ پس‌زمینه تبدیل می‌کند و سایر رنگ‌های انتخاب‌شده توسط کاربر را بدون
+      تغییر باقی می‌گذارد. تغییر شکل با تنظیمات حالت رنگ تعیین می‌شود. Legacy
+      روش اصلی توصیف شده در (برگر و همکاران، 2006) است و تنها اولین رنگ نامطلوب
+      را حذف می‌کند. همچنین حداقل رنگ Shift تنها اولین رنگ نامطلوب را حذف می‌کند
+      اما از روش متفاوتی استفاده می‌کند که میانگین مجذور اختلاف بین تصاویر ورودی
+      و خروجی را به حداقل می‌رساند. این تکنیک به عنوان مسئله حمل و نقل بهینه
+      Monge-Kantorovitch شناخته می‌شود. در نهایت، Remove First و Second رنگ هر
+      دو رنگ نامطلوب را حذف می‌کند.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Separate inks of different colors from graffiti on the wall.<a
+        جوهرهای رنگ‌‌های مختلف را از گرافیتی روی دیوار جدا کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Charles E. H. Berger, Jan A. de Koeijer, Wendy Glas and Henk T.
@@ -4885,10 +4861,10 @@
         >
       </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        Color Deconvolution in بـستا:
+        دکانولوشن رنگ در بستا:
         <a
           href="https://blog.ampedsoftware.com/2012/12/19/color-deconvolution-in-amped-five/"
           target="_blank"
@@ -4896,8 +4872,8 @@
         >
       </li>
       <li>
-        Read Beneath the Lines! Learn How بـستا’s Color Deconvolution Filter
-        Helps You Take Out Relevant Elements from Color-Mixed Images:
+        زیر خطوط را بخوانید! بیاموزید که چگونه فیلتر دکانولوشن رنگ بـستا به شما
+        کمک می‌کند تا عناصر مرتبط را از تصاویر ترکیبی رنگی حذف کنید:
         <a
           href="https://blog.ampedsoftware.com/2019/08/20/read-beneath-the-lines-learn-how-amped-fives-color-deconvolution-filter-helps-you-take-out-relevant-elements-from-color-mixed-images/"
           target="_blank"
@@ -4906,49 +4882,36 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Component-Separation">Component Separation</a></h3>
+    <h3><a name="Component-Separation">جداسازی اجزا</a></h3>
     <p>
-      <em
-        >Separates signals due to different informative components in the
-        image.</em
-      >
+      <em>سیگنال‌‌ها را به دلیل اجزای مختلف اطلاعاتی در تصویر جدا می‌کند.</em>
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The filter <em>Component Separation</em> uses the Fast ICA (Independent
-      Component Analysis) algorithm to separate the images into the most
-      independent components. The algorithm assumes that the three RGB
-      components of the signal represent three different linear combinations of
-      three independent input signals. After the processing the three estimated
-      input signals are mapped on the three RGB channels of the output image.
-      This filter does not process grayscale images.
+      فیلتر جداسازی اجزا از الگوریتم Fast ICA (تجزیه و تحلیل اجزای مستقل) برای
+      جداسازی تصاویر به مستقل ترین اجزا استفاده می‌کند. الگوریتم فرض می‌کند که
+      سه جزء RGB سیگنال، سه ترکیب خطی مختلف از سه سیگنال ورودی مستقل را نشان
+      می‌دهند. پس از پردازش، سه سیگنال ورودی تخمین زده شده بر روی سه کانال RGB
+      تصویر خروجی نگاشت می‌شوند. این فیلتر تصاویر سیاه و سفید را پردازش نمی‌کند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Channel</strong><br />
-        <em>Channels(s) to extract.</em><a href="" target="_blank"></a>
+        <strong>کانال</strong><br />
+        <em>کانال(های) برای استخراج</em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Separate a latent fingerprint from the background.<a
-          href=""
-          target="_blank"
-        ></a>
+        اثر انگشت پنهان را از پس زمینه جدا کنید.<a href="" target="_blank"></a>
       </li>
+      <li>تمبر چاپی را از تمبر پست جدا کنید.<a href="" target="_blank"></a></li>
       <li>
-        Separate a print stamp from a post stamp.<a href="" target="_blank"></a>
-      </li>
-      <li>
-        Separate a reflection from what's behind it.<a
-          href=""
-          target="_blank"
-        ></a>
+        یک انعکاس را از آنچه پشت آن است جدا کنید.<a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Aapo Hyvärinen and Erkki Oja, “Independent Component Analysis:
@@ -4962,114 +4925,100 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Fourier">Fourier</a></h3>
+    <h3><a name="Fourier">فوریه</a></h3>
     <p>
       <em
-        >Removes periodic noise, background and interferences in the Fourier
-        domain. Useful for latent fingerprints, capture artifacts and
-        electromagnetic interferences in videos.</em
+        >نویز دوره ای، پس زمینه و تداخل در دامنه فوریه را حذف می‌کند. برای اثر
+        انگشت نهفته، ثبت مصنوعات و تداخل‌‌های الکترومغناطیسی در فیلم‌‌ها مفید
+        است.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Fourier</em> tool filters an image in the frequency domain, which
-      allows to easily remove parts of the spectrum where interferences and/or
-      periodic noise are located. This is done by setting to zero selected areas
-      of the spectrum and then calculating its inverse Fourier transform with
-      the inverse DFT algorithm. Both manual and automatic selection tools are
-      available.
+      ابزار فوریه یک تصویر را در حوزه فرکانس فیلتر می‌کند، که به آسانی بخش‌هایی
+      از طیف را که تداخل‌ها و/یا نویز دوره‌ای در آن قرار دارند حذف می‌کند. این
+      کار با صفر کردن مناطق انتخابی طیف و سپس محاسبه تبدیل فوریه معکوس آن با
+      الگوریتم معکوس DFT انجام می‌شود. هر دو ابزار انتخاب دستی و خودکار در دسترس
+      هستند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Automatic Selection</strong><br />
+        <strong>انتخاب خودکار</strong><br />
         <em
-          >Automatically select the peaks in the FFT (can be refined
-          manually).</em
+          >به طور خودکار قله‌‌ها را در FFT انتخاب کنید (می‌توان آن را به صورت
+          دستی اصلاح کرد).</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Output</strong><br />
-        <em>Domain of the output image.</em><a href="" target="_blank"></a>
+        <strong>خروجی</strong><br />
+        <em>دامنه تصویر خروجی</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Smoothing</strong><br />
-        <em>Smoothing.</em><a href="" target="_blank"></a>
+        <strong>صاف کردن</strong><br />
+        <em>صاف کردن.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selections to Remove</strong><br />
-        <em>Regions of the spectrum to be removed.</em
-        ><a href="" target="_blank"></a>
+        <strong>انتخاب‌‌هایی برای حذف</strong><br />
+        <em>مناطقی از طیف که باید حذف شوند.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selections to Keep</strong><br />
-        <em>Regions of the spectrum to be preserved.</em
-        ><a href="" target="_blank"></a>
+        <strong>انتخاب‌‌هایی برای نگه داشتن</strong><br />
+        <em>مناطقی از طیف که باید حفظ شوند.</em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      Set <em>Output</em> to <em>Frequency Spectrum (FFT)</em>, which shows the
-      image FFT (Fast Fourier Transform), or to <em>Side by Side</em>, which
-      shows the FFT together with the processed image. In these modes, you can
-      set to zero specific portions of the FFT, which correspond to the
-      interferences. Three selection methods are available:<br />
-      - Select with the <em>Select</em> tool the areas you wish to set to zero
-      and click on <em>Add</em> in the <em>Selections to Remove</em> control. If
-      you need to undo a selection, select it on the list and click on the
-      button <em>Delete</em>.<br />
-      - Select with the <em>Select</em> tool the areas you wish to keep and then
-      click on <em>Add</em> in the <em>Selections to Keep</em> control. This
-      tool, combined with the previous one, can be used to define selections
-      with complex shapes or holes.<br />
-      - Click on the <em>Automatic Selection</em> control to automatically
-      detect the peaks of the FFT, which typically correspond to strong periodic
-      patterns or interferences. If necessary, use the
-      <em>Selections to Remove</em> or <em>Selections to Keep</em> controls to
-      fine tune the selection.<br />
-      - The filter may, in some cases, introduce ringing artifacts near sharp
-      edges in the image. If this occurs, use the <em>Smoothing</em> slider to
-      reduce the artifacts. This, however, also reduces the effect of the
-      filter.<br />
-      To check how the filter affects the output image, set <em>Output</em> to
-      <em>Image (IFFT)</em> or <em>Side by Side</em>, which show the inverse FFT
-      of the filtered spectrum.<br />
-      It is possible to show the deleted data by setting <em>Output</em> to
-      <em>Image Complement (IFFT)</em>.
+      خروجی را روی طیف فرکانس (FFT) تنظیم کنید که تصویر را FFT (تبدیل فوریه
+      سریع) نشان می‌دهد، یا روی Side by Side که FFT را همراه با تصویر پردازش شده
+      نشان می‌دهد. در این حالت‌ها، می‌توانید بخش‌های خاصی از FFT را که با
+      تداخل‌ها مطابقت دارد را روی صفر تنظیم کنید. سه روش انتخاب در دسترس
+      است::<br />
+      - با ابزار انتخاب مناطقی را که می‌خواهید صفر کنید انتخاب کنید و در کنترل
+      حذف انتخاب شده ها روی افزودن کلیک کنید. اگر نیاز به واگرد انتخابی دارید،
+      آن را در لیست انتخاب کنید و روی دکمه حذف کلیک کنید.<br />
+      - با ابزار انتخاب مناطقی را که می‌خواهید نگه دارید انتخاب کنید و سپس روی
+      گزینه افزودن در قسمت ذخیره انتخاب شده ها کلیک کنید. این ابزار، همراه با
+      ابزار قبلی، می‌تواند برای تعریف انتخاب‌‌هایی با اشکال یا سوراخ‌‌های پیچیده
+      استفاده شود.<br />
+      - بر روی کنترل انتخاب خودکار کلیک کنید تا به طور خودکار پیک‌‌های FFT را که
+      معمولاً با الگوهای دوره ای قوی یا تداخل مطابقت دارد، شناسایی کنید. در صورت
+      لزوم، از کنترل‌های حذف انتخاب شده ها یا ذخیره انتخاب شده ها برای تنظیم
+      دقیق انتخاب استفاده کنید.<br />
+      - فیلتر ممکن است در برخی موارد، آرتیفکت‌‌های زنگی را در نزدیکی لبه‌‌های
+      تیز تصویر ایجاد کند. اگر این اتفاق افتاد، از نوار لغزنده صاف کردن برای
+      کاهش مصنوعات استفاده کنید. با این حال، این نیز اثر فیلتر را کاهش
+      می‌دهد.<br />
+      برای بررسی اینکه چگونه فیلتر روی تصویر خروجی تأثیر می‌گذارد، خروجی را روی
+      Image (IFFT) یا Side by Side قرار دهید که FFT معکوس طیف فیلتر شده را نشان
+      می‌دهد.<br />
+      نمایش داده‌‌های حذف شده با تنظیم Output روی Image Complement (IFFT) امکان
+      پذیر است.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Separate a latent fingerprint from the background.<a
-          href=""
-          target="_blank"
-        ></a>
+        اثر انگشت پنهان را از پس زمینه جدا کنید.<a href="" target="_blank"></a>
       </li>
       <li>
-        Remove periodic interference from a camera.<a
-          href=""
-          target="_blank"
-        ></a>
+        تداخل دوره ای را از دوربین حذف کنید.<a href="" target="_blank"></a>
       </li>
       <li>
-        Remove Moiré artifacts from a photo of a screen.<a
-          href=""
-          target="_blank"
-        ></a>
+        مصنوعات Moiré را از عکس صفحه حذف کنید.<a href="" target="_blank"></a>
       </li>
       <li>
-        Remove artifacts from a scanned photo.<a href="" target="_blank"></a>
+        مصنوعات را از یک عکس اسکن شده حذف کنید.<a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -5079,11 +5028,10 @@
         ></a>
       </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        Science at Your Service: Learn How to Remove Periodic Noise With بـستا’s
-        Fourier Filter:
+        علم در خدمت شما: نحوه حذف نویز دوره ای را با فیلتر فوریه بـستا بیاموزید:
         <a
           href="https://blog.ampedsoftware.com/2019/12/17/science-at-your-service-learn-how-to-remove-periodic-noise-with-amped-fives-fourier-filter/"
           target="_blank"
@@ -5092,91 +5040,82 @@
       </li>
     </ul>
     <hr />
-    <h2><a name="Verify">Verify</a></h2>
-    <p><em>Tools to authenticate digital images.</em></p>
+    <h2><a name="Verify">تأیید کنید</a></h2>
+    <p><em>ابزارهایی برای احراز هویت تصاویر دیجیتال</em></p>
     <hr />
-    <h3><a name="File-Info">File Info</a></h3>
-    <p><em>Saves file information and EXIF metadata on the report.</em></p>
-    <h4>Details</h4>
+    <h3><a name="File-Info">اطلاعات فایل</a></h3>
+    <p><em>اطلاعات فایل و ابرداده EXIF را در گزارش ذخیره می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p></p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Info</strong><br />
-        <em>Metadata information saved with the file.</em
+        <strong>اطلاعات</strong><br />
+        <em>اطلاعات فراداده با فایل ذخیره می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
+      <li>تاریخ ثبت عکس را بررسی کنید.<a href="" target="_blank"></a></li>
       <li>
-        Verify the date when a picture has been taken.<a
+        بررسی کنید که آیا تصاویر با فتوشاپ ذخیره شده اند یا خیر.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Verify if the images have been saved with Photoshop.<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-      <li>
-        Display the camera used for taking the photo.<a
+        دوربینی که برای عکس گرفتن استفاده می‌شود را نمایش دهید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
     <hr />
-    <h3><a name="Hash-Code">Hash Code</a></h3>
+    <h3><a name="Hash-Code">کد هش</a></h3>
     <p>
       <em
-        >Calculates the input file hash code to check data integrity when
-        loading the project. Supports several hashing algorithms.</em
+        >کد هش فایل ورودی را برای بررسی یکپارچگی داده‌‌ها هنگام بارگذاری پروژه
+        محاسبه می‌کند. از چندین الگوریتم هش پشتیبانی می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p></p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Mode</strong><br />
-        <em>Hash code algorithm to use.</em><a href="" target="_blank"></a>
+        <strong>حالت</strong><br />
+        <em>الگوریتم کد هش برای استفاده.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Hash Codes</strong><br />
-        <em>List of calculated hash codes.</em><a href="" target="_blank"></a>
+        <strong>کدهای هش</strong><br />
+        <em>لیست کدهای هش محاسبه شده</em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Univoquely identify the input file to process.<a
+        فایل ورودی برای پردازش را به طور یکسان شناسایی کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Verify that the input and output files have not been changed.<a
+        بررسی کنید که فایل‌‌های ورودی و خروجی تغییر نکرده باشند.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Verify that the content of two images is the same.<a
-          href=""
-          target="_blank"
-        ></a>
+        بررسی کنید که محتوای دو تصویر یکسان است.<a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        In a Flash, with the Hash! Learn How to Quickly Spot Identical Frames in
-        بـستا:
+        در یک فلش، با هش! نحوه تشخیص سریع فریم‌‌های یکسان در بـستا را بیاموزید:
         <a
           href="https://blog.ampedsoftware.com/2019/07/30/in-a-flash-with-the-hash-learn-how-to-quickly-spot-identical-frames-in-amped-five/"
           target="_blank"
@@ -5184,8 +5123,8 @@
         >
       </li>
       <li>
-        VeriFIVE your files (aka "How to hash-check files in your بـستا
-        project"):
+        فایل‌‌های خود را VeriFIVE کنید (معروف به "چگونه فایل‌‌ها را در پروژه
+        بـستا خود چک کنیم"):
         <a
           href="https://blog.ampedsoftware.com/2019/03/12/verifive-your-files-aka-how-to-hash-check-files-in-your-amped-five-project/"
           target="_blank"
@@ -5194,91 +5133,91 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Macroblocks">Macroblocks</a></h3>
+    <h3><a name="Macroblocks">فیلتر ماکروبلاک‌‌ها</a></h3>
     <p>
       <em
-        >Visualizes the macroblock type and motion vectors from a MPEG based
-        video.</em
+        >نوع ماکروبلاک و بردارهای حرکت را از یک ویدیوی مبتنی بر MPEG تجسم
+        می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Macroblocks</em> filter will write a new video file which displays
-      the MPEG macroblock type and its motion vectors, depending on the
-      configured settings. This analysis allows to evaluate the reliability of
-      information in the different parts of the image.
+      فیلتر ماکروبلاک‌‌ها یک فایل ویدئویی جدید می‌نویسد که بسته به تنظیمات
+      پیکربندی شده، نوع ماکرو بلوک MPEG و بردارهای حرکتی آن را نمایش می‌دهد. این
+      تجزیه و تحلیل امکان ارزیابی قابلیت اطمینان اطلاعات در قسمت‌‌های مختلف
+      تصویر را فراهم می‌کند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>File</strong><br />
-        <em>Path of the file to save.</em><a href="" target="_blank"></a>
+        <strong>فایل</strong><br />
+        <em>مسیر فایل برای ذخیره</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Format</strong><br />
-        <em>Container and codec used to write the video file.</em
+        <strong>فرمت</strong><br />
+        <em>ظرف و کدک مورد استفاده برای نوشتن فایل ویدئویی.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show Macroblock Type</strong><br />
+        <strong>نمایش نوع ماکروبلاک</strong><br />
         <em
-          >If enabled, overlays different colors on macroblocks according to
-          their type.</em
+          >اگر فعال باشد، رنگ‌های مختلف را بر اساس نوع ماکرو بلوک‌ها پوشش
+          می‌دهد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show P Forward Motion Vectors</strong><br />
+        <strong>نمایش P بردارهای حرکت رو به جلو</strong><br />
         <em
-          >If enabled, overlays arrows that show the forward predicted motion
-          vectors of P frames.</em
+          >در صورت فعال بودن، فلش‌هایی را که بردارهای حرکت پیش‌بینی‌شده قاب‌های
+          P را نشان می‌دهند، پوشش می‌دهد..</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show B Forward Motion Vectors</strong><br />
+        <strong>نمایش B بردارهای حرکت رو به جلو</strong><br />
         <em
-          >If enabled, overlays arrows that show the forward predicted motion
-          vectors of B frames.</em
+          >در صورت فعال بودن، فلش‌هایی را که بردارهای حرکت پیش‌بینی‌شده قاب‌های
+          B را نشان می‌دهند، پوشش می‌دهد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show B Backward Motion Vectors</strong><br />
+        <strong>نمایش بردارهای حرکت رو به عقب B</strong><br />
         <em
-          >If enabled, overlays arrows that show the backward predicted motion
-          vectors of B frames.</em
+          >در صورت فعال بودن، فلش‌هایی را که بردارهای حرکت پیش‌بینی‌شده به عقب
+          قاب‌های B را نشان می‌دهند، پوشش می‌دهد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      Gray blocks have been copied from another frame. Green blocks have changes
-      in the luminance or location and are referenced to the previous frame.
-      Blue blocks have changes in the luminance or location and are referenced
-      to the next frame. Red blocks are newly encoded data from the current
-      frame and thus are more reliable. There are a number of possible colors
-      and types. For more information check:
-      https://trac.ffmpeg.org/wiki/Debug/MacroblocksAndMotionVectors.
+      بلوک‌‌های خاکستری از فریم دیگری کپی شده اند. بلوک‌‌های سبز تغییراتی در
+      روشنایی یا مکان دارند و به قاب قبلی ارجاع می‌شوند. بلوک‌‌های آبی تغییراتی
+      در روشنایی یا مکان دارند و به فریم بعدی ارجاع می‌شوند. بلوک‌های قرمز
+      داده‌های تازه کدگذاری‌شده از فریم فعلی هستند و بنابراین قابل اعتمادتر
+      هستند. تعدادی رنگ و نوع ممکن وجود دارد. برای اطلاعات بیشتر:
+      https://trac.ffmpeg.org/wiki/Debug/MacroblocksAndMotionVectors را بررسی
+      کنید.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Identify which data in a frame is of better quality and more reliable on
-        the original stream.<a href="" target="_blank"></a>
+        شناسایی کنید که کدام داده در یک فریم با کیفیت بهتر و قابل اعتمادتر در
+        جریان اصلی است.<a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        Understanding the Macroblocks Filter:
+        آشنایی با فیلتر ماکروبلاک‌‌ها:
         <a
           href="https://blog.ampedsoftware.com/2016/03/08/understanding-the-macroblocks-filter/"
           target="_blank"
@@ -5287,621 +5226,584 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Block-Difference">Block Difference</a></h3>
+    <h3><a name="Block-Difference">ابزار بلوک تفاوت</a></h3>
     <p>
       <em
-        >Compute the difference between the current and previous frames of a
-        video and hide the blocks with an average difference below a specified
-        threshold.</em
+        >تفاوت بین فریم‌‌های فعلی و قبلی یک ویدیو را محاسبه کنید و بلوک‌‌ها را
+        با اختلاف میانگین زیر یک آستانه مشخص پنهان کنید.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Block Difference</em> tool computes the difference between the
-      current and previous frames of a video and takes the average over blocks.
-      The blocks with an average difference below an user-specified threshold
-      are gradually blackened out. Both absolute and relative difference modes
-      are supported.
+      ابزار بلوک تفاوت تفاوت بین فریم‌‌های فعلی و قبلی یک ویدیو را محاسبه می‌کند
+      و میانگین را از بلوک‌‌ها می‌گیرد. بلوک‌هایی که دارای اختلاف متوسط زیر
+      آستانه تعیین‌شده توسط کاربر هستند، به تدریج سیاه می‌شوند. هر دو حالت تفاوت
+      مطلق و نسبی پشتیبانی می‌شوند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Difference Mode</strong><br />
-        <em>Choose between an absolute or relative difference.</em
+        <strong>حالت تفاوت</strong><br />
+        <em>بین یک تفاوت مطلق یا نسبی انتخاب کنید.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Block Size</strong><br />
-        <em>Size of the blocks used to average the difference.</em
+        <strong>اندازه بلوک</strong><br />
+        <em>اندازه بلوک‌‌های مورد استفاده برای میانگین تفاوت.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Threshold</strong><br />
+        <strong>آستانه</strong><br />
         <em
-          >The blocks with an average difference below this value are gradually
-          blackened out.</em
+          >بلوک‌‌هایی با اختلاف متوسط کمتر از این مقدار به تدریج سیاه
+          می‌شوند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      The <em>Block Difference</em> tool can be used to focus the observer's
-      attention onto the parts of the video that change over time. The
-      <em>Absolute</em> mode can be used if the frame has a uniform
-      illumination; the <em>Relative</em> mode, instead, may be preferable if
-      the frame contains both illuminated and dark portions.
+      ابزار بلوک تفاوت را می‌توان برای متمرکز کردن توجه ناظر به بخش‌‌هایی از
+      ویدیو که در طول زمان تغییر می‌کنند استفاده کرد. در صورتی که قاب دارای
+      روشنایی یکنواخت باشد، می‌توان از حالت مطلق استفاده کرد. در عوض، حالت نسبی
+      ممکن است ترجیح داده شود اگر قاب دارای هر دو بخش روشن و تاریک باشد.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Identify which data in a frame is of better quality and more reliable on
-        a converted stream.<a href="" target="_blank"></a>
+        شناسایی کنید که کدام داده در یک فریم با کیفیت بهتر و قابل اعتمادتر در
+        جریان تبدیل شده است.<a href="" target="_blank"></a>
       </li>
     </ul>
     <hr />
-    <h2><a name="Measure">Measure</a></h2>
-    <p><em>Extracts real-world measurements from images.</em></p>
+    <h2><a name="Measure">اندازه گرفتن</a></h2>
+    <p><em>اندازه‌گیری‌‌های دنیای واقعی را از تصاویر استخراج می‌کند.</em></p>
     <hr />
-    <h3><a name="Measure-1d">Measure 1d</a></h3>
+    <h3><a name="Measure-1d">ابزار اندازه گیری یک بعدی</a></h3>
     <p>
       <em
-        >Takes a measurement on the planar image. Reference and unknown measure
-        must be on the same plane and the plane must be parallel to the image
-        plane.</em
+        >روی تصویر مسطح اندازه‌گیری می‌کند. مرجع و اندازه‌گیری مجهول باید در یک
+        صفحه باشد و صفحه باید موازی با صفحه تصویر باشد.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Measure 1d</em> tool computes a distance in the real world from
-      the image. The real-world distance between any couple of points in the
-      image is computed by calculating the ratio between their pixel distance
-      and the pixel density, where the pixel density is obtained as the ratio
-      between the pixel length and the real-world length of the reference
-      segment.
+      ابزار اندازه گیری یک بعدی فاصله ای را در دنیای واقعی از تصویر محاسبه
+      می‌کند. فاصله واقعی بین هر دو نقطه در تصویر با محاسبه نسبت بین فاصله پیکسل
+      آنها و تراکم پیکسل محاسبه می‌شود، جایی که تراکم پیکسل به عنوان نسبت بین
+      طول پیکسل و طول واقعی مرجع به دست می‌آید. بخش.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Reference Line</strong><br />
-        <em
-          >The pixel coordinates of the line whose dimension is known by the
-          user.</em
+        <strong>خط مرجع</strong><br />
+        <em>مختصات پیکسل خطی که ابعاد آن توسط کاربر مشخص است.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Reference Length</strong><br />
-        <em
-          >The real-world distance (m, cm, mm, yd, ft, in...) between the
-          endpoints of the reference line.</em
+        <strong>طول مرجع</strong><br />
+        <em>فاصله واقعی (m، cm، mm، yd، ft، in...) بین نقاط انتهایی خط مرجع.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Unit of Measurement</strong><br />
-        <em>The measurement unit used in the process.</em
+        <strong>واحد اندازه‌گیری</strong><br />
+        <em>واحد اندازه‌گیری مورد استفاده در فرآیند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Decimal Places</strong><br />
-        <em>The number of decimal digits in the computed measurement.</em
+        <strong>مکان‌‌های اعشاری</strong><br />
+        <em>تعداد ارقام اعشاری در اندازه‌گیری محاسبه شده.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Output Line</strong><br />
-        <em>The pixel coordinates of the target of the measurement.</em
+        <strong>خط خروجی</strong><br />
+        <em>مختصات پیکسل هدف اندازه‌گیری.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>طول خروجی</strong><br />
+        <em>مقدار واقعی (m, cm, mm, yd, ft, in...) خروجی اندازه‌گیری.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Output Length</strong><br />
-        <em
-          >The real-world value (m, cm, mm, yd, ft, in...) of the output of the
-          measurement.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Show Reference Line</strong><br />
+        <strong>نمایش خط مرجع</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show Reference Measure</strong><br />
+        <strong>نمایش اندازه‌گیری مرجع</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show Output Line</strong><br />
+        <strong>نمایش خط خروجی</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show Output Measure</strong><br />
+        <strong>نمایش اندازه‌گیری خروجی</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      In the <em>Reference</em> tab, select two points on the image that will
-      define the known distance. This segment is used as reference. In the
-      <em>Measure</em> tab, mark the two endpoints of a segment you wish to
-      measure. The <em>Measure 1d</em> method does not rely on any geometric
-      information from the scene, so the filter has to be used with images which
-      are not affected by perspective and lens distortions. For further details,
-      please browse the <em>Tutorial</em> section of the user manual.
+      در تب منبع دو نقطه از تصویر را انتخاب کنید که فاصله شناخته شده را مشخص
+      می‌کند. این بخش به عنوان مرجع استفاده می‌شود. در تب اندازه گیری، دو نقطه
+      پایانی بخشی را که می‌خواهید اندازه‌گیری کنید، علامت بزنید. روش اندازه گیری
+      یک بعدی به هیچ اطلاعات هندسی از صحنه متکی نیست، بنابراین فیلتر باید برای
+      تصاویری استفاده شود که تحت تأثیر چشم انداز و اعوجاج لنز قرار نگیرند. برای
+      جزئیات بیشتر، لطفاً بخش آموزش کتابچه راهنمای کاربر را مرور کنید.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
-      <li>Measure some objects on a plane.<a href="" target="_blank"></a></li>
       <li>
-        Measure fingerprints, footprints or other evidence with a ruler.<a
+        برخی از اشیاء را در هواپیما اندازه‌گیری کنید.<a
+          href=""
+          target="_blank"
+        ></a>
+      </li>
+      <li>
+        اثر انگشت، رد پا یا سایر شواهد را با خط کش اندازه بگیرید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
     <hr />
-    <h3><a name="Measure-2d">Measure 2d</a></h3>
+    <h3><a name="Measure-2d">ابزار اندازه گیری دو بعدی</a></h3>
     <p>
       <em
-        >Takes a measurement on planar image after perspective correction.
-        Reference and unknown measure must be on the same plane.</em
+        >پس از تصحیح چشم انداز، روی تصویر مسطح اندازه‌گیری می‌کند. مرجع و
+        اندازه‌گیری مجهول باید در یک صفحه باشند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Measure 2d</em> tool computes a specific measurement distance in a
-      rectified image. Given an image of a planar surface, points on the image
-      plane can be mapped into corresponding points in the rectified plane by
-      means of a projective transformation called homography. Points in one
-      plane are mapped into the corresponding points in the other plane as
-      follows:<br />
+      ابزار اندازه گیری دو بعدی یک فاصله اندازه‌گیری خاص را در یک تصویر اصلاح
+      شده محاسبه می‌کند. با توجه به تصویری از یک سطح مسطح، نقاط روی صفحه تصویر
+      را می‌توان با استفاده از یک تبدیل تصویری به نام هموگرافی به نقاط مربوطه در
+      صفحه یکسو شده ترسیم کرد. نقاط یک صفحه به صورت زیر به نقاط مربوطه در صفحه
+      دیگر نگاشت می‌شوند:<br />
       X = Hx<br />
-      where x is an image point, X is the corresponding point on the world plane
-      and H is the 3x3 matrix representing the homography transformation.<br />
-      Once the homography matrix H is known (or has been computed), any image
-      point can be mapped into the corresponding location on the rectified
-      planar surface and the distance between two points x1 and x2 on the image
-      plane can be obtained by computing the Euclidean distance d(X1,X2) between
-      the corresponding points X1 and X2 on the rectified plane. The homography
-      is computed from a set of at least four points by the
-      <em>Perspective Correction</em> filter, that must be applied before
-      <em>Measure 2d</em>.
+      که در آن x یک نقطه تصویر، X نقطه متناظر در صفحه جهان و H ماتریس 3x3 است که
+      تبدیل هموگرافی را نشان می‌دهد. هنگامی‌که ماتریس هموگرافی H شناخته شد (یا
+      محاسبه شد)، هر نقطه تصویر را می‌توان در محل مربوطه در سطح مسطح اصلاح شده
+      ترسیم کرد و فاصله بین دو نقطه x1 و x2 در صفحه تصویر را می‌توان با محاسبه
+      فاصله اقلیدسی به دست آورد. d(X1,X2) بین نقاط متناظر X1 و X2 در صفحه یکسو
+      شده. هموگرافی از مجموعه ای از حداقل چهار نقطه توسط فیلتر تصحیح چشم انداز
+      محاسبه می‌شود که باید قبل از اندازه‌گیری دو بعدی اعمال شود.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>X-axis Reference Line</strong><br />
+        <strong>خط مرجع محور X</strong><br />
+        <em>مختصات پیکسل خط افقی که ابعاد آن توسط کاربر مشخص است.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>طول مرجع محور X</strong><br />
         <em
-          >The pixel coordinates of the horizontal line whose dimension is known
-          by the user.</em
+          >فاصله دنیای واقعی (m، cm، mm، yd، ft، in...) بین نقاط انتهایی خط مرجع
+          محور x.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>X-axis Reference Length</strong><br />
+        <strong>واحد اندازه‌گیری</strong><br />
+        <em>واحد اندازه‌گیری مورد استفاده در فرآیند.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>مکان‌‌های اعشاری</strong><br />
+        <em>تعداد ارقام اعشاری در اندازه‌گیری محاسبه شده.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>خط مرجع محور Y</strong><br />
+        <em>مختصات پیکسل خط عمودی که ابعاد آن توسط کاربر مشخص است.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>طول مرجع محور Y</strong><br />
         <em
-          >The real-world distance (m, cm, mm, yd, ft, in...) between the
-          endpoints of the x-axis reference line.</em
+          >فاصله دنیای واقعی (m، cm، mm، yd، ft، in...) بین نقاط انتهایی خط مرجع
+          محور y.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Unit of Measurement</strong><br />
-        <em>The measurement unit used in the process.</em
+        <strong>خط خروجی</strong><br />
+        <em>مختصات پیکسل هدف اندازه‌گیری.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>طول خروجی</strong><br />
+        <em>مقدار واقعی (m, cm, mm, yd, ft, in...) خروجی اندازه‌گیری.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Decimal Places</strong><br />
-        <em>The number of decimal digits in the computed measurement.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Y-axis Reference Line</strong><br />
-        <em
-          >The pixel coordinates of the vertical line whose dimension is known
-          by the user.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Y-axis Reference Length</strong><br />
-        <em
-          >The real-world distance (m, cm, mm, yd, ft, in...) between the
-          endpoints of the y-axis reference line.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Output Line</strong><br />
-        <em>The pixel coordinates of the target of the measurement.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Output Length</strong><br />
-        <em
-          >The real-world value (m, cm, mm, yd, ft, in...) of the output of the
-          measurement.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Show X Line</strong><br />
+        <strong>نمایش X Line</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show X Measure</strong><br />
+        <strong>نمایش X اندازه گیری</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show Y Line</strong><br />
+        <strong>نمایش Y Line</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show Y Measure</strong><br />
+        <strong>نمایش Y اندازه گیری</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show Output Line</strong><br />
+        <strong>نمایش خط خروجی</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show Output Measure</strong><br />
+        <strong>نمایش اندازه‌گیری خروجی</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      First, the user selects two segments: one in the horizontal (x-axis)
-      direction and the other one in the vertical (y-axis) direction. The
-      lengths of these segments are known and used as reference. Then, the user
-      marks the two points that will define the segment to measure. The
-      <em>Measure 2d</em> filter has to be used once the image has been
-      corrected for perspective distortion, i.e. the homography is estimated by
-      applying the <em>Perspective Correction</em> filter and the image of
-      slanted planar surfaces is rectified into front-on view. For further
-      details, please browse the <em>Tutorial</em> section of the user manual.
+      ابتدا کاربر دو بخش را انتخاب می‌کند: یکی در جهت افقی (محور x) و دیگری در
+      جهت عمودی (محور y). طول این قطعات شناخته شده و به عنوان مرجع استفاده
+      می‌شود. سپس، کاربر دو نقطه ای را که بخش مورد نظر را مشخص می‌کند، علامت
+      گذاری می‌کند. فیلتر اندازه گیری دو بعدی باید زمانی استفاده شود که تصویر
+      برای اعوجاج چشم انداز تصحیح شد، یعنی هموگرافی با اعمال فیلتر تصحیح چشم
+      انداز تخمین زده می‌شود و تصویر سطوح مسطح مایل به نمای جلو اصلاح می‌شود.
+      برای جزئیات بیشتر، لطفاً بخش آموزش کتابچه راهنمای کاربر را مرور کنید.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
-      <li>Measure traces of an accident.<a href="" target="_blank"></a></li>
+      <li>اندازه‌گیری آثار تصادف<a href="" target="_blank"></a></li>
       <li>
-        Estimate the kind of car from a very low quality video.<a
+        نوع ماشین را از روی یک ویدیو با کیفیت بسیار پایین تخمین بزنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
     <hr />
-    <h3><a name="Measure-3d">Measure 3d</a></h3>
+    <h3><a name="Measure-3d">ابزار اندازه گیری سه بعدی</a></h3>
     <p>
       <em
-        >Takes a measurement on the image with a reconstruction model of the
-        perspective. Supports error calculation and multiple measures.</em
+        >با یک مدل بازسازی از چشم انداز، روی تصویر اندازه‌گیری می‌کند. از محاسبه
+        خطا و اقدامات متعدد پشتیبانی می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Measure 3d</em> tool computes real-world distances directly on the
-      image. The measure estimation algorithm is based on the Single View
-      Metrology (SVM) approach described by Criminisi, Reid and Zisserman in
-      <em>Single View Metrology</em>. The SVM is based on the fact that image
-      lines which are parallel in the real-world join in a point in the image,
-      named vanishing point, due to the perspective. The vanishing points are
-      computed by marking on the image two or more lines, parallel in the real
-      world, for each direction (x, y, z). The scene perspective can be
-      reconstructed from the vanishing points by transforming the geometric
-      information into a system of linear constraints on the coordinates of the
-      3D points and using the known distance as a further constraint. As result,
-      3D measurements along one of the selected axes may be computed from a
-      single perspective view of a scene given only this minimal geometric
-      information determined from the image. Since the data input by the user
-      can be imprecise, the output measurements are uncertain. In order to
-      estimate how the uncertainty propagates from the input to the output of
-      the processing chain, the filter computes the error variance using
-      Gaussian quadrature and provides a confidence interval equal to +/- 3
-      standard deviations.
+      ابزار اندازه گیری سه بعدی فواصل دنیای واقعی را مستقیماً روی تصویر محاسبه
+      می‌کند. الگوریتم تخمین اندازه‌گیری مبتنی بر رویکرد اندازه‌شناسی تک‌نما
+      (SVM) است که توسط Criminisi، Reid و Zisserman در اندازه‌شناسی تک‌نما توصیف
+      شده است. SVM بر این واقعیت استوار است که خطوط تصویری که در دنیای واقعی
+      موازی هستند به دلیل چشم انداز در یک نقطه از تصویر به نام نقطه ناپدید
+      می‌پیوندند. نقاط ناپدید شدن با علامت گذاری روی تصویر دو یا چند خط، موازی
+      در دنیای واقعی، برای هر جهت (x، y، z) محاسبه می‌شوند. چشم انداز صحنه را
+      می‌توان با تبدیل اطلاعات هندسی به سیستمی‌از محدودیت‌‌های خطی در مختصات
+      نقاط سه بعدی و استفاده از فاصله شناخته شده به عنوان محدودیت بیشتر، از نقاط
+      ناپدید بازسازی کرد. در نتیجه، اندازه‌گیری‌های سه‌بعدی در امتداد یکی از
+      محورهای انتخاب‌شده را می‌توان از یک نمای چشم انداز یک صحنه با توجه به
+      حداقل اطلاعات هندسی تعیین‌شده از تصویر محاسبه کرد. از آنجایی که داده‌‌های
+      ورودی توسط کاربر می‌تواند نادقیق باشد، اندازه‌گیری‌‌های خروجی نامشخص
+      هستند. به منظور تخمین چگونگی انتشار عدم قطعیت از ورودی به خروجی زنجیره
+      پردازش، فیلتر واریانس خطا را با استفاده از ربع گاوسی محاسبه می‌کند و فاصله
+      اطمینانی برابر با +/- 3 انحراف استاندارد ارائه می‌کند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>X-axis Lines</strong><br />
+        <strong>خطوط محور X</strong><br />
         <em
-          >The set of the pixel coordinates of the lines which are defined by
-          the user in the x direction of the scene.</em
+          >مجموعه مختصات پیکسل خطوطی که توسط کاربر در جهت x صحنه تعریف
+          می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Y-axis Lines</strong><br />
+        <strong>خطوط محور Y</strong><br />
         <em
-          >The set of the pixel coordinates of the lines which are defined by
-          the user in the y direction of the scene.</em
+          >مجموعه مختصات پیکسل خطوطی که توسط کاربر در جهت y صحنه تعریف
+          می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Z-axis Lines</strong><br />
+        <strong>خطوط محور Z</strong><br />
         <em
-          >The set of the pixel coordinates of the lines which are defined by
-          the user in the z direction of the scene.</em
+          >مجموعه مختصات پیکسل خطوطی که توسط کاربر در جهت z از صحنه تعریف
+          می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Reference Axis Direction</strong><br />
+        <strong>جهت محور مرجع</strong><br />
         <em
-          >The X/Y/Z direction along which a metric information is known (some
-          reference distances are known).</em
+          >جهت X/Y/Z که در امتداد آن اطلاعات متریک مشخص است (برخی فواصل مرجع
+          شناخته شده است).</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Reference Line</strong><br />
+        <strong>خط مرجع</strong><br />
         <em
-          >The pixel coordinates of the image segment in the X/Y/Z direction
-          which is used as reference.</em
+          >مختصات پیکسل قطعه تصویر در جهت X/Y/Z که به عنوان مرجع استفاده
+          می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Reference Length</strong><br />
+        <strong>طول مرجع</strong><br />
+        <em>فاصله واقعی (m، cm، mm، yd، ft، in...) بین نقاط انتهایی خط مرجع.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>واحد اندازه‌گیری</strong><br />
+        <em>واحد اندازه‌گیری مورد استفاده در فرآیند.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>مکان‌‌های اعشاری</strong><br />
+        <em>تعداد ارقام اعشاری در اندازه‌گیری محاسبه شده.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>موقعیت دوربین</strong><br />
+        <em>فاصله تخمینی بین مرکز هدف و صفحه پایه زمین.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>جهت صحیح</strong><br />
         <em
-          >The real-world distance (m, cm, mm, yd, ft, in...) between the
-          endpoints of the reference line.</em
+          >اگر محور فعال z و نقطه 1 بالای نقطه 2 باشد، نقاط 1 و 2 مرجع و
+          اندازه‌گیری را عوض کنید.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Unit of Measurement</strong><br />
-        <em>The measurement unit used in the process.</em
+        <strong>خط خروجی</strong><br />
+        <em>مختصات پیکسل هدف اندازه‌گیری.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>طول خروجی</strong><br />
+        <em>مقدار واقعی (m, cm, mm, yd, ft, in...) خروجی اندازه‌گیری.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Decimal Places</strong><br />
-        <em>The number of decimal digits in the computed measurement.</em
+        <strong>خطای خروجی</strong><br />
+        <em>عدم قطعیت (m، cm، mm، yd، ft، in...) مرتبط با اندازه‌گیری خروجی.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Camera Position</strong><br />
+        <strong>خطای تجربی</strong><br />
         <em
-          >Estimated distance between the center of the objective and the ground
-          base plane.</em
+          >خطای به دست آمده با اندازه‌گیری یک جسم شناخته شده (مثلاً یک میله
+          اندازه‌گیری) در صحنه.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Correct Direction</strong><br />
+        <strong>محدوده خروجی</strong><br />
+        <em>طول خروجی +/- بزرگترین دو خطای بالا.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>خط خروجی 2</strong><br />
+        <em>مختصات پیکسل هدف اندازه‌گیری دوم.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>طول خروجی 2</strong><br />
+        <em>مقدار واقعی (m, cm, mm, yd, ft, in...) خروجی اندازه‌گیری دوم.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>خطای خروجی 2</strong><br />
         <em
-          >Swap points 1 and 2 of reference and measurement if the active axis
-          is z and point 1 is above point 2.</em
+          >عدم قطعیت (m, cm, mm, yd, ft, in...) مرتبط با خروجی اندازه‌گیری
+          دوم.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Output Line</strong><br />
-        <em>The pixel coordinates of the target of the measurement.</em
+        <strong>محدوده خروجی 2</strong><br />
+        <em>طول خروجی 2 +/- بزرگترین خطا از دو خطای بالا.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Output Length</strong><br />
+        <strong>تفاوت</strong><br />
+        <em>تفاوت بین اندازه‌گیری اول و دوم.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>خطوط کمکی</strong><br />
+        <em>خطوط بدون محدودیت که ممکن است به شما در درک صحنه کمک کند.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>تراز خطوط کمکی</strong><br />
         <em
-          >The real-world value (m, cm, mm, yd, ft, in...) of the output of the
-          measurement.</em
+          >به صورت اختیاری خط فعلی را با یکی از نقاط ناپدید محاسبه شده تراز
+          کنید.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Output Error</strong><br />
-        <em
-          >The uncertainty (m, cm, mm, yd, ft, in...) associated with the output
-          measurement.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Experimental Error</strong><br />
-        <em
-          >The error obtained by measuring a known object (e.g. a measuring rod)
-          in the scene.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Output Range</strong><br />
-        <em>The Output Length +/- the greatest of the two errors above.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Output Line 2</strong><br />
-        <em>The pixel coordinates of the target of the second measurement.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Output Length 2</strong><br />
-        <em
-          >The real-world value (m, cm, mm, yd, ft, in...) of the output of the
-          second measurement.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Output Error 2</strong><br />
-        <em
-          >The uncertainty (m, cm, mm, yd, ft, in...) associated with the output
-          of the second measurement.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Output Range 2</strong><br />
-        <em>The Output Length 2 +/- the greatest of the two errors above.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Difference</strong><br />
-        <em>The difference between the first and the second measurement.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Helper Lines</strong><br />
-        <em>Unconstrained lines that may help you to understand the scene.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Helper Lines Alignment</strong><br />
-        <em
-          >Optionally align the current line to one of the computed vanishing
-          points.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Show X Lines</strong><br />
+        <strong>نمایش X خطوط</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show Y Lines</strong><br />
+        <strong>نمایش خطوط Y</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show Z Lines</strong><br />
+        <strong>نمایش خطوط Z</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show Reference Line</strong><br />
+        <strong>نمایش خط مرجع</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show Reference Measure</strong><br />
+        <strong>نمایش اندازه‌گیری مرجع</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show Output Line</strong><br />
+        <strong>نمایش خط خروجی</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show Output Measure</strong><br />
+        <strong>نمایش اندازه‌گیری خروجی</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show Helper Lines</strong><br />
+        <strong>نمایش خطوط کمکی</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Show Horizon</strong><br />
+        <strong>نمایش Horizon</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      First, two or more lines for each direction of 3D space are selected, then
-      the reference distance in a x/y/z direction is defined and finally the
-      measurement is taken from image in same direction of the reference line.
-      It's suggested to take more than 2 lines for every direction, if they can
-      be reliably set. The orientation of the 3 sets of lines doesn't need to be
-      orthogonal.<br />
-      The SVM-based algorithms have been designed to work in an uncalibrated
-      framework (i.e. no need for the camera pose or internal parameters -e.g.
-      focal length- to be known or computed). On the other hand, scene
-      constraints such as the parallelism of structures are exploited, thus
-      making these algorithms especially suitable for scenes containing man-made
-      structures such as architectural elements and geometric patterns. This
-      means that the <em>Measure 3d</em> filter has to be used in images with a
-      structured scene, i.e. reliable and well defined geometric structures of
-      the scene need to be seen in the image for reconstructing the perspective
-      of the scene. For further details, please browse the
-      <em>Tutorial</em> section of the user manual.
+      ابتدا دو یا چند خط برای هر جهت از فضای سه بعدی انتخاب می‌شود، سپس فاصله
+      مرجع در جهت x/y/z تعریف می‌شود و در نهایت اندازه‌گیری از تصویر در همان جهت
+      خط مرجع گرفته می‌شود. پیشنهاد می‌شود برای هر جهت بیش از 2 خط بگیرید، اگر
+      بتوان آنها را به طور قابل اعتماد تنظیم کرد. جهت 3 مجموعه خط لازم نیست
+      متعامد باشد.<br />
+      الگوریتم‌‌های مبتنی بر SVM طوری طراحی شده اند که در یک چارچوب کالیبره نشده
+      کار کنند (یعنی بدون نیاز به موقعیت دوربین یا پارامترهای داخلی -مانند فاصله
+      کانونی- برای شناخته شدن یا محاسبه شدن). از سوی دیگر، محدودیت‌های صحنه
+      مانند موازی بودن سازه‌ها مورد بهره‌برداری قرار می‌گیرند، بنابراین این
+      الگوریتم‌ها به‌ویژه برای صحنه‌های حاوی سازه‌های دست‌ساز مانند عناصر معماری
+      و الگوهای هندسی مناسب هستند. این بدان معناست که فیلتر اندازه گیری سه بعدی
+      باید در تصاویر دارای صحنه ساختاریافته استفاده شود، یعنی ساختارهای هندسی
+      قابل اعتماد و مشخص صحنه باید در تصویر برای بازسازی چشم انداز صحنه دیده
+      شوند. برای جزئیات بیشتر، لطفاً بخش آموزش کتابچه راهنمای کاربر را مرور
+      کنید.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
-      <li>Measure the height of a suspect.<a href="" target="_blank"></a></li>
-      <li>Measure the height of a building.<a href="" target="_blank"></a></li>
+      <li>قد مظنون را اندازه‌گیری کنید.<a href="" target="_blank"></a></li>
+      <li>
+        ارتفاع یک ساختمان را اندازه‌گیری کنید.<a href="" target="_blank"></a>
+      </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         A. Criminisi, I. Reid, and A. Zisserman, “Single View Metrology”, in
@@ -5912,10 +5814,10 @@
         >
       </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        Calculate camera position from a picture or video:
+        موقعیت دوربین را از روی عکس یا ویدیو محاسبه کنید:
         <a
           href="https://blog.ampedsoftware.com/2013/09/25/calculate-camera-position-from-a-picture-or-video/"
           target="_blank"
@@ -5923,8 +5825,8 @@
         >
       </li>
       <li>
-        On the Fly! Learn How to Use بـستا’s Measure 3D Filter to Measure
-        Objects That Are Not on the Ground:
+        در پرواز! یاد بگیرید چگونه از فیلتر 3 بعدی اندازه‌گیری بـستا برای
+        اندازه‌گیری اشیایی که روی زمین نیستند استفاده کنید:
         <a
           href="http://blog.ampedsoftware.com/2019/11/12/on-the-fly-learn-how-to-use-amped-fives-measure-3d-filter-to-measure-objects-that-are-not-on-the-ground/"
           target="_blank"
@@ -5932,7 +5834,7 @@
         >
       </li>
       <li>
-        The Beginner’s Guide to Suspect Height Calculation from CCTV:
+        راهنمای مبتدیان برای محاسبه قد مشکوک از دوربین مدار بسته:
         <a
           href="https://blog.ampedsoftware.com/2017/08/17/the-beginners-guide-to-suspect-height-calculation-from-cctv/"
           target="_blank"
@@ -5941,53 +5843,50 @@
       </li>
     </ul>
     <hr />
-    <h2><a name="Sharpen">Sharpen</a></h2>
-    <p><em>Enhances image details.</em></p>
+    <h2><a name="Sharpen">تیز کردن </a></h2>
+    <p><em>جزئیات تصویر را بهبود می‌بخشد.</em></p>
     <hr />
-    <h3><a name="Laplacian-Sharpening">Laplacian Sharpening</a></h3>
-    <p><em>Sharpens the image using a Laplacian filter algorithm.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Laplacian-Sharpening">فیلتر تیز کردن لاپلاس </a></h3>
+    <p><em>تصویر را با استفاده از یک الگوریتم فیلتر لاپلاسی تیز می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Laplacian Sharpening</em> filter convolves the image with a 3x3
-      Laplacian kernel and then adds the resulting high-passed image onto the
-      original image. More specifically, the amount of high-passed information
-      added to original image is proportional to the <em>Strength</em> of
-      sharpening. The result of this sharpening operator is to increase the
-      contrast between each pixel and its neighbors. The Laplacian-based unsharp
-      masking is sensible to noise due to the nature of the Laplacian operator.
+      فیلتر تیز کردن لاپلاس تصویر را با یک هسته لاپلاسی 3x3 در هم می‌پیچد و سپس
+      تصویر بالا را به تصویر اصلی اضافه می‌کند. به طور خاص، مقدار اطلاعاتی که به
+      تصویر اصلی اضافه می‌شود، متناسب با قدرت شارپنینگ است. نتیجه این عملگر
+      شارپنینگ افزایش کنتراست بین هر پیکسل و همسایگان آن است. پوشش غیر شارپ
+      مبتنی بر لاپلاس به دلیل ماهیت اپراتور لاپلاسی نسبت به نویز حساس است.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Strength</strong><br />
+        <strong>استحکام - قدرت</strong><br />
         <em
-          >Strength of the sharpening effect; larger values provide increasing
-          amounts of sharpening.</em
+          >قدرت اثر تیز کردن؛ مقادیر بزرگتر باعث افزایش میزان تیز شدن
+          می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Mode</strong><br />
-        <em>Type of adjustment to be done.</em><a href="" target="_blank"></a>
+        <strong>حالت</strong><br />
+        <em>نوع تنظیمی‌که باید انجام شود.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
-      <li>Sharpen a license plate.<a href="" target="_blank"></a></li>
-      <li>Sharpen a face.<a href="" target="_blank"></a></li>
+      <li>پلاک خودرو را تیز کنید.<a href="" target="_blank"></a></li>
+      <li>صورت را تیز کنید<a href="" target="_blank"></a></li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -5998,74 +5897,70 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Unsharp-Masking">Unsharp Masking</a></h3>
-    <p><em>Sharpens the image using an unsharp masking filter.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Unsharp-Masking">فیلتر پوشاننده غیرشارپ</a></h3>
+    <p><em>تصویر را با استفاده از فیلتر پوشاننده غیرشارپ تیز می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Unsharp Masking</em> filter is implemented as a window-based
-      operator, i.e. it relies on a convolution kernel to perform spatial
-      filtering. The original image is first convolved with a <em>Radius</em> x
-      <em>Radius</em> Gaussian kernel to produce its smoothed version, i.e. a
-      low-passed image. The resulting image is then pixel subtracted from the
-      original image in order to produce a description of image edges, i.e. a
-      high-passed image. Only the pixel differences (edges) greater than certain
-      <em>Threshold</em> values are retained, so that sharpening of small image
-      details can be suppressed. In order to increase the sharpness of the
-      original image, a percentage (proportional to <em>Strength</em>) of the
-      thresholded high-passed image is added back onto the original image.
+      فیلتر پوشاننده غیرشارپ به عنوان یک اپراتور مبتنی بر ویندوز پیاده‌سازی
+      می‌شود، یعنی برای انجام فیلتر فضایی به هسته کانولوشن متکی است. تصویر اصلی
+      ابتدا با یک هسته گاوسی Radius x Radius ترکیب می‌شود تا نسخه صاف شده آن،
+      یعنی تصویری با گذر پایین، تولید شود. سپس تصویر به‌دست‌آمده پیکسل از تصویر
+      اصلی کم می‌شود تا توصیفی از لبه‌های تصویر، به‌عنوان یک تصویر با پاس بالا،
+      تولید شود. فقط تفاوت‌های پیکسلی (لبه‌ها) بیشتر از مقادیر آستانه خاص حفظ
+      می‌شوند، بنابراین می‌توان وضوح جزئیات کوچک تصویر را مهار کرد. به منظور
+      افزایش وضوح تصویر اصلی، درصدی (متناسب با استحکام - قدرت) از تصویر آستانه
+      بالا به تصویر اصلی اضافه می‌شود.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Strength</strong><br />
+        <strong>استحکام - قدرت</strong><br />
         <em
-          >Intensity of the sharpening effect: larger values provide increasing
-          amounts of sharpening.</em
+          >شدت اثر تیز کردن: مقادیر بزرگتر، میزان تیز کردن را افزایش می‌دهد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Size</strong><br />
+        <strong>اندازه</strong><br />
         <em
-          >Length, in pixels, of the side of the square filter window. High
-          resolution images allow a higher size.</em
+          >طول ضلع پنجره فیلتر مربعی بر حسب پیکسل. تصاویر با وضوح بالا امکان
+          اندازه بالاتر را فراهم می‌کنند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Threshold</strong><br />
+        <strong>آستانه</strong><br />
         <em
-          >The minimum difference in pixel values that indicates an edge where
-          sharpen must be applied. So you can protect areas of smooth tonal
-          transition from sharpening, and avoid creation of blemishes in the
-          facial, sky or water surface.</em
+          >حداقل تفاوت در مقادیر پیکسل که نشان دهنده لبه ای است که باید در آن
+          شارپ اعمال شود. بنابراین می‌توانید از نواحی انتقال رنگ صاف در برابر
+          تیز شدن محافظت کنید و از ایجاد لک در صورت، آسمان یا سطح آب جلوگیری
+          کنید.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Mode</strong><br />
-        <em>Type of adjustment to be done.</em><a href="" target="_blank"></a>
+        <strong>حالت</strong><br />
+        <em>نوع تنظیمی‌که باید انجام شود.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
-      <li>Sharpen a license plate.<a href="" target="_blank"></a></li>
-      <li>Sharpen a face.<a href="" target="_blank"></a></li>
+      <li>پلاک خودرو را تیز کنید..<a href="" target="_blank"></a></li>
+      <li>صورت را تیز کنید<a href="" target="_blank"></a></li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -6076,61 +5971,57 @@
       </li>
     </ul>
     <hr />
-    <h2><a name="Denoise">Denoise</a></h2>
-    <p><em>Reduces the image noise.</em></p>
+    <h2><a name="Denoise">نویز را حذف کردن</a></h2>
+    <p><em>نویز تصویر را کاهش می‌دهد.</em></p>
     <hr />
-    <h3><a name="Averaging-Filter">Averaging Filter</a></h3>
-    <p><em>Smooths the image with an averaging filter.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Averaging-Filter">فیلتر میانگین گیری</a></h3>
+    <p><em>تصویر را با یک فیلتر متوسط صاف می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Averaging Filter</em> performs a spatial linear filtering of the
-      image. The pixel value of the output image is computed by averaging the
-      values of the input image in the neighborhood of the corresponding input
-      pixel.
+      فیلتر میانگین گیری یک فیلتر فضایی خطی تصویر را انجام می‌دهد. مقدار پیکسل
+      تصویر خروجی با میانگین گیری مقادیر تصویر ورودی در همسایگی پیکسل ورودی
+      مربوطه محاسبه می‌شود.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Size</strong><br />
-        <em>Size of the filter kernel in pixels.</em
-        ><a href="" target="_blank"></a>
+        <strong>اندازه</strong><br />
+        <em>اندازه هسته فیلتر بر حسب پیکسل.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      The <em>Averaging Filter</em> is a linear low-pass filter that is often
-      used to reduce the intensity variation between adjacent pixels in the
-      image. It is useful for removing grain noise from a scanned
-      image/photograph, but it is not effective for impulsive noise
-      (salt-and-pepper). The main problem of the averaging filter is that edges
-      and details in the processed image are blurred. The value of the parameter
-      <em>Aperture</em> should be chosen to minimize the blurring (smoothing)
-      effect. A 3x3 square kernel is commonly used. Note that larger windows
-      (e.g. 5x5, 7x7, ...) will produce a smoother image after averaging.
+      فیلتر میانگین یک فیلتر پایین گذر خطی است که اغلب برای کاهش تغییرات شدت بین
+      پیکسل‌‌های مجاور در تصویر استفاده می‌شود. برای حذف نویز دانه از تصویر/عکس
+      اسکن شده مفید است، اما برای نویز تکانشی (نمک و فلفل) موثر نیست. مشکل اصلی
+      فیلتر میانگین گیری این است که لبه‌‌ها و جزئیات در تصویر پردازش شده تار
+      هستند. مقدار پارامتر دیافراگم باید برای به حداقل رساندن اثر تاری (صاف
+      کردن) انتخاب شود. معمولاً از یک هسته مربع 3×3 استفاده می‌شود. توجه داشته
+      باشید که پنجره‌‌های بزرگتر (مثلاً 5x5، 7x7، ...) پس از میانگین گیری، تصویر
+      صاف تری تولید می‌کنند.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Denoise an image taken in low light conditions.<a
+        حذف نویز تصویری که در شرایط نور کم گرفته شده است.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Denoise a video after making it brighter.<a href="" target="_blank"></a>
+        پس از روشن‌تر کردن ویدیو، آن را حذف کنید.<a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -6141,68 +6032,63 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Gaussian-Filter">Gaussian Filter</a></h3>
-    <p><em>Smooths the image using a Gaussian filter algorithm.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Gaussian-Filter">فیلتر گاوسی</a></h3>
+    <p><em>تصویر را با استفاده از الگوریتم فیلتر گاوسی صاف می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Gaussian Filter</em> applies a Gaussian filter to the image. The
-      value of the output pixel is computed as a weighted average of its
-      neighbors, in which the weights decrease with distance from the
-      neighborhood center.
+      فیلتر گاوسی یک فیلتر گاوسی را روی تصویر اعمال می‌کند. مقدار پیکسل خروجی به
+      عنوان میانگین وزنی همسایگان آن محاسبه می‌شود که در آن وزن‌‌ها با فاصله از
+      مرکز همسایگی کاهش می‌یابد.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Size</strong><br />
-        <em>Size of the Gaussian kernel in pixels.</em
+        <strong>اندازه</strong><br />
+        <em>اندازه هسته گاوسی بر حسب پیکسل.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>سیگما</strong><br />
+        <em>انحراف استاندارد توزیع گاوسی</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>حالت</strong><br />
+        <em>به صورت اختیاری یکی از پارامترها را از دیگری محاسبه کنید.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Sigma</strong><br />
-        <em>Standard deviation of the Gaussian distribution.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Mode</strong><br />
-        <em>Optionally compute one of the parameters from the other one.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      <em>Gaussian Filter</em> is a low-pass filter used to blur images reducing
-      noise and detail. It preserves edges better than a similarly sized
-      averaging filter. The amount of smoothing is determined by the value of
-      the parameter <em>Sigma</em>: larger values produce smoother images with
-      fewer details.
+      فیلتر گاوسی یک فیلتر پایین گذر است که برای محو کردن تصاویر و کاهش نویز و
+      جزئیات استفاده می‌شود. لبه‌‌ها را بهتر از یک فیلتر میانگین با اندازه مشابه
+      حفظ می‌کند. مقدار هموارسازی با مقدار پارامتر سیگما تعیین می‌شود: مقادیر
+      بزرگتر تصاویر صاف تری با جزئیات کمتر تولید می‌کنند.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Denoise an image taken in low light conditions.<a
+        حذف نویز تصویری که در شرایط نور کم گرفته شده است.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Denoise a video after making it brighter.<a href="" target="_blank"></a>
+        پس از روشن‌تر کردن ویدیو، آن را حذف کنید.<a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -6213,72 +6099,68 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Wiener-Filter">Wiener Filter</a></h3>
-    <p><em>Smooths the image with a Wiener filter.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Wiener-Filter">فیلتر وینر</a></h3>
+    <p><em>تصویر را با فیلتر وینر صاف می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Wiener Filter</em> performs an adaptive filtering of an image
-      degraded by additive noise. For each pixel of the input image, the local
-      mean and variance from a square neighborhood of size <em>Aperture</em> are
-      estimated. Then, the value of the output pixel is obtained combining the
-      corresponding input pixel value, the estimated local statistics and the
-      noise variance set by parameter <em>Noise</em>. The
-      <em>Wiener Filter</em> can tailor itself to the local image statistics.
-      Where the variance is large, the filter performs little smoothing. Where
-      the variance is small, the filter performs more smoothing.
+      فیلتر وینر یک فیلتر تطبیقی تصویری را انجام می‌دهد که در اثر نویز افزایشی
+      تخریب شده است. برای هر پیکسل از تصویر ورودی، میانگین محلی و واریانس از یک
+      مربع (یا a square neighborhood) با اندازه دیافراگم تخمین زده می‌شود. سپس،
+      مقدار پیکسل خروجی با ترکیب مقدار پیکسل ورودی مربوطه، آمار محلی تخمین زده
+      شده و واریانس نویز تنظیم شده توسط پارامتر نویز به دست می‌آید. فیلتر وینر
+      می‌تواند خود را بر اساس آمار تصویر محلی تنظیم کند. در جایی که واریانس زیاد
+      است، فیلتر صاف کردن کمی‌انجام می‌دهد. در جایی که واریانس کم است، فیلتر صاف
+      کردن بیشتری انجام می‌دهد.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Size</strong><br />
-        <em>Size of the filter kernel in pixels.</em
-        ><a href="" target="_blank"></a>
+        <strong>اندازه</strong><br />
+        <em>اندازه هسته فیلتر بر حسب پیکسل.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Noise</strong><br />
+        <strong>نویز</strong><br />
         <em
-          >Amount of noise to be reduced. If zero, noise level is automatically
-          computed.</em
+          >مقدار نویز باید کاهش یابد. اگر صفر باشد، سطح نویز به طور خودکار
+          محاسبه می‌شود</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      The <em>Wiener Filter</em> is an adaptive low-pass filter used to remove
-      noise from images. It works best when the noise is white additive noise,
-      such as Gaussian noise. If the parameter <em>Noise</em> is zero, the
-      Wiener routine also estimates the noise level before doing the filtering.
-      The <em>Wiener Filter</em> is more selective than a comparable linear
-      filter in preserving edges and other high frequency parts of an image. The
-      value of the parameter <em>Aperture</em> should be a trade-off between
-      noise removing and detail preserving: larger values can remove noise more
-      effectively, but also blur the details/edges.
+      فیلتر وینر یک فیلتر پایین گذر تطبیقی است که برای حذف نویز از تصاویر
+      استفاده می‌شود. زمانی که نویز نویز افزودنی سفید باشد، مانند نویز گاوسی،
+      بهترین عملکرد را دارد. اگر پارامتر نویز صفر باشد، روتین وینر قبل از انجام
+      فیلتر کردن، سطح نویز را نیز تخمین می‌زند. فیلتر وینر در حفظ لبه‌ها و سایر
+      بخش‌های فرکانس بالای تصویر، انتخابی‌تر از فیلتر خطی قابل مقایسه است. مقدار
+      پارامتر دیافراگم باید تعادلی بین حذف نویز و حفظ جزئیات باشد: مقادیر بزرگتر
+      می‌توانند نویز را به طور موثرتری حذف کنند، اما جزئیات/لبه‌‌ها را نیز محو
+      می‌کنند.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Denoise an image taken in low light conditions.<a
+        حذف نویز تصویری که در شرایط نور کم گرفته شده است.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Denoise a video after making it brighter.<a href="" target="_blank"></a>
+        پس از روشن‌تر کردن ویدیو، آن را حذف کنید.<a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Jae S. Lim, “Two-Dimensional Signal and Image Processing”, Prentice
@@ -6289,92 +6171,82 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Bilateral-Filter">Bilateral Filter</a></h3>
-    <p><em>Smooths the image with a bilateral Gaussian filter.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Bilateral-Filter">فیلتر دوطرفه</a></h3>
+    <p><em>تصویر را با فیلتر گاوسی دو طرفه صاف می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Bilateral Filter</em> uses a non-linear combination of similar and
-      nearby pixels in order to smooth the image. The value of the input pixel
-      is replaced with a weighted sum of its neighbors considering both their
-      geometric closeness and photometric similarities. The bilateral filter is
-      controlled by three parameters: <em>Aperture</em>,
-      <em>Space Sigma</em> and <em>Range Sigma</em>. They affect the size and
-      contrast of the structures to preserve. <em>Aperture</em> is the diameter
-      of the pixel neighborhood that is used for filtering.
-      <em>Space Sigma</em> defines spatial closeness: larger values mean that
-      farther pixels in the neighborhood will influence each other as long as
-      their intensities or colors are similar enough.
-      <em>Range Sigma</em> defines photometric similarity: larger values mean
-      that farther gray-levels or colors within the pixel neighborhood will be
-      mixed together, resulting in larger areas of similar pixel values.
+      فیلتر دوطرفه از ترکیب غیر خطی پیکسل‌‌های مشابه و نزدیک به منظور صاف کردن
+      تصویر استفاده می‌کند. مقدار پیکسل ورودی با مجموع وزنی همسایگان آن با در
+      نظر گرفتن نزدیکی هندسی و شباهت‌‌های نورسنجی جایگزین می‌شود. فیلتر دوطرفه
+      با سه پارامتر دیافراگم، Space Sigma و Range Sigma کنترل می‌شود. آنها بر
+      اندازه و کنتراست سازه‌‌ها برای حفظ تأثیر می‌گذارند. دیافراگم قطر همسایگی
+      پیکسلی است که برای فیلتر کردن استفاده می‌شود. Space Sigma نزدیکی فضایی را
+      تعریف می‌کند: مقادیر بزرگتر به این معنی است که پیکسل‌‌های دورتر در همسایگی
+      بر یکدیگر تأثیر می‌گذارند تا زمانی که شدت یا رنگ آنها به اندازه کافی مشابه
+      باشد. محدوده سیگما تشابه فتومتریک را تعریف می‌کند: مقادیر بزرگتر به این
+      معنی است که سطوح خاکستری دورتر یا رنگ‌ها در همسایگی پیکسل‌ها با هم مخلوط
+      می‌شوند و در نتیجه مناطق بزرگ‌تری از مقادیر پیکسل مشابه ایجاد می‌شود.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Size</strong><br />
-        <em>Size of the Gaussian bilateral kernel in pixels.</em
+        <strong>اندازه</strong><br />
+        <em>اندازه هسته دوطرفه گاوسی بر حسب پیکسل.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Space Sigma</strong><br />
+        <strong>فضای سیگما</strong><br />
+        <em>انحراف استاندارد توزیع گاوسی برای موقعیت‌‌های پیکسل.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>محدوده سیگما</strong><br />
+        <em>انحراف استاندارد توزیع گاوسی برای تفاوت مقادیر پیکسل.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>انتخاب</strong><br />
         <em
-          >Standard deviation of the Gaussian distribution for pixel
-          positions.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <ul>
-      <li>
-        <strong>Range Sigma</strong><br />
-        <em
-          >Standard deviation of the Gaussian distribution for differences of
-          pixel values.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Selection</strong><br />
-        <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      The <em>Bilateral Filter</em> is a non-iterative, non-linear scheme for
-      edge-preserving smoothing. Usually, in denoising applications, it is
-      preferred to Gaussian and median filters because it produces a much
-      cleaner image without blurring the edges. The three parameters of the
-      filter control the amount of smoothing. When the <em>Range Sigma</em> is
-      large the filter behaves like a low-pass Gaussian: noise as well as sharp
-      edges are filtered away. Conversely, when it is small, the filter removes
-      most texture, noise, and fine details but contours are preserved better.
-      Increasing both <em>Aperture</em> and <em>Space Sigma</em> will smooth
-      large structures in the image so that the blurring effect of the filter
-      will be stronger. When the <em>Aperture</em> is large the processing speed
-      decreases, so it is recommended to limit the kernel size of filter. In
-      contrast to standard Gaussian spatial smoothing, bilateral filtering
-      produces no phantom colors along edges in color images, and reduces
-      phantom colors where they appear in the original image.
+      فیلتر دوطرفه یک طرح غیر تکراری و غیر خطی برای صاف کردن لبه‌‌ها است.
+      معمولاً در برنامه‌های حذف نویز، به فیلترهای گاوسی و میانی ترجیح داده
+      می‌شود زیرا بدون محو کردن لبه‌ها، تصویر بسیار تمیزتری تولید می‌کند. سه
+      پارامتر فیلتر میزان صاف شدن را کنترل می‌کند. هنگامی‌که Range Sigma بزرگ
+      است، فیلتر مانند یک گاوسی پایین گذر عمل می‌کند: نویز و همچنین لبه‌‌های تیز
+      فیلتر می‌شوند. برعکس، وقتی فیلتر کوچک است، بیشتر بافت، نویز و جزئیات ظریف
+      را حذف می‌کند اما خطوط خطوط را بهتر حفظ می‌کند. افزایش هر دو دیافراگم و
+      Space Sigma ساختارهای بزرگ را در تصویر صاف می‌کند تا اثر تاری فیلتر قوی تر
+      شود. هنگامی‌که دیافراگم بزرگ است، سرعت پردازش کاهش می‌یابد، بنابراین توصیه
+      می‌شود اندازه هسته فیلتر را محدود کنید. برخلاف صاف‌سازی فضایی استاندارد
+      گاوسی، فیلتر دوطرفه هیچ رنگ فانتومی‌را در امتداد لبه‌ها در تصاویر رنگی
+      تولید نمی‌کند و رنگ‌های فانتوم را در جایی که در تصویر اصلی ظاهر می‌شوند
+      کاهش می‌دهد.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Denoise an image taken in low light conditions.<a
+        حذف نویز تصویری که در شرایط نور کم گرفته شده است.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Denoise a video after making it brighter.<a href="" target="_blank"></a>
+        پس از روشن‌تر کردن ویدیو، آن را حذف کنید.<a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         C. Tomasi and R. Manduchi, “Bilateral Filtering for Gray and Color
@@ -6386,83 +6258,76 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Median-Filter">Median Filter</a></h3>
+    <h3><a name="Median-Filter">فیلتر میانه</a></h3>
     <p>
-      <em
-        >Reduces the impulsive noise by applying a Median filter algorithm.</em
-      >
+      <em>با اعمال یک الگوریتم فیلتر میانه، نویز ضربه ای را کاهش می‌دهد.</em>
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Median Filter</em> replaces each pixel by the median or "middle"
-      pixel value in a neighborhood around the processed pixel. The size and the
-      shape of the neighborhood (kernel) are determined by the value of the
-      parameters <em>Aperture</em> and <em>Type</em>, respectively. The filter
-      supports the following kernels: <em>Square</em> with size defined by the
-      user, <em>Horizontal</em> (1x3 or 1x5 pixels), <em>Vertical</em> (3x1 or
-      5x1 pixels), <em>Cross</em> and <em>Color</em> (3x3 or 5x5 pixels). To
-      ensure valid operation when image boundary pixels are processed,
-      additional border pixels are defined using a proper function.
+      فیلتر میانه هر پیکسل را با مقدار پیکسل میانه یا "وسط" در همسایگی اطراف
+      پیکسل پردازش شده جایگزین می‌کند. اندازه و شکل همسایگی (هسته) به ترتیب با
+      مقدار پارامترهای Aperture و Type تعیین می‌شود. این فیلتر از هسته‌‌های زیر
+      پشتیبانی می‌کند: مربع با اندازه تعریف شده توسط کاربر، افقی (1x3 یا 1x5
+      پیکسل)، عمودی (3x1 یا 5x1 پیکسل)، متقاطع و رنگ (3x3 یا 5x5 پیکسل). برای
+      اطمینان از عملکرد معتبر هنگام پردازش پیکسل‌‌های مرزی تصویر، پیکسل‌‌های
+      حاشیه اضافی با استفاده از یک تابع مناسب تعریف می‌شوند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Size</strong><br />
-        <em>Size of the filter kernel in pixels.</em
-        ><a href="" target="_blank"></a>
+        <strong>اندازه</strong><br />
+        <em>اندازه هسته فیلتر بر حسب پیکسل.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Mode</strong><br />
-        <em>Shape of the filter kernel.</em><a href="" target="_blank"></a>
+        <strong>حالت</strong><br />
+        <em>شکل هسته فیلتر.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      The <em>Median Filter</em> is a non-linear low-pass filter that removes
-      intensity spikes and can be used to achieve noise reduction. It is useful
-      in reducing impulse (salt-and-pepper) noise.<br />
-      A median filter is able to reduce the noise without causing the typical
-      blurring effect of linear low-pass filters such as the
-      <em>Averaging Filter</em> and the <em>Gaussian Filter</em>. This makes
-      median filtering useful for both visual examination and measurement. The
-      shape of the mask has to be carefully chosen before applying the filter.
-      Its choice depends on the target of the processing.<br />
-      A <em>Cross</em> filter does not excessively smooth image details compared
-      to the <em>Square</em> filter, and typically provides a higher quality
-      output. Similarly, <em>Horizontal</em> and <em>Vertical</em> kernels do
-      not reduce details respectively along vertical and horizontal direction,
-      while a <em>Square</em> mask will produce a loss of detail in all
-      directions. These directional kernels can be used to preserve line
-      structures in the image. A square kernel can erode the corners of
-      rectangular objects, while a cross mask will be used for preserving them.
-      When applied to a color image, the previously described median filtering
-      kernels process color planes of an image separately, and as a result any
-      correlation between color components is lost.<br />
-      If you want to preserve this information, select <em>Color</em> in the
-      <em>Mode</em> parameter. The value of the parameter <em>Size</em> should
-      be a compromise between noise removing and detail preserving: larger
-      values can remove noise more effectively, but also blur the edges.
+      فیلتر میانه یک فیلتر پایین گذر غیر خطی است که نویزهای شدت را حذف می‌کند و
+      می‌تواند برای کاهش نویز استفاده شود. در کاهش صدای تکانه (نمک و فلفل) مفید
+      است.<br />
+      یک فیلتر میانه قادر است بدون ایجاد اثر تاری معمولی فیلترهای خطی پایین گذر
+      مانند فیلتر میانگین و فیلتر گاوسی، نویز را کاهش دهد. این باعث می‌شود که
+      فیلتر میانه هم برای معاینه بصری و هم برای اندازه‌گیری مفید باشد. قبل از
+      اعمال فیلتر، شکل ماسک باید با دقت انتخاب شود. انتخاب آن به هدف پردازش
+      بستگی دارد.<br />
+      فیلتر Cross جزئیات تصویر را در مقایسه با فیلتر مربع خیلی صاف نمی‌کند و
+      معمولاً خروجی با کیفیت بالاتری ارائه می‌دهد. به طور مشابه، هسته‌‌های افقی
+      و عمودی به ترتیب جزئیات را در جهت عمودی و افقی کاهش نمی‌دهند، در حالی که
+      یک ماسک مربعی باعث از دست رفتن جزئیات در همه جهات می‌شود. از این هسته‌‌های
+      جهت دار می‌توان برای حفظ ساختار خط در تصویر استفاده کرد. یک هسته مربع
+      می‌تواند گوشه اجسام مستطیلی را فرسایش دهد، در حالی که از یک ماسک متقاطع
+      برای حفظ آنها استفاده می‌شود. هنگامی‌که بر روی یک تصویر رنگی اعمال می‌شود،
+      هسته‌های فیلتر میانه توصیف شده قبلی، صفحات رنگی یک تصویر را جداگانه پردازش
+      می‌کنند و در نتیجه هر گونه همبستگی بین اجزای رنگ از بین می‌رود.<br />
+      اگر می‌خواهید این اطلاعات را حفظ کنید، رنگ را در پارامتر حالت انتخاب کنید.
+      مقدار پارامتر اندازه باید مصالحه ای بین حذف نویز و حفظ جزئیات باشد: مقادیر
+      بزرگتر می‌توانند نویز را به طور موثرتری حذف کنند، اما لبه‌‌ها را نیز محو
+      کنند.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Denoise an image with impulsive noise.<a href="" target="_blank"></a>
+        یک تصویر را با نویز تکانشی حذف کنید.<a href="" target="_blank"></a>
       </li>
-      <li>Correct scratches in an old VHS.<a href="" target="_blank"></a></li>
+      <li>
+        خراش‌‌ها را در VHS قدیمی‌اصلاح کنید<a href="" target="_blank"></a>
+      </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -6473,61 +6338,60 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Deblocking">Deblocking</a></h3>
+    <h3><a name="Deblocking">رفع انسداد</a></h3>
     <p>
       <em
-        >Reduces block artifacts from lossy compression, such as that of JPEG or
-        most video formats.</em
+        >آرتیفکت‌‌های بلوک ناشی از فشرده سازی با اتلاف، مانند فرمت‌‌های JPEG یا
+        اکثر فرمت‌‌های ویدیویی را کاهش می‌دهد.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      <em>Deblocking</em> applies a rational filter in order to remove
-      artifacts, caused by lossy compression, such as those which are usually
-      present in heavily compressed JPEG images or in most digital video files.
+      رفع انسداد یک فیلتر منطقی را به منظور حذف مصنوعات ناشی از فشرده سازی با
+      اتلاف اعمال می‌کند، مانند مواردی که معمولاً در تصاویر JPEG به شدت فشرده
+      شده یا در اکثر فایل‌‌های ویدیویی دیجیتال وجود دارند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Strength</strong><br />
+        <strong>استحکام - قدرت</strong><br />
         <em
-          >Intensity of the deblocking effect; the higher the strength, the
-          higher the number of removed artifacts (but also details).</em
+          >شدت اثر انسداد؛ هر چه استحکام بالاتر باشد، تعداد مصنوعات حذف شده (و
+          همچنین جزئیات) بیشتر است.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Reduce artifacts in a snapshot from a CCTV video.<a
+        کاهش مصنوعات در یک عکس فوری از یک فیلم دوربین مدار بسته.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Reduce artifacts in a picture taken with a digital camera.<a
+        کاهش مصنوعات در عکس گرفته شده با دوربین دیجیتال.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Reduce artifacts before deblurring, which is very sensitive to them.<a
+        مصنوعات را قبل از محو شدن کاهش دهید، که به آنها بسیار حساس است.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         R. Castagno, S. Marsi and G. Ramponi, “A simple algorithm for the
@@ -6540,109 +6404,100 @@
       </li>
     </ul>
     <hr />
-    <h2><a name="Deblurring">Deblurring</a></h2>
-    <p><em>Reduces image blurring.</em></p>
+    <h2><a name="Deblurring">تاری زدایی</a></h2>
+    <p><em>تاری تصویر را کاهش می‌دهد.</em></p>
     <hr />
-    <h3><a name="Motion-Deblurring">Motion Deblurring</a></h3>
+    <h3>
+      <a name="Motion-Deblurring">فیلتر تاری زدایی حرکت یا محو کننده حرکت</a>
+    </h3>
     <p>
       <em
-        >Corrects the blur caused by linear motion (moving subjects or
-        camera).</em
+        >تاری ناشی از حرکت خطی (سوژه‌‌های متحرک یا دوربین) را تصحیح می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      <em>Motion Deblurring</em> reduces the blurring effect caused by objects
-      moving too fast during the image acquisition process. The algorithm is
-      based on a Wiener filtering having, as point spread function (PSF), a line
-      <em>Size</em> pixels long with an angle of <em>Angle</em> degrees.
+      تاری زدایی حرکت جلوه تاری ناشی از حرکت بیش از حد اشیاء را در طول فرآیند
+      گرفتن تصویر کاهش می‌دهد. این الگوریتم مبتنی بر فیلتر وینر است که به عنوان
+      تابع گسترش نقطه (PSF)، یک خط اندازه پیکسل به طول با زاویه زاویه درجه دارد.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Size</strong><br />
-        <em>Length of the blur, expressed in pixels.</em
+        <strong>اندازه</strong><br />
+        <em>طول تاری، بیان شده در پیکسل.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>زاویه</strong><br />
+        <em>زاویه جهت تاری، بر حسب درجه نسبت به افقی بیان می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Angle</strong><br />
+        <strong>نویز</strong><br />
+        <em>تخمین نسبت توان نویز به سیگنال.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>حالت</strong><br />
         <em
-          >Angle of the blur direction, expressed in degrees with respect to the
-          horizontal.</em
+          >انتخاب می‌کند که آیا از یک PSF خطی کلاسیک یا دو نقطه ایزوله برای
+          تصحیح مسائل مشابه استفاده می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Noise</strong><br />
-        <em>Estimate of the noise-to-signal power ratio.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Mode</strong><br />
+        <strong>ضخامت</strong><br />
         <em
-          >Selects if using a classical linear PSF or two isolated points to
-          correct replica issues.</em
+          >ضخامت تاری، بیان شده در پیکسل. این اجازه می‌دهد تا یک جزء رفع تاری
+          نوری را نیز در نظر بگیرید.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Thickness</strong><br />
-        <em
-          >Thickness of the blur, expressed in pixels. This allows to consider
-          also an optical deblurring component.</em
+        <strong>تابع گسترش نقطه</strong><br />
+        <em>عملکرد Point Spread با تنظیمات فعلی ایجاد شد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Point Spread Function</strong><br />
-        <em>The Point Spread Function generated with the current settings.</em
+        <strong>شرایط مرزی</strong><br />
+        <em>آرتیفکت‌‌های زنگ نزدیک به مرزهای تصویر را کاهش دهید.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <ul>
-      <li>
-        <strong>Boundary Conditions</strong><br />
-        <em>Reduce ringing artifacts near the boundaries of the image.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      Very often it is possible to estimate the values of those parameters by
-      looking for the endpoints of a segment of the blurred area that in a
-      properly-focused image should converge into a single point. The
-      <em>Ruler</em> tool is automatically activated by the Motion Deblurring
-      filter, so you can select the endpoints of the blur segment: by doing this
-      you will automatically configure the <em>Shift</em> and
-      <em>Angle</em> parameters. Some extra fine-tuning may be necessary.<br />
-      In order to filter out the noise it is possible to set the
-      <em>Noise</em> parameter, which represents the estimated noise-to-signal
-      power ratio of the image.
+      اغلب اوقات می‌توان مقادیر آن پارامترها را با جستجوی نقاط انتهایی قسمتی از
+      ناحیه تار تخمین زد که در یک تصویر با فوکوس مناسب باید در یک نقطه همگرا
+      شوند. ابزار خط کش به طور خودکار توسط فیلتر تاری زدایی حرکت فعال می‌شود،
+      بنابراین می‌توانید نقاط انتهایی بخش تار را انتخاب کنید: با انجام این کار
+      پارامترهای Shift و Angle را به طور خودکار پیکربندی می‌کنید. ممکن است برخی
+      تنظیمات دقیق اضافی لازم باشد. برای فیلتر کردن نویز می‌توان پارامتر نویز را
+      تنظیم کرد که نشان‌دهنده نسبت تخمینی نویز به سیگنال تصویر است.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
+      <li>پاک کردن پلاک خودروی در حال حرکت<a href="" target="_blank"></a></li>
       <li>
-        Deblur a license plate of a moving car.<a href="" target="_blank"></a>
-      </li>
-      <li>
-        Deblur a license plate in a wrongly encoded video (replica).<a
+        در ویدیویی که به اشتباه کدگذاری شده است (مثنی) پلاک خودرو را محو کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Deblur a badge from a moving camera.<a href="" target="_blank"></a>
+        یک نشان از دوربین متحرک را محو کنید.<a href="" target="_blank"></a>
       </li>
-      <li>Deblur a moving face.<a href="" target="_blank"></a></li>
+      <li>چهره متحرک را محو کنید.<a href="" target="_blank"></a></li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Jae S. Lim, “Two-Dimensional Signal and Image Processing”, Prentice
@@ -6660,58 +6515,52 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Optical-Deblurring">Optical Deblurring</a></h3>
+    <h3><a name="Optical-Deblurring">رفع تاری نوری</a></h3>
     <p>
-      <em>Corrects the blur of objects that are out of focus (big blur).</em>
+      <em>تاری اشیا خارج از فوکوس را تصحیح می‌کند (تاری بزرگ).</em>
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      <em>Optical Deblurring</em> reduces the blurring effect due to incorrect
-      focus settings during the image acquisition process. The algorithm is
-      based on a Wiener filtering, having a circle of diameter <em>Size</em> as
-      point spread function (PSF).<br />
-      In order to filter out the noise it is possible to set the
-      <em>Noise</em> parameter, which represents the estimated noise-to-signal
-      power ratio of the image.
+      رفع تاری نوری به دلیل تنظیمات نادرست فوکوس در طول فرآیند گرفتن تصویر، جلوه
+      تاری را کاهش می‌دهد. الگوریتم مبتنی بر فیلتر وینر است که دایره‌ای با قطر
+      اندازه به عنوان تابع گسترش نقطه (PSF) دارد.<br />
+      برای فیلتر کردن نویز می‌توان پارامتر نویز را تنظیم کرد که نشان‌دهنده نسبت
+      تخمینی نویز به سیگنال تصویر است.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Size</strong><br />
-        <em>The radius of the point spread function in pixels.</em
+        <strong>اندازه</strong><br />
+        <em>Tتابع شعاع نقطه به پیکسل.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>نویز</strong><br />
+        <em>تخمین نسبت توان نویز به سیگنال.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>تابع گسترش نقطه</strong><br />
+        <em>عملکرد Point Spread با تنظیمات فعلی ایجاد شد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Noise</strong><br />
-        <em>Estimate of the noise-to-signal power ratio.</em
+        <strong>شرایط مرزی</strong><br />
+        <em>آرتیفکت‌‌های زنگ نزدیک به مرزهای تصویر را کاهش دهید.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
-      <li>
-        <strong>Point Spread Function</strong><br />
-        <em>The Point Spread Function generated with the current settings.</em
-        ><a href="" target="_blank"></a>
-      </li>
+      <li>محو کردن یک جسم خارج از فوکوس<a href="" target="_blank"></a></li>
+      <li>پلاک خودرو را از فوکوس خارج کنید.<a href="" target="_blank"></a></li>
+      <li>محو کردن چهره ای که فوکوس ندارد.<a href="" target="_blank"></a></li>
     </ul>
-    <ul>
-      <li>
-        <strong>Boundary Conditions</strong><br />
-        <em>Reduce ringing artifacts near the boundaries of the image.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Application Examples</h4>
-    <ul>
-      <li>Deblur an object out of focus.<a href="" target="_blank"></a></li>
-      <li>
-        Deblur a license plate out of focus.<a href="" target="_blank"></a>
-      </li>
-      <li>Deblur a face out of focus.<a href="" target="_blank"></a></li>
-    </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Jae S. Lim, “Two-Dimensional Signal and Image Processing”, Prentice
@@ -6729,74 +6578,72 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Nonlinear-Deblurring">Nonlinear Deblurring</a></h3>
-    <p><em>Corrects the blur caused by nonlinear motion.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Nonlinear-Deblurring">رفع تاری غیرخطی</a></h3>
+    <p><em>تاری ناشی از حرکت غیرخطی را تصحیح می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      <em>Nonlinear Deblurring</em> reduces the blurring effect caused by
-      objects moving too fast during the image acquisition process. The
-      algorithm is based on a Wiener filtering, having as point spread function
-      (PSF) a spline created by user selected points.
+      رفع تاری غیرخطی اثر تاری ناشی از حرکت بیش از حد اشیاء را در طول فرآیند
+      گرفتن تصویر کاهش می‌دهد. این الگوریتم مبتنی بر فیلتر وینر است که به عنوان
+      تابع گسترش نقطه (PSF) یک spline ایجاد شده توسط نقاط انتخاب شده توسط کاربر
+      دارد.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Points</strong><br />
-        <em>List of the points of the blur, expressed in pixels.</em
+        <strong>نقطه‌‌ها</strong><br />
+        <em>فهرست نقاط تاری که بر حسب پیکسل بیان شده است.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Noise</strong><br />
-        <em>Estimate of the noise-to-signal power ratio.</em
-        ><a href="" target="_blank"></a>
+        <strong>نویز</strong><br />
+        <em>تخمین نسبت توان نویز به سیگنال.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Thickness</strong><br />
+        <strong>ضخامت</strong><br />
         <em
-          >Thickness of the blur, expressed in pixels. This allows to consider
-          also an optical deblurring component.</em
+          >ضخامت تاری، بیان شده در پیکسل. این اجازه می‌دهد تا یک جزء رفع تاری
+          نوری را نیز در نظر بگیرید.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Point Spread Function</strong><br />
+        <strong>تابع گسترش نقطه</strong><br />
         <em
-          >The Point Spread Function generated by interpolating the points
-          selected by the user.</em
+          >تابع گسترش نقطه با درون یابی نقاط انتخاب شده توسط کاربر ایجاد
+          می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Boundary Conditions</strong><br />
-        <em>Reduce ringing artifacts near the boundaries of the image.</em
+        <strong>شرایط مرزی</strong><br />
+        <em>آرتیفکت‌‌های زنگ نزدیک به مرزهای تصویر را کاهش دهید.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      In order to determine the shape of PSF you need to add several points over
-      a blurred object in the picture, tracking the motion of the object or the
-      camera. User submitted points will be connected by a spline curve.<br />
-      In order to filter out the noise it is possible to set the
-      <em>Noise</em> parameter, which represents the estimated noise-to-signal
-      power ratio of the image.
+      برای تعیین شکل PSF باید چندین نقطه را روی یک شی تار در تصویر اضافه کنید و
+      حرکت جسم یا دوربین را ردیابی کنید. نقاط ارسالی کاربر توسط یک منحنی اسپلاین
+      به هم متصل خواهند شد.<br />
+      برای فیلتر کردن نویز می‌توان پارامتر نویز را تنظیم کرد که نشان‌دهنده نسبت
+      تخمینی نویز به سیگنال تصویر است.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Deblur a license plate with a complex curved blur.<a
+        یک پلاک با تاری منحنی پیچیده را از بین ببرید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Jae S. Lim, “Two-Dimensional Signal and Image Processing”, Prentice
@@ -6814,67 +6661,60 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Blind-Deconvolution">Blind Deconvolution</a></h3>
+    <h3><a name="Blind-Deconvolution">دکانولوشن کور</a></h3>
     <p>
       <em
-        >Corrects the blur of objects out of focus with blind deconvolution
-        (automatic estimation of little blur).</em
+        >تاری اشیاء خارج از فوکوس را با دکانولوشن کور (تخمین خودکار تاری کم)
+        تصحیح می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      <em>Blind Deconvolution</em> reduces the blurring effect caused by wrong
-      focus settings during the image acquisition process. The filter is based
-      on the blind deconvolution algorithm with a <em>Size</em> x
-      <em>Size</em> point spread function (PSF).<br />
-      The filter strength is adjusted by the parameter <em>Iterations</em> which
-      indicates the number of times the filter is applied.<br />
-      In order to reduce the ringing effect, it is possible to set the
-      <em>Noise</em> parameter, which represents the estimated noise-to-signal
-      power ratio of the image.
+      دکانولوشن کور اثر تاری ناشی از تنظیمات فوکوس اشتباه را در طول فرآیند گرفتن
+      تصویر کاهش می‌دهد. این فیلتر بر اساس الگوریتم دکانولوشن کور با تابع گسترش
+      نقطه اندازه x اندازه (PSF) است.<br />
+      قدرت فیلتر توسط پارامتر تکرار تنظیم می‌شود که تعداد دفعات اعمال فیلتر را
+      نشان می‌دهد.<br />
+      برای کاهش اثر زنگ، می‌توان پارامتر نویز را تنظیم کرد که نشان‌دهنده نسبت
+      تخمینی نویز به قدرت سیگنال تصویر است.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Size</strong><br />
-        <em>Point Spread Function (PSF) size of the blur.</em
+        <strong>اندازه</strong><br />
+        <em>اندازه عملکرد پخش نقطه (PSF) تاری.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Iterations</strong><br />
-        <em>Number of times the filter is applied.</em
+        <strong>تکرارها</strong><br />
+        <em>تعداد دفعاتی که فیلتر اعمال می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Noise</strong><br />
-        <em>Estimate of the noise-to-signal power ratio.</em
-        ><a href="" target="_blank"></a>
+        <strong>نویز</strong><br />
+        <em>تخمین نسبت توان نویز به سیگنال.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Deblur a license plate from an analog video.<a
-          href=""
-          target="_blank"
-        ></a>
+        پلاک را از یک ویدیوی آنالوگ پاک کنید.<a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -6908,66 +6748,63 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Turbulence-Deblurring">Turbulence Deblurring</a></h3>
+    <h3><a name="Turbulence-Deblurring">تلاطم رفع تاری</a></h3>
     <p>
       <em
-        >Corrects the blur caused by air turbulence on long distances or by high
-        ambient air temperature/humidity.</em
+        >تاری ناشی از تلاطم هوا در مسافت‌‌های طولانی یا دما/رطوبت بالای هوای
+        محیط را تصحیح می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      Light can follow a slightly curved trajectory if the temperature or
-      humidity of the air change along the path. This becomes especially visible
-      on images or videos captured from a long distance: objects appear to
-      slightly wobble and become blurred. <em>Turbulence Deblurring</em> can
-      reduce this specific type of blur. The algorithm is based on a Wiener
-      filter, with a point spread function derived from a mathematical model of
-      atmospheric turbulence. The <em>Strength</em> parameter is equal to the
-      radius in pixels of the point spread function at half maximum.<br />
-      In order to filter out the noise it is possible to set the
-      <em>Noise</em> parameter, which represents the estimated noise-to-signal
-      power ratio of the image.
+      اگر دما یا رطوبت هوا در طول مسیر تغییر کند، نور می‌تواند یک مسیر منحنی
+      کمی‌را دنبال کند. این امر به ویژه در تصاویر یا ویدیوهایی که از فاصله دور
+      گرفته شده اند قابل مشاهده است: به نظر می‌رسد اشیا کمی‌تکان می‌خورند و تار
+      می‌شوند. تلاطم رفع تاری می‌تواند این نوع خاص از تاری را کاهش دهد. این
+      الگوریتم بر اساس یک فیلتر وینر، با یک تابع گسترش نقطه ای است که از یک مدل
+      ریاضی تلاطم اتمسفر به دست آمده است. پارامتر استحکام - قدرت برابر است با
+      شعاع پیکسل تابع نقطه در نصف حداکثر.<br />
+      برای فیلتر کردن نویز می‌توان پارامتر نویز را تنظیم کرد که نشان‌دهنده نسبت
+      تخمینی نویز به سیگنال تصویر است.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Strength</strong><br />
-        <em>Radius of the point spread function at half maximum.</em
+        <strong>استحکام - قدرت</strong><br />
+        <em>شعاع تابع گسترش نقطه در نصف حداکثر.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Noise</strong><br />
-        <em>Estimate of the noise-to-signal power ratio.</em
+        <strong>نویز</strong><br />
+        <em>تخمین نسبت توان نویز به سیگنال.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>تابع گسترش نقطه</strong><br />
+        <em>عملکرد Point Spread با تنظیمات فعلی ایجاد شد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Point Spread Function</strong><br />
-        <em>The Point Spread Function generated with the current settings.</em
+        <strong>شرایط مرزی</strong><br />
+        <em>آرتیفکت‌‌های زنگ نزدیک به مرزهای تصویر را کاهش دهید.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        <strong>Boundary Conditions</strong><br />
-        <em>Reduce ringing artifacts near the boundaries of the image.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Application Examples</h4>
-    <ul>
-      <li>
-        Deblur a license plate from a long range video with turbulence.<a
+        پلاک خودرو را از یک ویدیوی دوربرد با تلاطم پاک کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Jae S. Lim, “Two-Dimensional Signal and Image Processing”, Prentice
@@ -6993,82 +6830,78 @@
       </li>
     </ul>
     <hr />
-    <h2><a name="Stabilization">Stabilization</a></h2>
-    <p><em>Stabilizes video frames.</em></p>
+    <h2><a name="Stabilization">پایدارسازی</a></h2>
+    <p><em>فریم‌‌های ویدیو را تثبیت می‌کند.</em></p>
     <hr />
-    <h3><a name="Local-Stabilization">Local Stabilization</a></h3>
+    <h3><a name="Local-Stabilization">تثبیت محلی</a></h3>
     <p>
       <em
-        >Stabilizes a shaking video by keeping the current selection steady. The
-        object of interest must be present in all frames. Supports different
-        stabilization modes.</em
+        >با ثابت نگه داشتن انتخاب فعلی، یک فیلم لرزان را تثبیت می‌کند. موضوع
+        مورد علاقه باید در همه قاب‌‌ها وجود داشته باشد. از حالت‌‌های مختلف تثبیت
+        پشتیبانی می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Local Stabilization</em> tool horizontally and/or vertically
-      shifts the different frames of a video in order to correct instability.
-      The offset to be applied is calculated by finding the maximum of the
-      cross-correlation function between each frame and a template, which is
-      obtained by the reference area copied from the reference frame.
+      ابزار تثبیت محلی به صورت افقی و/یا عمودی فریم‌‌های مختلف یک ویدیو را به
+      منظور اصلاح ناپایداری تغییر می‌دهد. افست اعمال شده با یافتن حداکثر تابع
+      همبستگی بین هر فریم و الگو محاسبه می‌شود که با ناحیه مرجع کپی شده از قاب
+      مرجع به دست می‌آید.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      Select with the <em>Selector</em> tool the area of the image that you
-      would like to keep steady. When clicking on the <em>Apply</em> button, the
-      current frame will be set as reference frame and the currently selected
-      area will be set as reference region. Use static template if the image
-      does not change very much, dynamic template if the scene changes and the
-      static mode is not enough to stabilize the frames. With
-      <em>Dynamic</em> template update be careful that the result will be
-      different if you will jump from frame to frame rather than playing them
-      sequentially.
+      با ابزار انتخاب کننده ناحیه ای از تصویر را که می‌خواهید ثابت نگه دارید
+      انتخاب کنید. با کلیک بر روی دکمه اعمال، قاب فعلی به عنوان قاب مرجع و منطقه
+      انتخاب شده فعلی به عنوان منطقه مرجع تنظیم می‌شود. اگر تصویر تغییر زیادی
+      نمی‌کند از الگوی استاتیک استفاده کنید، در صورتی که صحنه تغییر کند و حالت
+      استاتیک برای تثبیت فریم‌‌ها کافی نباشد از الگوی پویا استفاده کنید. با به
+      روز رسانی قالب پویا مراقب باشید که اگر به جای پخش متوالی آنها از فریم به
+      فریم بپرید، نتیجه متفاوت خواهد بود.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Stabilize a subject in a shaky video.<a href="" target="_blank"></a>
+        یک سوژه را در یک ویدیوی لرزان تثبیت کنید.<a href="" target="_blank"></a>
       </li>
       <li>
-        Stabilize a car to keep it in the same part of the video.<a
+        ماشین را تثبیت کنید تا در همان قسمت ویدیو بماند.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Stabilize a person to keep her in the same part of the video.<a
+        فردی را تثبیت کنید تا او را در همان قسمت ویدیو نگه دارد.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Stabilize a license plate as preprocessing for frame averaging.<a
+        یک پلاک خودرو را به عنوان پیش پردازش برای میانگین قاب تثبیت کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Stabilize a face as preprocessing for frame averaging.<a
+        یک چهره را به عنوان پیش پردازش برای میانگین گیری فریم تثبیت کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        Static & Dynamic Tracking: never miss your object(ive)!:
+        ردیابی استاتیک و پویا: هرگز شی (ive) خود را از دست ندهید!:
         <a
           href="https://blog.ampedsoftware.com/2019/02/01/static-dynamic-tracking-never-miss-your-objective/"
           target="_blank"
@@ -7076,7 +6909,7 @@
         >
       </li>
       <li>
-        Image and Video Stabilization with بـستا:
+        تثبیت تصویر و ویدئو با بستا:
         <a
           href="https://blog.ampedsoftware.com/2013/05/15/image-and-video-stabilization-with-amped-five/"
           target="_blank"
@@ -7085,60 +6918,51 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Global-Stabilization">Global Stabilization</a></h3>
+    <h3><a name="Global-Stabilization">تثبیت جهانی</a></h3>
     <p>
       <em
-        >Stabilizes the overall scene of a shaking video. Does not need a
-        specific object, but also stabilizes a changing scene.</em
+        >صحنه کلی یک فیلم لرزان را تثبیت می‌کند. به یک شی خاص نیاز ندارد، اما یک
+        صحنه در حال تغییر را نیز تثبیت می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Global Stabilization</em> tool stabilizes a video where the scene
-      is subject to camera motion, reducing its temporal high frequencies. For
-      each frame in the input video, a symmetric sliding window of
-      <em>Frames</em> frames is taken. The relative motion between each pair of
-      adjacent frames is calculated with a decimated block matching. Finally,
-      the displacement correction for the current frame is computed by means of
-      a median filter.
+      ابزار تثبیت جهانی ویدئویی را که در آن صحنه در معرض حرکت دوربین قرار
+      می‌گیرد، تثبیت می‌کند و فرکانس‌های زمانی بالای آن را کاهش می‌دهد. برای هر
+      فریم در ویدیوی ورودی، یک پنجره متقارن کشویی از فریم‌‌ها گرفته می‌شود. حرکت
+      نسبی بین هر جفت فریم مجاور با یک تطابق بلوک از بین رفته محاسبه می‌شود. در
+      نهایت، تصحیح جابجایی برای قاب فعلی با استفاده از یک فیلتر میانه محاسبه
+      می‌شود.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Maximum Shift</strong><br />
-        <em
-          >The maximum horizontal and vertical shifts (in pixels) to
-          correct.</em
+        <strong>حداکثر شیفت</strong><br />
+        <em>حداکثر جابجایی افقی و عمودی (بر حسب پیکسل) برای تصحیح.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Frames</strong><br />
-        <em>The number of frames to be considered for the stabilization.</em
+        <strong>قاب‌‌ها</strong><br />
+        <em>تعداد فریم‌‌هایی که برای تثبیت در نظر گرفته می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      This filter is more robust than <em>Local Stabilization</em> with respect
-      to zoom and panning, but it is less precise if you are interested in
-      finely stabilizing an object of interest.
+      این فیلتر نسبت به تثبیت موضعی از نظر بزرگنمایی و جابجایی قوی تر است، اما
+      اگر علاقه مند به تثبیت دقیق شی مورد نظر هستید، دقت کمتری دارد.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
+      <li>تثبیت ویدیوی یک دوربین فرسوده بدن.<a href="" target="_blank"></a></li>
       <li>
-        Stabilize the video of a body worn camera.<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-      <li>
-        Stabilize the video of a fight outside a bar taken with a mobile
-        phone.<a href="" target="_blank"></a>
+        ویدیوی دعوای بیرون از نوار که با تلفن همراه گرفته شده است را تثبیت
+        کنید.<a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         L. Tenze, S. Carrato and G. Ramponi, An alignment algorithm for old
@@ -7151,10 +6975,10 @@
         2005, pp.50-57.<a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        Image and Video Stabilization with بـستا:
+        تثبیت تصویر و ویدئو با بستا:
         <a
           href="https://blog.ampedsoftware.com/2013/05/15/image-and-video-stabilization-with-amped-five/"
           target="_blank"
@@ -7163,122 +6987,106 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Perspective-Stabilization">Perspective Stabilization</a></h3>
+    <h3><a name="Perspective-Stabilization">تثبیت چشم انداز</a></h3>
     <p>
-      <em
-        >Local Stabilization of planar objects, capable of tracking perspective
-        transformations.</em
-      >
+      <em>تثبیت محلی اجسام مسطح، قادر به ردیابی تحولات چشم انداز.</em>
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Perspective Stabilization</em> tool shifts and warps the different
-      frames of a video with sub-pixel accuracy, in order to keep a selected
-      region as steady as possible even if the object and/or the camera are
-      moving.
+      ابزار چشم انداز تثبیت فریم‌های مختلف یک ویدیو را با دقت زیر پیکسلی تغییر
+      می‌دهد و تغییر می‌دهد تا منطقه انتخاب‌شده را تا حد ممکن ثابت نگه دارد، حتی
+      اگر جسم و/یا دوربین در حال حرکت باشند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
+        <em>منطقه چهار ضلعی، در فریم اول، که می‌خواهید ثابت نگه دارید.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>نوع حرکت</strong><br />
         <em
-          >Quadrilateral region, on the first frame, that you would like to keep
-          steady.</em
+          >نوع حرکت ناحیه ردیابی شده حرکت پیچیده‌تر می‌تواند نتایج دقیق‌تری
+          بدهد، اما محاسبه زمان بیشتری می‌برد و به نویز یا تاری حرکت حساس‌تر
+          است.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Motion Type</strong><br />
-        <em
-          >Type of motion of the tracked region. A more complex motion can give
-          more accurate results but takes more time to compute and is more
-          sensitive to noise or motion blur.</em
+        <strong>روش ردیابی</strong><br />
+        <em>
+          ردیابی ایستا فریم فعلی را با اولی مقایسه می‌کند. ردیابی دینامیک فریم
+          فعلی را با قاب قبلی مقایسه می‌کند. ردیابی ترکیبی، فریم فعلی را با اولی
+          و قبلی مقایسه می‌کند (فقط برای چرخش و زوم و چشم انداز موجود است).</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Tracking Method</strong><br />
-        <em
-          ><em>Static Tracking</em> compares the current frame with the first.
-          <em>Dynamic Tracking</em> compares the current frame with the
-          previous. <em>Hybrid Tracking</em> compares the current frame with
-          both the first and the previous (available only for
-          <em>Rotation and Zoom</em> and <em>Perspective</em>).</em
+        <strong>درون یابی</strong><br />
+        <em>الگوریتم درون یابی</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>حالت خروجی</strong><br />
+        <em>نوع خروجی مورد نیاز شما</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>هموگرافی</strong><br />
+        <em>ماتریس تبدیل برای قاب فعلی محاسبه شده است.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <ul>
-      <li>
-        <strong>Interpolation</strong><br />
-        <em>Interpolation algorithm.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Output Mode</strong><br />
-        <em>Type of output you require.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Homography</strong><br />
-        <em>Transformation matrix calculated for the current frame.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      Using the <em>Quadrilateral</em> tool select, on the first frame, the
-      region that you would like to keep steady. For best results, you should
-      select the largest possible planar surface that contains the region of
-      interest (e.g. not just a number plate, but the entire front/back of the
-      vehicle). If the object of interest is approaching the camera, you may use
-      the <em>Reverse</em> filter to place, at the beginning of the video, the
-      frame where the object is largest.<br />
-      Select the <em>Motion Type</em> that best describes how the region changes
-      during the video. <em>Translation</em> is similar to the
-      <em>Local Stabilization</em> filter but adds sub-pixel accuracy.
-      <em>Rotation</em> is suitable for small rotations (in the computation, the
-      sine of the rotation angle is approximated by the angle).
-      <em>Rotation and Zoom</em> supports large rotation angles and may be
-      suitable, for instance, to stabilize a video of a static object captured
-      with a hand-held camera. <em>Perspective</em> is the most general setting,
-      and can give the most accurate results for moving objects, but also takes
-      more time to compute, is more sensitive to noise and may fail if the
-      motion is too fast or if the video is affected by motion blur.<br />
-      The <em>Tracking Method</em> determines which frames are compared.
-      <em>Static Tracking</em> compares the current frame with the first; this
-      offers a good stabilization but may fail if the shape of the region
-      changes too much. <em>Dynamic Tracking</em> compares each frame with the
-      previous; this setting is able to stabilize larger deformations but the
-      position of the region in the stabilized video may drift slightly over
-      time. <em>Hybrid Tracking</em> (available only for
-      <em>Rotation and Zoom</em> and <em>Perspective</em>) compares the current
-      frame with both the first and the previous; this allows to track large
-      deformations while keeping the target steady.<br />
-      In the <em>Output</em> tab, setting <em>Output Mode</em> to
-      <em>Stabilized Video</em> warps each frame, according to the selected
-      <em>Motion Type</em>, in order to keep the selection steady.
-      <em>Prepare for Perspective Super Resolution</em> leaves the video
-      unaltered but attaches the transformation matrix to each frame; you can
-      then apply the <em>Perspective Super Resolution</em> filter to enlarge the
-      stabilized region. <em>Selection Overlay</em> draws the warped selection
-      onto the input video. You can automatically add the
-      <em>Perspective Super Resolution</em> filter by clicking on the
-      <em>Prepare for Perspective Super Resolution</em> button. You can
-      optionally add a filter of the <em>Select Frames</em> group between the
-      <em>Perspective Stabilization</em> and
-      <em>Perspective Super Resolution</em> filters to discard frames that have
-      not been stabilized properly. Please note that adding other filters in
-      between may give unexpected results.
+      با استفاده از ابزار Quadrilateral، در فریم اول، ناحیه ای را که می‌خواهید
+      ثابت نگه دارید، انتخاب کنید. برای بهترین نتایج، باید بزرگترین سطح مسطح
+      ممکن را انتخاب کنید که شامل منطقه مورد نظر باشد (به عنوان مثال نه فقط یک
+      پلاک، بلکه کل جلو/پشت خودرو). اگر شی مورد نظر به دوربین نزدیک می‌شود،
+      می‌توانید از فیلتر معکوس برای قرار دادن فریمی‌که جسم در آن بزرگ‌ترین است،
+      در ابتدای فیلم استفاده کنید.<br />
+      نوع حرکتی را انتخاب کنید که به بهترین وجه نحوه تغییر منطقه را در طول ویدیو
+      توصیف می‌کند. ترجمه مشابه فیلتر تثبیت محلی است اما دقت زیر پیکسل را اضافه
+      می‌کند. چرخش برای چرخش‌‌های کوچک مناسب است (در محاسبات، سینوس زاویه چرخش
+      با زاویه تقریبی است). چرخش و زوم از زوایای چرخش بزرگ پشتیبانی می‌کند و
+      ممکن است برای مثال برای تثبیت ویدئویی از یک جسم ساکن که با دوربین دستی
+      گرفته شده است مناسب باشد. چشم انداز کلی‌ترین تنظیمات است و می‌تواند
+      دقیق‌ترین نتایج را برای اجسام متحرک ارائه دهد، اما همچنین محاسبه زمان
+      بیشتری می‌برد، به نویز حساس‌تر است و اگر حرکت خیلی سریع باشد یا اگر ویدیو
+      تحت تأثیر تاری حرکت قرار گیرد، ممکن است از کار بیفتد.<br />
+      روش ردیابی تعیین می‌کند که کدام فریم‌‌ها مقایسه شوند. ردیابی ایستا فریم
+      فعلی را با اولی مقایسه می‌کند. این تثبیت خوبی ارائه می‌دهد، اما اگر شکل
+      منطقه بیش از حد تغییر کند ممکن است شکست بخورد. ردیابی پویا هر فریم را با
+      فریم قبلی مقایسه می‌کند. این تنظیم می‌تواند تغییر شکل‌های بزرگ‌تر را تثبیت
+      کند، اما موقعیت منطقه در فیلم تثبیت‌شده ممکن است در طول زمان کمی‌تغییر
+      کند. ردیابی ترکیبی (فقط برای چرخش و زوم و چشم انداز موجود است) فریم فعلی
+      را با اولی و قبلی مقایسه می‌کند. این امکان ردیابی تغییر شکل‌‌های بزرگ را
+      در حالی که هدف را ثابت نگه می‌دارد، می‌دهد.<br />
+      در برگه خروجی، تنظیم حالت خروجی بر روی فیلم تثبیت‌شده، هر فریم را مطابق با
+      نوع حرکت انتخابی، تغییر می‌دهد تا انتخاب ثابت بماند. Prepare for چشم انداز
+      وضوح فوق العاده ویدیو را بدون تغییر می‌گذارد اما ماتریس تبدیل را به هر
+      فریم متصل می‌کند. سپس می‌توانید فیلتر چشم انداز وضوح فوق العاده را برای
+      بزرگ‌نمایی ناحیه تثبیت‌شده اعمال کنید. انتخابion Overlay انتخاب تاب خورده
+      را روی ویدیوی ورودی می‌کشد. با کلیک بر روی دکمه Prepare for چشم اندازSuper
+      Resolution می‌توانید به طور خودکار فیلتر چشم انداز وضوح فوق العاده را
+      اضافه کنید. می‌توانید به صورت اختیاری یک فیلتر از گروه انتخاب فریم‌ها بین
+      فیلترهای چشم انداز تثبیت و چشم انداز وضوح فوق العاده اضافه کنید تا
+      فریم‌‌هایی را که به درستی تثبیت نشده اند دور بیندازید. لطفاً توجه داشته
+      باشید که افزودن فیلترهای دیگر در این بین ممکن است نتایج غیرمنتظره ای به
+      همراه داشته باشد.
     </p>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        To Us "Nice" is Not Enough: Learn How to Further Improve Your Super
-        Resolution Images in بـستا:
+        برای ما "خوب یا nice" کافی نیست: بیاموزید که چگونه تصاویر با وضوح فوق
+        العاده خود را در بـستا بیشتر بهبود بخشید:
         <a
           href="https://blog.ampedsoftware.com/2020/01/21/to-us-nice-is-not-enough-learn-how-to-further-improve-your-super-resolution-images-in-amped-five/"
           target="_blank"
@@ -7286,8 +7094,8 @@
         >
       </li>
       <li>
-        When Simple Things Matter: Learn Why Reversing the Video May Greatly
-        Improve Your Results:
+        وقتی چیزهای ساده مهم هستند: بیاموزید که چرا معکوس کردن ویدیو ممکن است
+        نتایج شما را تا حد زیادی بهبود بخشد:
         <a
           href="https://blog.ampedsoftware.com/2019/05/07/when-simple-things-matter-learn-why-reversing-the-video-may-greatly-improve-your-results/"
           target="_blank"
@@ -7295,7 +7103,7 @@
         >
       </li>
       <li>
-        Perspective Stabilization and Perspective Super Resolution:
+        چشم انداز تثبیت و چشم انداز وضوح فوق العاده:
         <a
           href="https://blog.ampedsoftware.com/2018/11/08/perspective-stabilization-and-perspective-super-resolution/"
           target="_blank"
@@ -7304,67 +7112,61 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Perspective-Registration">Perspective Registration</a></h3>
+    <h3><a name="Perspective-Registration">ثبت چشم انداز</a></h3>
     <p>
       <em
-        >Aligns the perspective of different images of the same object, taken
-        from different points of view. Supports any kind of motion (shift,
-        rotation, zoom, perspective changes).</em
+        >چشم انداز تصاویر مختلف از یک شیء مشابه را که از دیدگاه‌های مختلف گرفته
+        شده‌اند، تراز می‌کند. پشتیبانی از هر نوع حرکت (تغییر، چرخش، زوم، تغییرات
+        چشم انداز).</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      <em>Perspective Registration</em> aligns an object of interest in all
-      frames with respect to a reference frame by a projective geometric
-      transformation. For each frame, except for the reference one, the
-      homography matrix which maps four control points of the frame to the
-      corresponding points of the reference frame is calculated. The result can
-      be refined by an optimization process which maximizes, through the
-      Nelder-Mead simplex method, the correlation between the region of interest
-      on the reference frame and each transformed frame.
+      ثبت چشم انداز یک شی مورد علاقه را در همه فریم‌‌ها با توجه به یک قاب مرجع
+      با یک تبدیل هندسی تصویری تراز می‌کند. برای هر فریم به جز فریم مرجع، ماتریس
+      هموگرافی که چهار نقطه کنترل قاب را به نقاط مربوطه قاب مرجع ترسیم می‌کند
+      محاسبه می‌شود. نتیجه را می‌توان با یک فرآیند بهینه سازی که از طریق روش
+      سیمپلکس نلدر-مید (Nelder-Mead simplex method)، همبستگی بین منطقه مورد نظر
+      در چارچوب مرجع و هر فریم تبدیل شده را به حداکثر می‌رساند، اصلاح کرد.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Selections</strong><br />
+        <strong>انتخاب‌‌ها</strong><br />
+        <em>بردار حاوی، برای هر فریم، نقاط انتخاب شده برای انتخاب.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>چارچوب مرجع</strong><br />
+        <em>موقعیت چارچوب مرجع</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>هوموگرافی اصلی</strong><br />
+        <em>ماتریس تبدیل با نقاط انتخاب شده محاسبه می‌شود.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>هموگرافی بهینه شده</strong><br />
+        <em>ماتریس تبدیل با بهینه سازی هموگرافی اصلی محاسبه شد.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>بهينه سازي</strong><br />
         <em
-          >Vector containing, for each frame, the points chosen for
-          selection.</em
+          >در صورت فعال بودن، ناحیه انتخاب شده روی هر تصویر به طور خودکار بهینه
+          می‌شود تا فیلتر بتواند بهترین نتایج را ارائه دهد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <ul>
-      <li>
-        <strong>Reference Frame</strong><br />
-        <em>Position of the reference frame.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Original Homography</strong><br />
-        <em>Transformation matrix calculated by selected points.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Optimized Homography</strong><br />
-        <em
-          >Transformation matrix calculated optimizing the original
-          homography.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Optimization</strong><br />
-        <em
-          >If enabled, the area selected on each image is automatically
-          optimized so that the filter can give the best results.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -7374,10 +7176,10 @@
         ></a>
       </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        Image and Video Stabilization with بـستا:
+        تثبیت تصویر و ویدئو با بستا:
         <a
           href="https://blog.ampedsoftware.com/2013/05/15/image-and-video-stabilization-with-amped-five/"
           target="_blank"
@@ -7386,97 +7188,94 @@
       </li>
     </ul>
     <hr />
-    <h2><a name="Integrate">Integrate</a></h2>
-    <p><em>Enhances image by multiple frames.</em></p>
+    <h2><a name="Integrate">یکپارچه سازی</a></h2>
+    <p><em>تصویر را با فریم‌‌های متعدد بهبود می‌بخشد.</em></p>
     <hr />
-    <h3><a name="Temporal-Smoothing">Temporal Smoothing</a></h3>
+    <h3><a name="Temporal-Smoothing">صاف کردن مقطعی</a></h3>
     <p>
       <em
-        >Reduces the noise integrating multiple frames. Gives the same number of
-        frames in output as in input.</em
+        >نویز ادغام چند فریم را کاهش می‌دهد. همان تعداد فریم در خروجی را به
+        ورودی می‌دهد.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Temporal Smoothing</em> tool reduces the noise in the image by
-      creating an output frame that is the pixel-by-pixel average of the current
-      frame with the previous ones. The number of the frames taken into account
-      is given by the parameter <em>Size</em>.
+      ابزار صاف کردن مقطعی با ایجاد یک فریم خروجی که میانگین پیکسل به پیکسل فریم
+      فعلی با فریم‌‌های قبلی است، نویز در تصویر را کاهش می‌دهد. تعداد فریم‌‌های
+      در نظر گرفته شده با پارامتر Size داده می‌شود.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Size</strong><br />
+        <strong>اندازه</strong><br />
         <em
-          >Size (in frames) of the "temporal window" to be used, i.e. the number
-          of frames to average.</em
+          >اندازه (در فریم) "پنجره زمانی" مورد استفاده، یعنی تعداد فریم‌‌ها به
+          طور متوسط.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      Note that if there are moving objects on the scene, they will result
-      blurred by the filter. In this case, it is recommended to use the
-      <em>Motion Smoothing</em>. The effect is generally softer than that one
-      obtained with the <em>Temporal Smoothing</em>. Moreover, it will keep
-      sharp even moving objects.
+      توجه داشته باشید که اگر اجسام متحرک در صحنه وجود داشته باشند، توسط فیلتر
+      تار می‌شوند. در این حالت استفاده از صاف کردن حرکت توصیه می‌شود. این اثر
+      معمولاً ملایم‌تر از اثری است که با صاف کردن زمانی به دست می‌آید. علاوه بر
+      این، حتی اجسام متحرک تیز را حفظ می‌کند.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
-      <li>Reduce the noise in a dark video.<a href="" target="_blank"></a></li>
+      <li>
+        نویز را در یک ویدیوی تاریک کاهش دهید.<a href="" target="_blank"></a>
+      </li>
     </ul>
     <hr />
-    <h3><a name="Motion-Smoothing">Motion Smoothing</a></h3>
+    <h3><a name="Motion-Smoothing">صاف کردن حرکت</a></h3>
     <p>
       <em
-        >Reduces the noise integrating current and previous frames and avoiding
-        halos on moving objects.</em
+        >نویز ادغام جریان و فریم‌‌های قبلی و جلوگیری از‌‌هاله روی اجسام متحرک را
+        کاهش می‌دهد.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Motion Smoothing</em> tool reduces the noise in a video by
-      processing each image along with the previous and the next frame. Each
-      pixel of the output image is calculated from the neighboring pixels in the
-      same frame and from the values of the pixel in the same position in the
-      previous and next frames. Since the moving objects are recognized by the
-      filter, they won't be blurred as it happens with simpler temporal filters,
-      such as the temporal smoothing.
+      ابزار صاف کردن حرکت با پردازش هر تصویر همراه با فریم قبلی و بعدی، نویز را
+      در یک ویدیو کاهش می‌دهد. هر پیکسل از تصویر خروجی از پیکسل‌‌های مجاور در
+      همان قاب و از مقادیر پیکسل در همان موقعیت در فریم‌‌های قبلی و بعدی محاسبه
+      می‌شود. از آنجایی که اجسام متحرک توسط فیلتر شناسایی می‌شوند، همانطور که در
+      فیلترهای زمانی ساده تر مانند صاف کردن زمانی اتفاق می‌افتد، محو نمی‌شوند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Still Smooth</strong><br />
-        <em>Smoothing strength from the current frame.</em
-        ><a href="" target="_blank"></a>
+        <strong>حفظ صافی</strong><br />
+        <em>استحکام صاف کننده از قاب فعلی</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Still Details</strong><br />
-        <em>Details preservation from the current frame.</em
-        ><a href="" target="_blank"></a>
+        <strong>حفظ جزییات</strong><br />
+        <em>حفظ جزئیات از قاب فعلی.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Motion Smooth</strong><br />
-        <em>Smoothing contribution from the neighboring frames.</em
-        ><a href="" target="_blank"></a>
+        <strong>حرکت صاف</strong><br />
+        <em>کمک صاف کردن از قاب‌‌های همسایه.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Motion Details</strong><br />
-        <em>Details contribution from the neighboring frames.</em
+        <strong>جزئیات حرکت</strong><br />
+        <em>مشارکت جزئیات از فریم‌‌های همسایه.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
-      <li>Reduce the noise in a dark video.<a href="" target="_blank"></a></li>
+      <li>
+        نویز را در یک ویدیوی تاریک کاهش دهید.<a href="" target="_blank"></a>
+      </li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         G. Ramponi, S. Marsi and S. Carrato, “Image processing using rational
@@ -7486,84 +7285,73 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Frame-Averaging">Frame Averaging</a></h3>
+    <h3><a name="Frame-Averaging">میانگین قاب</a></h3>
     <p>
       <em
-        >Reduces the noise by creating an image which is the average of all the
-        frames. Gives an output of a single image.</em
+        >با ایجاد تصویری که میانگین تمام فریم‌‌ها است، نویز را کاهش می‌دهد.
+        خروجی یک تصویر را می‌دهد.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      <em>Frame Averaging</em> calculates and implements a pixel-by-pixel mean
-      along all the frames of the video.
+      میانگین قاب میانگین پیکسل به پیکسل را در تمام فریم‌‌های ویدیو محاسبه و
+      پیاده سازی می‌کند.
     </p>
-    <h4>Parameters</h4>
-    <em>This filter has no parameters.</em>
-    <h4>Usage</h4>
+    <h4>مولفه‌‌ها</h4>
+    <em>این فیلتر هیچ پارامتری ندارد.</em>
+    <h4>استفاده</h4>
     <p>
-      Please note that, while this filter needs multiple frames as input, it
-      outputs one single frame.<br />
-      This filter, when applied to a single image, outputs a copy of the source.
+      لطفاً توجه داشته باشید که در حالی که این فیلتر به چندین فریم به عنوان
+      ورودی نیاز دارد، یک فریم واحد خروجی می‌دهد.<br />
+      این فیلتر وقتی روی یک تصویر اعمال می‌شود، یک کپی از منبع را خروجی می‌دهد.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
-      <li>Improve a dark scene.<a href="" target="_blank"></a></li>
-      <li>
-        Improve the readability of a license plate.<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-      <li>Improve the quality of a face.<a href="" target="_blank"></a></li>
+      <li>بهبود یک صحنه تاریک<a href="" target="_blank"></a></li>
+      <li>بهبود خوانایی پلاک<a href="" target="_blank"></a></li>
+      <li>بهبود کیفیت صورت<a href="" target="_blank"></a></li>
     </ul>
     <hr />
-    <h3><a name="Super-Resolution">Super Resolution</a></h3>
+    <h3><a name="Super-Resolution">وضوح فوق العاده</a></h3>
     <p>
       <em
-        >Generates a single higher-resolution image by merging all the frames
-        with subpixel motion estimation.</em
+        >با ادغام تمام فریم‌‌ها با تخمین حرکت زیرپیکسلی، یک تصویر با وضوح بالاتر
+        ایجاد می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Super Resolution</em> filter applies a sub-pixel registration to
-      all the frames of a video, then merges the motion corrected frames
-      together, along with a deblurring filtering. If a <em>Selection</em> is
-      set, then the selected area will be optimized.
+      فیلتر وضوح فوق العاده یک ثبت پیکسل فرعی را برای تمام فریم‌های یک ویدیو
+      اعمال می‌کند، سپس فریم‌های تصحیح‌شده حرکتی را به همراه یک فیلتر رفع تاری
+      با هم ادغام می‌کند. اگر یک انتخاب تنظیم شود، منطقه انتخاب شده بهینه
+      می‌شود.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Zoom</strong><br />
-        <em>Zoom factor for the output image.</em
-        ><a href="" target="_blank"></a>
+        <strong>بزرگنمایی</strong><br />
+        <em>فاکتور زوم برای تصویر خروجی.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Iterations</strong><br />
-        <em>Number of deblurring steps.</em><a href="" target="_blank"></a>
+        <strong>تکرارها</strong><br />
+        <em>تعداد مراحل رفع تاری</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
-        <em>Region of the image to optimize.</em><a href="" target="_blank"></a>
+        <strong>انتخاب</strong><br />
+        <em>منطقه تصویر برای بهینه سازی</em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
-      <li>
-        Improve the readability of a license plate.<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-      <li>Improve the quality of a face.<a href="" target="_blank"></a></li>
-      <li>Improve the readability of text.<a href="" target="_blank"></a></li>
+      <li>بهبود خوانایی پلاک<a href="" target="_blank"></a></li>
+      <li>بهبود کیفیت صورت<a href="" target="_blank"></a></li>
+      <li>بهبود خوانایی متن<a href="" target="_blank"></a></li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Hiroyuki Takeda, Peyman Milanfar, Matan Protter and Michael Elad,
@@ -7577,58 +7365,54 @@
     </ul>
     <hr />
     <h3>
-      <a name="Perspective-Super-Resolution">Perspective Super Resolution</a>
+      <a name="Perspective-Super-Resolution">وضوح فوق العاده چشم انداز</a>
     </h3>
     <p>
       <em
-        >Generates a single higher-resolution image by merging all the frames of
-        a video stabilized with the [Perspective Stabilization] filter.</em
+        >با ادغام تمام فریم‌های یک ویدیوی تثبیت شده با فیلتر [تثبیت چشم انداز]،
+        یک تصویر با وضوح بالاتر ایجاد می‌کند</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Perspective Super Resolution</em> filter takes the output of
-      <em>Perspective Stabilization</em> and uses it to compute a super
-      resolution of the input video.
+      فیلتر وضوح فوق العاده چشم انداز خروجی تثبیت چشم انداز را می‌گیرد و از آن
+      برای محاسبه وضوح فوق العاده ویدیوی ورودی استفاده می‌کند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Zoom</strong><br />
-        <em>Enlargement factor.</em><a href="" target="_blank"></a>
+        <strong>بزرگنمایی</strong><br />
+        <em>عامل بزرگ شدن</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Output Size</strong><br />
-        <em>Size of the output frame.</em><a href="" target="_blank"></a>
+        <strong>اندازه خروجی</strong><br />
+        <em>اندازه قاب خروجی</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Sharpening</strong><br />
-        <em>The sharpening effect of the filter.</em
-        ><a href="" target="_blank"></a>
+        <strong>تیز کردن</strong><br />
+        <em>اثر تیز شدن فیلتر.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <h4>Usage</h4>
     <p>
-      Apply the <em>Perspective Stabilization</em> tool checking the
-      <em>Prepare for Perspective Super Resolution</em> output option. Then,
-      apply the <em>Perspective Super Resolution</em> tool after it. It is
-      optionally possible to insert a filter of the <em>Select Frames</em> group
-      in between, to discard the frames where the stabilization has failed. The
-      image is automatically enlarged around the center of the quadrilateral
-      defined in <em>Perspective Stabilization</em>. The
-      <em>Sharpening</em> slider adjusts the sharpness of the processed image; a
-      higher value increases the sharpness but may produce a grainy output,
-      especially if the number of frames of the input video is low.
+      ابزار ثبیت چشم اندازرا با بررسی گزینه آماده شدن برای وضوح فوق العاده چشم
+      انداز اعمال کنید. سپس ابزار وضوح فوق العاده چشم انداز را بعد از آن اعمال
+      کنید. به‌صورت اختیاری می‌توان فیلتری از گروه انتخاب فریم‌ها را در بین قرار
+      داد تا فریم‌هایی را که در آن تثبیت‌سازی انجام نشده است دور بیندازیم. تصویر
+      به طور خودکار در اطراف مرکز چهارضلعی که در ثبیت چشم اندازتعریف شده است
+      بزرگ می‌شود. نوار لغزنده تیر کرپن وضوح تصویر پردازش شده را تنظیم می‌کند.
+      مقدار بالاتر وضوح را افزایش می‌دهد اما ممکن است خروجی دانه ای ایجاد کند،
+      به خصوص اگر تعداد فریم‌‌های ویدیوی ورودی کم باشد.
     </p>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        To Us "Nice" is Not Enough: Learn How to Further Improve Your Super
-        Resolution Images in بـستا:
+        برای ما "خوب یا nice" کافی نیست: بیاموزید که چگونه تصاویر با وضوح فوق
+        العاده خود را در بـستا بیشتر بهبود بخشید:
         <a
           href="https://blog.ampedsoftware.com/2020/01/21/to-us-nice-is-not-enough-learn-how-to-further-improve-your-super-resolution-images-in-amped-five/"
           target="_blank"
@@ -7636,8 +7420,8 @@
         >
       </li>
       <li>
-        When Simple Things Matter: Learn Why Reversing the Video May Greatly
-        Improve Your Results:
+        وقتی چیزهای ساده مهم هستند: بیاموزید که چرا معکوس کردن ویدیو ممکن است
+        نتایج شما را تا حد زیادی بهبود بخشد:
         <a
           href="https://blog.ampedsoftware.com/2019/05/07/when-simple-things-matter-learn-why-reversing-the-video-may-greatly-improve-your-results/"
           target="_blank"
@@ -7645,7 +7429,7 @@
         >
       </li>
       <li>
-        Perspective Stabilization and Perspective Super Resolution:
+        ثبیت چشم اندازو وضوح فوق العاده چشم انداز:
         <a
           href="https://blog.ampedsoftware.com/2018/11/08/perspective-stabilization-and-perspective-super-resolution/"
           target="_blank"
@@ -7654,146 +7438,136 @@
       </li>
     </ul>
     <hr />
-    <h2><a name="Presentation">Presentation</a></h2>
-    <p><em>Prepares a video or image for presentation.</em></p>
+    <h2><a name="Presentation">ارائه</a></h2>
+    <p><em>ویدئو یا تصویری را برای ارائه آماده می‌کند.</em></p>
     <hr />
-    <h3><a name="Compare-Original">Compare Original</a></h3>
+    <h3><a name="Compare-Original">اصل را مقایسه کنید</a></h3>
     <p>
       <em
-        >Juxtaposes or overlays original and enhanced images for comparison.</em
+        >تصاویر اصلی و پیشرفته را برای مقایسه در کنار هم قرار می‌دهد یا روی هم
+        قرار می‌دهد.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Compare Original</em> tool allow to display side by side the
-      original images with the processed ones in order to easily understand how
-      the processing has enhanced the image.
+      ابزار مقایسه با اصل اجازه می‌دهد تا تصاویر اصلی را در کنار تصاویر پردازش
+      شده نمایش دهید تا به راحتی درک کنید که چگونه پردازش تصویر را بهبود بخشیده
+      است.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Mode</strong><br />
+        <strong>حالت</strong><br />
         <em
-          >How to display the processed and the original (or unprocessed)
-          images, videos or frames.</em
+          >نحوه نمایش تصاویر، فیلم‌‌ها یا فریم‌‌های پردازش شده و اصلی (یا پردازش
+          نشده).</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Balance</strong><br />
-        <em>Balance between the original (0) and processed image (1).</em
+        <strong>تعادل</strong><br />
+        <em>تعادل بین تصویر اصلی (0) و تصویر پردازش شده (1).</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Gain</strong><br />
-        <em>Gain applied to the output image.</em
+        <strong>کسب کردن</strong><br />
+        <em>بهره بر روی تصویر خروجی اعمال می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Line Color</strong><br />
-        <em
-          >The color of the separating line in Half Horizontally and Half
-          Vertically mode.</em
+        <strong>رنگ خط</strong><br />
+        <em>رنگ خط جداکننده در حالت نیمه افقی و نیمه عمودی.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Line Thickness</strong><br />
-        <em
-          >The thickness of the separating line in Half Horizontally and Half
-          Vertically mode.</em
+        <strong>ضخامت خط</strong><br />
+        <em>ضخامت خط جداکننده در حالت نیمه افقی و نیمه عمودی.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
+      <li>مقایسه پلاک قبل و بعد از بهبود<a href="" target="_blank"></a></li>
       <li>
-        Compare a license plate before and after the enhancement.<a
+        یک چهره را قبل و بعد از بهبود مقایسه کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Compare a face before and after the enhancement.<a
+        یک ویدیو قبل و بعد از تثبیت را مقایسه کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
       <li>
-        Compare a video before and after the stabilization.<a
-          href=""
-          target="_blank"
-        ></a>
-      </li>
-      <li>
-        Compare a video keeping the stabilization on an object (putting a Video
-        Writer before).<a href="" target="_blank"></a>
+        ویدئویی را که تثبیت‌کننده را روی یک شیء نگه می‌دارد مقایسه کنید (قبل از
+        قرار دادن یک ویدئو نویس).<a href="" target="_blank"></a>
       </li>
     </ul>
     <hr />
-    <h3><a name="Spotlight">Spotlight</a></h3>
+    <h3><a name="Spotlight">نور افکن</a></h3>
     <p>
       <em
-        >Adds a spotlight effect to a selection. Supports different tracking
-        methods and inverse selection.</em
+        >این ویژگی یک جلوه نورافکن به یک انتخاب اضافه می‌کند. از روش‌‌های مختلف
+        ردیابی و انتخاب معکوس پشتیبانی می‌کند</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      <em>Spotlight</em> modifies contrast and brightness of a selection of the
-      image to highlight it in the scene.
+      نور افکن کنتراست و روشنایی انتخابی از تصویر را تغییر می‌دهد تا آن را در
+      صحنه برجسته کند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Contrast</strong><br />
-        <em>Extends the intensity difference among pixel (linear gain).</em
+        <strong>تضاد</strong><br />
+        <em>اختلاف شدت بین پیکسل‌‌ها (افزایش خطی) را افزایش می‌دهد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Brightness</strong><br />
-        <em>Adds or subtracts an offset to image pixels (bias).</em
+        <strong>روشنایی</strong><br />
+        <em>یک افست به پیکسل‌‌های تصویر اضافه یا کم می‌کند (بایاس).</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Shape</strong><br />
-        <em>Defines the shape of the selection.</em
+        <strong>شکل</strong><br />
+        <em>شکل انتخاب را مشخص می‌کند.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>نوع انتخاب</strong><br />
+        <em>مشخص می‌کند که انتخاب عادی یا معکوس است.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection Type</strong><br />
-        <em>Defines if the selection is normal or inverted.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
-      <li>Highlight the car of interest.<a href="" target="_blank"></a></li>
-      <li>Highlight the person of interest.<a href="" target="_blank"></a></li>
+      <li>ماشین مورد علاقه را برجسته کنید.<a href="" target="_blank"></a></li>
+      <li>فرد مورد علاقه را برجسته کنید.<a href="" target="_blank"></a></li>
     </ul>
-    <h4>References</h4>
+    <h4>منابع</h4>
     <ul>
       <li>
         Anil. K. Jain, “Fundamentals of Digital Image Processing”, Prentice
@@ -7804,75 +7578,77 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Hide-Selection">Hide Selection</a></h3>
+    <h3><a name="Hide-Selection">مخفی کردن انتخاب</a></h3>
     <p>
       <em
-        >Pixelates, darkens or blurs a selected area in a video (redaction for
-        privacy, witness protection, or sensitive subjects). Supports different
-        tracking methods and inverse selection.</em
+        >یک ناحیه انتخاب شده در یک ویدیو را پیکسل می‌کند (Pixelates)، تاریک
+        می‌کند یا محو می‌کند (تغییر برای حفظ حریم خصوصی، محافظت از شاهد یا
+        سوژه‌‌های حساس). از روش‌‌های مختلف ردیابی و انتخاب معکوس پشتیبانی
+        می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Hide Selection</em> tool hides the selected area using three
-      different methods:<br />
-      - <em>Smooth</em>: the selected area is processed by a smoothing
-      algorithm;<br />
-      - <em>Pixelate</em>: the selected area is pixelated;<br />
-      - <em>Black</em>: the selected area is turned blackened.
+      ابزار مخفی کردن انتخاب ناحیه انتخاب شده را با استفاده از سه روش مختلف
+      پنهان می‌کند:<br />
+      - <em>صاف</em>: ناحیه انتخاب شده توسط یک الگوریتم هموارسازی پردازش
+      می‌شود.<br />
+      - <em>Pixelate</em>: ناحیه انتخاب شده پیکسل شده است<br />
+      - <em>سیاه</em>: ناحیه انتخاب شده سیاه شده است.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Mode</strong><br />
-        <em>Type of method to use.</em><a href="" target="_blank"></a>
+        <strong>حالت</strong><br />
+        <em>نوع روش استفاده</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Size</strong><br />
-        <em>Adjusts the size of the blur or pixelation.</em
+        <strong>اندازه</strong><br />
+        <em>اندازه تاری یا پیکسلی را تنظیم می‌کند.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Shape</strong><br />
-        <em>Defines the shape of the selection.</em
+        <strong>شکل</strong><br />
+        <em>شکل انتخاب را مشخص می‌کند.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>نوع انتخاب</strong><br />
+        <em>مشخص می‌کند که انتخاب عادی یا معکوس است.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection Type</strong><br />
-        <em>Defines if the selection is normal or inverted.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Selection</strong><br />
+        <strong>انتخاب</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Redact a face from a body worn video.<a href="" target="_blank"></a>
+        یک چهره را از یک ویدیوی پوشیده از بدن ویرایش کنید.<a
+          href=""
+          target="_blank"
+        ></a>
       </li>
       <li>
-        Blur everything but a specific subject.<a href="" target="_blank"></a>
+        همه چیز را تار کنید جز یک موضوع خاص.<a href="" target="_blank"></a>
       </li>
-      <li>Pixelate a license plate.<a href="" target="_blank"></a></li>
+      <li>پلاک خودرو را پیکسل کنید<a href="" target="_blank"></a></li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        Video Redaction with بـستا:
+        ویرایش ویدیو با بـستا:
         <a
           href="https://blog.ampedsoftware.com/2018/05/24/video-redaction-with-amped-five/"
           target="_blank"
