@@ -7657,546 +7657,540 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Load-Timestamp">Load Timestamp</a></h3>
+    <h3><a name="Load-Timestamp">بارگذاری برچسب زمانی</a></h3>
     <p>
       <em
-        >Displays subtitles on the video frame. Font, color, size and position
-        can be customized.</em
+        >زیرنویس‌‌ها را روی قاب ویدیو نمایش می‌دهد. فونت، رنگ، اندازه و موقعیت
+        را می‌توان سفارشی کرد.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      This filter loads subtitles from a srt or smi file format and displays
-      them in the proper frames.
+      این فیلتر زیرنویس‌‌ها را از فرمت فایل srt یا smi بارگذاری کرده و در
+      فریم‌‌های مناسب نمایش می‌دهد.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>File</strong><br />
-        <em>Path of the subtitle file to load.</em
+        <strong>فایل</strong><br />
+        <em>مسیر فایل زیرنویس برای بارگیری.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>سبک متن</strong><br />
+        <em>فونت، اندازه و رنگ متن را مشخص کنید.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Text Style</strong><br />
-        <em>Specify text font, size and color.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Disable rendering</strong><br />
+        <strong>غیرفعال کردن رندر</strong><br />
         <em
-          >Don't draw the timestamp, just propagate the timestamp information
-          down the filters chain to the Add Text filter.</em
+          >مهر زمانی یا برچسب زمانی را ترسیم نکنید، فقط اطلاعات مُهر زمانی یا
+          برچسب زمانی را در زنجیره فیلترها به فیلتر افزودن متن منتشر کنید.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Timestamp format</strong><br />
+        <strong>قالب مهر زمان</strong><br />
         <em></em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Selection</strong><br />
-        <em>Position of the timestamp.</em><a href="" target="_blank"></a>
+        <strong>انتخاب</strong><br />
+        <em>موقعیت مهر زمانی</em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
-      <li>Load timestamp from a CCTV video.<a href="" target="_blank"></a></li>
       <li>
-        Add timestamp on a border (Frame Size).<a href="" target="_blank"></a>
+        بارگذاری مهر زمانی از یک فیلم دوربین مدار بسته<a
+          href=""
+          target="_blank"
+        ></a>
       </li>
-    </ul>
-    <hr />
-    <h3><a name="Add-Timestamp">Add Timestamp</a></h3>
-    <p>
-      <em
-        >Indicates date and time for the current frame. Font, color, size and
-        position can be customized.</em
-      >
-    </p>
-    <h4>Details</h4>
-    <p>
-      The <em>Write Timestamp</em> filter allows to provide time indication for
-      videos lacking a time stamp. Given the two known dates and times
-      corresponding to two reference frames, it will calculate for every frame
-      an approximate timestamp with a linear approximation. For videos which do
-      not have a constant frame rate the timestamp may not be accurate.
-    </p>
-    <h4>Parameters</h4>
-    <ul>
       <li>
-        <strong>First frame</strong><br />
-        <em>First reference frame.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>First timestamp</strong><br />
-        <em>Date and time of the first reference frame.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Second frame</strong><br />
-        <em>Second reference frame.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Second timestamp</strong><br />
-        <em>Date and time of the second reference frame.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Disable rendering</strong><br />
-        <em
-          >Don't draw the timestamp, just propagate the timestamp information
-          down the filters chain to the Add Text filter.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Adjust Frame Rate</strong><br />
-        <em>Frame rate adjustment settings.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Text Style</strong><br />
-        <em></em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Time Format</strong><br />
-        <em></em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Standard Formats</strong><br />
-        <em></em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Selection</strong><br />
-        <em>Position of the timestamp.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Usage</h4>
-    <p>
-      You can customize the date and time format as follows:<br />
-      %a: Abbreviated weekday name<br />
-      %A: Full weekday name<br />
-      %b: Abbreviated month name<br />
-      %B: Full month name<br />
-      %c: Date and time representation appropriate for locale<br />
-      %d: Day of month as decimal number (01 - 31)<br />
-      %H: Hour in 24-hour format (00 - 23)<br />
-      %I: Hour in 12-hour format (01 - 12)<br />
-      %j: Day of year as decimal number (001 - 366)<br />
-      %l: Milliseconds with leading zeros (000 - 999)<br />
-      %m: Month as decimal number (01 - 12)<br />
-      %M: Minute as decimal number (00 - 59)<br />
-      %p: Current locale's A.M./P.M. indicator for 12-hour clock<br />
-      %S: Second as decimal number (00 - 59)<br />
-      %U: Week of year as decimal number, with Sunday as first day of week (00 -
-      53)<br />
-      %w: Weekday as decimal number (0 - 6; Sunday is 0)<br />
-      %W: Week of year as decimal number, with Monday as first day of week (00 -
-      53)<br />
-      %x: Date representation for current locale<br />
-      %X: Time representation for current locale<br />
-      %y: Year without century, as decimal number (00 - 99)<br />
-      %Y: Year with century, as decimal number<br />
-      %z, %Z: Either the time zone name or time zone abbreviation, depending on
-      registry settings; no characters if time zone is unknown<br />
-      %%: Percent sign<br />
-      %#a, %#A, %#b, %#B, %#p, %#X, %#z, %#Z, %#%: # flag is ignored<br />
-      %#c: Long date and time representation, appropriate for current locale.
-      For example: "Tuesday, March 14, 1995, 12:41:29".<br />
-      %#x: Long date representation, appropriate to current locale. For example:
-      "Tuesday, March 14, 1995"<br />
-      %#d, %#H, %#I, %#j, %#m, %#M, %#S, %#U, %#w, %#W, %#y, %#Y: Remove leading
-      zeros (if any).<br />
-    </p>
-    <h4>Application Examples</h4>
-    <ul>
-      <li>
-        Add the time on a video with known times.<a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <hr />
-    <h3><a name="Annotate">Annotate</a></h3>
-    <p><em>Draws annotations over the image.</em></p>
-    <h4>Details</h4>
-    <p>
-      <em>Annotate</em> enables drawing annotations over the image: shapes,
-      arrows, lines. Also, allows for adding texts, images, hiding an area,
-      magnifying an area.
-    </p>
-    <h4>Parameters</h4>
-    <ul>
-      <li>
-        <strong>Annotation Tool</strong><br />
-        <em>A set of modes with their respective parameters.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Usage</h4>
-    <p>
-      Select a mode from settings panel, then draw or edit objects.<br />
-      <br />
-      - Shape - Draw on images and frames using various shapes (rectangle,
-      circle). Simply drag a shape on the frame or image using the mouse to
-      produce the annotation. Size, transparency and colors can be selected
-      according to preference.<br />
-      - Arrow - Draw on images and frames using arrows or lines. Simply drag an
-      arrow on the frame or image using the mouse to produce the annotation.
-      Size and color can be selected according to preference.<br />
-      - Pencil - Freehand drawing on images and frames. Simply draw on the frame
-      or image using the mouse. Size and color can be selected according to
-      preference.<br />
-      - Add Text - The Font and size can be selected, along with the style
-      (bold, italic or underlined). It is possible to select the color of the
-      text and add a background color or keep it as transparent using the
-      checkbox next to the color choice. The Horizontal Alignment can be chosen
-      between Center, Left or Right as can the Vertical Alignment.<br />
-      - Add an Image or Logo - Simply click the three white dots and the
-      software will open a browser window for navigating to the logo or image to
-      be used. There is the option to maintain or ignore the aspect ratio and to
-      treat white or black colors in the image as transparent.<br />
-      - Hide (Blur or Pixelate) - Here the strength of the redaction can be
-      chosen as well as the shape and any border color. The border thickness can
-      also be adjusted.<br />
-      - Magnify a Specific Area - Simply drag the selection tool over the area
-      to be magnified. The blue circle in the middle of the selection allows for
-      magnifying an object or subject but then showing the results in a
-      different area on the image. In this case, keep the blue circle on the
-      object or subject you want to magnify and move the selection box to the
-      area you want. There is the choice of zoom level, shape, border color and
-      thickness and the type of border.<br />
-      - Spotlight - Highlight an image region by modifying its contrast and
-      brightness. Drag the selection tool over the area to 'put the light' on
-      it. Shape and border can be adjusted according to preference.<br />
-      <br />
-      You can clear annotations by clicking the General button and selecting
-      Clear All.<br />
-      <br />
-      After drawing an annotation, clicking the right mouse button whilst
-      hovering over the annotation will give you the following options:<br />
-      - Lock - This will toggle on / off shape locking, to prevent accidental
-      editing or deletion after that the shape has been completed.<br />
-      - Copy - This will copy the selected annotation so it can be used
-      again.<br />
-      - Paste - This will paste any annotation that has previously been
-      copied.<br />
-      - Delete - This will delete the selected annotation.<br />
-      - Bring To Front - If you are using multiple annotations in layers, this
-      will bring the selected layer to the very front of the annotation
-      group.<br />
-      - Bring Forward - If you are using multiple annotations in layers, this
-      will bring the selected layer forward by one place within the annotation
-      group.<br />
-      - Send Backward - If you are using multiple annotations in layers, this
-      will send the selected layer backwards by one place within the annotation
-      group.<br />
-      - Send To Back - If you are using multiple annotations in layers, this
-      will send the selected layer to the very back of the annotations group.<br />
-      - Set Only For This Frame - This will set the selected annotation to show
-      only on the current frame when annotating video or image sequences.<br />
-      - Set From This Frame - This will set the selected annotation to show from
-      the current frame and allow for navigation to another frame, meaning the
-      annotation will show only in the range between those two frame points.<br />
-      - Set Until This Frame - This will set the selected annotation from a
-      previously selected frame of the video until the current frame of a video
-      or image sequence.<br />
-      - Set For All Frames - This will set the selected annotation to appear for
-      the entire video or image sequence.<br />
-      - Go To First Frame (N) - This will navigate to the first frame the
-      annotation appears on. The number in brackets is the frame number.<br />
-      - Go To Last Frame (N) - This will navigate to the last frame the
-      annotation appears on. The number in brackets is the frame number.<br />
-      <br />
-      Annotations can be applied independently to frames or to the entire video.
-      An annotation can be moved along a freehand path to keep highlight over a
-      subject. Recording the freehand path can be performed as follow:<br />
-      - Open a video containing the subject you wish to track (for example,
-      surrounding him/her with a circular shape).<br />
-      - Go to first frame of the video where the subject appears.<br />
-      - Use the Annotate filter, select an annotation type (any will work, but
-      Shape and Hide are the most common choices), then add the annotation over
-      the subject.<br />
-      - Leave the annotation selected: its control points must be visible and
-      coloured in white.<br />
-      - Using the Speed slider at the bottom, set the frame rate to a very low
-      value like 2 or 4 FPS.<br />
-      - Click the Play button. While video is playing at such low speed, slowly
-      drag the annotation and keep it centered on the subject.<br />
-      - Click the Pause button.<br />
-      - Deselect the annotation with one click outside its bounds; the control
-      points will disappear.<br />
-      <br />
-      After recording is completed, we can restore the frame rate to the
-      original speed (click on the Reset button), seek back to the frame where
-      the subject appeared, and click Play:<br />
-      the annotation will move along the path that you just recorded,
-      highlighting the desired subject. This shape will be visible also in
-      exported videos (Video Writer filter).<br />
-      <br />
-      A moving subject can be tracked by an automation-assisted procedure when
-      the subject appearance changes slowly across frames. Smart tracking can be
-      applied as follows:<br />
-      - Open a video containing the subject you wish to track (for example,
-      surrounding him/her with a circular shape).<br />
-      - Go to first frame of the video where the subject appears.<br />
-      - Use the Annotate filter, select an annotation type (any will work, but
-      Shape and Hide are the most common choices), then add the annotation over
-      the subject.<br />
-      - Leave the annotation selected: its control points must be visible and
-      coloured in white.<br />
-      - Now click the Track button once to activate tracking; two rectangles
-      will appear:<br />
-      - a reference region (green rectangle with dashed lines) to mark precisely
-      the subject to be tracked,<br />
-      - and a search window (yellow rectangle with dashed lines) which delimits
-      the area where the reference could appear in the next frame; a smaller
-      search window requires less computations and decreases the chance of
-      tracking errors on slow-speed subjects.<br />
-      While tracking is active a link-shaped icon appears on entities that
-      participate into a joint move/resize action with the current selection:<br />
-      - if an annotation is selected, the link icon will appear both on the
-      reference region (green) and the search window (yellow)<br />
-      - if the reference region (green) is selected, the link icon will appear
-      on the search window (yellow)<br />
-      - Click again Track: video will advance by one frame, and subject will be
-      tracked automatically; hold down Track to apply tracking repeatedly on
-      next frames, until button is released.<br />
-      - Click Copy button to copy current annotation shape and coordinates
-      verbatim into the next frame, without tracking applied; hold down Copy for
-      repeated copies in the next frames.<br />
-      - Click or hold Next and Previous buttons to navigate along the video, the
-      same way as Next Frame and Previous Frame buttons of the player panel
-      do.<br />
-      The difference between Copy and Next buttons is somewhat subtle, and can
-      be observed more clearly when annotation coordinates (position, rotation,
-      scale) differ between current and next frame:<br />
-      - Copy will overwrite coordinates in next frame, and step forward by one
-      frame;<br />
-      - Next will just step to next frame, leaving original coordinates
-      unchanged.
-    </p>
-    <h4>Application Examples</h4>
-    <ul>
-      <li>Draw annotations over the image.<a href="" target="_blank"></a></li>
-    </ul>
-    <hr />
-    <h3><a name="Add-Logo">Add Logo</a></h3>
-    <p>
-      <em
-        >Superimposes an external image onto the current image or video to mark
-        it. Supports transparency (alpha) channel or color to transparency
-        conversion.</em
-      >
-    </p>
-    <h4>Details</h4>
-    <p>
-      <em>Add Logo</em> superimposes an external image onto the current image or
-      video. The user can adjust the position of the image with respect to the
-      frame or a selection, if present. The image can be made transparent if it
-      contains an alpha channel; otherwise, the black or white pixels can be
-      made transparent on request.
-    </p>
-    <h4>Parameters</h4>
-    <ul>
-      <li>
-        <strong>File Name</strong><br />
-        <em
-          >Path of the external image file to superimpose onto the current image
-          or video.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Alpha Channel</strong><br />
-        <em
-          >Informs the user if the selected image file contains transparency
-          information.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Horizontal Position</strong><br />
-        <em
-          >Horizontal position of the superimposed image with respect to the
-          frame or selection.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Vertical Position</strong><br />
-        <em
-          >Vertical position of the superimposed image with respect to the frame
-          or selection.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Transparency</strong><br />
-        <em
-          >Method used to optionally blend the superimposed image with the
-          background.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Additional Transparency</strong><br />
-        <em>Optionally increase the transparency of the superimposed image.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Logo Size</strong><br />
-        <em>Logo Size.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Interpolation</strong><br />
-        <em>Interpolation algorithm.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Selection</strong><br />
-        <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Usage</h4>
-    <p>
-      Select an image file to use as a superimposed logo and then click
-      <em>Apply</em>. Use the <em>Horizontal Position</em> and
-      <em>Vertical Position</em> menus to adjust the position of the logo
-      relative to the main image frame or, if present, to the current selection.
-      If the image contains an alpha channel, it is used automatically to blend
-      the logo with the background; it may be necessary to specify if the alpha
-      channel is <em>Straight</em> or <em>Premultiplied</em> in the
-      <em>Transparency</em> menu. It is also possible to set <em>Black</em> or
-      <em>White</em> pixels to transparent, or to disable transparency
-      altogether.
-    </p>
-    <h4>Application Examples</h4>
-    <ul>
-      <li>
-        Add agency logo on a suspect photo for release.<a
+        برچسب زمانی را روی یک حاشیه اضافه کنید (اندازه فریم).<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
     <hr />
-    <h3><a name="Add-Text">Add Text</a></h3>
+    <h3><a name="Add-Timestamp">اضافه کردن برچسب زمانی</a></h3>
     <p>
       <em
-        >Inserts text on the image. Supports several macros to dynamically
-        change the content of the text. Font, color, size and position can be
-        customized.</em
+        >تاریخ و زمان فریم فعلی را نشان می‌دهد. فونت، رنگ، اندازه و موقعیت را
+        می‌توان سفارشی کرد.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Add Text</em> filter allows to put textual information on the
-      image.
+      فیلتر نوشتن برچسب زمانی به شما امکان می‌دهد برای ویدیوهایی که دارای مهر
+      زمانی هستند، زمان را نشان دهید. با توجه به دو تاریخ و زمان شناخته شده
+      مربوط به دو فریم مرجع، برای هر فریم یک مهر زمانی تقریبی با یک تقریب خطی
+      محاسبه می‌کند. برای ویدیوهایی که نرخ فریم ثابتی ندارند، ممکن است مهر زمانی
+      دقیق نباشد.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Text</strong><br />
-        <em>The text to write on the image.</em><a href="" target="_blank"></a>
+        <strong>فریم اول</strong><br />
+        <em>اولین قاب مرجع</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Add Macro</strong><br />
-        <em></em><a href="" target="_blank"></a>
+        <strong>اولین مهر زمان یا برچسب زمانی </strong><br />
+        <em>تاریخ و زمان اولین فریم مرجع.</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Text Style</strong><br />
-        <em>Font characteristics used for the text.</em
-        ><a href="" target="_blank"></a>
+        <strong>فریم دوم</strong><br />
+        <em>قاب مرجع دوم</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Background Color</strong><br />
+        <strong>مهر زمانی دوم</strong><br />
+        <em>تاریخ و زمان فریم مرجع دوم.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>غیرفعال کردن رندر</strong><br />
         <em
-          >The color used to optionally paint the rectangle behind the text.</em
+          >مهر زمانی را ترسیم نکنید، فقط اطلاعات مُهر زمانی را در زنجیره فیلترها
+          به فیلتر افزودن متن منتشر کنید.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Background Shape</strong><br />
-        <em>The shape of the colored background, if requested.</em
+        <strong>نرخ فریم را تنظیم کنید</strong><br />
+        <em>تنظیمات تنظیم نرخ فریم</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>سبک متن</strong><br />
+        <em></em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>فرمت زمان</strong><br />
+        <em></em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>فرمت‌‌های استاندارد</strong><br />
+        <em></em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>انتخاب</strong><br />
+        <em>موقعیت مهر زمانی</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <h4>استفاده</h4>
+    <p>
+      می‌توانید قالب تاریخ و زمان را به صورت زیر سفارشی کنید:<br />
+      %a: نام مختصر روز هفته<br />
+      %A: نام کامل روز هفته<br />
+      %b: نام مختصر ماه<br />
+      %B: نام ماه کامل<br />
+      %c: نمایش تاریخ و زمان مناسب برای منطقه<br />
+      %d: روز ماه به عنوان عدد اعشاری (01 - 31)<br />
+      %H: ساعت در قالب 24 ساعته (00 - 23)<br />
+      %I: ساعت در قالب 12 ساعته (01 - 12)<br />
+      %j: روز سال به عنوان عدد اعشاری (001 - 366)<br />
+      %l: میلی ثانیه با صفرهای ابتدایی (000 - 999)<br />
+      %m: ماه به عنوان عدد اعشاری (01 - 12)<br />
+      %M: دقیقه به عنوان عدد اعشاری (00 - 59)<br />
+      %p: محل فعلی A.M./P.M. نشانگر ساعت 12 ساعته<br />
+      %S: دوم به عنوان عدد اعشاری (00 - 59)<br />
+      %U: هفته سال به عنوان عدد اعشاری، با یکشنبه به عنوان اولین روز هفته (00 -
+      53)<br />
+      %w: روز هفته به عنوان عدد اعشاری (0 - 6؛ یکشنبه 0 است)<br />
+      %W: هفته سال به عنوان عدد اعشاری، با دوشنبه به عنوان اولین روز هفته (00 -
+      53)<br />
+      %x: نمایش تاریخ برای منطقه فعلی<br />
+      %X: نمایش زمان برای محلی فعلی<br />
+      %y: سال بدون قرن، به عنوان عدد اعشاری (00 - 99)<br />
+      %Y: سال با قرن، به عنوان عدد اعشاری<br />
+      %z, %Z: بسته به تنظیمات رجیستری، نام منطقه زمانی یا مخفف منطقه زمانی. بدون
+      کاراکتر اگر منطقه زمانی ناشناخته باشد<br />
+      %%: علامت درصد<br />
+      %#a, %#A, %#b, %#B, %#p, %#X, %#z, %#Z, %#%: # پرچم نادیده گرفته شده
+      است<br />
+      %#c: نمایش تاریخ و زمان طولانی، مناسب برای منطقه فعلی. به عنوان مثال: "سه
+      شنبه 23 اسفند 95 ساعت 12:41:29".<br />
+      %#x: نمایش تاریخ طولانی، مناسب با منطقه فعلی. به عنوان مثال: "سه شنبه 23
+      اسفند 95"<br />
+      %#d, %#H, %#I, %#j, %#m, %#M, %#S, %#U, %#w, %#W, %#y, %#Y: حذف پیشرو صفر
+      (در صورت وجود).<br />
+    </p>
+    <h4>نمونه‌‌های کاربردی</h4>
+    <ul>
+      <li>
+        زمان را روی یک ویدیو با زمان‌‌های مشخص اضافه کنید.<a
+          href=""
+          target="_blank"
+        ></a>
+      </li>
+    </ul>
+    <hr />
+    <h3><a name="Annotate">حاشیه نویسی کردن</a></h3>
+    <p><em>حاشیه نویسی را روی تصویر ترسیم می‌کند.</em></p>
+    <h4>جزئیات</h4>
+    <p>
+      ابزار حاشیه نویسی کشیدن حاشیه نویسی روی تصویر را فعال می‌کند: شکل‌‌ها،
+      فلش‌‌ها، خطوط. همچنین، امکان اضافه کردن متون، تصاویر، مخفی کردن یک منطقه،
+      بزرگنمایی یک منطقه را فراهم می‌کند.
+    </p>
+    <h4>مولفه‌‌ها</h4>
+    <ul>
+      <li>
+        <strong>ابزار حاشیه نویسی</strong><br />
+        <em>مجموعه ای از حالت‌‌ها با پارامترهای مربوطه خود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
+    <h4>استفاده</h4>
+    <p>
+      یک حالت را از پانل تنظیمات انتخاب کنید، سپس اشیاء را بکشید یا ویرایش
+      کنید.<br />
+      <br />
+      - شکل - با استفاده از اشکال مختلف (مستطیل، دایره) روی تصاویر و قاب‌‌ها
+      بکشید. برای ایجاد حاشیه نویسی، به سادگی یک شکل را روی قاب یا تصویر با
+      استفاده از ماوس بکشید. اندازه، شفافیت و رنگ را می‌توان با توجه به اولویت
+      انتخاب کرد.<br />
+      - فلش - با استفاده از فلش‌‌ها یا خطوط روی تصاویر و فریم‌‌ها بکشید. برای
+      ایجاد حاشیه نویسی، به سادگی یک فلش را روی قاب یا تصویر با استفاده از ماوس
+      بکشید. اندازه و رنگ را می‌توان با توجه به اولویت انتخاب کرد.<br />
+      - مداد - طراحی با دست آزاد روی تصاویر و قاب‌‌ها. به سادگی با استفاده از
+      ماوس روی قاب یا تصویر بکشید. اندازه و رنگ را می‌توان با توجه به اولویت
+      انتخاب کرد.<br />
+      - اضافه کردن متن - فونت و اندازه را می‌توان به همراه سبک (پررنگ، ایتالیک
+      یا زیرخط دار) انتخاب کرد. امکان انتخاب رنگ متن و اضافه کردن رنگ پس زمینه
+      یا شفاف نگه داشتن آن با استفاده از کادر کنار انتخاب رنگ وجود دارد. تراز
+      افقی را می‌توان بین مرکز، چپ یا راست و تراز عمودی انتخاب کرد.<br />
+      - اضافه کردن یک تصویر یا لوگو - به سادگی روی سه نقطه سفید کلیک کنید و نرم
+      افزار یک پنجره مرورگر را برای پیمایش به لوگو یا تصویر مورد استفاده باز
+      می‌کند. گزینه ای برای حفظ یا نادیده گرفتن نسبت تصویر و در نظر گرفتن
+      رنگ‌‌های سفید یا سیاه در تصویر به عنوان شفاف وجود دارد.<br />
+      - Hide (تار یا Pixelate) - در اینجا می‌توان قدرت ویرایش و همچنین شکل و هر
+      رنگ حاشیه را انتخاب کرد. ضخامت حاشیه نیز قابل تنظیم است.<br />
+      - بزرگنمایی یک ناحیه خاص - به سادگی ابزار انتخاب را روی ناحیه بزرگنمایی
+      بکشید. دایره آبی در وسط انتخاب، امکان بزرگنمایی یک شی یا موضوع را فراهم
+      می‌کند، اما سپس نتایج را در ناحیه دیگری روی تصویر نشان می‌دهد. در این حالت
+      دایره آبی را روی شی یا موضوعی که می‌خواهید بزرگ کنید نگه دارید و کادر
+      انتخاب را به ناحیه مورد نظر منتقل کنید. انتخاب سطح زوم، شکل، رنگ و ضخامت
+      حاشیه و نوع حاشیه وجود دارد.<br />
+      - Spotlight - یک منطقه تصویر را با تغییر کنتراست و روشنایی آن برجسته کنید.
+      ابزار انتخاب را روی آن ناحیه بکشید تا «نور را روی آن قرار دهید». شکل و
+      حاشیه را می‌توان با توجه به اولویت تنظیم کرد.<br />
+      <br />
+      You can clear annotations by clicking the General button and selecting
+      Clear All.<br />
+      <br />
+      با کلیک کردن روی دکمه عمومی‌و انتخاب پاک کردن همه، می‌توانید حاشیه
+      نویسی‌‌ها را پاک کنید.<br />
+      - پس از ترسیم حاشیه نویسی، با کلیک بر روی دکمه سمت راست ماوس در حالی که
+      ماوس را روی حاشیه قرار می‌دهید، گزینه‌‌های زیر در اختیار شما قرار
+      می‌گیرد:<br />
+      - قفل - این قفل شکل را روشن/خاموش می‌کند تا از ویرایش یا حذف تصادفی پس از
+      تکمیل شکل جلوگیری شود.<br />
+      - کپی - این حاشیه نویسی انتخاب شده را کپی می‌کند تا بتوان دوباره از آن
+      استفاده کرد.<br />
+      - چسباندن - هر حاشیه نویسی که قبلاً کپی شده است را جایگذاری می‌کند.<br />
+      - حذف - با این کار حاشیه نویسی انتخاب شده حذف می‌شود.<br />
+      - Bring To Front -اگر از چندین حاشیه نویسی در لایه‌‌ها استفاده می‌کنید،
+      این لایه انتخاب شده را به جلوی گروه حاشیه نویسی می‌آورد.<br />
+      - اگر از چندین حاشیه نویسی در لایه‌‌ها استفاده می‌کنید، این لایه انتخاب
+      شده را یک مکان در گروه حاشیه نویسی جلو می‌برد.<br />
+      - ارسال به عقب - اگر از چندین حاشیه نویسی در لایه‌‌ها استفاده می‌کنید، این
+      لایه انتخاب شده را یک مکان در گروه حاشیه نویسی به عقب ارسال می‌کند.<br />
+      - ارسال به عقب - اگر از چندین حاشیه نویسی در لایه‌‌ها استفاده می‌کنید، این
+      لایه انتخاب شده را به پشت گروه حاشیه نویسی ارسال می‌کند.<br />
+      - تنظیم فقط برای این فریم - با این کار حاشیه نویسی انتخاب شده در هنگام
+      حاشیه نویسی توالی‌‌های ویدیو یا تصویر فقط در فریم فعلی نمایش داده
+      می‌شود.<br />
+      - با این کار، حاشیه نویسی انتخاب شده از قاب فعلی نمایش داده می‌شود و امکان
+      پیمایش به فریم دیگر وجود دارد، به این معنی که حاشیه نویسی فقط در محدوده
+      بین آن دو نقطه فریم نشان داده می‌شود.<br />
+      - با این کار حاشیه نویسی انتخاب شده از فریم انتخاب شده قبلی از ویدیو تا
+      فریم فعلی یک ویدیو یا دنباله تصویر تنظیم می‌شود.<br />
+      - تنظیم برای همه فریم‌‌ها - با این کار حاشیه نویسی انتخاب شده برای کل
+      ویدیو یا دنباله تصویر ظاهر می‌شود.<br />
+      - برو به فریم اول (N) - با این کار به اولین فریمی‌که حاشیه نویسی روی آن
+      ظاهر می‌شود هدایت می‌شود. عدد داخل پرانتز شماره فریم است.<br />
+      - برو به آخرین فریم (N) - با این کار به آخرین فریمی‌که حاشیه نویسی روی آن
+      ظاهر می‌شود هدایت می‌شود. عدد داخل پرانتز شماره فریم است.<br />
+      <br />
+      حاشیه نویسی‌‌ها را می‌توان به طور مستقل روی فریم‌‌ها یا کل ویدیو اعمال
+      کرد. یک حاشیه نویسی را می‌توان در امتداد یک مسیر آزاد حرکت داد تا برجسته
+      روی یک موضوع باقی بماند. ثبت مسیر آزاد را می‌توان به صورت زیر انجام
+      داد:<br />
+      - ویدیویی را باز کنید که حاوی موضوعی است که می‌خواهید ردیابی کنید (مثلاً
+      او را با شکل دایره‌ای احاطه کنید).<br />
+      - به اولین فریم ویدیو که در آن سوژه ظاهر می‌شود بروید.<br />
+      - از فیلتر حاشیه نویسی استفاده کنید، یک نوع حاشیه نویسی را انتخاب کنید (هر
+      کدام کار می‌کند، اما Shape و Hide رایج ترین گزینه‌‌ها هستند)، سپس حاشیه
+      نویسی را روی موضوع اضافه کنید.<br />
+      - حاشیه نویسی را انتخاب کنید: نقاط کنترل آن باید قابل مشاهده و سفید
+      باشد.<br />
+      - با استفاده از نوار لغزنده Speed در پایین، نرخ فریم را روی مقدار بسیار
+      پایینی مانند 2 یا 4 FPS تنظیم کنید.<br />
+      - روی دکمه پخش کلیک کنید. در حالی که ویدیو با چنین سرعت کم پخش می‌شود،
+      حاشیه نویسی را به آرامی‌بکشید و آن را در مرکز موضوع قرار دهید.<br />
+      -روی دکمه توقف کلیک کنید. <br />
+      - حاشیه نویسی را با یک کلیک خارج از محدوده آن لغو انتخاب کنید. نقاط کنترل
+      ناپدید می‌شوند.<br />
+      <br />
+      پس از اتمام ضبط، می‌توانیم نرخ فریم را به سرعت اولیه بازگردانیم (روی دکمه
+      تنظیم مجدد کلیک کنید)، به فریمی‌که سوژه در آن ظاهر شده است برگردیم و روی
+      پخش کلیک کنید:<br />
+      حاشیه نویسی در مسیری که به تازگی ضبط کرده اید حرکت می‌کند و موضوع مورد نظر
+      را برجسته می‌کند. این شکل در ویدیوهای صادر شده نیز قابل مشاهده خواهد بود
+      (فیلتر ویدئو نویس)..<br />
+      <br />
+      هنگامی‌که ظاهر سوژه به آرامی‌در فریم‌‌ها تغییر می‌کند، می‌توان یک سوژه
+      متحرک را با یک روش خودکار به کمک ردیابی کرد. ردیابی هوشمند را می‌توان به
+      صورت زیر اعمال کرد:<br />
+      - ویدیویی را باز کنید که حاوی موضوعی است که می‌خواهید ردیابی کنید (مثلاً
+      فرد را با شکل دایره‌ای احاطه کنید).<br />
+      - به اولین فریم ویدیو که در آن سوژه ظاهر می‌شود بروید.<br />
+      - از فیلتر حاشیه نویسی استفاده کنید، یک نوع حاشیه نویسی را انتخاب کنید (هر
+      کدام کار می‌کند، اما Shape و Hide رایج ترین گزینه‌‌ها هستند)، سپس حاشیه
+      نویسی را روی موضوع اضافه کنید.<br />
+      - حاشیه نویسی را انتخاب کنید: نقاط کنترل آن باید قابل مشاهده و سفید
+      باشد.<br />
+      - حالا یکبار روی دکمه Track کلیک کنید تا ردیابی فعال شود. دو مستطیل ظاهر
+      می‌شود:<br />
+      - یک منطقه مرجع (مستطیل سبز با خطوط چین) برای علامت گذاری دقیق سوژه مورد
+      نظر،<br />
+      - و یک پنجره جستجو (مستطیل زرد با خطوط چین) که ناحیه ای را که مرجع
+      می‌تواند در فریم بعدی ظاهر شود مشخص می‌کند. یک پنجره جستجوی کوچکتر به
+      محاسبات کمتری نیاز دارد و احتمال ردیابی خطاها را در سوژه‌‌های کم سرعت کاهش
+      می‌دهد.<br />
+      در حالی که ردیابی فعال است، یک نماد پیوند شکل روی نهادهایی ظاهر می‌شود که
+      با انتخاب فعلی در یک اقدام مشترک حرکت/تغییر اندازه شرکت می‌کنند:<br />
+      - اگر یک حاشیه نویسی انتخاب شده باشد، نماد پیوند هم در منطقه مرجع (سبز) و
+      هم در پنجره جستجو (زرد) ظاهر می‌شود.<br />
+      - اگر منطقه مرجع (سبز) انتخاب شده باشد، نماد پیوند در پنجره جستجو ظاهر
+      می‌شود (زرد)<br />
+      - دوباره کلیک کنید Track: ویدیو یک فریم جلو می‌رود و موضوع به طور خودکار
+      ردیابی می‌شود. آهنگ را نگه دارید تا ردیابی به طور مکرر در فریم‌‌های بعدی
+      اعمال شود، تا زمانی که دکمه آزاد شود.<br />
+      - روی دکمه کپی کلیک کنید تا شکل حاشیه نویسی فعلی و مختصات کلمه به کلمه در
+      فریم بعدی، بدون اعمال ردیابی، کپی شود. برای کپی‌‌های مکرر در فریم‌‌های
+      بعدی، Copy را فشار دهید.<br />
+      - روی دکمه‌‌های Next و Previous کلیک کنید یا نگه دارید تا در امتداد ویدیو
+      حرکت کنید، همانطور که دکمه‌‌های Next Frame و Previous Frame پانل پخش کننده
+      انجام می‌دهند.<br />
+      تفاوت بین دکمه‌های کپی و بعدی تا حدودی ظریف است و زمانی که مختصات
+      حاشیه‌نویسی (موقعیت، چرخش، مقیاس) بین فریم فعلی و بعدی متفاوت است، با وضوح
+      بیشتری قابل مشاهده است::<br />
+      - کپی مختصات را در فریم بعدی بازنویسی می‌کند و یک فریم به جلو می‌رود.<br />
+      - بعدی فقط به فریم بعدی می‌رود و مختصات اصلی را بدون تغییر می‌گذارد..
+    </p>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
-      <li>
-        <strong>Date format</strong><br />
-        <em></em><a href="" target="_blank"></a>
-      </li>
+      <li>حاشیه نویسی را روی تصویر بکشید.<a href="" target="_blank"></a></li>
     </ul>
+    <hr />
+    <h3><a name="Add-Logo">اضافه کردن لوگو</a></h3>
+    <p>
+      <em
+        >یک تصویر خارجی را بر روی تصویر یا ویدیوی فعلی قرار می‌دهد تا آن را
+        علامت گذاری کند. پشتیبانی از کانال شفافیت (آلفا) یا تبدیل رنگ به
+        شفافیت.</em
+      >
+    </p>
+    <h4>جزئیات</h4>
+    <p>
+      افزودن لوگو یک تصویر خارجی را بر روی تصویر یا ویدیوی فعلی قرار می‌دهد.
+      کاربر می‌تواند در صورت وجود، موقعیت تصویر را با توجه به کادر یا انتخابی
+      تنظیم کند. اگر تصویر حاوی یک کانال آلفا باشد، می‌تواند شفاف شود. در غیر
+      این صورت، پیکسل‌‌های سیاه یا سفید در صورت درخواست می‌توانند شفاف شوند.
+    </p>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Time format</strong><br />
-        <em></em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Selection</strong><br />
+        <strong>نام فایل</strong><br />
         <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
+          >مسیر فایل تصویر خارجی برای قرار دادن بر روی تصویر یا ویدیوی فعلی.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
     <ul>
       <li>
-        Add file and frame info on a CCTV video.<a href="" target="_blank"></a>
+        <strong>کانال آلفا</strong><br />
+        <em
+          >اگر فایل تصویری انتخاب شده حاوی اطلاعات شفافیت باشد، به کاربر اطلاع
+          می‌دهد.</em
+        ><a href="" target="_blank"></a>
       </li>
-      <li>Annotate people on a video.<a href="" target="_blank"></a></li>
     </ul>
-    <h4>Related Links</h4>
     <ul>
       <li>
-        The Flexibility of the Add Text Filter:
+        <strong>موقعیت افقی</strong><br />
+        <em>موقعیت افقی تصویر روی هم با توجه به کادر یا انتخاب.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>موقعیت عمودی</strong><br />
+        <em>موقعیت عمودی تصویر روی هم با توجه به کادر یا انتخاب.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>شفافیت</strong><br />
+        <em
+          >روشی که برای ترکیب اختیاری تصویر روی هم قرار داده شده با پس‌زمینه
+          استفاده می‌شود.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>شفافیت اضافی</strong><br />
+        <em>به صورت اختیاری شفافیت تصویر روی هم را افزایش دهید.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>اندازه لوگو</strong><br />
+        <em>اندازه لوگو.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>درون یابی</strong><br />
+        <em>الگوریتم درون یابی</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>انتخاب</strong><br />
+        <em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <h4>استفاده</h4>
+    <p>
+      یک فایل تصویری را برای استفاده به عنوان لوگوی روی هم انتخاب کنید و سپس روی
+      اعمال کلیک کنید. از منوهای موقعیت افقی و موقعیت عمودی برای تنظیم موقعیت
+      لوگو نسبت به قاب تصویر اصلی یا، در صورت وجود، با انتخاب فعلی استفاده کنید.
+      اگر تصویر حاوی یک کانال آلفا باشد، به طور خودکار برای ترکیب آرم با پس
+      زمینه استفاده می‌شود. ممکن است لازم باشد در منوی Transparency مشخص شود که
+      آیا کانال آلفا مستقیم است یا از قبل ضرب شده است. همچنین می‌توان پیکسل‌‌های
+      سیاه یا سفید را روی شفاف تنظیم کرد یا شفافیت را به طور کلی غیرفعال کرد.
+    </p>
+    <h4>نمونه‌‌های کاربردی</h4>
+    <ul>
+      <li>
+        آرم آژانس را برای انتشار روی عکس مشکوک اضافه کنید.<a
+          href=""
+          target="_blank"
+        ></a>
+      </li>
+    </ul>
+    <hr />
+    <h3><a name="Add-Text">اضافه کردن متن</a></h3>
+    <p>
+      <em
+        >متن را روی تصویر درج می‌کند. پشتیبانی از چندین ماکرو برای تغییر پویا
+        محتوای متن. فونت، رنگ، اندازه و موقعیت را می‌توان سفارشی کرد.</em
+      >
+    </p>
+    <h4>جزئیات</h4>
+    <p>فیلتر افزودن متن اجازه می‌دهد تا اطلاعات متنی را روی تصویر قرار دهید.</p>
+    <h4>مولفه‌‌ها</h4>
+    <ul>
+      <li>
+        <strong>متن</strong><br />
+        <em>متن برای نوشتن روی تصویر</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>ماکرو اضافه کنید</strong><br />
+        <em></em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>سبک متن</strong><br />
+        <em>ویژگی‌‌های فونت مورد استفاده برای متن</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>رنگ پس زمینه</strong><br />
+        <em>رنگی که برای رنگ آمیزی اختیاری مستطیل پشت متن استفاده می‌شود.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>شکل پس زمینه</strong><br />
+        <em>شکل پس زمینه رنگی در صورت درخواست.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>فرمت تاریخ</strong><br />
+        <em></em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>فرمت زمان</strong><br />
+        <em></em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>انتخاب</strong><br />
+        <em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <h4>نمونه‌‌های کاربردی</h4>
+    <ul>
+      <li>
+        اطلاعات فایل و قاب را در یک فیلم دوربین مدار بسته اضافه کنید.<a
+          href=""
+          target="_blank"
+        ></a>
+      </li>
+      <li>
+        افراد را در یک ویدیو حاشیه نویسی کنید.<a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <h4>لینک‌‌های مربوطه</h4>
+    <ul>
+      <li>
+        انعطاف پذیری افزودن فیلتر متن:
         <a
           href="https://blog.ampedsoftware.com/2017/06/13/the-flexibility-of-the-add-text-filter/"
           target="_blank"
@@ -8204,8 +8198,8 @@
         >
       </li>
       <li>
-        Brilliant Details: Learn How to Use بـستا’s Macros to Add Adaptive Text
-        to Your Frames and Make Compelling Videos:
+        جزئیات درخشان: یاد بگیرید چگونه از ماکروهای بـستا برای افزودن متن تطبیقی
+        به فریم‌های خود و ساختن ویدیوهای جذاب استفاده کنید:
         <a
           href="https://blog.ampedsoftware.com/2020/02/25/brilliant-details-learn-how-to-use-amped-fives-macros-to-add-adaptive-text-to-your-frames-and-make-compelling-videos/"
           target="_blank"
@@ -8214,216 +8208,216 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Add-Shape">Add Shape</a></h3>
-    <p>
-      <em>Draws shapes (arrows, lines, rectangles, ellipses) on the image.</em>
-    </p>
-    <h4>Details</h4>
-    <p>
-      <em>Add Shape</em> draws rectangle, ellipses, lines and arrows to annotate
-      the image.
-    </p>
-    <h4>Parameters</h4>
-    <ul>
-      <li>
-        <strong>Shape Type</strong><br />
-        <em>The type of shape to draw.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Border Thickness</strong><br />
-        <em>The thickness of the shape border.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Line Type</strong><br />
-        <em>The type of line used to draw the border of the shape.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Border Color</strong><br />
-        <em>Color of the border.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Fill Color</strong><br />
-        <em>Color of the area inside the shape.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Fill Area</strong><br />
-        <em
-          >If enabled, fills the area using the <em>Fill Color</em>; otherwise,
-          leaves the shape transparent.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Line Angle</strong><br />
-        <em>Rotation angle of the line.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Selection</strong><br />
-        <em
-          >Selection where the filter is applied. It may be the whole image, a
-          static region, or a region containing a tracked object of
-          interest.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Application Examples</h4>
-    <ul>
-      <li>
-        Follow people with arrows on a video.<a href="" target="_blank"></a>
-      </li>
-      <li>Circle cars in a video.<a href="" target="_blank"></a></li>
-    </ul>
-    <hr />
-    <h3><a name="Add-Grid">Add Grid</a></h3>
+    <h3><a name="Add-Shape">شکل اضافه کنید</a></h3>
     <p>
       <em
-        >Superimposes a grid onto the image or video. Useful for compression
-        estimation and other analysis.</em
+        >شکل‌‌ها (فلش‌‌ها، خطوط، مستطیل‌‌ها، بیضی‌‌ها) را روی تصویر می‌کشد.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
+    <p>افزودن شکل برای حاشیه نویسی تصویر، مستطیل، بیضی، خطوط و فلش می‌کشد.</p>
+    <h4>مولفه‌‌ها</h4>
+    <ul>
+      <li>
+        <strong>نوع شکل</strong><br />
+        <em>نوع شکل برای ترسیم.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>ضخامت حاشیه - ضخامت لبه</strong><br />
+        <em>ضخامت حاشیه شکل.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>نوع خط</strong><br />
+        <em>نوع خطی که برای ترسیم مرز شکل استفاده می‌شود.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>رنگ لبه</strong><br />
+        <em>رنگ حاشیه.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>رنگ را پر کنید</strong><br />
+        <em>رنگ ناحیه داخل شکل</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>پر کردن منطقه</strong><br />
+        <em
+          >اگر فعال باشد، ناحیه را با استفاده از Fill رنگ پر می‌کند. در غیر این
+          صورت، شکل را شفاف می‌کند.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>زاویه خط</strong><br />
+        <em>زاویه چرخش خط.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>انتخاب</strong><br />
+        <em
+          >انتخاب محل اعمال فیلتر ممکن است کل تصویر، منطقه ایستا، یا ناحیه ای
+          حاوی یک شی ردیابی شده مورد علاقه باشد.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <h4>نمونه‌‌های کاربردی</h4>
+    <ul>
+      <li>
+        افراد دارای فلش را در یک ویدیو دنبال کنید.<a
+          href=""
+          target="_blank"
+        ></a>
+      </li>
+      <li>
+        دور ماشین‌‌ها در یک ویدیو دایره بکشید.<a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <hr />
+    <h3><a name="Add-Grid">فیلتر افزودن شبکه </a></h3>
     <p>
-      The <em>Add Grid</em> filter superimposes a regular grid onto the image or
-      video. The user can adjust the <em>Size</em>, <em>Offset</em>,
-      <em>Thickness</em>, <em>Color</em> and <em>Opacity</em>.
+      <em
+        >یک شبکه را بر روی تصویر یا ویدیو قرار می‌دهد. برای تخمین فشرده سازی و
+        تحلیل‌‌های دیگر مفید است.</em
+      >
     </p>
-    <h4>Parameters</h4>
-    <ul>
-      <li>
-        <strong>Size X</strong><br />
-        <em
-          >Distance in pixels between the vertical lines of the grid. Setting
-          this value to zero disables the vertical lines.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Size Y</strong><br />
-        <em
-          >Distance in pixels between the horizontal lines of the grid. Setting
-          this value to zero disables the horizontal lines.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Offset X</strong><br />
-        <em
-          >Distance in pixels between the first vertical line and the left
-          border of the image.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Offset Y</strong><br />
-        <em
-          >Distance in pixels between the first horizontal line and the top
-          border of the image.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Lock X/Y</strong><br />
-        <em
-          >When enabled, keeps the X values equal to the corresponding Y
-          value.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Thickness</strong><br />
-        <em>Thickness of the grid in pixels.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Color</strong><br />
-        <em>Color of the grid.</em><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <strong>Opacity</strong><br />
-        <em
-          >Opacity of the grid. A value of 1 produces a fully opaque grid;
-          smaller values produce a transparent grid that blends with the
-          background image.</em
-        ><a href="" target="_blank"></a>
-      </li>
-    </ul>
-    <h4>Usage</h4>
+    <h4>جزئیات</h4>
     <p>
-      The X and Y sizes and offsets of the grid can be adjusted independently,
-      or can be kept equal if the <em>Lock X/Y</em> option is set. Each set of
-      lines (horizontal or vertical) appears on the screen if the corresponding
-      size is greater than the zero.
+      فیلتر افزودن شبکه یک شبکه معمولی را بر روی تصویر یا ویدیو قرار می‌دهد.
+      کاربر می‌تواند اندازه، افست، ضخامت، رنگ و شفافیت را تنظیم کند.
     </p>
-    <h4>Application Examples</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
-      <li>Estimate the proper aspect ratio.<a href="" target="_blank"></a></li>
-      <li>Analyze macroblocks size.<a href="" target="_blank"></a></li>
       <li>
-        Overlay a grid on an image for face comparisons.<a
+        <strong>سایز X</strong><br />
+        <em
+          >فاصله بین خطوط عمودی شبکه بر حسب پیکسل. با قرار دادن این مقدار روی
+          صفر، خطوط عمودی غیرفعال می‌شوند.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>سایز Y</strong><br />
+        <em
+          >فاصله بین خطوط افقی شبکه بر حسب پیکسل. با قرار دادن این مقدار روی
+          صفر، خطوط افقی غیرفعال می‌شوند.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>افست X</strong><br />
+        <em>فاصله بین اولین خط عمودی و حاشیه سمت چپ تصویر بر حسب پیکسل.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>افست Y</strong><br />
+        <em>فاصله بین اولین خط افقی و حاشیه بالای تصویر بر حسب پیکسل.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>قفل X/Y</strong><br />
+        <em>وقتی فعال باشد، مقادیر X را برابر با مقدار Y مربوطه نگه می‌دارد.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>ضخامت</strong><br />
+        <em>ضخامت شبکه بر حسب پیکسل</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>رنگ</strong><br />
+        <em>رنگ شبکه.</em><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>کدورت</strong><br />
+        <em
+          >کدورت شبکه مقدار 1 یک شبکه کاملاً مات ایجاد می‌کند. مقادیر کوچکتر یک
+          شبکه شفاف ایجاد می‌کند که با تصویر پس زمینه ترکیب می‌شود.</em
+        ><a href="" target="_blank"></a>
+      </li>
+    </ul>
+    <h4>استفاده</h4>
+    <p>
+      اندازه‌‌ها و افست‌‌های X و Y شبکه را می‌توان به طور مستقل تنظیم کرد، یا
+      اگر گزینه Lock X/Y تنظیم شده باشد، می‌توان آنها را برابر نگه داشت. هر
+      مجموعه از خطوط (افقی یا عمودی) اگر اندازه مربوطه بزرگتر از صفر باشد، روی
+      صفحه ظاهر می‌شود.
+    </p>
+    <h4>نمونه‌‌های کاربردی</h4>
+    <ul>
+      <li>نسبت تصویر مناسب را تخمین بزنید.<a href="" target="_blank"></a></li>
+      <li>
+        اندازه ماکروبلاک‌‌ها را تجزیه و تحلیل کنید.<a
+          href=""
+          target="_blank"
+        ></a>
+      </li>
+      <li>
+        برای مقایسه چهره، یک شبکه روی یک تصویر قرار دهید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
     <hr />
-    <h3><a name="Change-Frame-Rate">Change Frame Rate</a></h3>
-    <p><em>Changes the frame rate of the video.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Change-Frame-Rate">تغییر نرخ فریم</a></h3>
+    <p><em>نرخ فریم ویدیو را تغییر می‌دهد.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Change Frame Rate</em> tool changes the update frequency of a
-      video during playback.
+      ابزار نرخ فریم ویدیو فرکانس به‌روزرسانی یک ویدیو را در حین پخش تغییر
+      می‌دهد.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Frame Rate</strong><br />
-        <em>Frame rate of the output video.</em><a href="" target="_blank"></a>
+        <strong>نرخ فریم</strong><br />
+        <em>نرخ فریم فیلم خروجی</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Total Time</strong><br />
-        <em>Total time of the output video.</em><a href="" target="_blank"></a>
+        <strong>زمان کل</strong><br />
+        <em>زمان کل فیلم خروجی</em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
-      <li>Visualize a video in slow motion.<a href="" target="_blank"></a></li>
       <li>
-        Restore the proper frame rate after a DVR conversion.<a
+        یک ویدیو را در حرکت آهسته تجسم کنید.<a href="" target="_blank"></a>
+      </li>
+      <li>
+        پس از تبدیل DVR، نرخ فریم مناسب را بازیابی کنید.<a
           href=""
           target="_blank"
         ></a>
       </li>
     </ul>
-    <h4>Related Links</h4>
+    <h4>لینک‌‌های مربوطه</h4>
     <ul>
       <li>
-        Changing a Video’s Frame Rate:
+        تغییر نرخ فریم ویدیو:
         <a
           href="https://blog.ampedsoftware.com/2017/06/06/changing-a-videos-frame-rate/"
           target="_blank"
@@ -8432,112 +8426,110 @@
       </li>
     </ul>
     <hr />
-    <h3><a name="Convert-Frame-Rate">Convert Frame Rate</a></h3>
+    <h3><a name="Convert-Frame-Rate">فیلتر تبدیل نرخ فریم </a></h3>
     <p>
       <em
-        >Adapts the frame rate of a video by duplicating or dropping frames.</em
+        >نرخ فریم یک ویدیو را با کپی کردن یا انداختن فریم‌‌ها تنظیم می‌کند.</em
       >
     </p>
-    <h4>Details</h4>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Convert Frame Rate</em> filter adapts the update frequency of a
-      video during playback by duplicating or dropping frames. The playback
-      speed remains unchanged. The processing uses a "sample and hold" technique
-      that does not alter the content of the input frames. Time-based and
-      timestamp-based videos are converted to frame-based videos with a constant
-      frame rate.
+      فیلتر تبدیل نرخ فریم فرکانس به‌روزرسانی یک ویدیو را در حین پخش با کپی کردن
+      یا انداختن فریم‌ها تنظیم می‌کند. سرعت پخش بدون تغییر باقی می‌ماند. پردازش
+      از تکنیک "نمونه و نگهداری" استفاده می‌کند که محتوای فریم‌‌های ورودی را
+      تغییر نمی‌دهد. ویدیوهای مبتنی بر زمان و مُهر زمانی به ویدیوهای مبتنی بر
+      فریم با نرخ فریم ثابت تبدیل می‌شوند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Frame Rate</strong><br />
-        <em>Frame rate of the output video.</em><a href="" target="_blank"></a>
+        <strong>نرخ فریم</strong><br />
+        <em>نرخ فریم فیلم خروجی</em><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      Use the <em>Convert Frame Rate</em> filter if you want to change the frame
-      rate of a video without changing the playback speed or if you want to
-      convert a time- or timestamp-based video to frame-based. Use
-      <em>Change Frame Rate</em> if instead you want to change the playback
-      speed of a frame-based video.
+      اگر می‌خواهید نرخ فریم یک ویدیو را بدون تغییر سرعت پخش تغییر دهید یا اگر
+      می‌خواهید یک ویدیوی مبتنی بر زمان یا مهر زمان را به مبتنی بر فریم تبدیل
+      کنید، از فیلتر تبدیل نرخ فریم استفاده کنید. اگر می‌خواهید سرعت پخش یک
+      ویدیوی مبتنی بر فریم را تغییر دهید، از تغییر نرخ فریم استفاده کنید.
     </p>
-    <h4>Application Examples</h4>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        Synchronize the frame rates of different videos before mixing them with
-        a filter in the [Link] category.<a href="" target="_blank"></a>
+        نرخ فریم ویدیوهای مختلف را قبل از مخلوط کردن آنها با یک فیلتر در دسته
+        [پیوند]، همگام کنید.<a href="" target="_blank"></a>
       </li>
     </ul>
     <hr />
-    <h3><a name="Reverse">Reverse</a></h3>
-    <p><em>Plays back the video in the reverse direction.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Reverse">معکوس</a></h3>
+    <p><em>ویدیو را در جهت معکوس پخش می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Reverse</em> filter is useful when stabilizing videos in which the
-      subject is moving towards the camera, and therefore is best visible on the
-      last frame.
+      فیلتر معکوس هنگام تثبیت فیلم‌‌هایی که در آنها سوژه به سمت دوربین حرکت
+      می‌کند مفید است و بنابراین در آخرین فریم به بهترین وجه قابل مشاهده است.
     </p>
-    <h4>Parameters</h4>
-    <em>This filter has no parameters.</em>
-    <h4>Application Examples</h4>
+    <h4>مولفه‌‌ها</h4>
+    <em>این فیلتر هیچ پارامتری ندارد.</em>
+    <h4>نمونه‌‌های کاربردی</h4>
     <ul>
       <li>
-        View an action in the opposite direction.<a href="" target="_blank"></a>
+        یک عمل را در جهت مخالف مشاهده کنید.<a href="" target="_blank"></a>
       </li>
       <li>
-        Invert the frame sequence for better integration of an object which is
-        increasing in size.<a href="" target="_blank"></a>
+        برای ادغام بهتر یک شی که در حال افزایش است، دنباله فریم را معکوس کنید.<a
+          href=""
+          target="_blank"
+        ></a>
       </li>
     </ul>
     <hr />
-    <h3><a name="Audio-Redaction">Audio Redaction</a></h3>
-    <p><em>Redacts parts of the video's audio track.</em></p>
-    <h4>Details</h4>
+    <h3><a name="Audio-Redaction">ویرایش صوتی</a></h3>
+    <p><em>بخش‌‌هایی از آهنگ صوتی ویدیو را ویرایش می‌کند.</em></p>
+    <h4>جزئیات</h4>
     <p>
-      The <em>Audio Redaction</em> tool will replace one or more sections of the
-      audio track with silence or some signal (e.g. sinusoid), optionally adding
-      fade-in and fade-out effects.
+      ابزار ویرایش صوتی، یک یا چند بخش از آهنگ صوتی را با سکوت یا مقداری سیگنال
+      (مثلاً سینوسی) جایگزین می‌کند و به صورت اختیاری جلوه‌های محو و محو شدن را
+      اضافه می‌کند.
     </p>
-    <h4>Parameters</h4>
+    <h4>مولفه‌‌ها</h4>
     <ul>
       <li>
-        <strong>Redacted intervals</strong><br />
-        <em>List of time intervals where redaction will be applied.</em
+        <strong>فواصل ویرایش شده</strong><br />
+        <em>فهرست فواصل زمانی که در آن ویرایش اعمال خواهد شد.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Redaction Type</strong><br />
-        <em>The type of signal used to replace the original audio with.</em
+        <strong>نوع ویرایش</strong><br />
+        <em>نوع سیگنالی که برای جایگزینی صدای اصلی استفاده می‌شود.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Redaction Volume (dB)</strong><br />
-        <em>Volume of the replacement signal.</em
-        ><a href="" target="_blank"></a>
+        <strong>حجم ویرایش (dB)</strong><br />
+        <em>صدای سیگنال جایگزینی</em><a href="" target="_blank"></a>
       </li>
     </ul>
     <ul>
       <li>
-        <strong>Fade length (ms)</strong><br />
+        <strong>طول محو شدن (ms)</strong><br />
         <em
-          >The length in milliseconds of the fade transition, to smoothly switch
-          from original to redacted audio and vice versa.</em
+          >طول انتقال محو شده بر حسب میلی ثانیه، برای جابجایی هموار از صدای اصلی
+          به صدای ویرایش شده و بالعکس.</em
         ><a href="" target="_blank"></a>
       </li>
     </ul>
-    <h4>Usage</h4>
+    <h4>استفاده</h4>
     <p>
-      Hold ALT and drag mouse over the Audio panel (enable from View menu if
-      hidden) to perform redaction.<br />
-      - Dragging started over an empty area creates a new redaction region.<br />
-      - Dragging a region's border modifies its beginnig or end.<br />
-      - Dragging a region's inner area moves it.<br />
-      Regions that overlap when finished dragging will be merged.
+      ALT را نگه دارید و ماوس را روی پانل صوتی بکشید (در صورت پنهان بودن از منوی
+      View فعال کنید) تا ویرایش انجام شود.<br />
+      - کشیدن شروع شده روی یک منطقه خالی یک منطقه ویرایش جدید ایجاد می‌کند.<br />
+      - کشیدن مرز یک منطقه شروع یا پایان آن را تغییر می‌دهد.<br />
+      - کشیدن ناحیه داخلی یک منطقه آن را حرکت می‌دهد.<br />
+      مناطقی که پس از پایان کشیدن با هم همپوشانی دارند، ادغام خواهند شد.
     </p>
   </body>
 </html>
