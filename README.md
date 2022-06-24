@@ -1,6 +1,6 @@
 # Amped five software localisation
 
-In this project we just want to localise the [software](https://ampedsoftware.com/five). Then we added the docs in the persian language and provide an `.mo` file which responsible for the localising stuff. At last we came up with a patch to replace all of the necessary files in the installed software directory.
+In this project we just want to localise the [software](https://ampedsoftware.com/five). Then we added the docs in the persian language and provide an `.mo` file in binary format which responsible for the localising stuff. At last we came up with a patch to replace all of the necessary files in the installed software directory.
 
 ## How we patched the software
 
